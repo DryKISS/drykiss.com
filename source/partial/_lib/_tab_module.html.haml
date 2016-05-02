@@ -1,0 +1,60 @@
+-##
+-# Blog Tab Module
+-# Use this module on the home page to tab between available categories.
+-#
+-# @author Ian Warner <ian.warner@drykiss.com>
+-##
+
+-# Variables
+- active  = "frontend"
+- exclude = [ "portfolio" ]
+
+-# Array
+- array = []
+- categories( exclude ).each do | category |
+    - array << { "path" => "##{ category }", "name" => category.capitalize }
+
+-# Blog
+= partial "./bootstrap/type/blockquote",
+           :locals => { :text  => "Our Blog",
+                        :small => "The following articles demonstrate some of the practices DryKISS undertake" }
+
+.row.blogSection
+
+    .span12
+
+        -# Nav Tabs
+        = partial "./bootstrap/components/navs",
+                   :locals => { :array   => array,
+                                :toggle  => true }
+
+        -# Tab Content
+        .tab-content
+
+            -# Loop though the Tab Array creating the content
+            - array.each do | tab |
+
+                - name = tab[ "name" ].downcase
+
+                .tab-pane{ :id => name, :class => ( defined? active and active == name ) ? "active" : false }
+
+                    .row
+
+                        -# Loop through the articles - Sort by Sticky then Latest
+                        - byCategory( name, [ "md" ] ).each do | article |
+
+                            .span4
+
+                                .blogContent
+
+                                    %img.img-polaroid{ :src => "#{ imagesBlog }#{ article.data.image }" }
+
+                                    %h4
+                                        / %a{ :href => article.url, :title => article.title }
+                                        /     = article.title
+
+                                    / = article.summary
+
+                                -# Blog Footer
+                                / = partial "./blog/details",
+                                /            :locals => { :article => article }

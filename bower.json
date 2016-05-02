@@ -1,0 +1,35 @@
+{
+    "name"     : "drykiss.com",
+    "version"  : "0.0.1",
+    "homepage" : "http://drykiss.com",
+
+    "authors"  : [
+        "Ian Warner <ian.warner@drykiss.com>"
+    ],
+
+    "dependencies" : {
+
+        "angular"                 : "",
+        "angular-ui-router"       : "",
+
+        "bootstrap-sass-official" : "",
+
+        "font-awesome"            : "",
+
+        "jquery"                  : "",
+
+        "mixitup"                 : ""
+
+    },
+
+    "license" : "MIT",
+
+    "ignore"  : [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+
+}

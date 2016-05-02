@@ -1,0 +1,76 @@
+---
+
+author      : DryKISS
+description : :descContact
+title       : :titleContact
+
+---
+
+-# Hero Image - Brand - Strap Line - Description
+%section.what
+
+    -# Jumbotron Block
+    -# @todo Fade the text in as before
+    -# @todo Look at the colour of the background on white for accessibility
+    .container
+
+        .row
+
+            .col-md-12
+
+                -# Heading
+                = codeBlender "heading", "molecule", { text: "Contact" }
+
+= codeBlender "blockquote", "atom",
+    { text:  "Contact Us",
+      small: "Please feel free to contact DryKISS by any of the following means." }
+
+.row
+
+    .span4
+
+        -# Details
+        %p
+
+            %a{ :href => "tel:+447780435329", :title => "Call DryKISS" }
+                %i.icon-phone
+                +44 (0)778 043 5329
+
+            %br
+
+            %a{ :href => "mailto:info@drykiss.com", :title => "Email DryKISS" }
+                %i.icon-envelope
+                info@drykiss.com
+
+            %br
+
+            %a{ :href => "https://twitter.com/DryKissLondon", :title => "DryKISS Twitter" }
+                %i.icon-twitter
+                @DryKissLondon
+
+            %br
+
+            %a{ :href => "https://www.facebook.com/DryKISSLtd", :title => "DryKISS Facebook" }
+                %i.icon-facebook
+                https://www.facebook.com/DryKISSLtd
+
+        -# Address
+        %div{ :itemscope => true, :itemtype => 'http://schema.org/PostalAddress' }
+
+            %span{ :itemprop => "name" }
+                DryKISS Ltd.
+            %br
+
+            %span{ :itemprop => "addressLocality" }
+                Wimbledon
+            %br
+
+            %span{ :itemprop => "addressRegion" }
+                London
+            %br
+
+    .span8
+
+        .img-polaroid
+
+            #map-canvas{ :style => "width:100%;height:300px;" }

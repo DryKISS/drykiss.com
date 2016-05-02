@@ -1,0 +1,69 @@
+##
+# Config YAML
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+##
+
+---
+
+# Version - This needs to be iterated on each distribution
+version : "1.0.0"
+
+# HTML tag
+html :
+    angular  : "app"
+    manifest : false
+
+# Head
+head :
+    prefix : "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# dcterms: http://purl.org/dc/terms/#"
+
+# Body tag
+body :
+    id         : false
+    extraClass : "ng-cloak"
+    spy        : false
+    target     : false
+    offset     : false
+
+# Brand
+brand : "DryKISS"
+url   : "http://drykiss.com/"
+
+# JavaScript
+javascript :
+    head : false
+    body : true
+
+# Sections
+breadcrumbs   : false
+container     : "container"
+description   : false
+heading       : false
+topIcon       : true
+
+# Extras
+configuration : false
+resources     : false
+todo          : false
+
+# Meta
+favicon      : "favicon.ico"
+meta :
+    apple    : false
+    core     : true
+    dublin   : false
+    facebook : false
+    fancy    : false
+    favicon  : false
+    feed     : false
+    google   : true
+    mobile   : true
+    touch    : false
+    twitter  : false
+
+# Footer
+copyright     : false
+footer :
+    active     : true
+    extraClass : "noBackground"

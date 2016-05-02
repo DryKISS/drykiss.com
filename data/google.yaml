@@ -1,0 +1,22 @@
+##
+# Google
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+##
+
+---
+
+api : false
+
+analytics :
+    active : true
+    code   : "UA-49976138-1"
+    url    : "auto"
+
+adsense        : false
+search         : false
+webmasterTools : "KV07s1r94b_CG89V9Tuh7a5FYEv4kG8-WbLMGLCOIjw"
+
+client :
+    id     : "908346284125-9nc8k5avs5gsg4f53j058jotsedtodgc.apps.googleusercontent.com"
+    secret : "ERR0xB-H_csJEdn2IPZ4MxWW"

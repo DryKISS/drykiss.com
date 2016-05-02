@@ -1,0 +1,79 @@
+---
+
+stub : ourWork
+
+angular :
+    controller   : PortfolioController
+    controllerAs : portfolio
+
+---
+
+-# Work Section
+%section.work
+
+    -# Portfolio Section
+    .portfolio.portfolio__all{ itemscope: true, itemtype: "http://schema.org/Blog" }
+
+        -# Bootstrap Container
+        .container
+
+            -# Bootstrap Row
+            .row
+
+                -# Bootstrap Columns
+                .col-md-12.col-sm-12
+
+                    -# Portfolio Blockquote
+                    = codeBlender "blockquote", "atom", string( :"portfolio.recent.heading" )
+
+        -# Bootstrap Container
+        .container
+
+            -# Bootstrap Row
+            .row
+
+                -# Bootstrap Columns
+                .col-md-12.col-sm-12
+
+                    -# Portfolio Filter
+                    .portfolio__filter
+
+                        -# Create list
+                        - list = []
+
+                        -# Create the All filter
+                        - list << { data: { filter: "all" }, extraClass: "filter", link: { url: "javascript:;" }, text: "All" }
+
+                        -# Get the unique Subcategories in the portfolio
+                        - blog( 'portfolio' ).articles.uniq{ | r | r.data.category }.each do | portfolio |
+                            - category = portfolio.data.category
+                            - list << { data: { filter: ".category-#{ category }" }, extraClass: "filter", link: { url: "javascript:;" }, text: category }
+
+                        -# List - Filter
+                        = codeBlender "list-ul", "atom", { array: list, extraClass: "nav nav-pills" }
+
+        -# Bootstrap Container
+        .container
+
+            -# Bootstrap Row
+            .row
+
+                -# Portfolio Grid
+                .portfolio__grid
+
+                    -# Loop through the Portfolio Category
+                    -# Sorting is done by date as a default
+                    - blog( 'portfolio' ).articles.each do | portfolio |
+
+                        -# Bootstrap Columns
+                        .col-md-3.col-sm-3.mix{ class: "category-#{ portfolio.data.category }" }
+
+                            -# Link to Portfolio
+                            %a{ href: portfolio.url, title: portfolio.data.heading.title }
+
+                                -# Image
+                                = codeBlender "image", "atom",
+                                    { alt:        portfolio.data.heading.title,
+                                      caption:    portfolio.data.heading.title,
+                                      extraClass: "img-thumbnail",
+                                      src:        "#{ portfolio.data.meta.image }" }

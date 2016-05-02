@@ -1,0 +1,48 @@
+-##
+-# Portfolio
+-#
+-# @usage
+-# -# Portfolio layout
+-# = wrap_layout "#{ config[ :layout_dir ] }/portfolio" do
+-#
+-# @author   Ian Warner <ian.warner@drykiss.com>
+-# @category template
+-##
+
+-# Variables
+- cp      = current_page.data
+- heading = cp.heading
+
+-# Portfolio
+= wrap_layout "#{ config[ :layout_dir ] }fullWidth" do
+
+    .container
+
+        .row
+
+            .col-md-3
+
+                %aside Side bar with nav to other projects
+
+            .col-md-9
+
+                -# Blog Post
+                %article{ role: "article", itemscope: true, itemtype: "http://schema.org/BlogPosting"  }
+
+                    -# Heading - Article H1
+                    = codeBlender "heading", "molecule", { extraClass: "heading--noMargin", small: heading.small, text: heading.title, itemprop: "name headline" }
+
+                    -# Blog Detail Footer
+                    = codeBlender "detail", "molecule", { author: true, cal: true, social: true, tags: false }
+
+                    -# Blog Image
+                    = codeBlender "image", "molecule"
+
+                    -# Yield
+                    %span{ itemprop: "text" }= yield
+
+                    -# Pager
+                    = codeBlender "pager", "molecule"
+
+                    -# Discus Comments
+                    = codeBlender "disqus-comment", "organism"
