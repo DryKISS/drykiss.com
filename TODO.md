@@ -126,11 +126,14 @@ Adds tasks based on the anatomy of the website, in terms of atomic elements.
 
 ## Our work
 
-- [ ] Look at making the site images pop a little more - maybe put at angle not square on.
 - [ ] 4 columns of uniform images and captions
     - [ ] Image thumbnail 360 x 360
+
+- [ ] Stop the flicker of the screen as the screenshots animate in
+- [ ] Look at making the site images pop a little more - maybe put at angle not square on.
 - [ ] Sort out what portfolio elements we want to show on this page - choose 4 to start
 - [ ] Define the categories needed for the portfolio
+- [ ] Design the caption to flow below the box a little better
 
 --------------------------------------------------------------------------------
 
