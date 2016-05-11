@@ -56,28 +56,25 @@ angular :
                         = codeBlender "list-ul", "atom", { array: list, extraClass: "nav nav-pills" }
 
             -# Bootstrap row
-            .row
+            .row.portfolio__grid
 
-                -# Portfolio grid
-                .portfolio__grid
+                -# Loop through the portfolio category
+                -# Sorting is done by date as a default
+                -# Only show those that are published
+                - blog( 'portfolio' ).articles.select{ | r | r.data.published != false }.each do | portfolio |
 
-                    -# Loop through the portfolio category
-                    -# Sorting is done by date as a default
-                    -# Only show those that are published
-                    - blog( 'portfolio' ).articles.select{ | r | r.data.published != false }.each do | portfolio |
+                    -# Bootstrap column
+                    .col-md-3.col-sm-3
 
-                        -# Bootstrap column
-                        .col-md-3.col-sm-3
+                        -# Portfolio segment with mix
+                        .portfolio__segment.mix{ class: "category-#{ portfolio.data.category }" }
 
-                            -# Portfolio segment with mix
-                            .portfolio__segment.mix{ class: "category-#{ portfolio.data.category }" }
+                            -# Link to portfolio
+                            %a{ href: portfolio.url, title: portfolio.data.heading.title }
 
-                                -# Link to portfolio
-                                %a{ href: portfolio.url, title: portfolio.data.heading.title }
-
-                                    -# Image - portfolio thumbnail
-                                    = codeBlender "image", "atom",
-                                        { alt:        portfolio.data.heading.title,
-                                          caption:    portfolio.data.heading.title,
-                                          extraClass: "img-thumbnail",
-                                          src:        "#{ portfolio.data.meta.image }" }
+                                -# Image - portfolio thumbnail
+                                = codeBlender "image", "atom",
+                                    { alt:        portfolio.data.heading.title,
+                                      caption:    portfolio.data.caption,
+                                      extraClass: "img-thumbnail",
+                                      src:        portfolio.data.meta.image }

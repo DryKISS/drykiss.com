@@ -126,21 +126,67 @@ Adds tasks based on the anatomy of the website, in terms of atomic elements.
 
 ## Our work
 
-- [ ] 4 columns of uniform images and captions
-    - [ ] Image thumbnail 360 x 360
+Uses the MixItUp library to present the portfolio blog posts in a filterable
+manner.
 
 - [ ] Stop the flicker of the screen as the screenshots animate in
-- [ ] Look at making the site images pop a little more - maybe put at angle not square on.
 - [ ] Sort out what portfolio elements we want to show on this page - choose 4 to start
-- [ ] Define the categories needed for the portfolio
-- [ ] Design the caption to flow below the box a little better
+- [ ] Use paging on this page to scroll through more than 16
+
+- Heading
+    - [ ] Does the block quote work here - try pageHeader instead
+    - [ ] Human - change copy here to be more human
+
+- Filter
+    - Based on the category of each portfolio blog entry
+    - [ ] Define the categories needed for the portfolio
+    - [ ] Add a title to the filter bar - Filter : or something
+    - [ ] Apply numbers that show total in each section
+
+- Image layout
+    - 4 columns of uniform responsive images and captions
+        - Image thumbnail 360 x 360
+    - [ ] Look at making the site images pop a little more - maybe put at angle not square on.
+    - [ ] Test how the layout looks with many elements
+
+- Caption
+    - [ ] Centre the text and add a small description for each element
+    - [ ] Design the caption to flow below the box a little better
 
 --------------------------------------------------------------------------------
 
 ## Blog details
 
+Create the template to render the blog post, all the content should come from the
+blog post entries. Including images and formatting of these.
+
+- http://www.keenthemes.com/preview/metronic/theme/admin_1/page_general_portfolio_1.html
 - [ ] Layout the details in a better way
 - [ ] Get a proper disqus comments shortcode for this site
+
+- Accessibility
+
+    - [] Need to make sure all Alt tags are correct
+    - [] Role are applied to the template
+
+- Micro Format
+
+    - [] Sort out the object type for a portfolio blog post - contains company and assets
+    - [] Need to move the article section to the top of the code
+
+- Heading
+    - [ ] PageHeader or blockquote try this out
+    - [ ] Human - change copy here to be more human
+
+- Blog image
+    - [ ] 4 columns with screenshots inside
+    - [ ] Middle one reserve for logo perhaps
+    - [ ] Need to remove the caption from these
+    - [ ] Allow the images to be clicked and zoomed on to see full image in full length
+
+- Disqus comments
+    - [ ] Position these a bit better not full width
+    - [ ] Margin at bottom
 
 --------------------------------------------------------------------------------
 

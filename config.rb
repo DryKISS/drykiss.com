@@ -57,7 +57,7 @@ activate :blog do | blog |
 
     blog.name              = "portfolio"
     blog.prefix            = "portfolio"
-    blog.default_extension = ".md"
+    blog.default_extension = ".haml"
 
     blog.permalink         = "{title}.html"
     blog.sources           = ":title.html"
