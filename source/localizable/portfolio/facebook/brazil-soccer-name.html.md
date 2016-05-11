@@ -12,12 +12,13 @@ meta :
     title       : "Brazil Soccer Name"
     type        : "article"
 
-category : Facebook
-date     : 2012-01-01
-excerpt  : "Brazil Soccer Name"
-lang     : en
-modified : 2012-01-01
-tags     : [ facebook, social ]
+category  : Facebook
+date      : 2012-01-01
+excerpt   : Brazil Soccer Name
+lang      : en
+modified  : 2012-01-01
+published : false
+tags      : [ facebook, social ]
 
 ---
 

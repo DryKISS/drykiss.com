@@ -1,21 +1,28 @@
 ---
 
-stub : index
+meta :
+    author      : "DryKISS"
+    description : "DryKISS is a full service internet and mobile digital production house. Our core services span consulting, strategy; planning; development; testing and analytics. Using cutting edge technologies within disciplined processes."
+    image       : "Image"
+    subject     : "DryKISS"
+    title       : "DryKISS develops hybrid mobile apps; responsive internet sites."
+    type        : "website"
 
 ---
 
 -# Hero Image - Brand - Strap Line - Description
 .hero
 
-    -# Full width Image
+    -# Hero image
     .hero__image
 
-        -# Jumbotron Block
-        -# @todo Fade the text in as before
+        -# Bootstrap container
         .container
 
+            -# Bootstrap row
             .row
 
+                -# Bootstrap column
                 .col-md-12
 
                     -# Jumbotron
@@ -23,54 +30,54 @@ stub : index
                         { desc:    :jumbotronDesc,
                           heading: { small: :jumbotronSmall, text: data.config.brand } }
 
-    -# Ethos Block
-    -# @todo More emphasis on the columns of text - better typography
-    -# @todo Link the text to relevant resources and internal links
-    -# @todo Use of imagery / icon to identify to the three core principals
+    -# Bootstrap container
     .container
 
+        -# Bootstrap row
         .row
 
+            -# Bootstrap column
             .col-md-12
 
                 -# Blockquote
-                = codeBlender "blockquote", "atom",
-                    { small: "Understand | Architect | Craft",
-                      text:  "Ethos" }
+                = codeBlender "blockquote", "atom", { small: "Understand | Architect | Craft", text: "Ethos" }
 
+        -# Bootstrap row
         .row
 
+            -# Bootstrap column
             .col-md-3
 
                 %p
                     Modern applications are not just about a distinctive design
-                    or utilising cutting edge technologies. They are user centric,
-                    analytic based, growth machines.
+                    or utilising cutting edge technologies. They are user
+                    centric, analytic based, growth machines.
 
                 %p
-                    At DryKISS we encourage a research based project cycle, to meet
-                    these ever changing UX needs.
+                    At DryKISS we encourage a research based project cycle, to
+                    meet these ever changing UX needs.
 
+            -# Bootstrap column
             .col-md-3
 
                 %p
-                    %strong
-                        UNDERSTAND:
-                    At DryKISS we want to learn about your user,
-                    business and the reasons behind embarking on this new project.
+                    %strong UNDERSTAND:
+                    At DryKISS we want to learn about your user, business and
+                    the reasons behind embarking on this new project.
 
                 %p
                     We can create persona, storyboards and initial prototypes to
                     help guide these critical early decisions.
 
+            -# Bootstrap column
             .col-md-3
 
                 %p
-                    %strong
-                        ARCHITECT:
+                    %strong ARCHITECT:
                     DryKISS will draft a user centric development approach which
                     can include technology reasoning; product backlog;
-                    continuous integration plan; definition of done and sprint milestones.
+                    continuous integration plan; definition of done and sprint
+                    milestones.
 
                 %p
                     Social integration, SEO and marketing guidance.
@@ -78,11 +85,11 @@ stub : index
                 %p
                     All through the lens of your deadlines and budget.
 
+            -# Bootstrap column
             .col-md-3
 
                 %p
-                    %strong
-                        CRAFT:
+                    %strong CRAFT:
                     Our crafting is all about rapid feature completion.
                     We want the user to test a story as quickly as possible.
 
@@ -95,9 +102,9 @@ stub : index
                     patterns that can be styled and deployed.
 
     / -# Portfolio Recent
-    / = partial "./template/portfolio/portfolio.recent", locals: { total: 4 }
+    / = codeBlender "", "./template/portfolio/portfolio.recent", { total: 4 }
 
-    -# Services
+    -# Bootstrap container
     .container
 
         -# Portfolio
@@ -105,64 +112,46 @@ stub : index
             { text:  "Our Services",
               small: "We pride ourselves on offering a full-service, economic and future technology approach." }
 
+        -# Bootstrap row
         .row
 
             .services
 
+                -# Bootstrap column
                 .col-md-4
 
-                    %h4 User Experience
+                    -# Heading - H4
+                    = codeBlender "heading", "molecule", { tag: "h4", text: "User Experience" }
 
                     %p
-                        We help brands create valuable experiences across digital
-                        channels by focusing on the habits and needs of their audience.
-                        Our user experience team will transform the quality of your
-                        products, the happiness of your customers and the success of
-                        your business.
+                        We help brands create valuable experiences across
+                        digital channels by focusing on the habits and needs of
+                        their audience. Our user experience team will transform
+                        the quality of your products, the happiness of your
+                        customers and the success of your business.
 
+                -# Bootstrap column
                 .col-md-4
 
-                    %h4 Creativity
+                    -# Heading - H4
+                    = codeBlender "heading", "molecule", { tag: "h4", text: "Creativity" }
 
                     %p
                         Focused creativity is the engine for all we do. Our
-                        cross-platform, and specifically mobile experience makes our
-                        approach always flexible, responsive and dynamic. From initial
-                        concepts through to final design our creative teams and
-                        developers create compelling and unique brand experiences.
+                        cross-platform, and specifically mobile experience makes
+                        our approach always flexible, responsive and dynamic.
+                        From initial concepts through to final design our
+                        creative teams and developers create compelling and
+                        unique brand experiences.
 
+                -# Bootstrap column
                 .col-md-4
 
-                    %h4 Development
+                    -# Heading - H4
+                    = codeBlender "heading", "molecule", { tag: "h4", text: "Development" }
 
                     %p
-                        By using the best and latest frameworks we are not re-inventing
-                        the wheel, but delivering projects based on known processes.
-                        This enables us to deliver cutting edge code quickly and within
-                        budget.
-
--# Page
--#     Meta
--#     CSS
--#     Icons
--#     Header
--#     Sections
--#         Hero
--#             Cover Image
--#             Jumbotron
--#         Work
--#             Articles
--#                 9 Peices - i.e. Portfolio / Shopping
--#                     Indiviudal Links to Details Page
--#             Button Link to other items
--#         Feed
--#             Twitter
--#             Journal
--#     Footer
--#         X Columns
--#         Privacy Links
--#         SiteMap
--#         Copyright
--#         Top Icon
--#     JavaScript
--#     Analytics
+                        By using the best and latest frameworks we are not re-
+                        inventing the wheel, but delivering projects based on
+                        known processes. This enables us to deliver cutting edge
+                        code quickly and within budget.

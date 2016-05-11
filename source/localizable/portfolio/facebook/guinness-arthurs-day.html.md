@@ -12,12 +12,13 @@ meta :
     title       : "Guinness® Facebook Page"
     type        : "article"
 
-category : Facebook
-date     : 2012-01-01
-excerpt  : "Guinness® Facebook Page"
-lang     : en
-modified : 2012-01-01
-tags     : [ facebook, social ]
+category  : Facebook
+date      : 2012-01-01
+excerpt   : Guinness® Facebook Page
+lang      : en
+modified  : 2012-01-01
+published : false
+tags      : [ facebook, social ]
 
 ---
 

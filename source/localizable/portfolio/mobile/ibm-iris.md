@@ -12,12 +12,13 @@ meta :
     title       : "IBM - Iris"
     type        : "article"
 
-category : Mobile
-date     : 2014-10-30
-excerpt  : ""
-lang     : en
-modified : 2014-10-30
-tags     : [ iPad, Hybrid ]
+category  : Mobile
+date      : 2014-10-30
+excerpt   : Iris
+lang      : en
+modified  : 2014-10-30
+published : false
+tags      : [ iPad, Hybrid ]
 
 ---
 

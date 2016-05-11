@@ -12,12 +12,13 @@ meta :
     title       : "Love Football"
     type        : "article"
 
-category : Facebook
-date     : 2012-01-01
-excerpt  : "Love Football"
-lang     : en
-modified : 2012-01-01
-tags     : [ facebook, social ]
+category  : Facebook
+date      : 2012-01-01
+excerpt   : Love Football
+lang      : en
+modified  : 2012-01-01
+published : false
+tags      : [ facebook, social ]
 
 ---
 

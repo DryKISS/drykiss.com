@@ -1,9 +1,10 @@
 ##
 # Disqus
 #
-# @author Ian Warner <ian.warner@drykiss.com>
+# @author   Ian Warner <ian.warner@drykiss.com>
+# @category meta
 ##
 
 ---
 
-shortName : "codeblender"
+shortName : codeBlender

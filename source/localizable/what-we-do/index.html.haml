@@ -1,59 +1,87 @@
 ---
 
-author      : DryKISS
-description : :descWhatWeDo
-published   : true
-title       : :titleWhatWeDo
+meta :
+    author      : "DryKISS"
+    description : "DryKISS is a full service internet and mobile digital production house. Our core services span consulting, strategy; planning; development; testing and analytics. Using cutting edge technologies within disciplined processes."
+    image       : "Image"
+    subject     : "DryKISS"
+    title       : "DryKISS develops hybrid mobile apps; responsive internet sites."
+    type        : "website"
 
 ---
 
 -# Hero Image - Brand - Strap Line - Description
 %section.what
 
-    -# Jumbotron Block
-    -# @todo Fade the text in as before
-    -# @todo Look at the colour of the background on white for accessibility
+    -# Bootstrap container
     .container
 
+        -# Bootstrap row
         .row
 
+            -# Bootstrap column
             .col-md-12
 
-                -# Heading
+                -# Heading - H1
                 = codeBlender "heading", "molecule", { text: "What we do" }
 
-Project To Do?... Consider it Done!
+        -# Bootstrap row
+        .row
 
-Web design
-Your Website? One of a Kind...
-Just Like Your Company
-Web Applications
-You've Got the Brilliant Idea...
-We Make it Work
-Logo & Branding
-"Brand" and "Logo" Aren't the Same...
-But They Both Make an Indelible Mark
-Mobile Apps & Sites
-Make Sure You're With Them...
-Everywhere They Go!
-Motion & Special Effects
-We Don't Do Special Effects...
-We Do WOW Effects
-Other Services
-Our Speciality?...
-Everything Your Business Needs
-How we roll?
-Every business or manager has an endless to-do list. Our clients breathe a sigh of relief after moving a project from their list to ours. They know us. They know our work. Professional, brand-consistent, user-experience focused, and done on deadline. We invite you to get to know us, too.
+            -# Bootstrap column
+            .col-md-4
 
-You'd also like to stand out from the crowd?
-You've come to the right place. Our designers and developers have the freedom to use every bit of their creativity. They collaborate and critique their brainstorms with the rest of our team, in an atmosphere of trust and inventiveness. They have the talent and drive to surprise our clients with something never seen before.
+                -# Thumbnail
+                .thumbnail
 
-The results? Electrifying.
+                    -# Caption
+                    .caption
 
-Our process?
-Well, it's not 42 expensive, time-wasting deliverables set in stone and derived from a flood of meetings that crush the living daylights out of everyone involved. Whew!
+                        -# Heading - H2
+                        = codeBlender "heading", "molecule", { tag: "h2", text: "Responsive development" }
 
-What is it, then?
-Your company is unique; our process flows from your project. It's for you, and you alone. It's collaborative, energetic, custom-made, agile, iterative. It's all you'd hope from a young, tech-savvy, creative team who works with corporate giants and micro-businesses with equal devotion.
+                        :markdown
+                            Crafting responsive, mobile first or adaptive sites and
+                            applications is something DryKISS excels in.
 
-And we make it easy for you.
+                            Developing a mobile friendly product is not only a user
+                            requirement but it also improves SEO aspects.
+
+            -# Bootstrap column
+            .col-md-4
+
+                -# Thumbnail
+                .thumbnail
+
+                    -# Caption
+                    .caption
+
+                        -# Heading - H1
+                        = codeBlender "heading", "molecule", { tag: "h2", text: "Prototyping" }
+
+                        :markdown
+                            Using CodeBlender our atomic development pattern
+                            library, DryKISS can rapidly deliver any kind of
+                            prototype to answer user research questions.
+
+                            We have already delivered a TV EPG; mobile touchID
+                            application; one page sites and email newsletter.
+
+            -# Bootstrap column
+            .col-md-4
+
+                -# Thumbnail
+                .thumbnail
+
+                    -# Caption
+                    .caption
+
+                        -# Heading - H1
+                        = codeBlender "heading", "molecule", { tag: "h2", text: "Hybrid mobile development" }
+
+                        :markdown
+                            Utilising the latest technologies such as Cordova or
+                            PhoneGap, DryKISS can deliver cross-platform HTML5 and
+                            JavaScript mobile applications without hassle.
+
+

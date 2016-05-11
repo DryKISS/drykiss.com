@@ -12,12 +12,13 @@ meta :
     title       : "Xpansif"
     type        : "article"
 
-category : Site
-date     : 2013-01-01
-excerpt  : "Xpansif"
-lang     : en
-modified : 2013-01-01
-tags     : [ SMS, Mobile ]
+category  : Site
+date      : 2013-01-01
+excerpt   : "Xpansif"
+lang      : en
+modified  : 2013-01-01
+published : false
+tags      : [ SMS, Mobile ]
 
 ---
 

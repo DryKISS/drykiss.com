@@ -38,24 +38,6 @@ en:
         rights           : "&copy; 2015, DryKISS Ltd. All rights reserved."
         itemType         : "WebPage"
 
-        # Index
-        index :
-            author      : "DryKISS"
-            description : "DryKISS"
-            image       : "Image"
-            subject     : "DryKISS"
-            title       : "DryKISS"
-            type        : "website"
-
-        # Our Work
-        ourWork :
-            author      : "DryKISS"
-            description : "DryKISS"
-            image       : "Image"
-            subject     : "DryKISS"
-            title       : "DryKISS"
-            type        : "website"
-
     # Navigation
     navigation :
 
@@ -70,17 +52,17 @@ en:
             - text : "What We Do"
               link : { url: "/what-we-do/" }
 
-            # Who We Are
-            - text : "Who We Are"
-              link : { url: "/who-we-are/" }
+            # # Who We Are
+            # - text : "Who We Are"
+            #   link : { url: "/who-we-are/" }
 
             # Our Work
             - text : "Our Work"
               link : { url: "/our-work/" }
 
-            # Contact
-            - text : "Contact"
-              link : { url: "/contact/", ui: { sref: { active: "contact" } } }
+            # # Contact
+            # - text : "Contact"
+            #   link : { url: "/contact/", ui: { sref: { active: "contact" } } }
 
     # Home Section
     titleHome : "London digital production | Rapid Prototyping, MVP, PHP, mobile, Facebook | DryKISS Ltd"
@@ -162,7 +144,7 @@ en:
           description : |
             DryKISS is a full service internet and mobile digital production house.
             Our core services span consulting, strategy; planning; development;
-            testing and analytics. Using cutting edge technologies within diciplined processes.
+            testing and analytics. Using cutting edge technologies within disciplined processes.
 
         # Column Two
         - title       : "What We Do"
@@ -193,17 +175,32 @@ en:
         # Column Four
         - title       : "Contact"
           icon        : "fa-phone"
-          markdown    : true
           description : |
 
             If you have a brief, and want to discuss how we would approach it.
-            [Please get in touch](/contact).
+
+            <a href="/contact" title="Contact DryKISS">
+                Please get in touch
+            </a>
+
+            <br />
 
             <i class="fa fa-map-marker"></i>
-            Colliers Wood, London, UK
+            Wimbledon, London, UK
+
+            <br />
 
             <i class="fa fa-phone"></i>
-            [+44 (0) 778 043 5329](tel:+447780435329)
+            <a href="tel:+447780435329" title="Call DryKISS">
+                44 (0) 778 043 5329
+            </a>
+
+            <br />
 
             <i class="fa fa-envelope"></i>
-            [info@drykiss.com](mailto:info@drykiss.com)
+            <a href="mailto:info@drykiss.com" title="Call DryKISS">
+                info@drykiss.com
+            </a>
+
+            <br />
+            <br />

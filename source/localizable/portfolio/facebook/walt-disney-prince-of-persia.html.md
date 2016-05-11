@@ -12,12 +12,13 @@ meta :
     title       : "Walt Disney® Prince of Persia"
     type        : "article"
 
-category : Facebook
-date     : 2010-04-16
-excerpt  : "Walt Disney® Prince of Persia"
-lang     : en
-modified : 2010-04-16
-tags     : [ facebook, social ]
+category  : Facebook
+date      : 2010-04-16
+excerpt   : Walt Disney® Prince of Persia
+lang      : en
+modified  : 2010-04-16
+published : false
+tags      : [ facebook, social ]
 
 ---
 

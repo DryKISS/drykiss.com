@@ -1,7 +1,8 @@
 ##
 # Google
 #
-# @author Ian Warner <ian.warner@drykiss.com>
+# @author   Ian Warner <ian.warner@drykiss.com>
+# @category meta
 ##
 
 ---
@@ -13,7 +14,7 @@ analytics :
     code   : "UA-49976138-1"
     url    : "auto"
 
-adsense        : false
+adsense        : "ca-pub-4390370568784157"
 search         : false
 webmasterTools : "KV07s1r94b_CG89V9Tuh7a5FYEv4kG8-WbLMGLCOIjw"
 

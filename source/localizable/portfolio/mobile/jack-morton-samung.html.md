@@ -12,12 +12,13 @@ meta :
     title       : "Samsung"
     type        : "article"
 
-category : Mobile
-date     : 2014-10-30
-excerpt  : ""
-lang     : en
-modified : 2014-10-30
-tags     : [ iPad, Hybrid ]
+category  : Mobile
+date      : 2014-10-30
+excerpt   : Samsung
+lang      : en
+modified  : 2014-10-30
+published : false
+tags      : [ iPad, Hybrid ]
 
 ---
 

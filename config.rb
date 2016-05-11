@@ -1,21 +1,20 @@
 ##
 # Middleman Configuration File
 #
-# @author Ian Warner <ian.warner@drykiss.com>
+# @author   Ian Warner <ian.warner@drykiss.com>
+# @category configuration
 ##
 
 # Variables
-set :partials_dir,   "partial/_codeBlender"
-set :layout_dir,     "_codeBlender/"
-set :layout,         "_codeBlender/fullWidth"
-set :debug_assets,   true
-# set :relative_links,   true
-# set :strip_index_file, false
-set :syntaxScheme,   "ThankfulEyes"
-set :haml,           { ugly: true, format: :html5 }
-set :css_dir,        "assets/stylesheets"
-set :js_dir,         "assets/javascripts"
-set :images_dir,     "assets/images"
+set :partials_dir, "partial/_codeBlender"
+set :layout_dir,   "_codeBlender/"
+set :layout,       "_codeBlender/fullWidth"
+set :debug_assets, true
+set :syntaxScheme, "ThankfulEyes"
+set :haml,         { ugly: true, format: :html5 }
+set :css_dir,      "assets/stylesheets"
+set :js_dir,       "assets/javascripts"
+set :images_dir,   "assets/images"
 
 # @see https://github.com/twbs/bootstrap-sass#number-precision
 ::Sass::Script::Value::Number.precision = [ 8, ::Sass::Script::Value::Number.precision ].max
@@ -26,9 +25,6 @@ set :images_dir,     "assets/images"
 set :markdown_engine, :kramdown
 set :markdown, toc_levels: "2", auto_id_prefix: "#"
 
-# Syntax Highlighting
-activate :syntax
-
 # Time zone
 Time.zone = "Europe/London"
 
@@ -37,18 +33,9 @@ Time.zone = "Europe/London"
 # @see http://www.rubydoc.info/github/svenfuchs/i18n/I18n
 activate :i18n, :mount_at_root => :en
 
-# Live reload
-# activate :livereload
-
 # Per-page layout changes
-page '/*.xml',       layout: false
-page '/*.json',      layout: false
-page '/*.txt',       layout: false
-page "atom.xml",     layout: false
 page "channel.html", layout: false
-page "config.xml",   layout: false
 page "feed.xml",     layout: false
-page "runner.html",  layout: false
 page "sitemap.xml",  layout: false
 
 # Remove 404 from directory indexes
@@ -56,12 +43,12 @@ page "/404.html", :directory_index => false
 
 # Sprockets
 activate :sprockets
-
 sprockets.append_path File.join root, "bower_components"
+sprockets.append_path File.join root, "source/localizable"
 sprockets.append_path File.join root, "source/partial/_codeBlender/atom"
 sprockets.append_path File.join root, "source/partial/_codeBlender/molecule"
 sprockets.append_path File.join root, "source/partial/_codeBlender/organism"
-sprockets.append_path File.join( root, "source/partial/_codeBlender/template" )
+sprockets.append_path File.join root, "source/partial/_codeBlender/template"
 
 # Portfolio blog collection
 # Template files cannot be within a folder path with a _ i.e. _codeBlender/template
@@ -116,7 +103,7 @@ configure :build do
     activate :relative_assets
 
     # GZIP Files
-    # activate :gzip
+    activate :gzip
 
     # For example, change the Compass output style for deployment
     activate :minify_css

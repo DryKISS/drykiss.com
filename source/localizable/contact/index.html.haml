@@ -1,76 +1,77 @@
 ---
 
-author      : DryKISS
-description : :descContact
-title       : :titleContact
+meta :
+    author      : "DryKISS"
+    description : "DryKISS is a full service internet and mobile digital production house. Our core services span consulting, strategy; planning; development; testing and analytics. Using cutting edge technologies within disciplined processes."
+    image       : "Image"
+    subject     : "DryKISS"
+    title       : "DryKISS develops hybrid mobile apps; responsive internet sites."
+    type        : "website"
 
 ---
 
 -# Hero Image - Brand - Strap Line - Description
 %section.what
 
-    -# Jumbotron Block
-    -# @todo Fade the text in as before
-    -# @todo Look at the colour of the background on white for accessibility
+    -# Bootstrap container
     .container
 
+        -# Bootstrap row
         .row
 
+            -# Bootstrap column
             .col-md-12
 
-                -# Heading
-                = codeBlender "heading", "molecule", { text: "Contact" }
+                -# Heading - H1
+                = codeBlender "blockquote", "atom",
+                    { text:  "Contact Us",
+                      small: "Please feel free to contact DryKISS by any of the following means." }
 
-= codeBlender "blockquote", "atom",
-    { text:  "Contact Us",
-      small: "Please feel free to contact DryKISS by any of the following means." }
+        -# Bootstrap row
+        .row
 
-.row
+            -# Bootstrap column
+            .col-md-4
 
-    .span4
+                -# Details
+                %p
 
-        -# Details
-        %p
+                    %a{ href: "tel:+447780435329", title: "Call DryKISS" }
+                        %i.icon-phone
+                        +44 (0)778 043 5329
 
-            %a{ :href => "tel:+447780435329", :title => "Call DryKISS" }
-                %i.icon-phone
-                +44 (0)778 043 5329
+                    %br
 
-            %br
+                    %a{ href: "mailto:info@drykiss.com", title: "Email DryKISS" }
+                        %i.icon-envelope
+                        info@drykiss.com
 
-            %a{ :href => "mailto:info@drykiss.com", :title => "Email DryKISS" }
-                %i.icon-envelope
-                info@drykiss.com
+                    %br
 
-            %br
+                    %a{ href: "https://twitter.com/DryKissLondon", title: "DryKISS Twitter" }
+                        %i.icon-twitter
+                        @DryKissLondon
 
-            %a{ :href => "https://twitter.com/DryKissLondon", :title => "DryKISS Twitter" }
-                %i.icon-twitter
-                @DryKissLondon
+                    %br
 
-            %br
+                    %a{ href: "https://www.facebook.com/DryKISSLtd", title: "DryKISS Facebook" }
+                        %i.icon-facebook
+                        https://www.facebook.com/DryKISSLtd
 
-            %a{ :href => "https://www.facebook.com/DryKISSLtd", :title => "DryKISS Facebook" }
-                %i.icon-facebook
-                https://www.facebook.com/DryKISSLtd
+                -# Address
+                %div{ itemscope: true, itemtype: 'http://schema.org/PostalAddress' }
 
-        -# Address
-        %div{ :itemscope => true, :itemtype => 'http://schema.org/PostalAddress' }
+                    %span{ itemprop: "name" } DryKISS Ltd.
+                    %br
 
-            %span{ :itemprop => "name" }
-                DryKISS Ltd.
-            %br
+                    %span{ itemprop: "addressLocality" } Wimbledon
+                    %br
 
-            %span{ :itemprop => "addressLocality" }
-                Wimbledon
-            %br
+                    %span{ itemprop: "addressRegion" } London
+                    %br
 
-            %span{ :itemprop => "addressRegion" }
-                London
-            %br
+            .span8
 
-    .span8
+                .img-polaroid
 
-        .img-polaroid
-
-            #map-canvas{ :style => "width:100%;height:300px;" }
+                    #map-canvas{ style: "width:100%;height:300px;" }

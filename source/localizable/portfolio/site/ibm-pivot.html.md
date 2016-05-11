@@ -12,12 +12,13 @@ meta :
     title       : "IBM - Pivot"
     type        : "article"
 
-category : Site
-date     : 2014-10-30
-excerpt  : ""
-lang     : en
-modified : 2014-10-30
-tags     : [ Site ]
+category  : Site
+date      : 2014-10-30
+excerpt   : ""
+lang      : en
+modified  : 2014-10-30
+published : false
+tags      : [ Site ]
 
 ---
 
@@ -28,3 +29,6 @@ Pivot
 ## What we did
 
 ## Technologies
+
+http://fentonbutcher.co.uk/news/
+https://www.linkedin.com/in/leila-d-angelo-31719816

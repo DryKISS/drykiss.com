@@ -12,15 +12,15 @@ meta :
     title       : "Beep Services - title"
     type        : "article"
 
-category : Site
-date     : 2013-01-01
-excerpt  : "Beep Services - excerpt"
-lang     : en
-modified : 2013-01-01
-tags     : [ SMS, Mobile ]
+category  : Site
+date      : 2013-01-01
+excerpt   : Beep Services - excerpt
+lang      : en
+modified  : 2013-01-01
+published : false
+tags      : [ SMS, Mobile ]
 
 ---
-
 
 Companies could divert their main phone number into our
 platform.

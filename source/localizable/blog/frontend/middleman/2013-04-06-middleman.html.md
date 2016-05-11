@@ -32,7 +32,7 @@ current system date if left off.
 
 ## PARTIALS
 
-    = partial('navbar', :locals => { :foo => "bar" })
+    = codeBlender 'navbar', 'organism', { :foo => "bar" }
 
     <%= request.path %>
     <%= current_page.path %>

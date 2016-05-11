@@ -1,1 +1,1 @@
-/var/www/CodeBlender/Gemfile
+/var/www/CodeBlender/www/Gemfile
