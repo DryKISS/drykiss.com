@@ -32,9 +32,14 @@ Adds tasks based on the anatomy of the website, in terms of atomic elements.
 
 --------------------------------------------------------------------------------
 
-## Analytics
+## Google
 
-- [ ] Check that this is setup correctly
+- Analytics
+    - [ ] Check that this is setup correctly
+        - UA-49976138-1
+- Search console
+    - [ ] Make sure the verification is done for google search console
+        - KV07s1r94b_CG89V9Tuh7a5FYEv4kG8-WbLMGLCOIjw
 - [ ] Create goals for contact and reading case studies etc
 
 --------------------------------------------------------------------------------
@@ -129,9 +134,13 @@ Adds tasks based on the anatomy of the website, in terms of atomic elements.
 Uses the MixItUp library to present the portfolio blog posts in a filterable
 manner.
 
-- [ ] Stop the flicker of the screen as the screenshots animate in
-- [ ] Sort out what portfolio elements we want to show on this page - choose 4 to start
-- [ ] Use paging on this page to scroll through more than 16
+- Examples
+    - https://www.digiti.be/projects
+
+- General
+    - [ ] Stop the flicker of the screen as the screenshots animate in
+    - [ ] Sort out what portfolio elements we want to show on this page - choose 4 to start
+    - [ ] Use paging on this page to scroll through more than 16
 
 - Heading
     - [ ] Does the block quote work here - try pageHeader instead
@@ -157,36 +166,62 @@ manner.
 
 ## Blog details
 
-Create the template to render the blog post, all the content should come from the
-blog post entries. Including images and formatting of these.
+Create the template to render the blog post, all the content should come from
+the blog post entries. Including images and formatting of these.
 
-- http://www.keenthemes.com/preview/metronic/theme/admin_1/page_general_portfolio_1.html
-- [ ] Layout the details in a better way
-- [ ] Get a proper disqus comments shortcode for this site
+- Examples
+    - http://www.keenthemes.com/preview/metronic/theme/admin_1/page_general_portfolio_1.html
+    - http://fentonbutcher.co.uk/work/anz/
+    - http://clearleft.com/made/channel-4-scrapbook
+
+- General
+    - [ ] Layout the details in a better way
+    - [ ] Get a proper disqus comments shortcode for this site
+    - [ ] Add breadcrumbs to the top linking back to projects
 
 - Accessibility
-
-    - [] Need to make sure all Alt tags are correct
-    - [] Role are applied to the template
+    - [ ] Need to make sure all Alt tags are correct
+    - [ ] Role are applied to the template
 
 - Micro Format
-
-    - [] Sort out the object type for a portfolio blog post - contains company and assets
-    - [] Need to move the article section to the top of the code
+    - [ ] Sort out the object type for a portfolio blog post - contains company and assets
+    - [ ] Need to move the article section to the top of the code
 
 - Heading
+    - [ ] Include the brand logo potentially - can be part of the screenshots
     - [ ] PageHeader or blockquote try this out
     - [ ] Human - change copy here to be more human
+    - [ ] Create the strapline for what was done - reuse the caption perhaps
 
 - Blog image
     - [ ] 4 columns with screenshots inside
+    - [ ] Put the images in an array through the thumbnail partial
     - [ ] Middle one reserve for logo perhaps
     - [ ] Need to remove the caption from these
     - [ ] Allow the images to be clicked and zoomed on to see full image in full length
 
+- Content
+    - [ ] Split this into two columns with What we did on left and description on right
+    - [ ] Look at the pull quotes on clearLeft
+    - [ ] Provide tags potentially on what was done - i.e. UX, Database, Development, SEO
+
+- What we did section
+    - [ ] Highlights section
+        - [ ] Key deliverables and KPIs / achievements completed
+    - [ ] List out a short paragraph on what was done
+    - [ ] Roles and responsibilities of the project perhaps - who was on team
+        - [ ] Link to the team members
+    - [ ] Project duration
+    - [ ] Link to live site if applicable
+
 - Disqus comments
     - [ ] Position these a bit better not full width
     - [ ] Margin at bottom
+    - [ ] Move to the right column
+
+- Pagination
+    - [ ] Remove for now
+    - [ ] Sort out the older and newer pagination links, need to link to the correct posts
 
 --------------------------------------------------------------------------------
 

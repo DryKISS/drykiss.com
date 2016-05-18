@@ -31,17 +31,17 @@
                     -# Heading - H1
                     = codeBlender "heading", "molecule", { pageHeader: true, extraClass: "heading--noMargin", small: heading.small, text: heading.title, itemprop: "name headline" }
 
+        -# Yield - portfolio post
+        %span{ itemprop: "text" }= yield
+
         -# Bootstrap row
         .row
 
             -# Bootstrap column
             .col-md-12.col-sm-12
 
-                -# Yield
-                %span{ itemprop: "text" }= yield
-
                 -# Pager
-                = codeBlender "pager", "molecule"
+                -# = codeBlender "pager", "molecule"
 
                 -# Disqus comment
                 = codeBlender "disqus-comment", "organism"
