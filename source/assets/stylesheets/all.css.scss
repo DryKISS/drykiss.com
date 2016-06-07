@@ -8,11 +8,11 @@
 
 // Variables / Mixins
 //----------------------------------------------------------------------------//
-@import "_variables";
+@import "variable";
 @import "scaffolding/_scaffolding";
 
 // Library & Lib
 //----------------------------------------------------------------------------//
-@import "_bower";
-@import "_library";
-@import "_lib";
+@import "bower";
+@import "library";
+@import "lib";

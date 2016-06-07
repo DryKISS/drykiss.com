@@ -94,6 +94,8 @@ end
 # @see https://github.com/middleman-contrib/middleman-deploy
 activate :deploy do | deploy |
     deploy.deploy_method = :git
+    deploy.remote        = 'git@github.com:DryKISS/drykiss.com.git'
+    deploy.build_before  = false
 end
 
 # Build-specific configuration

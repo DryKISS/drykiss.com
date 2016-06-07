@@ -2,6 +2,14 @@
 
 Adds tasks based on the anatomy of the website, in terms of atomic elements.
 
+http://work.stevegrossi.com/2014/05/06/tips-for-building-static-sites-with-middleman/
+[Cognition Agency](http://www.cognitionagency.co.uk/)
+[Fixel](http://www.wearefixel.com/)
+[Digiti](http://www.digiti.be/)
+[Blog](http://demo.wpzoom.com/venture/blog/)
+http://www.edmundyu.com/#\myProcess
+http://clearleft.com/made
+
 --------------------------------------------------------------------------------
 
 ## Global
