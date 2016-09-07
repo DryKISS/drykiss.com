@@ -19,7 +19,7 @@ body {
     // Hero image
     //------------------------------------------------------------------------//
     .hero__image {
-        background-image    : image-url( "sections/kiss.jpg" );
+        background-image    : url( "/assets/images/sections/kiss.jpg" );
         background-repeat   : no-repeat;
         background-position : center;
         background-size     : cover;

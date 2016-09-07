@@ -3,15 +3,28 @@
 #
 # @author   Ian Warner <ian.warner@drykiss.com>
 # @category configuration
+# @see      http://middlemanapp.com/
 ##
+
+# ENV[ 'WEBPACK_ENV' ] ||= ( build? ? 'build' : 'development' )
+
+# External pipeline - Webpack
+activate :external_pipeline,
+    name:    :webpack,
+    command: build? ?
+        "./node_modules/webpack/bin/webpack.js --bail -p" :
+        "./node_modules/webpack/bin/webpack.js --watch -d --progress --color",
+    source:  ".tmp/dist",
+    latency: 1
 
 # Variables
 set :partials_dir, "partial/_codeBlender"
 set :layout_dir,   "_codeBlender/"
 set :layout,       "_codeBlender/fullWidth"
 set :debug_assets, true
-set :syntaxScheme, "ThankfulEyes"
 set :haml,         { ugly: true, format: :html5 }
+
+# Assets
 set :css_dir,      "assets/stylesheets"
 set :js_dir,       "assets/javascripts"
 set :images_dir,   "assets/images"
@@ -34,21 +47,26 @@ Time.zone = "Europe/London"
 activate :i18n, :mount_at_root => :en
 
 # Per-page layout changes
+page '/*.xml',       layout: false
+page '/*.json',      layout: false
+page '/*.txt',       layout: false
+page "atom.xml",     layout: false
 page "channel.html", layout: false
+page "config.xml",   layout: false
 page "feed.xml",     layout: false
+page "runner.html",  layout: false
 page "sitemap.xml",  layout: false
 
 # Remove 404 from directory indexes
 page "/404.html", :directory_index => false
 
-# Sprockets
-activate :sprockets
-sprockets.append_path File.join root, "bower_components"
-sprockets.append_path File.join root, "source/localizable"
-sprockets.append_path File.join root, "source/partial/_codeBlender/atom"
-sprockets.append_path File.join root, "source/partial/_codeBlender/molecule"
-sprockets.append_path File.join root, "source/partial/_codeBlender/organism"
-sprockets.append_path File.join root, "source/partial/_codeBlender/template"
+# Middleman Deploy
+# @see https://github.com/middleman-contrib/middleman-deploy
+activate :deploy do | deploy |
+    deploy.deploy_method = :git
+    deploy.remote        = 'git@github.com:DryKISS/drykiss.com.git'
+    deploy.build_before  = false
+end
 
 # Portfolio blog collection
 # Template files cannot be within a folder path with a _ i.e. _codeBlender/template
@@ -90,16 +108,11 @@ activate :blog do | blog |
 
 end
 
-# Middleman Deploy
-# @see https://github.com/middleman-contrib/middleman-deploy
-activate :deploy do | deploy |
-    deploy.deploy_method = :git
-    deploy.remote        = 'git@github.com:DryKISS/drykiss.com.git'
-    deploy.build_before  = false
-end
-
 # Build-specific configuration
 configure :build do
+
+    # "Ignore" JS so webpack has full control.
+    ignore { | path | path =~ /\/(.*)\.js$/  }
 
     # Use relative URLs
     activate :relative_assets

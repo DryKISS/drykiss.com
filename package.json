@@ -1,0 +1,51 @@
+{
+    "author"      : "Ian Warner <ian.warner@drykiss.com>",
+    "license"     : "MIT",
+    "name"        : "DryKISS",
+    "version"     : "1.0.0",
+    "description" : "DryKISS Web development",
+    "main"        : "source/assets/javascripts/body.js",
+    "private"     : true,
+    "homepage"    : "http://drykiss.com",
+
+    "scripts" : {
+        "test" : "echo \"Error: no test specified\" && exit 1"
+    },
+
+    "repository": {
+        "type" : "git",
+        "url"  : "git+https://github.com/DryKISS/drykiss.com.git"
+    },
+
+    "bugs" : {
+        "url" : "https://github.com/DryKISS/drykiss.com/issues"
+    },
+
+    "dependencies" : {
+        "angular"           : "",
+        "angular-ui-router" : "",
+        "bootstrap-sass"    : "",
+        "font-awesome"      : "",
+        "jquery"            : ""
+    },
+
+    "devDependencies" : {
+        "clean-webpack-plugin"        : "",
+        "coffee-script"               : "",
+        "coffee-loader"               : "",
+        "css-loader"                  : "",
+        "extract-text-webpack-plugin" : "",
+        "file-loader"                 : "",
+        "gulp"                        : "",
+        "gulp-uncss"                  : "",
+        "gulp-csso"                   : "",
+        "node-bourbon"                : "",
+        "node-sass"                   : "",
+        "resolve-url-loader"          : "",
+        "sass-loader"                 : "",
+        "style-loader"                : "",
+        "url-loader"                  : "",
+        "webpack"                     : ""
+    }
+
+}

@@ -32,28 +32,28 @@ angular :
                     -# Portfolio blockquote
                     = codeBlender "blockquote", "atom", string( :"portfolio.recent.heading" )
 
-            -# Bootstrap row
-            .row
+            -# -# Bootstrap row
+            -# .row
 
-                -# Bootstrap column
-                .col-md-12.col-sm-12
+            -#     -# Bootstrap column
+            -#     .col-md-12.col-sm-12
 
-                    -# Portfolio filter
-                    .portfolio__filter
+            -#         -# Portfolio filter
+            -#         .portfolio__filter
 
-                        -# Create list
-                        - list = []
+            -#             -# Create list
+            -#             - list = []
 
-                        -# Create the all filter
-                        - list << { data: { filter: "all" }, extraClass: "filter", link: { url: "javascript:;" }, text: "All" }
+            -#             -# Create the all filter
+            -#             - list << { data: { filter: "all" }, extraClass: "filter", link: { url: "javascript:;" }, text: "All" }
 
-                        -# Get the unique subcategories in the portfolio
-                        - blog( 'portfolio' ).articles.select{ | r | r.data.published != false }.uniq{ | r | r.data.category }.each do | portfolio |
-                            - category = portfolio.data.category
-                            - list << { data: { filter: ".category-#{ category }" }, extraClass: "filter", link: { url: "javascript:;" }, text: category }
+            -#             -# Get the unique subcategories in the portfolio
+            -#             - blog( 'portfolio' ).articles.select{ | r | r.data.published != false }.uniq{ | r | r.data.category }.each do | portfolio |
+            -#                 - category = portfolio.data.category
+            -#                 - list << { data: { filter: ".category-#{ category }" }, extraClass: "filter", link: { url: "javascript:;" }, text: category }
 
-                        -# List filter
-                        = codeBlender "list-ul", "atom", { array: list, extraClass: "nav nav-pills" }
+            -#             -# List filter
+            -#             = codeBlender "list-ul", "atom", { array: list, extraClass: "nav nav-pills" }
 
             -# Bootstrap row
             .row.portfolio__grid
@@ -67,7 +67,7 @@ angular :
                     .col-md-3.col-sm-3
 
                         -# Portfolio segment with mix
-                        .portfolio__segment.mix{ class: "category-#{ portfolio.data.category }" }
+                        .portfolio__segment{ class: "category-#{ portfolio.data.category }" }
 
                             -# Link to portfolio
                             %a{ href: portfolio.url, title: portfolio.data.heading.title }

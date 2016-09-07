@@ -93,7 +93,7 @@ en:
         recent :
 
             heading :
-                small : "Hover over the projects for some extra details. Click for the full description."
+                small : "Click the projects for some extra details."
                 text  : "Our Work"
 
     # Who We Are

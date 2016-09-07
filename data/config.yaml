@@ -62,9 +62,3 @@ meta :
     mobile   : true
     touch    : false
     twitter  : false
-
-# Footer
-copyright     : false
-footer :
-    active     : true
-    extraClass : "noBackground"

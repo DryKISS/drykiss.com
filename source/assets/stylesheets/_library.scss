@@ -7,16 +7,16 @@
 
 // Atom
 //----------------------------------------------------------------------------//
-@import "blockquote/_blockquote";
+@import "~atom/blockquote/_blockquote";
 
 // Molecule
 //----------------------------------------------------------------------------//
-@import "top-icon/_top-icon";
+@import "~molecule/top-icon/_top-icon";
 
 // Organism
 //----------------------------------------------------------------------------//
-@import "footer/_footer";
+@import "~organism/footer/_footer";
 
 // Template
 //----------------------------------------------------------------------------//
-@import "portfolio/_portfolio";
+@import "~template/portfolio/_portfolio";
