@@ -62,13 +62,13 @@ module.exports = {
             // Woff fonts
             {
                 test   : /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader : 'url-loader',
+                loader : 'url-loader'
             },
 
             // TTF, EOT fonts and SVG
             {
                 test   : /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
-                loader : 'file-loader',
+                loader : 'file-loader?name=assets/fonts/[hash].[ext]'
             }
 
         ]

@@ -22,11 +22,10 @@
     },
 
     "dependencies" : {
-        "angular"           : "",
-        "angular-ui-router" : "",
-        "bootstrap-sass"    : "",
-        "font-awesome"      : "",
-        "jquery"            : ""
+        "angular"        : "",
+        "bootstrap-sass" : "",
+        "font-awesome"   : "",
+        "jquery"         : ""
     },
 
     "devDependencies" : {

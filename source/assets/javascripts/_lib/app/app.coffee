@@ -18,8 +18,6 @@
 angular
     .module 'app',  [
 
-        'ui.router'
-
         'app.controller'
         'app.directive'
 

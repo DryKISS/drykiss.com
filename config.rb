@@ -69,7 +69,6 @@ activate :deploy do | deploy |
 end
 
 # Portfolio blog collection
-# Template files cannot be within a folder path with a _ i.e. _codeBlender/template
 # @see https://elenichappen.svbtle.com/getting-tags-to-work-with-middlemans-blog-gem
 activate :blog do | blog |
 
@@ -80,8 +79,7 @@ activate :blog do | blog |
     blog.permalink         = "{title}.html"
     blog.sources           = ":title.html"
 
-    blog.layout            = "portfolio.template"
-    # blog.layout            = "partial/_library/template/portfolio/portfolio.template"
+    blog.layout            = "_codeBlender/portfolio"
 
     blog.summary_separator = /(READMORE)/
     blog.summary_length    = 250
@@ -98,40 +96,36 @@ activate :blog do | blog |
     blog.per_page          = 5
     blog.page_link         = "page/{num}"
 
-    # Subcategory collections
-    blog.custom_collections = {
-        category: {
-            link:     "/categories/{category}.html",
-            template: "partial/codeBlender/template/blog-tag.html"
-        }
-    }
-
 end
 
 # Build-specific configuration
 configure :build do
 
-    # "Ignore" JS so webpack has full control.
-    ignore { | path | path =~ /\/(.*)\.js$/  }
+    # Asset hash
+    activate :asset_hash
+
+    # GZIP Files
+    # @see https://middlemanapp.com/advanced/file_size_optimization/
+    activate :gzip
 
     # Use relative URLs
     activate :relative_assets
 
-    # GZIP Files
-    activate :gzip
-
     # For example, change the Compass output style for deployment
-    activate :minify_css
+    # activate :minify_css, inline: true
 
-    # Minify Javascript on build
-    activate :minify_javascript
+    # Minimise JavaScript on build
+    # @see https://github.com/crtvhd/middleboy
+    # activate :minify_javascript
+    # activate :minify_javascript, inline: true, compressor: Uglifier.new( mangle: false, comments: :none )
 
-    # Minify HTML
+    # Minimise HTML
+    # https://github.com/middleman/middleman-minify-html
     activate :minify_html
 
     # Favicon
     activate :favicon_maker, icons: {
-        "favicon_template.png" => [
+        "favicon_base.png" => [
             { icon: "favicon.png", size: "32x32" },
             { icon: "favicon.ico", size: "64x64,32x32,24x24,16x16" },
         ]

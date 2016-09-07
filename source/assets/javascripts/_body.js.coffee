@@ -12,7 +12,6 @@ require 'bootstrap-sass'
 
 # Angular JS
 require 'angular'
-require 'angular-ui-router'
 
 # App
 require 'lib/app/app.coffee'
