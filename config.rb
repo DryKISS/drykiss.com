@@ -124,11 +124,39 @@ configure :build do
     activate :minify_html
 
     # Favicon
-    activate :favicon_maker, icons: {
-        "favicon_base.png" => [
-            { icon: "favicon.png", size: "32x32" },
-            { icon: "favicon.ico", size: "64x64,32x32,24x24,16x16" },
-        ]
-    }
+    # activate :favicon_maker, icons: {
+    #     "favicon_base.png" => [
+    #         { icon: "favicon.png", size: "32x32" },
+    #         { icon: "favicon.ico", size: "64x64,32x32,24x24,16x16" },
+    #     ]
+    # }
+
+    # Auto-generate multiple favicon versions
+    activate :favicon_maker do | icon |
+
+        # Template
+        icon.template_dir = File.join( root, 'source/assets/images/favicon/' )
+        icon.output_dir   = File.join( root, 'build/assets/images/favicon' )
+
+        # Icon
+        icon.icons = {
+
+            # High resolution icon
+            "favicon_template_hires.png" => [
+                { icon: "favicon-152x152.png" },
+                { icon: "favicon-120x120.png" },
+                { icon: "favicon-76x76.png"   },
+                { icon: "favicon-60x60.png"   },
+            ]
+
+            # # Low resolution icon
+            # "favicon_template_lores.png" => [
+            #     { icon: "favicon-32x32.png" },
+            #     { icon: "favicon-16x16.png" },
+            #     { icon: "favicon.ico", size: "64x64,32x32,24x24,16x16" }
+            # ]
+        }
+
+    end
 
 end

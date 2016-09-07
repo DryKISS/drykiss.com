@@ -56,7 +56,7 @@ meta :
     dublin   : false
     facebook : false
     fancy    : false
-    favicon  : false
+    favicon  : true
     feed     : false
     google   : true
     mobile   : true
