@@ -26,6 +26,7 @@ tags      : [ wordpress ]
 
 -# Variable
 - path = "portfolio/deliveroo/"
+- title = current_page.data.heading.title
 
 -# Bootstrap row
 .row
@@ -35,7 +36,7 @@ tags      : [ wordpress ]
 
         -# Image - portfolio thumbnail
         = codeBlender "image", "atom",
-            { alt:        "Deliveroo - home",
+            { alt:        "#{ title } - home",
               extraClass: "img-thumbnail img-responsive",
               src:        "#{ path }deliveroo-home-thumb.png" }
 
@@ -44,7 +45,7 @@ tags      : [ wordpress ]
 
         -# Image - portfolio thumbnail
         = codeBlender "image", "atom",
-            { alt:        "Deliveroo - post",
+            { alt:        "#{ title } - post",
               extraClass: "img-thumbnail img-responsive",
               src:        "#{ path }deliveroo-home-mobile-thumb.png" }
 
@@ -53,7 +54,7 @@ tags      : [ wordpress ]
 
         -# Image - portfolio thumbnail
         = codeBlender "image", "atom",
-            { alt:        "Deliveroo - home - mobile",
+            { alt:        "#{ title } - home - mobile",
               extraClass: "img-thumbnail img-responsive",
               src:        "#{ path }deliveroo-post-thumb.png" }
 
@@ -62,7 +63,7 @@ tags      : [ wordpress ]
 
         -# Image - portfolio thumbnail
         = codeBlender "image", "atom",
-            { alt:        "Deliveroo - post - mobile",
+            { alt:        "#{ title } - post - mobile",
               extraClass: "img-thumbnail img-responsive",
               src:        "#{ path }deliveroo-post-mobile-thumb.png" }
 

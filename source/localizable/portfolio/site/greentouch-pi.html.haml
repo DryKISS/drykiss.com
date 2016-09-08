@@ -24,6 +24,10 @@ tags      : [ Site ]
 
 ---
 
+-# Variable
+- path  = "portfolio/greentouch/"
+- title = current_page.data.heading.title
+
 -# Bootstrap row
 .row
 
@@ -32,36 +36,36 @@ tags      : [ Site ]
 
         -# Image - portfolio thumbnail
         = codeBlender "image", "atom",
-            { alt:        "Greentouch PI - introduction",
+            { alt:        "#{ title } - introduction",
               extraClass: "img-thumbnail img-responsive",
-              src:        "portfolio/greentouch/home.png" }
+              src:        "#{ path }home.png" }
 
     -# Bootstrap column
     .col-md-3
 
         -# Image - portfolio thumbnail
         = codeBlender "image", "atom",
-            { alt:        "Greentouch PI - massage services",
+            { alt:        "#{ title } - massage services",
               extraClass: "img-thumbnail img-responsive",
-              src:        "portfolio/greentouch/service.png" }
+              src:        "#{ path }service.png" }
 
     -# Bootstrap column
     .col-md-3
 
         -# Image - portfolio thumbnail
         = codeBlender "image", "atom",
-            { alt:        "Greentouch PI - contact us",
+            { alt:        "#{ title } - contact us",
               extraClass: "img-thumbnail img-responsive",
-              src:        "portfolio/greentouch/contact.png" }
+              src:        "#{ path }contact.png" }
 
     -# Bootstrap column
     .col-md-3
 
         -# Image - portfolio thumbnail
         = codeBlender "image", "atom",
-            { alt:        "Greentouch PI - tea consumed",
+            { alt:        "#{ title } - tea consumed",
               extraClass: "img-thumbnail img-responsive",
-              src:        "portfolio/greentouch/tea.png" }
+              src:        "#{ path }tea.png" }
 
 %hr
 
