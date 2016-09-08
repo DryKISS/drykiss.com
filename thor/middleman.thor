@@ -265,7 +265,7 @@ class Middleman < Thor
         system( "clear" )
 
         # Variable
-        path = "/var/www/DryKiss/codeblender.io/www/"
+        path = "/var/www/DryKiss/codeblender.io/public/"
 
         say( "\n\t Create symbolic link\n\t" )
 
