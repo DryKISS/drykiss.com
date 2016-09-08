@@ -8,7 +8,7 @@
 ---
 
 app :
-    id     : "c6705d307767cf7ac36162abefe3af2b"
+    id     : false
     secret : false
 
 page :

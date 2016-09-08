@@ -102,7 +102,7 @@ end
 configure :build do
 
     # Asset hash
-    activate :asset_hash
+    activate :asset_hash, :ignore => [/facebookShare.png/]
 
     # GZIP Files
     # @see https://middlemanapp.com/advanced/file_size_optimization/
@@ -147,12 +147,8 @@ configure :build do
                 { icon: "favicon-120x120.png" },
                 { icon: "favicon-76x76.png"   },
                 { icon: "favicon-60x60.png"   },
-            ],
-
-            # Low resolution icon
-            "favicon_template_hires.png" => [
-                { icon: "favicon-32x32.png" },
-                { icon: "favicon-16x16.png" },
+                { icon: "favicon-32x32.png"   },
+                { icon: "favicon-16x16.png"   },
                 { icon: "favicon.ico", size: "64x64,32x32,24x24,16x16" }
             ]
         }

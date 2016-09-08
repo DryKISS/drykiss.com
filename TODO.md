@@ -2,22 +2,37 @@
 
 Adds tasks based on the anatomy of the website, in terms of atomic elements.
 
-http://work.stevegrossi.com/2014/05/06/tips-for-building-static-sites-with-middleman/
+--------------------------------------------------------------------------------
+
+## Links
+
+**Competition**
 [Cognition Agency](http://www.cognitionagency.co.uk/)
 [Fixel](http://www.wearefixel.com/)
 [Digiti](http://www.digiti.be/)
-[Blog](http://demo.wpzoom.com/venture/blog/)
-http://www.edmundyu.com/#\myProcess
-http://clearleft.com/made
+[Clear Left](http://clearleft.com/made)
+
+**Template**
+[Blog template](http://demo.wpzoom.com/venture/blog/)
+[UX Site](http://www.edmundyu.com/#\myProcess)
+
+--------------------------------------------------------------------------------
+
+## Social
+
+- [ ] Create Facebook social page
+    - [ ] Connect an Instagram account and link it
+    - [ ] Check the facebook data for app id etc and make sure correct
+    - [ ] Provide DryKiss og:image
+- [ ] Sign up to Feed burner for the blog elements
+- [ ] Create Google plus business page
+- [ ] Create Twitter
+- [ ] Add LinkedIn page - https://www.linkedin.com/company/drykiss-ltd
 
 --------------------------------------------------------------------------------
 
 ## Global
 
-- [ ] Sign up to Feed burner for the blog elements
-- [ ] Create Facebook social page
-- [ ] Create Google plus business page
-- [ ] Create twitter
 - [ ] Translation / Config page to write over YAML files
 - [ ] Check responsive across all elements
 - [ ] Optimise the images on the site
@@ -31,12 +46,8 @@ http://clearleft.com/made
 ## Meta
 
 - [ ] Can remove the keywords meta tag from the sites
-- [ ] Make sure the favicon works and across paths
 - [ ] Add in the dublin core
-- [ ] Add in the facebook
 - [ ] Add in the apple
-- [ ] Add in the google
-- [ ] Check the facebook data for app id etc and make sure correct
 
 --------------------------------------------------------------------------------
 
