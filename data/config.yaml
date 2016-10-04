@@ -47,18 +47,3 @@ topIcon       : true
 configuration : false
 resources     : false
 todo          : false
-
-# Meta
-favicon      : "favicon.ico"
-meta :
-    apple    : false
-    core     : true
-    dublin   : false
-    facebook : true
-    fancy    : false
-    favicon  : true
-    feed     : false
-    google   : true
-    mobile   : true
-    touch    : false
-    twitter  : false

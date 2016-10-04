@@ -162,12 +162,19 @@ en:
           description : |
 
             <div class="socialList">
+
                 <a href="https://www.facebook.com/DryKISSLtd" target="_blank" title="Facebook">
                     <span class="fa fa-facebook"></span>
                 </a>
+
                 <a href="https://twitter.com/DryKISSLtd" target="_blank" title="Twitter">
                     <span class="fa fa-twitter"></span>
                 </a>
+
+                <a href="https://www.linkedin.com/company/drykiss-ltd" target="_blank" title="LinkedIn">
+                    <span class="fa fa-linkedin"></span>
+                </a>
+
             </div>
 
             We are experts in creating social media apps and pages.

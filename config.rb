@@ -80,7 +80,6 @@ activate :blog do | blog |
     blog.sources           = ":title.html"
 
     blog.layout            = "_codeBlender/portfolio"
-
     blog.summary_separator = /(READMORE)/
     blog.summary_length    = 250
 

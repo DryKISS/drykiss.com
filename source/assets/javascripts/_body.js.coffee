@@ -22,6 +22,3 @@ require 'lib/app/config.coffee'
 ##
 require 'molecule/top-icon/_top-icon_controller.coffee'
 require 'template/portfolio/_portfolio_controller.coffee'
-
-# Mix It Up
-#= require mixitup/build/jquery.mixitup.min
