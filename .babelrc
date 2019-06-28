@@ -1,0 +1,41 @@
+{
+  "presets": ["next/babel"],
+  "env": {
+    "development": {
+      "plugins": [
+        [
+          "styled-components", {
+            "displayName": true,
+            "ssr": true
+          }
+        ],
+        [
+          "module-resolver",
+          {
+            "root": ["./"],
+            "alias": {
+              "config": "./config",
+              "data": "./data",
+              "layout": "./layouts"
+            }
+          }
+        ]
+      ]
+    },
+    "production": {
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": ["./"],
+            "alias": {
+              "config": "./data/config",
+              "data": "./data",
+              "layout": "./layouts"
+            }
+          }
+        ]
+      ]
+    }
+  }
+}

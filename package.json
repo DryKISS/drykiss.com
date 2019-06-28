@@ -1,50 +1,55 @@
 {
-    "author"      : "Ian Warner <ian.warner@drykiss.com>",
-    "license"     : "MIT",
-    "name"        : "DryKISS",
-    "version"     : "1.0.0",
-    "description" : "DryKISS Web development",
-    "main"        : "source/assets/javascripts/body.js",
-    "private"     : true,
-    "homepage"    : "http://drykiss.com",
-
-    "scripts" : {
-        "test" : "echo \"Error: no test specified\" && exit 1"
-    },
-
-    "repository": {
-        "type" : "git",
-        "url"  : "git+https://github.com/DryKISS/drykiss.com.git"
-    },
-
-    "bugs" : {
-        "url" : "https://github.com/DryKISS/drykiss.com/issues"
-    },
-
-    "dependencies" : {
-        "angular"        : "",
-        "bootstrap-sass" : "",
-        "font-awesome"   : "",
-        "jquery"         : ""
-    },
-
-    "devDependencies" : {
-        "clean-webpack-plugin"        : "",
-        "coffee-script"               : "",
-        "coffee-loader"               : "",
-        "css-loader"                  : "",
-        "extract-text-webpack-plugin" : "",
-        "file-loader"                 : "",
-        "gulp"                        : "",
-        "gulp-uncss"                  : "",
-        "gulp-csso"                   : "",
-        "node-bourbon"                : "",
-        "node-sass"                   : "",
-        "resolve-url-loader"          : "",
-        "sass-loader"                 : "",
-        "style-loader"                : "",
-        "url-loader"                  : "",
-        "webpack"                     : ""
-    }
-
+  "name": "drykiss.com",
+  "license": "ISC",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node .",
+    "build": "npm run clean-cache && next build",
+    "export": "npm run clean-cache && next build && next export",
+    "deploy": "next build && next export && touch out/.nojekyll && mv out/static/robots.txt out/robots.txt && touch out/CNAME && echo \"drykiss.com\" >> out/CNAME && push-dir --dir=out --remote=git@github.com:DryKISS/drykiss.com.git --branch=gh-pages",
+    "clean-cache": "rimraf -rf ./node_modules/.cache",
+    "serve": "serve out"
+  },
+  "standard": {
+    "globals": [
+      "__SITE__"
+    ],
+    "ignore": [
+      "node_modules/**",
+      "*.bundle*.js"
+    ],
+    "parser": "babel-eslint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/pro-regular-svg-icons": "^5.8.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "firebase": "^6.2.2",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-dropzone": "^10.1.5",
+    "react-select": "^3.0.4",
+    "react-tooltip": "^3.10.0",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "@weco/next-plugin-transpile-modules": "^2.2.1",
+    "babel-eslint": "^10.0.2",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-styled-components": "^1.10.0",
+    "express": "^4.17.1",
+    "push-dir": "^0.4.1",
+    "serve": "^11.0.2",
+    "sitemap": "^2.2.0",
+    "standard": "^12.0.1",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.8.0"
+  }
 }

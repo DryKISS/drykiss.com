@@ -1,18 +1,7 @@
-# Middleman #
-#############
-.sass-cache
-.cache
-Gemfile.lock
-composer.lock
-build
-.bundle
-.divshot-cache
-.mm-pid-*
-.rbenv-version
-.ruby-version
-.rvmrc
-bin
-/.tmp/
+# Next #
+########
+.next
+out
 
 # Composer #
 ############
@@ -26,14 +15,16 @@ bower_components
 #######
 !.gitkeep
 
-# Sublime #
-###########
+# IDE #
+#######
 *.sublime-*
+.vscode
 
 # Cordova #
 ###########
-platforms/
-plugins/
+hooks
+platforms
+plugins
 
 # Compiled source #
 ###################
@@ -74,5 +65,10 @@ Thumbs.db
 
 # Node #
 ########
-node_modules/*
+node_modules/
 npm-debug.log
+dist
+
+# Coverage #
+############
+coverage
