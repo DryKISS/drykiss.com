@@ -29,7 +29,7 @@
           {
             "root": ["./"],
             "alias": {
-              "config": "./data/config",
+              "config": "./config",
               "data": "./data",
               "layout": "./layouts"
             }
