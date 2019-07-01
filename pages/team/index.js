@@ -2,37 +2,29 @@
  * Team
  */
 
-// Config
-import { BRAND, URL_BASE } from 'config'
+// Layout
+import { Page } from 'layout/page'
 
 // UI
-import {
-  Container,
-  MetaHead,
-  PageHeading
-} from 'industry-ui'
+import { Container, PageHeading } from 'industry-ui'
 
 const Team = () => {
   const meta = {
-    canonical: URL_BASE,
     description: `
       DryKISS is a full service internet and mobile digital production house.
       Our services span consulting, strategy; planning; development; testing
       and analytics.
     `,
+    path: '/team',
     title: `DryKISS develops hybrid mobile and responsive websites`
   }
 
   return (
-    <>
-      <MetaHead meta={meta} brand={BRAND} />
-
+    <Page meta={meta}>
       <Container>
-
         <PageHeading heading='Team' />
-
       </Container>
-    </>
+    </Page>
   )
 }
 

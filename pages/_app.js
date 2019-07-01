@@ -8,15 +8,21 @@ import React from 'react'
 // Next
 import App, { Container } from 'next/app'
 import Head from 'next/head'
+import Router from 'next/router'
 
 // UI
-import { Theme } from 'industry-ui'
+import { GoogleAnalyticsPageView, Theme } from 'industry-ui'
+
+// Config
+import { Google } from 'config'
 
 // Layout
 import Layout from 'layout'
 
 // Style
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
+
+Router.events.on('routeChangeComplete', url => GoogleAnalyticsPageView(url, Google.analytics))
 
 export default class MyApp extends App {
   static async getInitialProps ({ Component, router, ctx }) {

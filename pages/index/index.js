@@ -4,8 +4,8 @@
  * @see https://www.figma.com/file/Wpd0TYwwu2njqurECo5qOHAH/Landing-Pages?node-id=1%3A2
  */
 
-// Config
-import { BRAND, URL_BASE } from 'config'
+// Layout
+import { Page } from 'layout/page'
 
 // UI
 import {
@@ -14,7 +14,6 @@ import {
   Blockquote,
   Heading,
   Hero,
-  MetaHead,
   Row
 } from 'industry-ui'
 
@@ -23,18 +22,17 @@ import styled from 'styled-components'
 
 const Home = () => {
   const meta = {
-    canonical: `${URL_BASE}`,
     description: `
       DryKISS is a full service internet and mobile digital production house.
       Our services span consulting, strategy; planning; development; testing
       and analytics.
     `,
+    path: '/',
     title: `DryKISS develops hybrid mobile and responsive websites`
   }
 
   return (
-    <>
-      <MetaHead brand={BRAND} meta={meta} />
+    <Page meta={meta}>
 
       <StyledHero
         background='/static/sections/kiss.jpg'
@@ -171,7 +169,7 @@ const Home = () => {
 
       </Container>
 
-    </>
+    </Page>
   )
 }
 

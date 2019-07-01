@@ -2,33 +2,31 @@
  * What We do
  */
 
-// Config
-import { BRAND, URL_BASE } from 'config'
+// Layout
+import { Page } from 'layout/page'
 
 // UI
 import {
   Column,
   Container,
   Heading,
-  MetaHead,
   PageHeading,
   Row
 } from 'industry-ui'
 
 const WhatWedo = () => {
   const meta = {
-    canonical: URL_BASE,
     description: `
       DryKISS is a full service internet and mobile digital production house.
       Our services span consulting, strategy; planning; development; testing
       and analytics.
     `,
+    path: '/what-we-do',
     title: `DryKISS develops hybrid mobile and responsive websites`
   }
 
   return (
-    <>
-      <MetaHead brand={BRAND} meta={meta} />
+    <Page meta={meta}>
 
       <Container>
 
@@ -78,7 +76,7 @@ const WhatWedo = () => {
 
       </Container>
 
-    </>
+    </Page>
   )
 }
 

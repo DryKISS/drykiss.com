@@ -3,13 +3,12 @@
  * Lists domains owned by DryKISS and shortlinks to various management tools.
  */
 
-// Config
-import { BRAND, URL_BASE } from 'config'
+// Layout
+import { Page } from 'layout/page'
 
 // UI
 import {
   Container,
-  MetaHead,
   Link,
   PageHeading,
   Table
@@ -85,19 +84,17 @@ const Domains = () => {
     </Link>
 
   const meta = {
-    canonical: URL_BASE,
     description: `
       DryKISS is a full service internet and mobile digital production house.
       Our services span consulting, strategy; planning; development; testing
       and analytics.
     `,
+    path: '/domains',
     title: `DryKISS develops hybrid mobile and responsive websites`
   }
 
   return (
-    <>
-      <MetaHead meta={meta} brand={BRAND} />
-
+    <Page meta={meta}>
       <Container>
 
         <PageHeading heading='Domains' />
@@ -108,7 +105,7 @@ const Domains = () => {
         />
 
       </Container>
-    </>
+    </Page>
   )
 }
 

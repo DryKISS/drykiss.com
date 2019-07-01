@@ -9,6 +9,9 @@ import React from 'react'
 import Document, { Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
+// Config
+import { Google } from 'config'
+
 export default class MyDocument extends Document {
   static async getInitialProps (ctx) {
     const sheet = new ServerStyleSheet()
@@ -26,7 +29,23 @@ export default class MyDocument extends Document {
     return (
       <html className='no-js' lang='en' dir='ltr' prefix='og: http://ogp.me/ns#'>
 
-        <Head />
+        <Head>
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${Google.analytics}`}
+          />
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${Google.analytics}');
+              `
+            }}
+          />
+        </Head>
 
         <body>
           <Main />

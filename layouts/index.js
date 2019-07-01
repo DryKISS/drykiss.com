@@ -6,24 +6,21 @@
 import { node } from 'prop-types'
 
 // UI
-import { Copyright, Footer, Navbar } from 'industry-ui'
+import { Bootstrap } from 'industry-ui'
 
 // Data
-import { COPYRIGHT, FOOTER, NAVIGATION } from 'data'
+import { Brand } from 'config'
+import { Copyright, Footer, Navigation } from 'data'
 
-const Layout = ({ children }) => {
-  return (
-    <>
-      <Navbar brand='/static/logo/drykiss.svg' links={NAVIGATION} />
-
-      {children}
-
-      <Footer columns={FOOTER} />
-
-      <Copyright brand='DryKISS Ltd' links={COPYRIGHT} />
-    </>
-  )
-}
+const Layout = ({ children }) =>
+  <Bootstrap
+    brand={Brand.name}
+    brandLogo={Brand.logo}
+    children={children}
+    copyright={Copyright}
+    footer={Footer}
+    navigation={Navigation}
+  />
 
 Layout.propTypes = {
   children: node.isRequired
