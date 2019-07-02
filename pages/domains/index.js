@@ -36,6 +36,7 @@ const Domains = () => {
       text: 'Analytics'
     },
     {
+      hidden: true,
       text: 'Whois'
     }
   ]
@@ -47,7 +48,7 @@ const Domains = () => {
           pathname: `https://analytics.google.com/analytics/web/#/report-home/${analytics}`
         }
       }}>
-      <a target='_blank'>analytics</a>
+      <a target='_blank'>Analytics</a>
     </Link>
 
   const DomainLink = ({ domain }) =>
