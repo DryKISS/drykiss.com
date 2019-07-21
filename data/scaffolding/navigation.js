@@ -1,6 +1,8 @@
 /**
  * Navigation
  */
+import { Blog } from 'config'
+
 export const Navigation = {
 
   right: [
@@ -9,6 +11,12 @@ export const Navigation = {
       id: 'navHome',
       name: 'Home',
       to: '/'
+    },
+
+    {
+      id: 'navBlog',
+      name: 'Blog',
+      to: Blog.path
     },
 
     {

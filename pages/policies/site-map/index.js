@@ -15,7 +15,7 @@ const SiteMap = () => {
       Our services span consulting, strategy; planning; development; testing
       and analytics.
     `,
-    path: '/site-map',
+    path: '/policies/site-map',
     title: `DryKISS develops hybrid mobile and responsive websites`
   }
 

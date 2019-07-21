@@ -18,70 +18,58 @@ import {
 import { Domains as Data } from 'data'
 
 const Domains = () => {
-  const Columns = (ConsoleLink, DomainLink, ProviderLink) => [
+  const Columns = () => [
+
     {
       formatter: DomainLink,
       text: 'Domain'
     },
-    {
-      formatter: ProviderLink,
-      text: 'Provider'
-    },
-    {
-      formatter: ConsoleLink,
-      text: 'Webmaster'
-    },
+
     {
       formatter: AnalyticsLink,
       text: 'Analytics'
     },
+
     {
-      hidden: true,
+      formatter: ProviderLink,
+      text: 'Provider'
+    },
+
+    {
+      formatter: ConsoleLink,
+      text: 'Webmaster'
+    },
+
+    {
+      formatter: WhoisLink,
       text: 'Whois'
     }
+
   ]
 
   const AnalyticsLink = ({ analytics }) =>
-    <Link to={
-      {
-        href: {
-          pathname: `https://analytics.google.com/analytics/web/#/report-home/${analytics}`
-        }
-      }}>
+    <Link to={`https://analytics.google.com/analytics/web/#/report-home/${analytics}`}>
       <a target='_blank'>Analytics</a>
     </Link>
 
+  const ConsoleLink = ({ domain }) =>
+    <Link to={`https://search.google.com/search-console?sc-domain:${domain}`}>
+      <a target='_blank'>Console</a>
+    </Link>
+
   const DomainLink = ({ domain }) =>
-    <Link to={
-      {
-        href: {
-          pathname: `https://${domain}`
-        }
-      }}>
+    <Link to={`https://${domain}`}>
       <a target='_blank'>{domain}</a>
     </Link>
 
-  const ProviderLink = ({ provider }) =>
-    <Link to={
-      {
-        href: {
-          pathname: provider.link
-        }
-      }}>
-      <a target='_blank'>{provider.name}</a>
+  const ProviderLink = ({ domain, registrar }) =>
+    <Link to={`https://dash.cloudflare.com/e59b2f1093dd43ce0ac14555d3d04249/${domain}`}>
+      <a target='_blank'>{registrar}</a>
     </Link>
 
-  const ConsoleLink = ({ domain }) =>
-    <Link to={
-      {
-        href: {
-          pathname: `https://search.google.com/search-console`,
-          query: {
-            resource_id: `https://${domain}`
-          }
-        }
-      }}>
-      <a target='_blank'>Console</a>
+  const WhoisLink = ({ domain }) =>
+    <Link to={`https://whois.domaintools.com/${domain}`}>
+      <a target='_blank'>Whois</a>
     </Link>
 
   const meta = {
@@ -101,7 +89,7 @@ const Domains = () => {
         <PageHeading heading='Domains' />
 
         <Table
-          columns={Columns(ConsoleLink, DomainLink, ProviderLink)}
+          columns={Columns()}
           rows={Data}
         />
 

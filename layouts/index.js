@@ -12,15 +12,18 @@ import { Bootstrap } from 'industry-ui'
 import { Brand } from 'config'
 import { Copyright, Footer, Navigation } from 'data'
 
-const Layout = ({ children }) =>
-  <Bootstrap
-    brand={Brand.name}
-    brandLogo={Brand.logo}
-    children={children}
-    copyright={Copyright}
-    footer={Footer}
-    navigation={Navigation}
-  />
+const Layout = ({ children }) => {
+  return (
+    <Bootstrap
+      brand={Brand.name}
+      brandLogo={Brand.logo}
+      children={children}
+      copyright={Copyright}
+      footer={Footer}
+      navigation={Navigation}
+    />
+  )
+}
 
 Layout.propTypes = {
   children: node.isRequired

@@ -15,14 +15,28 @@ import { Google } from 'config'
 export default class MyDocument extends Document {
   static async getInitialProps (ctx) {
     const sheet = new ServerStyleSheet()
-
     const originalRenderPage = ctx.renderPage
-    ctx.renderPage = () => originalRenderPage({
-      enhanceApp: App => props => sheet.collectStyles(<App {...props} />)
-    })
 
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps, styles: [...initialProps.styles, ...sheet.getStyleElement()] }
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: App => props => sheet.collectStyles(<App {...props} />)
+        })
+
+      const initialProps = await Document.getInitialProps(ctx)
+
+      return {
+        ...initialProps,
+        styles: (
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>
+        )
+      }
+    } finally {
+      sheet.seal()
+    }
   }
 
   render () {
@@ -30,7 +44,6 @@ export default class MyDocument extends Document {
       <html className='no-js' lang='en' dir='ltr' prefix='og: http://ogp.me/ns#'>
 
         <Head>
-
           <meta name='viewport' content='width=device-width, initial-scale=1' key='viewport' />
           <meta charSet='UTF-8' key='charset' />
           <meta httpEquiv='X-UA-Compatible' content='IE=edge' key='edge' />
@@ -55,6 +68,10 @@ export default class MyDocument extends Document {
           <link rel='apple-touch-icon' sizes='180x180' href='/static/favicon/apple-touch-icon.png' />
           <link rel='icon' type='image/png' sizes='32x32' href='/static/favicon/favicon.png' />
           <link rel='icon' type='image/png' sizes='16x16' href='/static/favicon/favicon.png' />
+
+          <script
+            src={`https://maps.googleapis.com/maps/api/js?key=${Google.apiKey}&amp;libraries=places`}
+          />
 
           <script
             async

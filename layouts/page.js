@@ -30,6 +30,8 @@ export const Page = ({ children, meta }) => {
       />
 
       {children}
+
+      <br />
     </>
   )
 }

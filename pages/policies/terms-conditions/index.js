@@ -15,7 +15,7 @@ const TermsConditions = () => {
       Our services span consulting, strategy; planning; development; testing
       and analytics.
     `,
-    path: '/terms-conditions',
+    path: '/policies/terms-conditions',
     title: `DryKISS develops hybrid mobile and responsive websites`
   }
 

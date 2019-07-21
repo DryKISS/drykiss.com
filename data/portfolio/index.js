@@ -1,5 +1,5 @@
 /**
- * Data
+ * Portfolio
  */
 export * from './facebook'
 export * from './sites'

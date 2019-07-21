@@ -7,14 +7,41 @@ import { Page } from 'layout/page'
 
 // UI
 import {
-  Column,
+  Button,
+  Card,
+  CardFooter,
+  CardDecks,
   Container,
-  Heading,
-  PageHeading,
-  Row
+  Link,
+  PageHeading
 } from 'industry-ui'
 
+// Data
+import { Services } from 'data'
+
 const WhatWedo = () => {
+  const RenderServices = () =>
+    Services.map(({ description, name }, index) =>
+      <Card
+        body={description}
+        bordered
+        deck
+        header={name}
+        key={index}
+        shadow
+      >
+        <CardFooter>
+          <Link to={'articleLink'}>
+            <Button
+              content='Read more'
+              context='primary'
+              size='lg'
+            />
+          </Link>
+        </CardFooter>
+      </Card>
+    )
+
   const meta = {
     description: `
       DryKISS is a full service internet and mobile digital production house.
@@ -27,55 +54,18 @@ const WhatWedo = () => {
 
   return (
     <Page meta={meta}>
-
       <Container>
 
-        <PageHeading heading='What we do' />
+        <PageHeading
+          heading='What we do'
+          strapline='DryKISS can offer a full service development and marketing solution.'
+        />
 
-        <Row>
-
-          <Column lg={4}>
-
-            <Heading content='Responsive development' tag='h3' />
-
-            <p>
-              Crafting responsive, mobile first or adaptive sites and
-              applications is something DryKISS excels in. Developing a mobile
-              friendly product is not only a user requirement but it also
-              improves SEO aspects.
-            </p>
-
-          </Column>
-
-          <Column lg={4}>
-
-            <Heading content='Prototyping' tag='h3' />
-
-            <p>
-              Using CodeBlender our atomic development pattern library,
-              DryKISS can rapidly deliver any kind of prototype to answer user
-              research questions. We have already delivered a TV EPG; mobile
-              touchID application; one page sites and email newsletter.
-            </p>
-
-          </Column>
-
-          <Column lg={4}>
-
-            <Heading content='Hybrid mobile development' tag='h3' />
-
-            <p>
-              Utilising the latest technologies such as Cordova or PhoneGap,
-              DryKISS can deliver cross-platform HTML5 and JavaScript mobile
-              applications without hassle.
-            </p>
-
-          </Column>
-
-        </Row>
+        <CardDecks>
+          <RenderServices />
+        </CardDecks>
 
       </Container>
-
     </Page>
   )
 }

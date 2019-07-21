@@ -1,5 +1,5 @@
 /**
- * Pricing
+ * SEO
  */
 
 // Layout
@@ -15,14 +15,14 @@ const Pricing = () => {
       Our services span consulting, strategy; planning; development; testing
       and analytics.
     `,
-    path: '/pricing',
+    path: '/services/pricing',
     title: `DryKISS develops hybrid mobile and responsive websites`
   }
 
   return (
     <Page meta={meta}>
       <Container>
-        <PageHeading heading='Pricing' />
+        <PageHeading heading='SEO' />
       </Container>
     </Page>
   )
