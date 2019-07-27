@@ -37,6 +37,10 @@ export const Mailchimp = {
   id: '9ea724a203'
 }
 
+export const Pinterest = {
+  verify: `18cdcea1be80cd72ded2e50bb5d21050`
+}
+
 export const Config = {
   Blog,
   Brand,
@@ -44,5 +48,6 @@ export const Config = {
   Facebook,
   Google,
   HubSpot,
-  Mailchimp
+  Mailchimp,
+  Pinterest
 }
