@@ -19,7 +19,6 @@ export const Facebook = {
   hashTag: 'DryKISS'
 }
 
-//
 export const Google = {
   analytics: 'UA-49976138-1',
   adsense: 'ca-pub-4390370568784157',
@@ -27,9 +26,23 @@ export const Google = {
   verification: 'KV07s1r94b_CG89V9Tuh7a5FYEv4kG8-WbLMGLCOIjw'
 }
 
+export const HubSpot = {
+  id: 6190637
+}
+
 export const Mailchimp = {
   username: 'drykiss',
   dc: 'us7',
   u: '4862895059f8ff67d43123d97',
   id: '9ea724a203'
+}
+
+export const Config = {
+  Blog,
+  Brand,
+  Canonical,
+  Facebook,
+  Google,
+  HubSpot,
+  Mailchimp
 }

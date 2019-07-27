@@ -2,6 +2,7 @@
 
 https://psdwizard.com/pricing
 https://www.avamae.co.uk/blog?categoriesid=1001
+https://dvelp.co.uk/
 
 ## Blog Ideas
 

@@ -10,7 +10,7 @@ import Document, { Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
 // Config
-import { Google } from 'config'
+import { Google, HubSpot } from 'config'
 
 export default class MyDocument extends Document {
   static async getInitialProps (ctx) {
@@ -69,25 +69,41 @@ export default class MyDocument extends Document {
           <link rel='icon' type='image/png' sizes='32x32' href='/static/favicon/favicon.png' />
           <link rel='icon' type='image/png' sizes='16x16' href='/static/favicon/favicon.png' />
 
-          <script
-            src={`https://maps.googleapis.com/maps/api/js?key=${Google.apiKey}&amp;libraries=places`}
-          />
+          {HubSpot && HubSpot.id &&
+            <script
+              async
+              defer
+              id='hs-script-loader'
+              src={`https://js.hs-scripts.com/${HubSpot.id}.js`}
+              type='text/javascript'
+            />
+          }
 
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${Google.analytics}`}
-          />
+          {Google && Google.apiKey &&
+            <script
+              src={`https://maps.googleapis.com/maps/api/js?key=${Google.apiKey}&amp;libraries=places`}
+            />
+          }
 
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${Google.analytics}');
-              `
-            }}
-          />
+          {Google && Google.analytics &&
+            <>
+              <script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=${Google.analytics}`}
+              />
+
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${Google.analytics}');
+                  `
+                }}
+              />
+            </>
+          }
         </Head>
 
         <body>
