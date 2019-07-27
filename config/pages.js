@@ -6,12 +6,30 @@ module.exports = () => {
 
   // Blog -  `/blog/:slug`
   let articles = ARTICLES.reduce(
-    (pages, { slug }) =>
+    (pages, { category, slug }) =>
       Object.assign({}, pages, {
-        [`/blog/${slug}`]: { page: `/blog/${slug}` }
+        [`/blog/${category}/${slug}`]: {
+          page: `/blog/article`,
+          query: {
+            articleSlug: slug,
+            category: category
+          }
+        }
       }),
     {}
   )
+
+  // // Dog Breeds: `/dogs/breeds/:slug`
+  // let breeds = DOG_BREEDS_LIVE.reduce(
+  //   (pages, { dogSlug }) =>
+  //     Object.assign({}, pages, {
+  //       [`/dogs/breeds/${dogSlug}`]: {
+  //         page: '/dogs/breeds/profile',
+  //         query: { dogSlug: dogSlug }
+  //       }
+  //     }),
+  //   {}
+  // )
 
   return Object.assign({}, {
     ...articles
