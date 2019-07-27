@@ -1,35 +1,39 @@
 /**
  * Pages for the site
+ *
+ * @todo Find a way to import Slugify from IndustryUI
  */
+
+const slugify = (string) => {
+  const slug = string
+    .toLowerCase()
+    .replace(/['&]/g, '')
+    .replace(/ +/g, ' ')
+    .replace(/ /g, '-')
+
+  return slug
+}
+
 module.exports = () => {
   const { ARTICLES } = require('../data/blog')
 
   // Blog -  `/blog/:slug`
   let articles = ARTICLES.reduce(
-    (pages, { category, slug }) =>
-      Object.assign({}, pages, {
-        [`/blog/${category}/${slug}`]: {
+    (pages, { category, slug }) => {
+      const catSlug = slugify(category)
+
+      return Object.assign({}, pages, {
+        [`/blog/${catSlug}/${slug}`]: {
           page: `/blog/article`,
           query: {
             articleSlug: slug,
-            category: category
+            category: catSlug
           }
         }
-      }),
+      })
+    },
     {}
   )
-
-  // // Dog Breeds: `/dogs/breeds/:slug`
-  // let breeds = DOG_BREEDS_LIVE.reduce(
-  //   (pages, { dogSlug }) =>
-  //     Object.assign({}, pages, {
-  //       [`/dogs/breeds/${dogSlug}`]: {
-  //         page: '/dogs/breeds/profile',
-  //         query: { dogSlug: dogSlug }
-  //       }
-  //     }),
-  //   {}
-  // )
 
   return Object.assign({}, {
     ...articles
