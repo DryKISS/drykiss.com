@@ -5,17 +5,17 @@ export const Copyright = [
 
   {
     name: 'Terms and conditions',
-    to: '/terms-conditions'
+    to: '/policies/terms-conditions'
   },
 
   {
     name: 'Privacy policy',
-    to: '/privacy-policy'
+    to: '/policies/privacy-policy'
   },
 
   {
     name: 'Site map',
-    to: '/site-map'
+    to: '/policies/site-map'
   }
 
 ]
