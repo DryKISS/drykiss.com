@@ -45,6 +45,7 @@ const Contact = () => {
   return (
     <Page meta={meta}>
       <Container>
+
         <PageHeading heading='Contact' />
 
         <div id='hubspotForm' />

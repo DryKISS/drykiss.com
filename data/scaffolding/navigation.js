@@ -35,6 +35,12 @@ export const Navigation = {
       id: 'navDomains',
       name: 'Domains',
       to: '/domains'
+    },
+
+    {
+      id: 'navSignIn',
+      name: 'Log in',
+      to: '/account/sign-in'
     }
 
   ]
