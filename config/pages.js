@@ -48,6 +48,7 @@ module.exports = () => {
     // Careers
 
     // Contact
+    '/contact': { page: '/contact' },
 
     // Domain
     '/domains': { page: '/domains' },
