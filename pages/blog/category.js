@@ -34,7 +34,7 @@ const CategoryTemplate = ({ category }) => {
       and analytics.
     `,
     path: `${Blog.path}/${category}`,
-    title: `DryKISS develops hybrid mobile and responsive websites`
+    title: 'DryKISS develops hybrid mobile and responsive websites'
   }
 
   return (

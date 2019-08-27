@@ -34,7 +34,7 @@ const AuthorTemplate = ({ author }) => {
       and analytics.
     `,
     path: `${Blog.path}/${author}`,
-    title: `DryKISS develops hybrid mobile and responsive websites`
+    title: 'DryKISS develops hybrid mobile and responsive websites'
   }
 
   return (

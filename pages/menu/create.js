@@ -14,9 +14,6 @@ import {
   Row
 } from 'industry-ui'
 
-// Style
-import styled from 'styled-components'
-
 export default () => {
   const meta = {
     description: `
@@ -24,7 +21,7 @@ export default () => {
       proofreading available.
     `,
     path: '/menu',
-    title: `Create The Perfect Simple Menu`
+    title: 'Create The Perfect Simple Menu'
   }
 
   return (

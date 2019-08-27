@@ -16,7 +16,7 @@ export default () => {
       and analytics.
     `,
     path: '/team',
-    title: `DryKISS develops hybrid mobile and responsive websites`
+    title: 'DryKISS develops hybrid mobile and responsive websites'
   }
 
   return (

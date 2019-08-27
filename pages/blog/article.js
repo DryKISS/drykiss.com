@@ -79,8 +79,7 @@ const ArticleTemplate = ({ articleSlug, category }) => {
               <BlogSidebar articles={articles.ARTICLES} config={Blog} facebook={Facebook} />
             </Column>
 
-          </Row>
-        }
+          </Row>}
       </Container>
     </Page>
   )

@@ -19,7 +19,6 @@ import { Domains as Data } from 'data'
 
 export default () => {
   const Columns = () => [
-
     {
       formatter: DomainLink,
       text: 'Domain'
@@ -44,7 +43,6 @@ export default () => {
       formatter: WhoisLink,
       text: 'Whois'
     }
-
   ]
 
   const AnalyticsLink = ({ analytics }) =>
@@ -79,7 +77,7 @@ export default () => {
       and analytics.
     `,
     path: '/domains',
-    title: `DryKISS develops hybrid mobile and responsive websites`
+    title: 'DryKISS develops hybrid mobile and responsive websites'
   }
 
   return (

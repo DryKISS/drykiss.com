@@ -70,8 +70,7 @@ export default class MyDocument extends Document {
           <link rel='icon' type='image/png' sizes='16x16' href='/static/favicon/favicon.png' />
 
           {Pinterest && Pinterest.verify &&
-            <meta name='p:domain_verify' content={Pinterest.verify} />
-          }
+            <meta name='p:domain_verify' content={Pinterest.verify} />}
 
           {HubSpot && HubSpot.id &&
             <script
@@ -80,14 +79,12 @@ export default class MyDocument extends Document {
               id='hs-script-loader'
               src={`https://js.hs-scripts.com/${HubSpot.id}.js`}
               type='text/javascript'
-            />
-          }
+            />}
 
           {Google && Google.apiKey &&
             <script
               src={`https://maps.googleapis.com/maps/api/js?key=${Google.apiKey}&amp;libraries=places`}
-            />
-          }
+            />}
 
           {Google && Google.analytics &&
             <>
@@ -106,8 +103,7 @@ export default class MyDocument extends Document {
                   `
                 }}
               />
-            </>
-          }
+            </>}
         </Head>
 
         <body>

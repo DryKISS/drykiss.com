@@ -28,7 +28,7 @@ export default () => {
       on the users profile.
     `,
     path: '/portfolio/facebook/brazil-soccer-name',
-    title: `Brazil Soccer Name Facebook Application`
+    title: 'Brazil Soccer Name Facebook Application'
   }
 
   return (
@@ -40,7 +40,7 @@ export default () => {
 
         <Row>
           <Column md={12}>
-            <Image alt='Brazil Soccer Name' src={`/static/portfolio/triangle-solutions/brazil-soccer-name-generator/hero.png`} />
+            <Image alt='Brazil Soccer Name' src='/static/portfolio/triangle-solutions/brazil-soccer-name-generator/hero.png' />
           </Column>
         </Row>
 
@@ -54,7 +54,7 @@ export default () => {
 
             <Heading content='Links' tag='h3' />
 
-            <Link to={''}>
+            <Link to=''>
               <a>Brazil Soccer Name</a>
             </Link>
             <p />

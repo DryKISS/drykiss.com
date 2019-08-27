@@ -25,7 +25,7 @@ export default () => {
       menus done right. Legal, design and printing done for a monthly fee.
     `,
     path: '/menu',
-    title: `Menu Creation Done Right`
+    title: 'Menu Creation Done Right'
   }
 
   return (

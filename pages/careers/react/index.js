@@ -117,7 +117,7 @@ export default () => {
             Training budget, including language lessons are available.
           </span>
           <span>
-            Contract Salary: €115 per day
+            Contract Salary: €150 per day
           </span>
         </List>
 

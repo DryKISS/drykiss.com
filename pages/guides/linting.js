@@ -20,7 +20,7 @@ export default () => {
       configuration and plug and play nature of this library.
     `,
     path: '/',
-    title: `JavaScript Linting is a Crucial CI Component.`
+    title: 'JavaScript Linting is a Crucial CI Component.'
   }
 
   return (

@@ -28,12 +28,11 @@ export default () => {
               bordered
               footer={title}
               shadow
-              to={
-                {
-                  href: {
-                    pathname: `/portfolio/${type}/${slug}`
-                  }
-                }}
+              to={{
+                href: {
+                  pathname: `/portfolio/${type}/${slug}`
+                }
+              }}
             >
               <Image alt={title} src={`/static/portfolio/${client}/${slug}/hero.png`} />
             </Card>
@@ -49,7 +48,7 @@ export default () => {
       and analytics.
     `,
     path: '/our-work',
-    title: `DryKISS develops hybrid mobile and responsive websites`
+    title: 'DryKISS develops hybrid mobile and responsive websites'
   }
 
   return (

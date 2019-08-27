@@ -25,7 +25,7 @@ export default () => {
       could be localised and distributed.
     `,
     path: '/portfolio/facebook/brazil-soccer-name',
-    title: `Walt Disney® Prince of Persia`
+    title: 'Walt Disney® Prince of Persia'
   }
 
   return (
@@ -37,7 +37,7 @@ export default () => {
 
         <Row>
           <Column md={12}>
-            <Image alt='Prince of Persia' src={`/static/portfolio/digital-outlook/walt-disney-prince-of-persia/hero.png`} />
+            <Image alt='Prince of Persia' src='/static/portfolio/digital-outlook/walt-disney-prince-of-persia/hero.png' />
           </Column>
         </Row>
 

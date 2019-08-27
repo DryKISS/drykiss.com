@@ -25,7 +25,7 @@ export default () => {
       distributed amongst it's marketing locations.
     `,
     path: '/portfolio/facebook/brazil-soccer-name',
-    title: `Guinness® Facebook Page`
+    title: 'Guinness® Facebook Page'
   }
 
   return (
@@ -37,7 +37,7 @@ export default () => {
 
         <Row>
           <Column md={12}>
-            <Image alt='Arthurs Day' src={`/static/portfolio/tribal-ddb/guinness-arthurs-day/hero.png`} />
+            <Image alt='Arthurs Day' src='/static/portfolio/tribal-ddb/guinness-arthurs-day/hero.png' />
           </Column>
         </Row>
 
