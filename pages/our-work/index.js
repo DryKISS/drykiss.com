@@ -23,7 +23,7 @@ export default () => {
     PORTFOLIO_FACEBOOK.map(({ active, client, slug, title, type }, index) => {
       if (active) {
         return (
-          <Column key={index} lg={4}>
+          <Column key={index} md={6} lg={4}>
             <Card
               bordered
               footer={title}
@@ -34,7 +34,10 @@ export default () => {
                 }
               }}
             >
-              <Image alt={title} src={`/static/portfolio/${client}/${slug}/hero.png`} />
+              <Image
+                alt={title}
+                src={`/static/portfolio/${client}/${slug}/hero.png`}
+              />
             </Card>
           </Column>
         )

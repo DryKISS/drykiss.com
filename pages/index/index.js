@@ -53,7 +53,7 @@ export default () => {
 
         <Row>
 
-          <Column lg={3}>
+          <Column md={3}>
 
             <p>
               Modern applications are not just about a distinctive design or
@@ -68,7 +68,7 @@ export default () => {
 
           </Column>
 
-          <Column lg={3}>
+          <Column md={3}>
 
             <p>
               <strong>UNDERSTAND:</strong> At DryKISS we want to learn about
@@ -83,7 +83,7 @@ export default () => {
 
           </Column>
 
-          <Column lg={3}>
+          <Column md={3}>
 
             <p>
               <strong>ARCHITECT:</strong> DryKISS will draft a user centric
@@ -99,7 +99,7 @@ export default () => {
 
           </Column>
 
-          <Column lg={3}>
+          <Column md={3}>
 
             <p>
               <strong>CRAFT:</strong> Our crafting is all about rapid feature
@@ -124,7 +124,7 @@ export default () => {
 
         <Row>
 
-          <Column lg={4}>
+          <Column md={4}>
 
             <Heading content='User Experience' tag='h3' />
 
@@ -138,7 +138,7 @@ export default () => {
 
           </Column>
 
-          <Column lg={4}>
+          <Column md={4}>
 
             <Heading content='Creativity' tag='h3' />
 
@@ -152,7 +152,7 @@ export default () => {
 
           </Column>
 
-          <Column lg={4}>
+          <Column md={4}>
 
             <Heading content='Development' tag='h3' />
 
