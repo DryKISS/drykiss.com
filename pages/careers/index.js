@@ -1,14 +1,24 @@
 /**
  * Careers
+ * Showcases available jobs at DryKISS
+ *
+ * @see https://www.malt.es/
  */
 
 // Layout
 import { Page } from 'layout/page'
 
 // UI
-import { Container, PageHeading } from 'industry-ui'
+import {
+  Card,
+  CardBody,
+  Column,
+  Container,
+  PageHeading,
+  Row
+} from 'industry-ui'
 
-const Careers = () => {
+export default () => {
   const meta = {
     description: `
       DryKISS is a full service internet and mobile digital production house.
@@ -16,16 +26,52 @@ const Careers = () => {
       and analytics.
     `,
     path: '/careers',
-    title: `DryKISS develops hybrid mobile and responsive websites`
+    title: 'DryKISS develops hybrid mobile and responsive websites'
   }
 
   return (
     <Page meta={meta}>
       <Container>
+
         <PageHeading heading='Careers' />
+
+        <p>
+          At DryKISS, we thrive on being the best; we love to continually learn,
+          use the latest technologies and prototype everything. Our main goal
+          though is to keep our clients and their customers happy. We do this by
+          crafting top notch Accessible and SEO friendly sites. Quality is
+          essential around everything we do.
+        </p>
+
+        <p>
+          We are looking to expand what we do to Valencia, a city we have fallen
+          in love with. We believe it promotes the work life balance that is so
+          essential these days. We can work hard and sleep easy. If you are
+          passionate about quality, entrepreneurial at heart and have a passion
+          for what you do then please get in touch.
+        </p>
+
+        <PageHeading heading='Current job openings' />
+
+        <Row>
+          <Column lg={3}>
+
+            <Card
+              alt='React job opening'
+              bordered
+              image='/static/careers/react.svg'
+              shadow
+              to='/careers/react'
+            >
+              <CardBody>
+                Senior React Developer: Valencia
+              </CardBody>
+            </Card>
+
+          </Column>
+        </Row>
+
       </Container>
     </Page>
   )
 }
-
-export default Careers

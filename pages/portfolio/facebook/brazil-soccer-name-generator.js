@@ -20,7 +20,7 @@ import {
   Row
 } from 'industry-ui'
 
-const BrazilSoccerName = () => {
+export default () => {
   const meta = {
     description: `
       DryKISS developed Brazil Soccer Name as an early Facebook platform
@@ -113,5 +113,3 @@ const BrazilSoccerName = () => {
     </Page>
   )
 }
-
-export default BrazilSoccerName

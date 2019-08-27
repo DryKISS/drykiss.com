@@ -11,14 +11,13 @@ import {
   Container,
   Blockquote,
   Heading,
-  Hero,
   Row
 } from 'industry-ui'
 
 // Style
 import styled from 'styled-components'
 
-const Home = () => {
+export default () => {
   const meta = {
     description: `
       Create a simple menu that meets customer needs. Translation, legal and
@@ -135,15 +134,3 @@ const Home = () => {
     </Page>
   )
 }
-
-const StyledHero = styled(Hero)`
-  h1, h2 {
-    background-color: rgba(240, 0, 0, .5);
-    border-radius: 5px;
-    color: #fff;
-    padding: 10px;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
-  }
-`
-
-export default Home

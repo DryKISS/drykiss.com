@@ -19,9 +19,9 @@ import {
 // Data
 import { Services } from 'data'
 
-const WhatWedo = () => {
+export default () => {
   const RenderServices = () =>
-    Services.map(({ description, name }, index) =>
+    Services.map(({ description, name, to }, index) =>
       <Card
         body={description}
         bordered
@@ -31,7 +31,7 @@ const WhatWedo = () => {
         shadow
       >
         <CardFooter>
-          <Link to={'articleLink'}>
+          <Link to={`/what-we-do/services${to}`}>
             <Button
               content='Read more'
               context='primary'
@@ -69,5 +69,3 @@ const WhatWedo = () => {
     </Page>
   )
 }
-
-export default WhatWedo

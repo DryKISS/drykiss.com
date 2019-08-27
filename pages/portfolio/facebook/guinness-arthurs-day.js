@@ -18,7 +18,7 @@ import {
   Row
 } from 'industry-ui'
 
-const ArthursDay = () => {
+export default () => {
   const meta = {
     description: `
       To celebrate Arthur's Day, Guinness required a Facebook page that could be
@@ -122,5 +122,3 @@ const ArthursDay = () => {
     </Page>
   )
 }
-
-export default ArthursDay

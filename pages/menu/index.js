@@ -18,7 +18,7 @@ import {
 // Style
 import styled from 'styled-components'
 
-const Home = () => {
+export default () => {
   const meta = {
     description: `
       DryKISS creates a simple option for restaurants and cafes to have their
@@ -156,5 +156,3 @@ const StyledHero = styled(Hero)`
     text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
   }
 `
-
-export default Home

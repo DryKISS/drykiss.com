@@ -8,7 +8,7 @@ import { Page } from 'layout/page'
 // UI
 import { Container, PageHeading } from 'industry-ui'
 
-const Responsive = () => {
+export default () => {
   const meta = {
     description: `
       DryKISS is a full service internet and mobile digital production house.
@@ -27,5 +27,3 @@ const Responsive = () => {
     </Page>
   )
 }
-
-export default Responsive

@@ -19,6 +19,15 @@ export const Facebook = {
   hashTag: 'DryKISS'
 }
 
+export const Firebase = {
+  apiKey: 'AIzaSyDnLOvdAt-obP_vWjGdBLeFElPzYY8J8Bc',
+  authDomain: 'chat-drykiss-com.firebaseapp.com',
+  databaseURL: 'https://chat-drykiss-com.firebaseio.com',
+  projectId: 'chat-drykiss-com',
+  storageBucket: 'chat-drykiss-com.appspot.com',
+  messagingSenderId: '708210032343'
+}
+
 export const Google = {
   analytics: 'UA-49976138-1',
   adsense: 'ca-pub-4390370568784157',
@@ -47,6 +56,7 @@ export const Config = {
   Brand,
   Canonical,
   Facebook,
+  Firebase,
   Google,
   HubSpot,
   Mailchimp,

@@ -32,16 +32,22 @@ export const Navigation = {
     },
 
     {
-      id: 'navDomains',
-      name: 'Domains',
-      to: '/domains'
+      id: 'navCareer',
+      name: 'Careers',
+      to: '/careers'
     },
 
     {
-      id: 'navSignIn',
-      name: 'Log in',
-      to: '/account/sign-in'
+      id: 'navDomains',
+      name: 'Domains',
+      to: '/domains'
     }
+
+    // {
+    //   id: 'navSignIn',
+    //   name: 'Log in',
+    //   to: '/account/sign-in'
+    // }
 
   ]
 

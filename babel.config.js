@@ -2,24 +2,25 @@ module.exports = function (api) {
   api.cache(true)
 
   const presets = [
+    '@babel/preset-env',
     'next/babel'
   ]
 
   const plugins = [
     [
       'styled-components', {
-        'displayName': true,
-        'ssr': true
+        displayName: true,
+        ssr: true
       }
     ],
     [
       'module-resolver',
       {
-        'root': ['./'],
-        'alias': {
-          'config': './config',
-          'data': './data',
-          'layout': './layouts'
+        root: ['./'],
+        alias: {
+          config: './config',
+          data: './data',
+          layout: './layouts'
         }
       }
     ]

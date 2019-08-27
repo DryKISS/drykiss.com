@@ -17,22 +17,21 @@ const slugify = (string) => {
 module.exports = () => {
   const { ARTICLES } = require('../data/blog')
 
-  // Blog -  `/blog/:slug`
-  let articles = ARTICLES.reduce(
+  // Blog - `/blog/:slug`
+  const articles = ARTICLES.reduce(
     (pages, { category, slug }) => {
       const catSlug = slugify(category)
 
       return Object.assign({}, pages, {
         [`/blog/${catSlug}/${slug}`]: {
-          page: `/blog/article`,
+          page: '/blog/article',
           query: {
             articleSlug: slug,
             category: catSlug
           }
         }
       })
-    },
-    {}
+    }, {}
   )
 
   return Object.assign({}, {
@@ -46,9 +45,14 @@ module.exports = () => {
     // About
 
     // Careers
+    '/careers': { page: '/careers' },
+    '/careers/react': { page: '/careers/react' },
 
     // Contact
     '/contact': { page: '/contact' },
+
+    // Blog
+    '/blog': { page: '/blog' },
 
     // Domain
     '/domains': { page: '/domains' },

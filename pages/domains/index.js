@@ -17,7 +17,7 @@ import {
 // Data
 import { Domains as Data } from 'data'
 
-const Domains = () => {
+export default () => {
   const Columns = () => [
 
     {
@@ -97,5 +97,3 @@ const Domains = () => {
     </Page>
   )
 }
-
-export default Domains

@@ -22,7 +22,7 @@ import {
 // Data
 import articles from 'data/blog'
 
-const BlogHome = () => {
+export default () => {
   const meta = {
     description: `
       DryKISS is a full service internet and mobile digital production house.
@@ -30,7 +30,7 @@ const BlogHome = () => {
       and analytics.
     `,
     path: Blog.path,
-    title: `DryKISS develops hybrid mobile and responsive websites`
+    title: 'DryKISS develops hybrid mobile and responsive websites'
   }
 
   return (
@@ -52,5 +52,3 @@ const BlogHome = () => {
     </Page>
   )
 }
-
-export default BlogHome

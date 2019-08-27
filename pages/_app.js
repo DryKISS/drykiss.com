@@ -6,14 +6,19 @@
 import React from 'react'
 
 // Next
-import App, { Container } from 'next/app'
+import App from 'next/app'
 import Router from 'next/router'
 
 // UI
-import { GoogleAnalyticsPageView, Theme, ThemeStyle } from 'industry-ui'
+import {
+  FirebaseProvider,
+  GoogleAnalyticsPageView,
+  Theme,
+  ThemeStyle
+} from 'industry-ui'
 
 // Config
-import { Google } from 'config'
+import { Firebase, Google } from 'config'
 
 // Layout
 import Layout from 'layout'
@@ -25,33 +30,21 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 Router.events.on('routeChangeComplete', url => GoogleAnalyticsPageView(url, Google.analytics))
 
 export default class MyApp extends App {
-  static async getInitialProps ({ Component, ctx }) {
-    let pageProps = {}
-
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx)
-    }
-
-    return { pageProps }
-  }
-
   render () {
     const { Component, pageProps } = this.props
 
     return (
-      <Container>
-
-        <ThemeProvider theme={Theme}>
-
+      // <FirebaseProvider config={Firebase}>
+      <ThemeProvider theme={Theme}>
+        <>
           <Layout>
             <Component {...pageProps} />
           </Layout>
 
-        </ThemeProvider>
-
-        <ThemeStyle />
-
-      </Container>
+          <ThemeStyle />
+        </>
+      </ThemeProvider>
+      // </FirebaseProvider>
     )
   }
 }

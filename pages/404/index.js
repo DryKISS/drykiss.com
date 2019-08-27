@@ -8,7 +8,7 @@ import { Page } from 'layout/page'
 // UI
 import { Container, PageHeading } from 'industry-ui'
 
-const Error404 = () => {
+export default () => {
   const meta = {
     description: `
       DryKISS is a full service internet and mobile digital production house.
@@ -36,5 +36,3 @@ const Error404 = () => {
     </Page>
   )
 }
-
-export default Error404

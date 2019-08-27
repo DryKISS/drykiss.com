@@ -20,7 +20,7 @@ import {
 // Style
 import styled from 'styled-components'
 
-const Home = () => {
+export default () => {
   const meta = {
     description: `
       DryKISS is a full service internet and mobile digital production house.
@@ -28,7 +28,7 @@ const Home = () => {
       and analytics.
     `,
     path: '/',
-    title: `DryKISS develops hybrid mobile and responsive websites`
+    title: 'DryKISS develops hybrid mobile and responsive websites'
   }
 
   return (
@@ -182,5 +182,3 @@ const StyledHero = styled(Hero)`
     text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
   }
 `
-
-export default Home

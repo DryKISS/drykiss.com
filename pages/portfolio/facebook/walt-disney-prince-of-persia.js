@@ -18,7 +18,7 @@ import {
   Row
 } from 'industry-ui'
 
-const PrinceOfPersia = () => {
+export default () => {
   const meta = {
     description: `
       Walt Disney required a Facebook page for the movie Prince of Persia that
@@ -127,5 +127,3 @@ const PrinceOfPersia = () => {
     </Page>
   )
 }
-
-export default PrinceOfPersia

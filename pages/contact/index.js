@@ -14,7 +14,7 @@ import { HubSpot } from 'config'
 // UI
 import { Container, PageHeading } from 'industry-ui'
 
-const Contact = () => {
+export default () => {
   useEffect(() => {
     const script = document.createElement('script')
 
@@ -54,5 +54,3 @@ const Contact = () => {
     </Page>
   )
 }
-
-export default Contact

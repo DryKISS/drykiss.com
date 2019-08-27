@@ -18,7 +18,7 @@ import {
 // Data
 import { PORTFOLIO_FACEBOOK } from 'data'
 
-const OurWork = () => {
+export default () => {
   const renderPortfolio = () =>
     PORTFOLIO_FACEBOOK.map(({ active, client, slug, title, type }, index) => {
       if (active) {
@@ -66,5 +66,3 @@ const OurWork = () => {
     </Page>
   )
 }
-
-export default OurWork
