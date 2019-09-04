@@ -19,7 +19,7 @@ export default () => {
       DryKISS utilise StandardJS for all JavaScript Linting. We love the ease of
       configuration and plug and play nature of this library.
     `,
-    path: '/',
+    path: '/guides/linting',
     title: 'JavaScript Linting is a Crucial CI Component.'
   }
 

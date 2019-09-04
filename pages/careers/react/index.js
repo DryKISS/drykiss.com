@@ -111,13 +111,13 @@ export default () => {
 
         <List>
           <span>
-            English fluent
+            Able to communicate in English
           </span>
           <span>
             Training budget, including language lessons are available.
           </span>
           <span>
-            Contract Salary: €150 per day
+            Contract Salary: Based on experience.
           </span>
         </List>
 
