@@ -11,9 +11,6 @@ import { Page } from 'layout/page'
 // Config
 import { HubSpot } from 'config'
 
-// UI
-import { Container, PageHeading } from 'industry-ui'
-
 export default () => {
   useEffect(() => {
     const script = document.createElement('script')
@@ -43,14 +40,8 @@ export default () => {
   }
 
   return (
-    <Page meta={meta}>
-      <Container>
-
-        <PageHeading heading='Contact' />
-
-        <div id='hubspotForm' />
-
-      </Container>
+    <Page heading='Contact' meta={meta}>
+      <div id='hubspotForm' />
     </Page>
   )
 }

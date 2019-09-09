@@ -17,7 +17,14 @@ export const Footer = [
         testing and analytics. Using cutting edge technologies within
         disciplined processes.
       </p>
-      `
+      `,
+    links: [
+      {
+        id: 'footerTeam',
+        name: 'DryKISS Team',
+        to: '/team'
+      }
+    ]
   },
 
   {

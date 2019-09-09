@@ -20,10 +20,8 @@ export default () => {
   }
 
   return (
-    <Page meta={meta}>
-      <Container>
-        <PageHeading heading='Terms &amp; Conditions' />
-      </Container>
+    <Page heading='Terms &amp; Conditions' meta={meta}>
+      Terms and Conditions
     </Page>
   )
 }

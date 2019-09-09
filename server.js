@@ -21,10 +21,10 @@ app.prepare()
     })
 
     // Blog Article
-    server.get('/blog/:category/:articleSlug', (req, res) => {
-      return app.render(req, res, '/blog/article', {
-        articleSlug: req.params.articleSlug,
-        category: req.params.category
+    server.get('/blog/:categoryId/:articleId', (req, res) => {
+      return app.render(req, res, '/blog/[categoryId]/[articleId]', {
+        articleId: req.params.articleId,
+        categoryId: req.params.categoryId
       })
     })
 

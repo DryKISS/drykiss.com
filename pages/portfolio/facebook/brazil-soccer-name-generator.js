@@ -10,13 +10,11 @@ import { Page } from 'layout/page'
 // UI
 import {
   Column,
-  Container,
   Divider,
   Heading,
   Image,
   Link,
   List,
-  PageHeading,
   Row
 } from 'industry-ui'
 
@@ -32,84 +30,78 @@ export default () => {
   }
 
   return (
-    <Page meta={meta}>
+    <Page heading='Brazil Soccer Name Generator' meta={meta}>
 
-      <Container>
+      <Row>
+        <Column md={12}>
+          <Image alt='Brazil Soccer Name' src='/static/portfolio/triangle-solutions/brazil-soccer-name-generator/hero.png' />
+        </Column>
+      </Row>
 
-        <PageHeading heading='Brazil Soccer Name Generator' />
+      <Divider size='lg' />
 
-        <Row>
-          <Column md={12}>
-            <Image alt='Brazil Soccer Name' src='/static/portfolio/triangle-solutions/brazil-soccer-name-generator/hero.png' />
-          </Column>
-        </Row>
+      <Row>
 
-        <Divider size='lg' />
+        <Column md={3}>
 
-        <Row>
+          <Heading content='What we did' tag='h2' />
 
-          <Column md={3}>
+          <Heading content='Links' tag='h3' />
 
-            <Heading content='What we did' tag='h2' />
+          <Link to=''>
+            <a>Brazil Soccer Name</a>
+          </Link>
+          <p />
 
-            <Heading content='Links' tag='h3' />
+          <Heading content='Tasks' tag='h3' />
 
-            <Link to=''>
-              <a>Brazil Soccer Name</a>
-            </Link>
-            <p />
+          <List>
+            <span>Developed Javascript algorithm to create name</span>
+            <span>Database creation to manage users and names</span>
+            <span>Deployed on Facebook platform</span>
+            <span>Social and Viral actions enhanced</span>
+            <span>Interlinked with other Facebook apps</span>
+          </List>
 
-            <Heading content='Tasks' tag='h3' />
+          <Heading content='Project Duration' tag='h3' />
 
-            <List>
-              <span>Developed Javascript algorithm to create name</span>
-              <span>Database creation to manage users and names</span>
-              <span>Deployed on Facebook platform</span>
-              <span>Social and Viral actions enhanced</span>
-              <span>Interlinked with other Facebook apps</span>
-            </List>
+          <List>
+            <span>2 weeks development</span>
+          </List>
 
-            <Heading content='Project Duration' tag='h3' />
+          <Heading content='Outcome' tag='h3' />
 
-            <List>
-              <span>2 weeks development</span>
-            </List>
+          <List>
+            <span>Tens of thousands of downloads</span>
+            <span>Ceased due to Facebook changing profile rules</span>
+          </List>
 
-            <Heading content='Outcome' tag='h3' />
+          <Heading content='Team' tag='h3' />
 
-            <List>
-              <span>Tens of thousands of downloads</span>
-              <span>Ceased due to Facebook changing profile rules</span>
-            </List>
+          <List>
+            <span>Ian Warner - Developer</span>
+          </List>
 
-            <Heading content='Team' tag='h3' />
+        </Column>
 
-            <List>
-              <span>Ian Warner - Developer</span>
-            </List>
+        <Column md={9}>
 
-          </Column>
+          <Heading content='Description' tag='h2' />
 
-          <Column md={9}>
-
-            <Heading content='Description' tag='h2' />
-
-            <p>
+          <p>
               Brazil Soccer Name was a small fun Facebook application created in
               a very short time to really amplify the conversions we wanted on
               Love Football.
-            </p>
+          </p>
 
-            <p>
+          <p>
               It was very successful with tens of thousands of downloads, and many
               thousands of social interactions such as shares and likes.
-            </p>
+          </p>
 
-          </Column>
+        </Column>
 
-        </Row>
-
-      </Container>
+      </Row>
     </Page>
   )
 }

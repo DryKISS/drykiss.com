@@ -15,7 +15,6 @@ import {
   BlogHero,
   BlogSidebar,
   Column,
-  Container,
   Row
 } from 'industry-ui'
 
@@ -35,20 +34,18 @@ export default () => {
 
   return (
     <Page meta={meta}>
-      <Container>
-        <Row>
+      <Row>
 
-          <Column lg={8}>
-            <BlogHero articles={articles.ARTICLES} config={Blog} />
-            <BlogCategories articles={articles.ARTICLES} config={Blog} />
-          </Column>
+        <Column lg={8}>
+          <BlogHero articles={articles.ARTICLES} config={Blog} />
+          <BlogCategories articles={articles.ARTICLES} config={Blog} />
+        </Column>
 
-          <Column lg={4}>
-            <BlogSidebar articles={articles.ARTICLES} config={Blog} facebook={Facebook} />
-          </Column>
+        <Column lg={4}>
+          <BlogSidebar articles={articles.ARTICLES} config={Blog} facebook={Facebook} />
+        </Column>
 
-        </Row>
-      </Container>
+      </Row>
     </Page>
   )
 }

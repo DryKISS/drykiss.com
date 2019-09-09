@@ -12,15 +12,15 @@
  */
 
 // React
-import { node } from 'prop-types'
+import { node, object, string } from 'prop-types'
 
 // UI
-import { MetaHead } from 'industry-ui'
+import { Container, MetaHead, PageHeading } from 'industry-ui'
 
 // Data
 import { Brand, Canonical } from 'config'
 
-export const Page = ({ children, meta }) => {
+export const Page = ({ children, heading, meta }) => {
   return (
     <>
       <MetaHead
@@ -29,13 +29,16 @@ export const Page = ({ children, meta }) => {
         meta={meta}
       />
 
-      {children}
-
-      <br />
+      <Container>
+        {heading && <PageHeading heading={heading} />}
+        {children}
+      </Container>
     </>
   )
 }
 
 Page.propTypes = {
-  children: node.isRequired
+  children: node.isRequired,
+  heading: string,
+  meta: object.isRequired
 }

@@ -6,7 +6,7 @@
 import { Page } from 'layout/page'
 
 // UI
-import { Container, PageHeading } from 'industry-ui'
+import { Card, CardBody, Column, Row } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -20,10 +20,24 @@ export default () => {
   }
 
   return (
-    <Page meta={meta}>
-      <Container>
-        <PageHeading heading='Team' />
-      </Container>
+    <Page heading='Team' meta={meta}>
+      <Row>
+        <Column lg={3}>
+
+          <Card
+            alt='Ian Warner'
+            bordered
+            image='/static/freelancer/ian-warner/1.jpg'
+            shadow
+            to='https://availabletowork.com/freelancer/ian-warner'
+          >
+            <CardBody>
+              Ian Warner
+            </CardBody>
+          </Card>
+
+        </Column>
+      </Row>
     </Page>
   )
 }

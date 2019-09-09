@@ -7,12 +7,7 @@
 import { Page } from 'layout/page'
 
 // UI
-import {
-  Container,
-  Link,
-  PageHeading,
-  Table
-} from 'industry-ui'
+import { Link, Table } from 'industry-ui'
 
 // Data
 import { Domains as Data } from 'data'
@@ -81,17 +76,11 @@ export default () => {
   }
 
   return (
-    <Page meta={meta}>
-      <Container>
-
-        <PageHeading heading='Domains' />
-
-        <Table
-          columns={Columns()}
-          rows={Data}
-        />
-
-      </Container>
+    <Page heading='Domains' meta={meta}>
+      <Table
+        columns={Columns()}
+        rows={Data}
+      />
     </Page>
   )
 }

@@ -11,9 +11,7 @@ import {
   Card,
   CardFooter,
   CardDecks,
-  Container,
-  Link,
-  PageHeading
+  Link
 } from 'industry-ui'
 
 // Data
@@ -53,19 +51,14 @@ export default () => {
   }
 
   return (
-    <Page meta={meta}>
-      <Container>
+    <Page heading='What we do' meta={meta}>
+      <p>
+        DryKISS can offer a full service development and marketing solution.
+      </p>
 
-        <PageHeading
-          heading='What we do'
-          strapline='DryKISS can offer a full service development and marketing solution.'
-        />
-
-        <CardDecks>
-          <RenderServices />
-        </CardDecks>
-
-      </Container>
+      <CardDecks>
+        <RenderServices />
+      </CardDecks>
     </Page>
   )
 }

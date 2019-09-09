@@ -45,7 +45,7 @@ const SignUp = ({ firebase, slug }) => {
   const [form, setValues] = useState(INITIAL_STATE)
 
   const ERROR_CODE_ACCOUNT_EXISTS = 'auth/email-already-in-use'
-  const ERROR_MSG_ACCOUNT_EXISTS = `An account with this E-Mail address already exists. Try to login with this account instead.`
+  const ERROR_MSG_ACCOUNT_EXISTS = 'An account with this E-Mail address already exists. Try to login with this account instead.'
 
   const change = (e) => {
     const { checked, id, type, value } = e.target
@@ -121,21 +121,21 @@ const SignUp = ({ firebase, slug }) => {
 
   switch (slug) {
     case 'employer':
-      copy['description'] = `Join our community of responsible breeders, add your litters and get access to genuine verified buyers.`
-      copy['metaDescription'] = 'Register with Tailwise to be recognized as a Responsible Breeder. Join our mission to stop puppy farms in London and the wider UK.'
-      copy['metaTitle'] = 'Join Our Community of Responsible Breeders'
-      copy['title'] = `Become a Tailwise Breeder`
+      copy.description = 'Join our community of responsible breeders, add your litters and get access to genuine verified buyers.'
+      copy.metaDescription = 'Register with Tailwise to be recognized as a Responsible Breeder. Join our mission to stop puppy farms in London and the wider UK.'
+      copy.metaTitle = 'Join Our Community of Responsible Breeders'
+      copy.title = 'Become a Tailwise Breeder'
       break
     default:
-      copy['description'] = `Join our community of responsible breeders, add your litters and get access to genuine verified buyers.`
-      copy['metaDescription'] = 'Registering with Tailwise provides your charity with a massive opportunity to help rehome your dogs. Tailwise gives 50% back to charities to help rehome more dogs.'
-      copy['metaTitle'] = 'Register Your Dog Rehome Charity'
-      copy['title'] = `Sign Up`
+      copy.description = 'Join our community of responsible breeders, add your litters and get access to genuine verified buyers.'
+      copy.metaDescription = 'Registering with Tailwise provides your charity with a massive opportunity to help rehome your dogs. Tailwise gives 50% back to charities to help rehome more dogs.'
+      copy.metaTitle = 'Register Your Dog Rehome Charity'
+      copy.title = 'Sign Up'
   }
 
   const meta = {
     description: copy.metaDescription,
-    path: `/account/sign-up`,
+    path: '/account/sign-up',
     title: copy.metaTitle
   }
 
@@ -168,8 +168,7 @@ const SignUp = ({ firebase, slug }) => {
           />
 
           {error &&
-            <Alert content={`Error: ${error.message}`} context='warning' />
-          }
+            <Alert content={`Error: ${error.message}`} context='warning' />}
         </Column>
 
       </Row>

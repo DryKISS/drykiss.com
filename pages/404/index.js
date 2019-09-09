@@ -5,9 +5,6 @@
 // Layout
 import { Page } from 'layout/page'
 
-// UI
-import { Container, PageHeading } from 'industry-ui'
-
 export default () => {
   const meta = {
     description: `
@@ -20,19 +17,12 @@ export default () => {
   }
 
   return (
-    <Page meta={meta}>
-      <Container>
-
-        <PageHeading
-          heading='404 ERROR PAGE – NOT FOUND'
-          strapline={`
-            The page you were looking for no longer exists or never did.
-            Please use the links at the top of your screen to get back in the
-            game, or click here to go home and start again.
-          `}
-        />
-
-      </Container>
+    <Page heading='404 ERROR PAGE – NOT FOUND' meta={meta}>
+      <p>
+        The page you were looking for no longer exists or never did.
+        Please use the links at the top of your screen to get back in the
+        game, or click here to go home and start again.
+      </p>
     </Page>
   )
 }

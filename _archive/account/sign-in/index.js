@@ -78,8 +78,8 @@ const SignIn = ({ firebase }) => {
       Our services span consulting, strategy; planning; development; testing
       and analytics.
     `,
-    path: `/account/sign-in`,
-    title: `DryKISS develops hybrid mobile and responsive websites`
+    path: '/account/sign-in',
+    title: 'DryKISS develops hybrid mobile and responsive websites'
   }
 
   return (
@@ -99,9 +99,7 @@ const SignIn = ({ firebase }) => {
               submit={submit}
             />
 
-            {error &&
-              <Alert content={`Error: ${error.message}`} context='warning' />
-            }
+            {error && <Alert content={`Error: ${error.message}`} context='warning' />}
 
           </Column>
 

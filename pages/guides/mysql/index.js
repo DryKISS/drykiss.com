@@ -8,11 +8,7 @@
 import { Page } from 'layout/page'
 
 // UI
-import {
-  Container,
-  Blockquote,
-  Heading
-} from 'industry-ui'
+import { Heading } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -26,75 +22,71 @@ export default () => {
   }
 
   return (
-    <Page meta={meta}>
+    <Page heading='MySQL Best Practices' meta={meta}>
 
-      <Container>
+      <Heading content='Installation' tag='h2' />
 
-        <Blockquote text='MySQL Best Practices' />
+      <pre>$ brew info mysql</pre>
+      <pre>$ brew install mysql</pre>
 
-        <Heading content='Installation' tag='h2' />
-
-        <pre>$ brew info mysql</pre>
-        <pre>$ brew install mysql</pre>
-
-        <p>
+      <p>
           To start the MySQL run:
-        </p>
+      </p>
 
-        <pre>$ mysql.server start</pre>
-        <pre>mysql.server `start|stop|restart|reload|force-reload|status`</pre>
+      <pre>$ mysql.server start</pre>
+      <pre>mysql.server `start|stop|restart|reload|force-reload|status`</pre>
 
-        <p>
+      <p>
           Or to start it as a service when the computer starts run:
-        </p>
+      </p>
 
-        <pre>$ brew services start mysql</pre>
+      <pre>$ brew services start mysql</pre>
 
-        <p>
+      <p>
           This will install MySQL without a root passwoord.
-          <br />- u: root
-          <br />- p: -
-        </p>
+        <br />- u: root
+        <br />- p: -
+      </p>
 
-        <p>
+      <p>
           To setup a secure installation run:
-        </p>
+      </p>
 
-        <pre>$ mysql_secure_installation</pre>
+      <pre>$ mysql_secure_installation</pre>
 
-        <p>
+      <p>
           MySQL is configured to only allow connections from localhost by
           default, to connect run:
-        </p>
+      </p>
 
-        <pre>$ mysql -uroot</pre>
+      <pre>$ mysql -uroot</pre>
 
-        <p>
+      <p>
           Type quit or exit to return to the command prompt.
-        </p>
+      </p>
 
-        <Heading content='GUI' tag='h2' />
+      <Heading content='GUI' tag='h2' />
 
-        <p>
+      <p>
           Sequel Pro is a Free and open source MySQL GUI, however this does not
           currently support MySQL 8. Since we should use the latest MySQL has to
           offer the
-        </p>
+      </p>
 
-        <pre>$ brew cask install sequel-pro</pre>
+      <pre>$ brew cask install sequel-pro</pre>
 
-        <p>
+      <p>
           MySQL Workbench is the official GUI for MySQL, probably not as
           intuitive to use as Sequel Pro, but it will connect to the last MySQL version.
-        </p>
+      </p>
 
-        <pre>$ brew cask install sequel-pro</pre>
+      <pre>$ brew cask install sequel-pro</pre>
 
-        <Heading content='ORM' tag='h2' />
+      <Heading content='ORM' tag='h2' />
 
-        <p>
+      <p>
           Sequelize
-        </p>
+      </p>
 
         MYSQL FAILS
 
@@ -241,8 +233,6 @@ default-character-set = utf8
 key_buffer              = 16M
 
 !includedir /etc/mysql/conf.d/
-
-      </Container>
 
     </Page>
   )

@@ -5,9 +5,6 @@
 // Layout
 import { Page } from 'layout/page'
 
-// UI
-import { Container, PageHeading } from 'industry-ui'
-
 export default () => {
   const meta = {
     description: `
@@ -20,10 +17,8 @@ export default () => {
   }
 
   return (
-    <Page meta={meta}>
-      <Container>
-        <PageHeading heading='About' />
-      </Container>
+    <Page heading='About' meta={meta}>
+      DryKISS Ltd was setup to simplify the process of development.
     </Page>
   )
 }

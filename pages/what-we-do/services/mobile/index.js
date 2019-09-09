@@ -20,10 +20,8 @@ export default () => {
   }
 
   return (
-    <Page meta={meta}>
-      <Container>
-        <PageHeading heading='Mobile' />
-      </Container>
+    <Page heading='Mobile' meta={meta}>
+      Hybrid mobile application development.
     </Page>
   )
 }

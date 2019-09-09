@@ -22,7 +22,7 @@ export const PORTFOLIO_FACEBOOK = [
     active: true,
     client: 'tribal-ddb',
     slug: 'guinness-arthurs-day',
-    title: `Guiness Arthur's Day`,
+    title: 'Guiness Arthur\'s Day',
     type: 'facebook'
   },
 
@@ -30,7 +30,7 @@ export const PORTFOLIO_FACEBOOK = [
     active: false,
     client: 'triangle-solutions',
     slug: 'love-football',
-    title: `Love Football`,
+    title: 'Love Football',
     type: 'facebook'
   },
 
@@ -38,7 +38,7 @@ export const PORTFOLIO_FACEBOOK = [
     active: true,
     client: 'digital-outlook',
     slug: 'walt-disney-prince-of-persia',
-    title: `Prince of Persia`,
+    title: 'Prince of Persia',
     type: 'facebook'
   },
 
@@ -46,7 +46,7 @@ export const PORTFOLIO_FACEBOOK = [
     active: false,
     client: 'triangle-solutions',
     slug: 'would-you',
-    title: `Would You`,
+    title: 'Would You',
     type: 'facebook'
   },
 
@@ -54,7 +54,7 @@ export const PORTFOLIO_FACEBOOK = [
     active: false,
     client: 'triangle-solutions',
     slug: 'zingo',
-    title: `Zingo`,
+    title: 'Zingo',
     type: 'facebook'
   }
 

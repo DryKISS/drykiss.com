@@ -37,7 +37,7 @@ export const Google = {
 
 export const HubSpot = {
   id: 6190637,
-  contactFormId: `3a36aae9-8343-45f6-9268-15acd39190fe`
+  contactFormId: '3a36aae9-8343-45f6-9268-15acd39190fe'
 }
 
 export const Mailchimp = {
@@ -48,7 +48,7 @@ export const Mailchimp = {
 }
 
 export const Pinterest = {
-  verify: `18cdcea1be80cd72ded2e50bb5d21050`
+  verify: '18cdcea1be80cd72ded2e50bb5d21050'
 }
 
 export const Config = {

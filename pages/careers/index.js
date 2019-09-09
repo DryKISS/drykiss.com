@@ -9,14 +9,7 @@
 import { Page } from 'layout/page'
 
 // UI
-import {
-  Card,
-  CardBody,
-  Column,
-  Container,
-  PageHeading,
-  Row
-} from 'industry-ui'
+import { Card, CardBody, Column, Heading, Row } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -30,48 +23,42 @@ export default () => {
   }
 
   return (
-    <Page meta={meta}>
-      <Container>
+    <Page heading='Careers' meta={meta}>
+      <p>
+        At DryKISS, we thrive on being the best; we love to continually learn,
+        use the latest technologies and prototype everything. Our main goal
+        though is to keep our clients and their customers happy. We do this by
+        crafting top notch Accessible and SEO friendly sites. Quality is
+        essential around everything we do.
+      </p>
 
-        <PageHeading heading='Careers' />
+      <p>
+        We are looking to expand what we do to Valencia, a city we have fallen
+        in love with. We believe it promotes the work life balance that is so
+        essential these days. We can work hard and sleep easy. If you are
+        passionate about quality, entrepreneurial at heart and have a passion
+        for what you do then please get in touch.
+      </p>
 
-        <p>
-          At DryKISS, we thrive on being the best; we love to continually learn,
-          use the latest technologies and prototype everything. Our main goal
-          though is to keep our clients and their customers happy. We do this by
-          crafting top notch Accessible and SEO friendly sites. Quality is
-          essential around everything we do.
-        </p>
+      <Heading content='Current job openings' tag='h2' />
 
-        <p>
-          We are looking to expand what we do to Valencia, a city we have fallen
-          in love with. We believe it promotes the work life balance that is so
-          essential these days. We can work hard and sleep easy. If you are
-          passionate about quality, entrepreneurial at heart and have a passion
-          for what you do then please get in touch.
-        </p>
+      <Row>
+        <Column lg={3}>
 
-        <PageHeading heading='Current job openings' />
+          <Card
+            alt='React job opening'
+            bordered
+            image='/static/careers/react.svg'
+            shadow
+            to='/careers/react'
+          >
+            <CardBody>
+              Senior React Developer: Valencia
+            </CardBody>
+          </Card>
 
-        <Row>
-          <Column lg={3}>
-
-            <Card
-              alt='React job opening'
-              bordered
-              image='/static/careers/react.svg'
-              shadow
-              to='/careers/react'
-            >
-              <CardBody>
-                Senior React Developer: Valencia
-              </CardBody>
-            </Card>
-
-          </Column>
-        </Row>
-
-      </Container>
+        </Column>
+      </Row>
     </Page>
   )
 }

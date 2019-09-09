@@ -8,13 +8,11 @@ import { Page } from 'layout/page'
 // UI
 import {
   Column,
-  Container,
   Divider,
   Heading,
   Image,
   Link,
   List,
-  PageHeading,
   Row
 } from 'industry-ui'
 
@@ -29,96 +27,90 @@ export default () => {
   }
 
   return (
-    <Page meta={meta}>
+    <Page heading='Guinness® Arthurs Day' meta={meta}>
 
-      <Container>
+      <Row>
+        <Column md={12}>
+          <Image alt='Arthurs Day' src='/static/portfolio/tribal-ddb/guinness-arthurs-day/hero.png' />
+        </Column>
+      </Row>
 
-        <PageHeading heading='Guinness® Arthurs Day' />
+      <Divider size='lg' />
 
-        <Row>
-          <Column md={12}>
-            <Image alt='Arthurs Day' src='/static/portfolio/tribal-ddb/guinness-arthurs-day/hero.png' />
-          </Column>
-        </Row>
+      <Row>
 
-        <Divider size='lg' />
+        <Column md={3}>
 
-        <Row>
+          <Heading content='What we did' tag='h2' />
 
-          <Column md={3}>
+          <Heading content='Links' tag='h3' />
 
-            <Heading content='What we did' tag='h2' />
+          <Link to='https://en.wikipedia.org/wiki/Arthur%27s_Day'>
+            <a target='_blank'>Arthur's Day</a>
+          </Link>
 
-            <Heading content='Links' tag='h3' />
+          <Link to='https://www.youtube.com/watch?v=nJA4AifqbsM&feature=youtu.be'>
+            <a target='_blank'>Arthur's Day Video</a>
+          </Link>
+          <p />
 
-            <Link to='https://en.wikipedia.org/wiki/Arthur%27s_Day'>
-              <a target='_blank'>Arthur's Day</a>
-            </Link>
+          {/* https://www.irishpubsglobal.com/guinness-unveils-2011-arthurs-day-line-up/ */}
+          {/* https://www.youtube.com/watch?v=OKEQ_NuRl2c */}
 
-            <Link to='https://www.youtube.com/watch?v=nJA4AifqbsM&feature=youtu.be'>
-              <a target='_blank'>Arthur's Day Video</a>
-            </Link>
-            <p />
+          <Heading content='Tasks' tag='h3' />
 
-            {/* https://www.irishpubsglobal.com/guinness-unveils-2011-arthurs-day-line-up/ */}
-            {/* https://www.youtube.com/watch?v=OKEQ_NuRl2c */}
+          <List>
+            <span>Developed PHP and Javascript page tab.</span>
+            <span>Custom slider because Facebook JS was very limited</span>
+            <span>Deployed onto Facebook page</span>
+            <span>Social and Viral actions added</span>
+            <span>Videos and Images optimised for speed of delivery</span>
+          </List>
 
-            <Heading content='Tasks' tag='h3' />
+          <Heading content='Project Duration' tag='h3' />
 
-            <List>
-              <span>Developed PHP and Javascript page tab.</span>
-              <span>Custom slider because Facebook JS was very limited</span>
-              <span>Deployed onto Facebook page</span>
-              <span>Social and Viral actions added</span>
-              <span>Videos and Images optimised for speed of delivery</span>
-            </List>
+          <List>
+            <span>1 month development</span>
+          </List>
 
-            <Heading content='Project Duration' tag='h3' />
+          <Heading content='Outcome' tag='h3' />
 
-            <List>
-              <span>1 month development</span>
-            </List>
+          <List>
+            <span>Successfully delivered ontime</span>
+            <span>Marketed to thousands of Guinness and Diageo fans</span>
+          </List>
 
-            <Heading content='Outcome' tag='h3' />
+          <Heading content='Team' tag='h3' />
 
-            <List>
-              <span>Successfully delivered ontime</span>
-              <span>Marketed to thousands of Guinness and Diageo fans</span>
-            </List>
+          <List>
+            <span>Ian Warner - Developer</span>
+            <span>James Mulligan - PM</span>
+          </List>
 
-            <Heading content='Team' tag='h3' />
+        </Column>
 
-            <List>
-              <span>Ian Warner - Developer</span>
-              <span>James Mulligan - PM</span>
-            </List>
+        <Column md={9}>
 
-          </Column>
+          <Heading content='Description' tag='h2' />
 
-          <Column md={9}>
-
-            <Heading content='Description' tag='h2' />
-
-            <p>
+          <p>
               Arthurs Day was an annual celebration at Guinness to celebrate the
               birthday of it's founder Arthur Guinness.
-            </p>
+          </p>
 
-            <p>
+          <p>
               DryKISS through TribalDDB created the Facebook page application to
               market the musical event.
-            </p>
+          </p>
 
-            <p>
+          <p>
               It contained band profiles with videos and imagery, the page was
               then marketed globally to all Guinness fans.
-            </p>
+          </p>
 
-          </Column>
+        </Column>
 
-        </Row>
-
-      </Container>
+      </Row>
     </Page>
   )
 }

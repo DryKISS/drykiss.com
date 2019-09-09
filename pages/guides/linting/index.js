@@ -6,12 +6,7 @@
 import { Page } from 'layout/page'
 
 // UI
-import {
-  Column,
-  Container,
-  Blockquote,
-  Row
-} from 'industry-ui'
+import { Column, Row } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -24,26 +19,20 @@ export default () => {
   }
 
   return (
-    <Page meta={meta}>
+    <Page heading='JavaScript Linting' meta={meta}>
 
-      <Container>
+      <Row>
 
-        <Blockquote text='JavaScript Linting' />
+        <Column lg={3}>
 
-        <Row>
+          <p>
+            JavaScript Linting is cruical for the consistency of the code
+            written by the development team.
+          </p>
 
-          <Column lg={3}>
+        </Column>
 
-            <p>
-              JavaScript Linting is cruical for the consistency of the code
-              written by the development team.
-            </p>
-
-          </Column>
-
-        </Row>
-
-      </Container>
+      </Row>
 
     </Page>
   )

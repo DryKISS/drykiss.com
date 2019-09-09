@@ -1,12 +1,14 @@
 /**
  * SEO
+ *
+ * @see https://docs.google.com/document/d/1fPTQxf5X0ivBGo-gFD35yaOnp0t5DFNSJNCtP73Z__8/edit#
  */
 
 // Layout
 import { Page } from 'layout/page'
 
 // UI
-import { Container, PageHeading } from 'industry-ui'
+import { Hero } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -21,9 +23,17 @@ export default () => {
 
   return (
     <Page meta={meta}>
-      <Container>
-        <PageHeading heading='SEO' />
-      </Container>
+
+      <Hero
+        background='/static/sections/kiss.jpg'
+        strapline={`
+          London web and mobile development. Crafting modern digital mobile and
+          web solutions; using state of the art technologies; within
+          disciplined processes. Don't Repeat Yourself  Keep it simple, stupid
+        `}
+        title='SEO'
+      />
+
     </Page>
   )
 }

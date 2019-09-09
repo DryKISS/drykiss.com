@@ -6,14 +6,7 @@
 import { Page } from 'layout/page'
 
 // UI
-import {
-  Card,
-  Column,
-  Container,
-  Image,
-  PageHeading,
-  Row
-} from 'industry-ui'
+import { Card, Column, Image, Row } from 'industry-ui'
 
 // Data
 import { PORTFOLIO_FACEBOOK } from 'data'
@@ -55,16 +48,10 @@ export default () => {
   }
 
   return (
-    <Page meta={meta}>
-      <Container>
-
-        <PageHeading heading='Our Work' />
-
-        <Row>
-          {renderPortfolio()}
-        </Row>
-
-      </Container>
+    <Page heading='Our Work' meta={meta}>
+      <Row>
+        {renderPortfolio()}
+      </Row>
     </Page>
   )
 }
