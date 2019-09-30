@@ -8,7 +8,7 @@
     "build": "next build",
     "export": "next export",
     "package": "yarn run build && yarn run export",
-    "postexport": "yarn run babel-node --ignore=node_modules ./scripts/postExport.js",
+    "postexport": "node ./scripts/postExport.js",
     "production": "push-dir --dir=out --remote=git@github.com:DryKISS/drykiss.com.git --branch=gh-pages",
     "clean-cache": "rimraf -rf ./node_modules/.cache",
     "serve": "serve out"
@@ -46,8 +46,6 @@
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/node": "^7.6.1",
     "@zeit/next-css": "^1.0.1",
     "babel-eslint": "^10.0.3",
     "babel-plugin-module-resolver": "^3.2.0",

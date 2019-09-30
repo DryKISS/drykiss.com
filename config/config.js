@@ -1,6 +1,10 @@
 /**
  * Config
  */
+
+const Canonical = require('./canonical')
+export { Canonical }
+
 export const Blog = {
   path: '/blog'
 }
@@ -9,8 +13,6 @@ export const Brand = {
   logo: '/static/logo/drykiss.svg',
   name: 'DryKISS Ltd'
 }
-
-export const Canonical = 'https://drykiss.com'
 
 export const Facebook = {
   appId: 285418984933747,

@@ -3,11 +3,9 @@
  */
 
 // Import
-import fs from 'fs-extra'
-
-// Data
-import { Canonical } from '../config'
-import getPages from '../config/pages'
+const fs = require('fs-extra')
+const Canonical = require('../config/canonical')
+const getPages = require('../config/pages')
 
 function formatDateStandard (date) {
   var d = new Date(date)
