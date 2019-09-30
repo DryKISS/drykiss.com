@@ -4,11 +4,8 @@
  * @see https://docs.google.com/document/d/1fPTQxf5X0ivBGo-gFD35yaOnp0t5DFNSJNCtP73Z__8/edit#
  */
 
-// Layout
-import { Page } from 'layout/page'
-
 // UI
-import { Hero } from 'industry-ui'
+import { Hero, Page } from 'industry-ui'
 
 export default () => {
   const meta = {

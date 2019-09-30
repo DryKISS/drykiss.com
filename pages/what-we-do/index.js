@@ -2,16 +2,14 @@
  * What We do
  */
 
-// Layout
-import { Page } from 'layout/page'
-
 // UI
 import {
   Button,
   Card,
   CardFooter,
   CardDecks,
-  Link
+  Link,
+  Page
 } from 'industry-ui'
 
 // Data

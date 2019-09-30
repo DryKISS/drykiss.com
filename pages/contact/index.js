@@ -5,8 +5,8 @@
 // React
 import { useEffect } from 'react'
 
-// Layout
-import { Page } from 'layout/page'
+// UI
+import { Page } from 'industry-ui'
 
 // Config
 import { HubSpot } from 'config'

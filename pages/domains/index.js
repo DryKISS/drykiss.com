@@ -3,11 +3,8 @@
  * Lists domains owned by DryKISS and shortlinks to various management tools.
  */
 
-// Layout
-import { Page } from 'layout/page'
-
 // UI
-import { Link, Table } from 'industry-ui'
+import { Link, Page, Table } from 'industry-ui'
 
 // Data
 import { Domains as Data } from 'data'

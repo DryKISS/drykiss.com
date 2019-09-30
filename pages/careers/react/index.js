@@ -5,11 +5,8 @@
  * @see https://www.tecnoempleo.com/senior-frontend-development-engineer-valencia/react-javascript-git/rf-4bd6xc71aqa64f62849c
  */
 
-// Layout
-import { Page } from 'layout/page'
-
 // UI
-import { Heading, List } from 'industry-ui'
+import { Heading, List, Page } from 'industry-ui'
 
 export default () => {
   const meta = {

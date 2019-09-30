@@ -15,9 +15,6 @@ import find from 'lodash/find'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
-// Layout
-import { Page } from 'layout/page'
-
 // Config
 import { Blog, Facebook } from 'config'
 
@@ -27,6 +24,7 @@ import {
   BlogSidebar,
   Column,
   Container,
+  Page,
   Row
 } from 'industry-ui'
 

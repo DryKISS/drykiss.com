@@ -4,17 +4,18 @@
  * @see https://www.figma.com/file/Wpd0TYwwu2njqurECo5qOHAH/Landing-Pages?node-id=1%3A2
  */
 
-// Layout
-import { Page } from 'layout/page'
-
 // UI
 import {
   Column,
   Blockquote,
   Heading,
   Hero,
+  Page,
   Row
 } from 'industry-ui'
+
+// Config
+import { Brand } from 'config'
 
 // Style
 import styled from 'styled-components'
@@ -31,8 +32,7 @@ export default () => {
   }
 
   return (
-    <Page meta={meta}>
-
+    <Page brand={Brand} meta={meta}>
       <StyledHero
         background='/static/sections/kiss.jpg'
         strapline={`
@@ -97,19 +97,16 @@ export default () => {
         </Column>
 
         <Column md={3}>
-
           <p>
             <strong>CRAFT:</strong> Our crafting is all about rapid feature
             completion. We want the user to test a story as quickly as
             possible.
           </p>
-
           <p>
             Building from a pattern library, is what we call Atomic
             Development. CodeBlender accelerates this process with
             pre-defined common patterns that can be styled and deployed.
           </p>
-
         </Column>
 
       </Row>

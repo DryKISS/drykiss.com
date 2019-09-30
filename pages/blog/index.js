@@ -3,9 +3,6 @@
  * Imports the list of articles to build the Blog home page
  */
 
-// Layout
-import { Page } from 'layout/page'
-
 // Config
 import { Blog, Facebook } from 'config'
 
@@ -15,6 +12,7 @@ import {
   BlogHero,
   BlogSidebar,
   Column,
+  Page,
   Row
 } from 'industry-ui'
 

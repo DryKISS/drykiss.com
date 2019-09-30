@@ -2,11 +2,8 @@
  * Guides - Linting
  */
 
-// Layout
-import { Page } from 'layout/page'
-
 // UI
-import { Column, Row } from 'industry-ui'
+import { Column, Page, Row } from 'industry-ui'
 
 export default () => {
   const meta = {

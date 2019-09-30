@@ -30,7 +30,7 @@ module.exports = () => {
     }, {}
   )
 
-  return Object.assign({}, {
+  return Object.assign({
     ...articles
   }, {
 

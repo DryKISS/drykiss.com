@@ -4,9 +4,6 @@
  * @todo Add when
  */
 
-// Layout
-import { Page } from 'layout/page'
-
 // UI
 import {
   Column,
@@ -15,6 +12,7 @@ import {
   Image,
   Link,
   List,
+  Page,
   Row
 } from 'industry-ui'
 

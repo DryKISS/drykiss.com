@@ -2,11 +2,8 @@
  * Responsive
  */
 
-// Layout
-import { Page } from 'layout/page'
-
 // UI
-import { Container, PageHeading } from 'industry-ui'
+import { Page } from 'industry-ui'
 
 export default () => {
   const meta = {

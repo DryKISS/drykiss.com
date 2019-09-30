@@ -9,8 +9,8 @@ import { node } from 'prop-types'
 import { Bootstrap } from 'industry-ui'
 
 // Data
-import { Brand } from 'config'
-import { Copyright, Footer, Navigation } from 'data'
+import { Brand, Navigation } from 'config'
+import { Copyright, Footer } from 'data'
 
 const Layout = ({ children }) => {
   return (
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
       children={children}
       copyright={Copyright}
       footer={Footer}
-      navigation={Navigation}
+      Navigation={Navigation}
     />
   )
 }

@@ -6,9 +6,6 @@
  * - 10 to a page
  */
 
-// Layout
-import { Page } from 'layout/page'
-
 // Config
 import { Blog, Facebook } from 'config'
 
@@ -19,6 +16,7 @@ import {
   BlogSidebar,
   Column,
   Container,
+  Page,
   PageHeading,
   Row
 } from 'industry-ui'

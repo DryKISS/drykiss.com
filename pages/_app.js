@@ -8,6 +8,9 @@ import Router from 'next/router'
 // UI
 import { GoogleAnalyticsPageView, HubSpot, MyApp } from 'industry-ui'
 
+// Layout
+import Layout from 'layout'
+
 // Config
 import { Google } from 'config'
 
@@ -25,4 +28,4 @@ Router.events.on('routeChangeComplete', url => {
 })
 
 export default (props) =>
-  <MyApp {...props} />
+  <MyApp Layout={Layout} {...props} />

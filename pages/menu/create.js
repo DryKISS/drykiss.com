@@ -2,14 +2,12 @@
  * Menu - Create
  */
 
-// Layout
-import { Page } from 'layout/page'
-
 // UI
 import {
   Column,
   Blockquote,
   Heading,
+  Page,
   Row
 } from 'industry-ui'
 

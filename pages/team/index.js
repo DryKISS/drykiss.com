@@ -2,11 +2,8 @@
  * Team
  */
 
-// Layout
-import { Page } from 'layout/page'
-
 // UI
-import { Card, CardBody, Column, Row } from 'industry-ui'
+import { Card, CardBody, Column, Page, Row } from 'industry-ui'
 
 export default () => {
   const meta = {

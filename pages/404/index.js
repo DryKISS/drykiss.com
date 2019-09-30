@@ -3,7 +3,7 @@
  */
 
 // Layout
-import { Page } from 'layout/page'
+import { Page } from 'industry-ui'
 
 export default () => {
   const meta = {

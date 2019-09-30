@@ -5,11 +5,8 @@
  * @see https://www.malt.es/
  */
 
-// Layout
-import { Page } from 'layout/page'
-
 // UI
-import { Card, CardBody, Column, Heading, Row } from 'industry-ui'
+import { Card, CardBody, Column, Heading, Page, Row } from 'industry-ui'
 
 export default () => {
   const meta = {

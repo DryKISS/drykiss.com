@@ -4,11 +4,8 @@
  * @todo Create a code highlight segment
  */
 
-// Layout
-import { Page } from 'layout/page'
-
 // UI
-import { Heading } from 'industry-ui'
+import { Heading, Page } from 'industry-ui'
 
 export default () => {
   const meta = {

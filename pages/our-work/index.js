@@ -2,11 +2,8 @@
  * Our Work
  */
 
-// Layout
-import { Page } from 'layout/page'
-
 // UI
-import { Card, Column, Image, Row } from 'industry-ui'
+import { Card, Column, Image, Page, Row } from 'industry-ui'
 
 // Data
 import { PORTFOLIO_FACEBOOK } from 'data'

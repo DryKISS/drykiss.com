@@ -2,15 +2,13 @@
  * Menu
  */
 
-// Layout
-import { Page } from 'layout/page'
-
 // UI
 import {
   Column,
   Blockquote,
   Heading,
   Hero,
+  Page,
   Row
 } from 'industry-ui'
 
