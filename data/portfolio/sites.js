@@ -2,21 +2,18 @@
  * Portfolio - Sites
  */
 export const PORTFOLIO_SITES = [
-
   {
     client: 'Alpha Founders',
     slug: 'askhanuman',
     title: 'Ask Hanuman',
     type: 'site'
   },
-
   {
     client: 'Beep Taxt',
     slug: 'beep-services',
     title: 'Beep Services',
     type: 'site'
   },
-
   {
     client: 'Beep Taxi',
     slug: 'beep-taxi',
@@ -101,5 +98,4 @@ export const PORTFOLIO_SITES = [
     title: 'Yofone',
     type: 'site'
   }
-
 ]

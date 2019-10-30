@@ -42,7 +42,6 @@ export default class MyDocument extends Document {
   render () {
     return (
       <html className='no-js' lang='en' dir='ltr' prefix='og: http://ogp.me/ns#'>
-
         <Head>
           <meta name='viewport' content='width=device-width, initial-scale=1' key='viewport' />
           <meta charSet='UTF-8' key='charset' />
@@ -52,7 +51,10 @@ export default class MyDocument extends Document {
           <meta name='author' content='DryKISS' key='author' />
 
           <meta property='og:type' content='website' />
-          <meta property='og:image' content='https://drykiss.com/static/social/drykiss-facebook.png' />
+          <meta
+            property='og:image'
+            content='https://drykiss.com/static/social/drykiss-facebook.png'
+          />
           <meta property='og:site_name' content='DryKISS' />
           <meta property='og:locale' content='en_GB' />
           <meta property='og:image:width' content='1200' />
@@ -62,31 +64,43 @@ export default class MyDocument extends Document {
           <meta name='twitter:card' content='summary_large_image' />
           <meta name='twitter:creator' content='@drykiss' />
           <meta name='twitter:site' content='@drykiss' />
-          <meta name='twitter:image' content='https://drykiss.com/static/social/drykiss-facebook.png' />
+          <meta
+            name='twitter:image'
+            content='https://drykiss.com/static/social/drykiss-facebook.png'
+          />
           <meta name='twitter:image:alt' content='DryKISS logo and strapline' />
 
-          <link rel='apple-touch-icon' sizes='180x180' href='/static/favicon/apple-touch-icon.png' />
+          <link
+            rel='apple-touch-icon'
+            sizes='180x180'
+            href='/static/favicon/apple-touch-icon.png'
+          />
           <link rel='icon' type='image/png' sizes='32x32' href='/static/favicon/favicon.png' />
           <link rel='icon' type='image/png' sizes='16x16' href='/static/favicon/favicon.png' />
 
-          {Pinterest && Pinterest.verify &&
-            <meta name='p:domain_verify' content={Pinterest.verify} />}
+          {Pinterest && Pinterest.verify && (
+            <meta name='p:domain_verify' content={Pinterest.verify} />
+          )}
 
-          {HubSpot && HubSpot.id &&
+          {HubSpot && HubSpot.id && (
             <script
               async
               defer
               id='hs-script-loader'
               src={`https://js.hs-scripts.com/${HubSpot.id}.js`}
               type='text/javascript'
-            />}
+            />
+          )}
 
-          {Google && Google.apiKey &&
+          {Google && Google.apiKey && (
             <script
-              src={`https://maps.googleapis.com/maps/api/js?key=${Google.apiKey}&amp;libraries=places`}
-            />}
+              src={`https://maps.googleapis.com/maps/api/js?key=${
+                Google.apiKey
+              }&amp;libraries=places`}
+            />
+          )}
 
-          {Google && Google.analytics &&
+          {Google && Google.analytics && (
             <>
               <script
                 async
@@ -103,14 +117,14 @@ export default class MyDocument extends Document {
                   `
                 }}
               />
-            </>}
+            </>
+          )}
         </Head>
 
         <body>
           <Main />
           <NextScript />
         </body>
-
       </html>
     )
   }

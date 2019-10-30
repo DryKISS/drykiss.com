@@ -5,16 +5,7 @@
  */
 
 // UI
-import {
-  Column,
-  Divider,
-  Heading,
-  Image,
-  Link,
-  List,
-  Page,
-  Row
-} from 'industry-ui'
+import { Column, Divider, Heading, Image, Link, List, Page, Row } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -29,19 +20,19 @@ export default () => {
 
   return (
     <Page heading='Brazil Soccer Name Generator' meta={meta}>
-
       <Row>
         <Column md={12}>
-          <Image alt='Brazil Soccer Name' src='/static/portfolio/triangle-solutions/brazil-soccer-name-generator/hero.png' />
+          <Image
+            alt='Brazil Soccer Name'
+            src='/static/portfolio/triangle-solutions/brazil-soccer-name-generator/hero.png'
+          />
         </Column>
       </Row>
 
       <Divider size='lg' />
 
       <Row>
-
         <Column md={3}>
-
           <Heading content='What we did' tag='h2' />
 
           <Heading content='Links' tag='h3' />
@@ -79,26 +70,21 @@ export default () => {
           <List>
             <span>Ian Warner - Developer</span>
           </List>
-
         </Column>
 
         <Column md={9}>
-
           <Heading content='Description' tag='h2' />
 
           <p>
-              Brazil Soccer Name was a small fun Facebook application created in
-              a very short time to really amplify the conversions we wanted on
-              Love Football.
+            Brazil Soccer Name was a small fun Facebook application created in a very short time to
+            really amplify the conversions we wanted on Love Football.
           </p>
 
           <p>
-              It was very successful with tens of thousands of downloads, and many
-              thousands of social interactions such as shares and likes.
+            It was very successful with tens of thousands of downloads, and many thousands of social
+            interactions such as shares and likes.
           </p>
-
         </Column>
-
       </Row>
     </Page>
   )

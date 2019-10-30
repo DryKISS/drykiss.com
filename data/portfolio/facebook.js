@@ -17,15 +17,13 @@ export const PORTFOLIO_FACEBOOK = [
     title: 'Brazil Soccer Name Generator',
     type: 'facebook'
   },
-
   {
     active: true,
     client: 'tribal-ddb',
     slug: 'guinness-arthurs-day',
-    title: 'Guiness Arthur\'s Day',
+    title: "Guiness Arthur's Day",
     type: 'facebook'
   },
-
   {
     active: false,
     client: 'triangle-solutions',
@@ -33,7 +31,6 @@ export const PORTFOLIO_FACEBOOK = [
     title: 'Love Football',
     type: 'facebook'
   },
-
   {
     active: true,
     client: 'digital-outlook',
@@ -41,7 +38,6 @@ export const PORTFOLIO_FACEBOOK = [
     title: 'Prince of Persia',
     type: 'facebook'
   },
-
   {
     active: false,
     client: 'triangle-solutions',
@@ -49,7 +45,6 @@ export const PORTFOLIO_FACEBOOK = [
     title: 'Would You',
     type: 'facebook'
   },
-
   {
     active: false,
     client: 'triangle-solutions',
@@ -57,5 +52,4 @@ export const PORTFOLIO_FACEBOOK = [
     title: 'Zingo',
     type: 'facebook'
   }
-
 ]

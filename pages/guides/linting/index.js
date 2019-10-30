@@ -17,20 +17,14 @@ export default () => {
 
   return (
     <Page heading='JavaScript Linting' meta={meta}>
-
       <Row>
-
         <Column lg={3}>
-
           <p>
-            JavaScript Linting is cruical for the consistency of the code
-            written by the development team.
+            JavaScript Linting is cruical for the consistency of the code written by the development
+            team.
           </p>
-
         </Column>
-
       </Row>
-
     </Page>
   )
 }

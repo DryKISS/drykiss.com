@@ -20,7 +20,6 @@ export default () => {
 
   return (
     <Page meta={meta}>
-
       <Hero
         background='/static/sections/kiss.jpg'
         strapline={`
@@ -30,7 +29,6 @@ export default () => {
         `}
         title='SEO'
       />
-
     </Page>
   )
 }

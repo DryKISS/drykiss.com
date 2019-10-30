@@ -3,16 +3,7 @@
  */
 
 // UI
-import {
-  Column,
-  Divider,
-  Heading,
-  Image,
-  Link,
-  List,
-  Page,
-  Row
-} from 'industry-ui'
+import { Column, Divider, Heading, Image, Link, List, Page, Row } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -26,19 +17,19 @@ export default () => {
 
   return (
     <Page heading='Walt Disney® Prince of Persia' meta={meta}>
-
       <Row>
         <Column md={12}>
-          <Image alt='Prince of Persia' src='/static/portfolio/digital-outlook/walt-disney-prince-of-persia/hero.png' />
+          <Image
+            alt='Prince of Persia'
+            src='/static/portfolio/digital-outlook/walt-disney-prince-of-persia/hero.png'
+          />
         </Column>
       </Row>
 
       <Divider size='lg' />
 
       <Row>
-
         <Column md={3}>
-
           <Heading content='What we did' tag='h2' />
 
           <Heading content='Links' tag='h3' />
@@ -82,39 +73,33 @@ export default () => {
             <span>Mikael Gotlib - PM</span>
             <span>Threeya Thirunathan - PM</span>
           </List>
-
         </Column>
 
         <Column md={9}>
-
           <Heading content='Description' tag='h2' />
 
           <p>
-              Prince of Persia: The Sand of Time, is a blockbuster movie starring
-              Jake Gyllenhaal. Disney wanted to use Facebook to market the film
-              in various locations. UK, Italy, Germany etc.
+            Prince of Persia: The Sand of Time, is a blockbuster movie starring Jake Gyllenhaal.
+            Disney wanted to use Facebook to market the film in various locations. UK, Italy,
+            Germany etc.
           </p>
 
           <p>
-              It was decided to create a page for each country so the content
-              could be internationalied and localised for each.
+            It was decided to create a page for each country so the content could be
+            internationalied and localised for each.
           </p>
 
           <p>
-              This proved exceptionally problematic in terms of getting sign off
-              for each change required from one country to another, but we managed
-              to deliver all pages on time.
+            This proved exceptionally problematic in terms of getting sign off for each change
+            required from one country to another, but we managed to deliver all pages on time.
           </p>
 
           <p>
-              Facebook at this time also had issues in terms of testing whole
-              pages. So extra effort was needed to set this all up.
+            Facebook at this time also had issues in terms of testing whole pages. So extra effort
+            was needed to set this all up.
           </p>
-
         </Column>
-
       </Row>
-
     </Page>
   )
 }

@@ -20,7 +20,6 @@ export default () => {
     <Page heading='Team' meta={meta}>
       <Row>
         <Column lg={3}>
-
           <Card
             alt='Ian Warner'
             bordered
@@ -28,11 +27,8 @@ export default () => {
             shadow
             to='https://availabletowork.com/freelancer/ian-warner'
           >
-            <CardBody>
-              Ian Warner
-            </CardBody>
+            <CardBody>Ian Warner</CardBody>
           </Card>
-
         </Column>
       </Row>
     </Page>

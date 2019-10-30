@@ -3,16 +3,7 @@
  */
 
 // UI
-import {
-  Column,
-  Divider,
-  Heading,
-  Image,
-  Link,
-  List,
-  Page,
-  Row
-} from 'industry-ui'
+import { Column, Divider, Heading, Image, Link, List, Page, Row } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -26,19 +17,19 @@ export default () => {
 
   return (
     <Page heading='Guinness® Arthurs Day' meta={meta}>
-
       <Row>
         <Column md={12}>
-          <Image alt='Arthurs Day' src='/static/portfolio/tribal-ddb/guinness-arthurs-day/hero.png' />
+          <Image
+            alt='Arthurs Day'
+            src='/static/portfolio/tribal-ddb/guinness-arthurs-day/hero.png'
+          />
         </Column>
       </Row>
 
       <Divider size='lg' />
 
       <Row>
-
         <Column md={3}>
-
           <Heading content='What we did' tag='h2' />
 
           <Heading content='Links' tag='h3' />
@@ -84,30 +75,26 @@ export default () => {
             <span>Ian Warner - Developer</span>
             <span>James Mulligan - PM</span>
           </List>
-
         </Column>
 
         <Column md={9}>
-
           <Heading content='Description' tag='h2' />
 
           <p>
-              Arthurs Day was an annual celebration at Guinness to celebrate the
-              birthday of it's founder Arthur Guinness.
+            Arthurs Day was an annual celebration at Guinness to celebrate the birthday of it's
+            founder Arthur Guinness.
           </p>
 
           <p>
-              DryKISS through TribalDDB created the Facebook page application to
-              market the musical event.
+            DryKISS through TribalDDB created the Facebook page application to market the musical
+            event.
           </p>
 
           <p>
-              It contained band profiles with videos and imagery, the page was
-              then marketed globally to all Guinness fans.
+            It contained band profiles with videos and imagery, the page was then marketed globally
+            to all Guinness fans.
           </p>
-
         </Column>
-
       </Row>
     </Page>
   )

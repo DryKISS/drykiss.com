@@ -17,11 +17,6 @@ export const Navigation = () => {
         to: '/'
       },
       {
-        id: 'navBlog',
-        name: 'Blog',
-        to: Blog.path
-      },
-      {
         id: 'navWhatWeDo',
         name: 'What We Do',
         to: '/what-we-do'
@@ -30,6 +25,16 @@ export const Navigation = () => {
         id: 'navOurWork',
         name: 'Our Work',
         to: '/our-work'
+      },
+      {
+        id: 'navGuides',
+        name: 'Guides',
+        to: '/guides'
+      },
+      {
+        id: 'navBlog',
+        name: 'Blog',
+        to: Blog.path
       },
       {
         id: 'navCareer',
@@ -44,7 +49,5 @@ export const Navigation = () => {
     ]
   }
 
-  return (
-    <Navbar brand={Brand.logo} links={Default} />
-  )
+  return <Navbar brand={Brand.logo} links={Default} />
 }

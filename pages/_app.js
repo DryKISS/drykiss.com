@@ -14,6 +14,47 @@ import Layout from 'layout'
 // Config
 import { Google } from 'config'
 
+// Font awesome
+import {
+  faBars,
+  faBlog,
+  faCalendarAlt,
+  faExternalLink,
+  faFileUser,
+  faHomeHeart,
+  faStopwatch,
+  faTimes,
+  faUser
+} from '@fortawesome/pro-regular-svg-icons'
+
+import {
+  faFacebookSquare,
+  faGithub,
+  faLinkedin,
+  faPinterestSquare,
+  faTwitterSquare
+} from '@fortawesome/free-brands-svg-icons'
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+library.add(
+  faBars,
+  faBlog,
+  faCalendarAlt,
+  faExternalLink,
+  faFileUser,
+  faHomeHeart,
+  faStopwatch,
+  faTimes,
+  faUser,
+
+  faFacebookSquare,
+  faGithub,
+  faLinkedin,
+  faPinterestSquare,
+  faTwitterSquare
+)
+
 // Track pageViews
 Router.events.on('routeChangeComplete', url => {
   if (Google && Google.analytics) {
@@ -21,11 +62,10 @@ Router.events.on('routeChangeComplete', url => {
   }
 
   if (HubSpot && HubSpot.id) {
-    const _hsq = window._hsq = window._hsq || []
+    const _hsq = (window._hsq = window._hsq || [])
     _hsq.push(['setPath', url])
     _hsq.push(['trackPageView'])
   }
 })
 
-export default (props) =>
-  <MyApp Layout={Layout} {...props} />
+export default props => <MyApp Layout={Layout} {...props} />

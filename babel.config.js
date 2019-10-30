@@ -1,13 +1,12 @@
 module.exports = function (api) {
   api.cache(true)
 
-  const presets = [
-    'next/babel'
-  ]
+  const presets = ['next/babel']
 
   const plugins = [
     [
-      'styled-components', {
+      'styled-components',
+      {
         displayName: true,
         ssr: true
       }
@@ -17,6 +16,7 @@ module.exports = function (api) {
       {
         root: ['./'],
         alias: {
+          api: './api',
           config: './config',
           data: './data',
           layout: './layouts'

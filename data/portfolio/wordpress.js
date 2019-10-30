@@ -8,12 +8,10 @@ export const PORTFOLIO_WORDPRESS = [
     title: 'Blackberry Youth Challenge',
     type: 'wordpress'
   },
-
   {
     client: 'deliveroo',
     slug: 'deliveroo-rebrand',
     title: 'Deliveroo Rebrand',
     type: 'wordpress'
   }
-
 ]

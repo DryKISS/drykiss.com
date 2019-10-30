@@ -2,10 +2,8 @@
  * Footer
  */
 export const Footer = [
-
   {
     size: { sm: 6, md: 3 },
-
     header: 'About',
     text: `
       <p>
@@ -26,7 +24,6 @@ export const Footer = [
       }
     ]
   },
-
   {
     size: { sm: 6, md: 3 },
     header: 'What We Do',
@@ -42,7 +39,6 @@ export const Footer = [
       </p>
     `
   },
-
   {
     size: { sm: 6, md: 3 },
     header: 'Social',
@@ -67,7 +63,6 @@ export const Footer = [
       We are experts in creating social media apps and pages.
     `
   },
-
   {
     size: { sm: 6, md: 3 },
     header: 'Contact',
@@ -98,5 +93,4 @@ export const Footer = [
       }
     ]
   }
-
 ]

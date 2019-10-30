@@ -10,7 +10,37 @@ import { Link, Page, Table } from 'industry-ui'
 import { Domains as Data } from 'data'
 
 export default () => {
-  const Columns = () => [
+  const AnalyticsLink = ({ row }) => (
+    <Link to={`https://analytics.google.com/analytics/web/#/report-home/${row.analytics}`}>
+      <a target='_blank'>Analytics</a>
+    </Link>
+  )
+
+  const ConsoleLink = ({ row }) => (
+    <Link to={`https://search.google.com/search-console?sc-domain:${row.domain}`}>
+      <a target='_blank'>Console</a>
+    </Link>
+  )
+
+  const DomainLink = ({ row }) => (
+    <Link to={`https://${row.domain}`}>
+      <a target='_blank'>{row.domain}</a>
+    </Link>
+  )
+
+  const ProviderLink = ({ row }) => (
+    <Link to={`https://dash.cloudflare.com/e59b2f1093dd43ce0ac14555d3d04249/${row.domain}`}>
+      <a target='_blank'>{row.registrar}</a>
+    </Link>
+  )
+
+  const WhoisLink = ({ row }) => (
+    <Link to={`https://whois.domaintools.com/${row.domain}`}>
+      <a target='_blank'>Whois</a>
+    </Link>
+  )
+
+  const Columns = [
     {
       formatter: DomainLink,
       text: 'Domain'
@@ -37,31 +67,6 @@ export default () => {
     }
   ]
 
-  const AnalyticsLink = ({ analytics }) =>
-    <Link to={`https://analytics.google.com/analytics/web/#/report-home/${analytics}`}>
-      <a target='_blank'>Analytics</a>
-    </Link>
-
-  const ConsoleLink = ({ domain }) =>
-    <Link to={`https://search.google.com/search-console?sc-domain:${domain}`}>
-      <a target='_blank'>Console</a>
-    </Link>
-
-  const DomainLink = ({ domain }) =>
-    <Link to={`https://${domain}`}>
-      <a target='_blank'>{domain}</a>
-    </Link>
-
-  const ProviderLink = ({ domain, registrar }) =>
-    <Link to={`https://dash.cloudflare.com/e59b2f1093dd43ce0ac14555d3d04249/${domain}`}>
-      <a target='_blank'>{registrar}</a>
-    </Link>
-
-  const WhoisLink = ({ domain }) =>
-    <Link to={`https://whois.domaintools.com/${domain}`}>
-      <a target='_blank'>Whois</a>
-    </Link>
-
   const meta = {
     description: `
       DryKISS is a full service internet and mobile digital production house.
@@ -74,10 +79,7 @@ export default () => {
 
   return (
     <Page heading='Domains' meta={meta}>
-      <Table
-        columns={Columns()}
-        rows={Data}
-      />
+      <Table columns={Columns} rows={Data} />
     </Page>
   )
 }

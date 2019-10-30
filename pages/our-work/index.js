@@ -24,10 +24,7 @@ export default () => {
                 }
               }}
             >
-              <Image
-                alt={title}
-                src={`/static/portfolio/${client}/${slug}/hero.png`}
-              />
+              <Image alt={title} src={`/static/portfolio/${client}/${slug}/hero.png`} />
             </Card>
           </Column>
         )
@@ -46,9 +43,7 @@ export default () => {
 
   return (
     <Page heading='Our Work' meta={meta}>
-      <Row>
-        {renderPortfolio()}
-      </Row>
+      <Row>{renderPortfolio()}</Row>
     </Page>
   )
 }

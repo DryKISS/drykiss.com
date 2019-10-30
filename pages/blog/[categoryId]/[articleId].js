@@ -19,17 +19,10 @@ import { useRouter } from 'next/router'
 import { Blog, Facebook } from 'config'
 
 // UI
-import {
-  Article,
-  BlogSidebar,
-  Column,
-  Container,
-  Page,
-  Row
-} from 'industry-ui'
+import { Article, BlogSidebar, Column, Page, Row } from 'industry-ui'
 
 // Data
-import articles from 'data/blog'
+import { Articles } from 'data/blog'
 
 export default () => {
   const INITIAL_STATE = {
@@ -54,7 +47,9 @@ export default () => {
         window.FB.XFBML.parse()
       }
 
-      const filtered = find(articles.ARTICLES, (o) => { return o.slug === query.articleId })
+      const filtered = find(Articles, o => {
+        return o.slug === query.articleId
+      })
       setArticle(filtered)
       setIsLoading(false)
     }
@@ -68,9 +63,8 @@ export default () => {
 
   return (
     <>
-      {!isLoading &&
+      {!isLoading && (
         <Page meta={meta}>
-
           <Head>
             <script
               async
@@ -80,26 +74,17 @@ export default () => {
             />
           </Head>
 
-          <Container>
+          <Row>
+            <Column lg={8}>
+              <Article article={article} config={Blog} facebook={Facebook} />
+            </Column>
 
-            <Row>
-
-              <Column lg={8}>
-                <Article article={article} config={Blog} facebook={Facebook} />
-              </Column>
-
-              <Column lg={4}>
-                <BlogSidebar
-                  articles={articles.ARTICLES}
-                  config={Blog}
-                  facebook={Facebook}
-                />
-              </Column>
-
-            </Row>
-          </Container>
+            <Column lg={4}>
+              <BlogSidebar articles={Articles} config={Blog} facebook={Facebook} />
+            </Column>
+          </Row>
         </Page>
-      }
+      )}
     </>
   )
 }
