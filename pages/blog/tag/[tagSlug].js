@@ -10,7 +10,7 @@
 import { Blog, Facebook } from 'config'
 
 // UI
-import { capitalize, BlogListing, BlogSidebar, Column, Page, Row } from 'industry-ui'
+import { BlogListing, BlogSidebar, Column, Page, Row } from 'industry-ui'
 
 // Data
 import { Articles } from 'data/blog'
@@ -24,7 +24,7 @@ export default ({ tag }) => {
 
   return (
     // <Page heading={`Tagged: ${capitalize(tag)}`} meta={meta}></Page>
-    <Page heading={`Tagged`} meta={meta}>
+    <Page heading='Tagged' meta={meta}>
       <Row>
         <Column lg={8}>
           <BlogListing articles={Articles} config={Blog} tag={tag} />

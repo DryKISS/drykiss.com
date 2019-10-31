@@ -13,7 +13,7 @@ import { useRouter } from 'next/router'
 import { Blog, Facebook } from 'config'
 
 // UI
-import { capitalize, BlogListing, BlogSidebar, Column, Page, Row } from 'industry-ui'
+import { BlogListing, BlogSidebar, Column, Page, Row } from 'industry-ui'
 
 // Data
 import { Articles } from 'data/blog'
@@ -33,7 +33,7 @@ export default ({ category }) => {
 
   return (
     // <Page heading={capitalize(query.categorySlug)} meta={meta}></Page>
-    <Page heading={'Category'} meta={meta}>
+    <Page heading='Category' meta={meta}>
       <Row>
         <Column lg={8}>
           <BlogListing articles={Articles} category={category} />
