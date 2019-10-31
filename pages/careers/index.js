@@ -38,7 +38,7 @@ export default () => {
       <Heading content='Current job openings' tag='h2' />
 
       <Row>
-        <Column lg={3}>
+        <Column md={3}>
           <Card
             alt='React job opening'
             bordered
@@ -50,7 +50,19 @@ export default () => {
           </Card>
         </Column>
 
-        <Column lg={3}>
+        <Column md={3}>
+          <Card
+            alt='React job opening'
+            bordered
+            image='/static/careers/react.svg'
+            shadow
+            to='/careers/react-junior'
+          >
+            <CardBody>Junior React Developer</CardBody>
+          </Card>
+        </Column>
+
+        <Column md={3}>
           <Card
             alt='React job opening'
             bordered

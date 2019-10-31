@@ -1,6 +1,6 @@
 /**
  * Careers - React
- * Intern React Position - Valencia
+ * Junior React Position - Valencia
  */
 
 // UI
@@ -8,32 +8,25 @@ import { Button, Heading, List, ListItem, Page } from 'industry-ui'
 
 export default () => {
   const meta = {
-    description: `DryKISS wants a intern react developer to join the growing team in Valencia Spain.
+    description: `DryKISS wants a junior react developer to join the growing team in Valencia Spain.
       This is a full time position with flexible eveything. Click to view the requirements and
       apply.`,
-    path: '/careers/react-intern',
-    title: 'Intern React Developer Required in Valencia Spain'
+    path: '/careers/react-junior',
+    title: 'Junior React Developer Required in Valencia Spain'
   }
 
   return (
-    <Page heading='Careers - Intern React Developer' meta={meta}>
+    <Page heading='Careers - Junior React Developer' meta={meta}>
       <p>
         <b>ONLY Individuals need to Apply Please</b>
         <br />
         <b>
           Our preference would be someone Valencia or Spain based, but will consider Europe time
-          zone
+          zone.
         </b>
       </p>
 
       <Heading content='Description' tag='h2' />
-
-      <p>
-        Are you just starting out in web development but need some working experience? Some
-        mentorship? Keen to learn and grow?
-      </p>
-
-      <p>Improve your coding skills and build something real you can showcase to the world!</p>
 
       <p>
         DryKiss is a startup web development company building MPVs. We are a full-service
@@ -47,10 +40,24 @@ export default () => {
       <Heading content='You are:' tag='h3' />
 
       <List>
+        <ListItem>1 to 2+ experience in Front-end development.</ListItem>
+        <ListItem>Some experience in developing with React.</ListItem>
+        <ListItem>Front-end / services : Node.js/Express.js/MongoDB/Redis</ListItem>
+        <ListItem>Ability to write high-performance, reusable code for UI components.</ListItem>
         <ListItem>
-          0+ experienced or just finishing an extensive coding Bootcamp? We are after keen,
-          communicative, highly curious people who have the theory but not yet the full experience!
+          Experienced in CI including git, aws, docker, Node.js microservice stack etc.
         </ListItem>
+        <ListItem>Experience with MySQL databases.</ListItem>
+        <ListItem>Experience working with AWS.</ListItem>
+        <ListItem>Experience working with and designing RESTful APIs.</ListItem>
+        <ListItem>
+          Confident using Git &amp; Gitlab and working in an Agile (Kanban) workplace.
+        </ListItem>
+        <ListItem>
+          Excited about working with GraphQL and React/ReactNative, MaterialUI and potentially
+          TensorFlow, Highcharts/D3.
+        </ListItem>
+        <ListItem>Fluent with Agile Methodologies (Scrum).</ListItem>
         <ListItem>
           Able to demonstrate the ability to code efficiently, learn quickly and communicate very
           fluidly with the rest of the team.
@@ -59,17 +66,15 @@ export default () => {
           A strategic thinker with operational skills able to guide a project through its full
           lifecycle.
         </ListItem>
-        <ListItem>You care about high quality, performant, and maintainable code.</ListItem>
         <ListItem>
-          You love being able to switch between different projects and jump in anywhere from
-          javascript frontends, node backends, and microservices.
+          Export in all kinds of testing best practices; writing clean and maintainable code. You
+          care about high quality, performant, and maintainable code.
         </ListItem>
         <ListItem>
           Helpful, Humble, Human, not a machine. Understand what people want before they know
           themselves.
         </ListItem>
-        <ListItem>Love for experimentation and constant learning!</ListItem>
-        <ListItem>English speaking as most of our Loom videos are recorded in English!</ListItem>
+        <ListItem>English speaking.</ListItem>
       </List>
 
       <Heading content='You will:' tag='h3' />
@@ -88,21 +93,6 @@ export default () => {
         <ListItem>Collaborate on design and UX.</ListItem>
       </List>
 
-      <Heading content='Offer:' tag='h3' />
-
-      <List>
-        <ListItem>
-          3 month internship remote (Europe time zone). Available between 9.30am - 2.30pm Spain time
-          (we have a 10.30am daily standup).
-        </ListItem>
-        <ListItem>
-          Teamwork follows an Agile methodology - Scrum with short cycles (2 weeks).
-        </ListItem>
-        <ListItem>Gain experience in Front end development.</ListItem>
-        <ListItem>Add awesome experience to your resume.</ListItem>
-        <ListItem>Possibility to grow into a Full-time Junior role with us!</ListItem>
-      </List>
-
       <Heading content='Please apply with:' tag='h3' />
 
       <List>
@@ -112,8 +102,9 @@ export default () => {
             LOOM
           </a>{' '}
           video presenting (with voice) something you have worked on - even if it's as simple as a
-          button design in a school project.
+          button design.
         </ListItem>
+        <ListItem>Day rate in € in your application.</ListItem>
         <ListItem>Most recent projects/designs/code if available.</ListItem>
         <ListItem>Your availability.</ListItem>
         <ListItem>Location (or where you might be located).</ListItem>
@@ -122,7 +113,7 @@ export default () => {
 
       <Button
         as='a'
-        href='https://angel.co/company/drykissltd/jobs/653781-intern-react-developer'
+        href='https://angel.co/company/drykissltd/jobs/653800-junior-react-developer-freelance-contractor'
         content='Apply on Angel List'
         size='lg'
         target='_blank'
