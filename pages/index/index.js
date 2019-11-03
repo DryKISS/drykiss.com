@@ -1,7 +1,5 @@
 /**
  * Home
- *
- * @see https://www.figma.com/file/Wpd0TYwwu2njqurECo5qOHAH/Landing-Pages?node-id=1%3A2
  */
 
 // UI
@@ -15,11 +13,8 @@ import styled from 'styled-components'
 
 export default () => {
   const meta = {
-    description: `
-      DryKISS is a full service internet and mobile digital production house.
-      Our services span consulting, strategy; planning; development; testing
-      and analytics.
-    `,
+    description: `DryKISS is a full service internet and mobile digital production house. Our
+      services span consulting, strategy; planning; development; testing and analytics.`,
     path: '/',
     title: 'DryKISS develops hybrid mobile and responsive websites'
   }
@@ -27,13 +22,9 @@ export default () => {
   return (
     <Page brand={Brand} meta={meta}>
       <StyledHero
-        background='/static/sections/kiss.jpg'
-        strapline={`
-          London web and mobile development. Crafting modern digital mobile and
-          web solutions; using state of the art technologies; within
-          disciplined processes. Don't Repeat Yourself  Keep it simple, stupid
-        `}
-        title='DryKISS'
+        background='/static/hero/background.png'
+        strapline='Talk to us to transform your project idea into a working digital product.'
+        title='WE DO MVPS'
       />
 
       <Blockquote footer='Understand | Architect | Craft' text='Ethos' />
@@ -44,7 +35,6 @@ export default () => {
             Modern applications are not just about a distinctive design or utilising cutting edge
             technologies. They are user centric, analytic based, growth machines.
           </p>
-
           <p>
             At DryKISS we encourage a research based project cycle, to meet these ever changing UX
             needs.
@@ -56,7 +46,6 @@ export default () => {
             <strong>UNDERSTAND:</strong> At DryKISS we want to learn about your user, business and
             the reasons behind embarking on this new project.
           </p>
-
           <p>
             We can create personas, storyboards and initial prototypes to help guide these critical
             early decisions.
@@ -69,7 +58,6 @@ export default () => {
             can include technology reasoning; product backlog; continuous integration plan;
             definition of done and sprint milestones.
           </p>
-
           <p>
             Social integration, SEO and marketing guidance. All through the lens of your deadlines
             and budget.
@@ -97,7 +85,6 @@ export default () => {
       <Row>
         <Column md={4}>
           <Heading content='User Experience' tag='h3' />
-
           <p>
             We help brands create valuable experiences across digital channels by focusing on the
             habits and needs of their audience. Our user experience team will transform the quality
@@ -107,7 +94,6 @@ export default () => {
 
         <Column md={4}>
           <Heading content='Creativity' tag='h3' />
-
           <p>
             Focused creativity is the engine for all we do. Our cross-platform, and specifically
             mobile experience makes our approach always flexible, responsive and dynamic. From
@@ -118,7 +104,6 @@ export default () => {
 
         <Column md={4}>
           <Heading content='Development' tag='h3' />
-
           <p>
             By using the best and latest frameworks we are not re- inventing the wheel, but
             delivering projects based on known processes. This enables us to deliver cutting edge
@@ -133,7 +118,7 @@ export default () => {
 const StyledHero = styled(Hero)`
   h1,
   h2 {
-    background-color: rgba(240, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 5px;
     color: #fff;
     padding: 10px;
