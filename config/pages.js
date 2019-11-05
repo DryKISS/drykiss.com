@@ -38,19 +38,30 @@ module.exports = () => {
       '/404': { page: '/404' },
 
       // About
-
-      // Careers
-      '/careers': { page: '/careers' },
-      '/careers/react': { page: '/careers/react' },
-
-      // Contact
-      '/contact': { page: '/contact' },
+      '/about': { page: '/about' },
 
       // Blog
       '/blog': { page: '/blog' },
 
+      // Careers
+      '/careers': { page: '/careers' },
+      '/careers/react': { page: '/careers/react' },
+      '/careers/react-intern': { page: '/careers/react-intern' },
+      '/careers/react-junior': { page: '/careers/react-junior' },
+
+      // Contact
+      '/contact': { page: '/contact' },
+
       // Domain
       '/domains': { page: '/domains' },
+
+      // Guides
+      '/guides': { page: '/guides' },
+      '/guides/continuous-intergration/git': { page: '/guides/continuous-intergration/git' },
+      '/guides/continuous-intergration/github': { page: '/guides/continuous-intergration/github' },
+      '/guides/linting': { page: '/guides/linting' },
+      '/guides/mysql': { page: '/guides/mysql' },
+      '/guides/nextjs/anatomy': { page: '/guides/nextjs/anatomy' },
 
       // Our Work
       '/our-work': { page: '/our-work' },
@@ -70,6 +81,9 @@ module.exports = () => {
       '/portfolio/facebook/walt-disney-prince-of-persia': {
         page: '/portfolio/facebook/walt-disney-prince-of-persia'
       },
+
+      // Team
+      '/team': { page: '/team' },
 
       // What We Do
       '/what-we-do': { page: '/what-we-do' },
