@@ -17,6 +17,30 @@ export default () => {
       <Row>
         <Column lg={3}>
           <Card
+            alt='Git'
+            bordered
+            image='/static/guides/git/git.svg'
+            shadow
+            to='/guides/continuous-intergration/git'
+          >
+            <CardBody>Git</CardBody>
+          </Card>
+        </Column>
+
+        <Column lg={3}>
+          <Card
+            alt='Github'
+            bordered
+            image='/static/guides/git/git.svg'
+            shadow
+            to='/guides/continuous-intergration/github'
+          >
+            <CardBody>Github</CardBody>
+          </Card>
+        </Column>
+
+        <Column lg={3}>
+          <Card
             alt='Page anatomy'
             bordered
             image='/static/guides/nextjs/anatomy.svg'
