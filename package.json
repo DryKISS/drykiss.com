@@ -10,6 +10,7 @@
     "lint-fix": "standard --fix --verbose | snazzy",
     "prettier": "prettier-standard './**/*.js'",
     "stylelint": "stylelint './**/*.js'",
+    "test": "yarn run lint-fix && yarn run prettier && yarn run stylelint",
     "build": "next build",
     "export": "next export",
     "package": "yarn run build && yarn run export",
