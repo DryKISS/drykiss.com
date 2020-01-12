@@ -49,5 +49,5 @@ export const Navigation = () => {
     ]
   }
 
-  return <Navbar brand={Brand.logo} links={Default} />
+  return <Navbar brand={Brand.logo} widgets={Default} />
 }
