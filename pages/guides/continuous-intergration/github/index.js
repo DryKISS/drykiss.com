@@ -1,5 +1,5 @@
 /**
- * Guides - NextJS - Github
+ * Guides - Continuous Intergration - Github
  */
 
 // UI
@@ -8,7 +8,7 @@ import { Heading, List, ListItem, Page } from 'industry-ui'
 export default () => {
   const meta = {
     description: 'How DRYKISS utilise Github and workflows to acheive a coherrent CI process.',
-    path: '/guides/git',
+    path: '/guides/continuous-intergration/github',
     title: 'GitHub at DRYKISS'
   }
 

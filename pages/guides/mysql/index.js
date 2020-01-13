@@ -1,7 +1,5 @@
 /**
- * Guides - Linting
- *
- * @todo Create a code highlight segment
+ * Guides - MySQL
  */
 
 // UI

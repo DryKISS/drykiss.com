@@ -8,7 +8,7 @@ import { List, Page } from 'industry-ui'
 export default () => {
   const meta = {
     description: 'Using NextJS and ReactJS to create the perfect page anatomy',
-    path: '/guides/linting',
+    path: '/guides/nextjs/anatomy',
     title: 'NextJS, Anatomy of a Page.'
   }
 

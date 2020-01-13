@@ -8,7 +8,7 @@ import { Card, CardBody, Column, Page, Row } from 'industry-ui'
 export default () => {
   const meta = {
     description: 'How DryKISS operates as a development studio, our best practice guides',
-    path: '/guides/linting',
+    path: '/guides',
     title: 'DryKISS Internal Guides Made Public.'
   }
 
@@ -48,6 +48,18 @@ export default () => {
             to='/guides/nextjs/anatomy'
           >
             <CardBody>Anatomy of a Page</CardBody>
+          </Card>
+        </Column>
+
+        <Column lg={3}>
+          <Card
+            alt='Onboarding'
+            bordered
+            image='/static/guides/git/git.svg'
+            shadow
+            to='/guides/onboarding/tools'
+          >
+            <CardBody>Tools</CardBody>
           </Card>
         </Column>
       </Row>

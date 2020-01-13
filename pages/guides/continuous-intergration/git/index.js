@@ -1,5 +1,5 @@
 /**
- * Guides - NextJS - Git
+ * Guides - Continuous Intergration - Git
  */
 
 // UI
@@ -8,7 +8,7 @@ import { Heading, List, ListItem, Page } from 'industry-ui'
 export default () => {
   const meta = {
     description: 'How DRYKISS utilise git to acheive a coherrent CI process.',
-    path: '/guides/git',
+    path: '/guides/continuous-intergration/git',
     title: 'Git at DRYKISS'
   }
 
