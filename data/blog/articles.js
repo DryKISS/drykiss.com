@@ -1,7 +1,26 @@
 /**
  * Blog
  */
+
+import content from './contents/content001.js'
+
 module.exports.Articles = [
+  {
+    author: 'Xinyi Wu',
+    category: 'Development',
+    data: content,
+    date: '2020-01-23',
+    description: 'Static Site development',
+    excerpt: 'Static Site development',
+    heading: 'Wild thoughts of a newbie developer: Why understanding the browser is important for any developer',
+    hero: true,
+    published: true,
+    readtime: 3,
+    slug: 'static-site-development',
+    tags: ['static', 'jam'],
+    time: '12:00pm',
+    title: 'Why understanding the browser is important for any developer'
+  },
   {
     author: 'Ian Warner',
     category: 'Development',
