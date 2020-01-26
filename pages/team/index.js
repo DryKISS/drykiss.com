@@ -18,6 +18,9 @@ export default () => {
 
   return (
     <Page heading='Team' meta={meta}>
+      <h2>Meet the Drykiss squad!</h2>
+      <p>In DryKISS we offer a full service development and marketing solution, we are prepared to listen to your needs, craft your project and help boost your business. Our team is comprised of highly skilled professionals with over 20 years of experiences in web development and digital marketing, which secured the success of our collaboration.</p>
+
       <Row>
         <Column lg={3}>
           <Card
@@ -25,7 +28,7 @@ export default () => {
             bordered
             image='/static/freelancer/ian-warner/1.jpg'
             shadow
-            to='https://availabletowork.com/freelancer/ian-warner'
+            to='team/Ian-Warner'
           >
             <CardBody>Ian Warner</CardBody>
           </Card>

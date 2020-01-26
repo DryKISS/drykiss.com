@@ -42,6 +42,11 @@ export const Navigation = () => {
         to: '/careers'
       },
       {
+        id: 'navTeam',
+        name: 'Team',
+        to: '/team'
+      },
+      {
         id: 'navDomains',
         name: 'Domains',
         to: '/domains'
