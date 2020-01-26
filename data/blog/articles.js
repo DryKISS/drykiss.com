@@ -14,10 +14,11 @@ module.exports.Articles = [
     excerpt: 'Static Site development',
     heading: 'Wild thoughts of a newbie developer: Why understanding the browser is important for any developer',
     hero: true,
+    image: 'browsersbw.svg',
     published: true,
     readtime: 3,
     slug: 'static-site-development',
-    tags: ['static', 'jam'],
+    tags: ['static', 'jam', 'browsers'],
     time: '12:00pm',
     title: 'Why understanding the browser is important for any developer'
   },
