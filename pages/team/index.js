@@ -10,7 +10,7 @@ function teamMembers () {
     {
       id: 'iwarner',
       name: 'Ian Warner',
-      link: 'team/Ian-Warner',
+      link: 'https://www.linkedin.com/in/iwarner/',
       image: '/static/freelancer/ian-warner/1.jpg'
     },
     {

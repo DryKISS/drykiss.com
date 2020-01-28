@@ -10,17 +10,16 @@ module.exports.Articles = [
     category: 'Development',
     data: content,
     date: '2020-01-23',
-    description: 'Static Site development',
-    excerpt: 'Static Site development',
-    heading: 'Wild thoughts of a newbie developer: Why understanding the browser is important for any developer',
+    description: 'Why understanding the browser is important for any developer',
+    excerpt: 'Brief introduction to browsers',
+    heading: 'Is the browser important for developers?',
     hero: true,
-    image: 'browsersbw.svg',
     published: true,
     readtime: 3,
-    slug: 'static-site-development',
-    tags: ['static', 'jam', 'browsers'],
+    slug: 'about-browsers',
+    tags: ['static', 'browser', 'developer'],
     time: '12:00pm',
-    title: 'Why understanding the browser is important for any developer'
+    title: 'Is the browser important for developers?'
   },
   {
     author: 'Ian Warner',
