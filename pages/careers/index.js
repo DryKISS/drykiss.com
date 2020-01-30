@@ -20,7 +20,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Careers' meta={meta}>
+    <Page pageHeading={{ heading: 'Careers' }} meta={meta}>
       <p>
         At DryKISS, we thrive on being the best; we love to continually learn, use the latest
         technologies and prototype everything. Our main goal though is to keep our clients and their

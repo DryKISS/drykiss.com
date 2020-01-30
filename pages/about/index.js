@@ -17,7 +17,7 @@ export default () => {
   }
 
   return (
-    <Page heading='About' meta={meta}>
+    <Page pageHeading={{ heading: 'About' }} meta={meta}>
       DryKISS Ltd was setup to simplify the process of development.
     </Page>
   )

@@ -17,7 +17,7 @@ export default () => {
   }
 
   return (
-    <Page heading='404 ERROR PAGE – NOT FOUND' meta={meta}>
+    <Page pageHeading={{ heading: '404 ERROR PAGE – NOT FOUND' }} meta={meta}>
       <p>
         The page you were looking for no longer exists or never did. Please use the links at the top
         of your screen to get back in the game, or click here to go home and start again.
