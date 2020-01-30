@@ -2,7 +2,7 @@
  * Blog
  */
 
-import content from './contents/content001.js'
+import { content } from './contents/content001.js'
 
 module.exports.Articles = [
   {
