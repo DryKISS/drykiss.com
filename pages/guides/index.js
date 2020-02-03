@@ -13,7 +13,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Guides' meta={meta}>
+    <Page pageHeading={{ heading: 'Guides' }} meta={meta}>
       <Row>
         <Column lg={3}>
           <Card

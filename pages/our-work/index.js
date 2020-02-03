@@ -42,7 +42,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Our Work' meta={meta}>
+    <Page pageHeading={{ heading: 'Our Work' }} meta={meta}>
       <Row>{renderPortfolio()}</Row>
     </Page>
   )

@@ -78,7 +78,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Domains' meta={meta}>
+    <Page pageHeading={{ heading: 'Domains' }} meta={meta}>
       <Table columns={Columns} rows={Data} />
     </Page>
   )
