@@ -1,7 +1,5 @@
 /**
  * Pages for the site
- *
- * @todo Find a way to import Slugify from IndustryUI
  */
 
 const slugify = string => {
@@ -20,6 +18,8 @@ module.exports = () => {
   // Blog - `/blog/:category/:slug`
   const articles = ARTICLES.Articles.reduce((pages, { category, slug }) => {
     const catSlug = slugify(category)
+
+    console.log(catSlug, slug)
 
     return Object.assign({}, pages, {
       [`/blog/${catSlug}/${slug}`]: {

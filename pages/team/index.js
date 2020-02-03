@@ -5,6 +5,9 @@
 // UI
 import { Card, CardBody, Icon, Image, Column, Page, Row } from 'industry-ui'
 
+// Style
+import styled from 'styled-components'
+
 export default () => {
   const teamMembers = [
     {
@@ -15,7 +18,8 @@ export default () => {
     {
       id: 'kheruc',
       name: 'Kristian Heruc',
-      link: 'https://github.com/kheruc'
+      link: 'https://github.com/kheruc',
+      icon: 'github'
     },
     {
       id: 'octohedron',
@@ -70,11 +74,18 @@ export default () => {
         {teamMembers.map(member => (
           <Column key={member.id} lg={3}>
             <Card center bordered to={member.link}>
-              <Image alt={member.name} src={`/static/team/${member.id}.jpg`} />
+              <StyledImage alt={member.name} src={`/static/team/${member.id}.jpg`} />
 
               <CardBody>
                 {member.name}
-                <Icon context='primary' icon='linkedin' prefix='fab' size='lg' pull='right' />
+
+                <Icon
+                  context='primary'
+                  icon={member.icon || 'linkedin'}
+                  prefix='fab'
+                  size='lg'
+                  pull='right'
+                />
               </CardBody>
             </Card>
           </Column>
@@ -83,3 +94,7 @@ export default () => {
     </Page>
   )
 }
+
+const StyledImage = styled(Image)`
+  filter: grayscale(100%);
+`
