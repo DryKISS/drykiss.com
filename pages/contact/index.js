@@ -40,7 +40,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Contact' meta={meta}>
+    <Page pageHeading={{ heading: 'Contact' }} meta={meta}>
       <div id='hubspotForm' />
     </Page>
   )

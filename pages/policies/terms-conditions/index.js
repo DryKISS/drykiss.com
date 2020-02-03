@@ -17,7 +17,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Terms &amp; Conditions' meta={meta}>
+    <Page pageHeading={{ heading: 'Terms &amp; Conditions' }} meta={meta}>
       Terms and Conditions
     </Page>
   )

@@ -17,7 +17,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Site Map' meta={meta}>
+    <Page pageHeading={{ heading: 'Site Map' }} meta={meta}>
       Site Map
     </Page>
   )

@@ -17,7 +17,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Privacy Policy' meta={meta}>
+    <Page pageHeading={{ heading: 'Private Policy' }} meta={meta}>
       Privacy Policy
     </Page>
   )

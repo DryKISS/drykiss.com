@@ -31,7 +31,7 @@ export default () => {
   }
 
   return (
-    <Page heading='What we do' meta={meta}>
+    <Page pageHeading={{ heading: 'What we do' }} meta={meta}>
       <p>DryKISS can offer a full service development and marketing solution.</p>
 
       <CardDecks>
