@@ -2,7 +2,7 @@
  * Blog
  */
 
-import { aboutBrowsers } from './contents/about-browsers'
+const aboutBrowsers = require('./contents/about-browsers')
 
 module.exports.Articles = [
   {

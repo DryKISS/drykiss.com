@@ -2,11 +2,6 @@
  * Next Config
  */
 const withCSS = require('@zeit/next-css')
-const withTM = require('next-transpile-modules')
+const withTM = require('next-transpile-modules')(['industry-ui'])
 
-const nextConfig = {
-  transpileModules: ['industry-ui'],
-  pageExtensions: ['js']
-}
-
-module.exports = withCSS(withTM(nextConfig))
+module.exports = withCSS(withTM())
