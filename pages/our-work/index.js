@@ -13,7 +13,7 @@ export default () => {
     PORTFOLIO_FACEBOOK.map(({ active, client, slug, title, type }, index) => {
       if (active) {
         return (
-          <Column key={index} md={6} lg={4}>
+          <Column key={index} md={6} lg={3}>
             <Card
               bordered
               footer={title}
