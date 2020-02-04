@@ -7,10 +7,17 @@ import { Card, Column, Image, Page, Row } from 'industry-ui'
 
 // Data
 import { PORTFOLIO_FACEBOOK } from 'data'
+import { PORTFOLIO_SITES } from 'data'
+import { PORTFOLIO_WORDPRESS } from 'data'
+
+const portfolioSites = PORTFOLIO_SITES
+const portfolioFacebook = PORTFOLIO_FACEBOOK
+const portfolioWordpress = PORTFOLIO_WORDPRESS
+const portfolioExamples = portfolioSites
 
 export default () => {
   const renderPortfolio = () =>
-    PORTFOLIO_FACEBOOK.map(({ active, client, slug, title, type }, index) => {
+    portfolioExamples.map(({ active, client, slug, title, type }, index) => {
       if (active) {
         return (
           <Column key={index} md={6} lg={3}>
