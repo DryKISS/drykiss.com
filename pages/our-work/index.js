@@ -13,7 +13,7 @@ import { PORTFOLIO_WORDPRESS } from 'data'
 const portfolioSites = PORTFOLIO_SITES
 const portfolioFacebook = PORTFOLIO_FACEBOOK
 const portfolioWordpress = PORTFOLIO_WORDPRESS
-const portfolioExamples = portfolioSites
+const portfolioExamples = [...portfolioWordpress, ...portfolioFacebook, ...portfolioSites]
 
 export default () => {
   const renderPortfolio = () =>

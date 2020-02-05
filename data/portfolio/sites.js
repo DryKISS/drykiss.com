@@ -26,7 +26,7 @@ export const PORTFOLIO_SITES = [
   {
     active: true,
     client: 'deliveroo',
-    slug: 'deliveroo-excuse-generator',
+    slug: 'excuse-generator',
     title: 'Deliveroo Excuse Generator',
     type: 'site'
   },
