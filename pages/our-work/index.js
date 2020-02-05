@@ -9,15 +9,11 @@ import { Card, Column, Image, Page, Row } from 'industry-ui'
 import { PORTFOLIO_FACEBOOK } from 'data'
 import { PORTFOLIO_SITES } from 'data'
 import { PORTFOLIO_WORDPRESS } from 'data'
-import { PORTFOLIO_MOBILE } from '../../data/portfolio'
-
-const portfolioSites = PORTFOLIO_SITES
-const portfolioFacebook = PORTFOLIO_FACEBOOK
-const portfolioWordpress = PORTFOLIO_WORDPRESS
-const porfolioMobile = PORTFOLIO_MOBILE
-const portfolioExamples = [...portfolioWordpress, ...portfolioFacebook, ...portfolioSites, ...porfolioMobile]
+import { PORTFOLIO_MOBILE } from 'data'
 
 export default () => {
+  const portfolioExamples = [...PORTFOLIO_FACEBOOK, ...PORTFOLIO_SITES, ...PORTFOLIO_WORDPRESS, ...PORTFOLIO_MOBILE]
+
   const renderPortfolio = () =>
     portfolioExamples.map(({ active, client, slug, title, type }, index) => {
       if (active) {
