@@ -9,11 +9,13 @@ import { Card, Column, Image, Page, Row } from 'industry-ui'
 import { PORTFOLIO_FACEBOOK } from 'data'
 import { PORTFOLIO_SITES } from 'data'
 import { PORTFOLIO_WORDPRESS } from 'data'
+import { PORTFOLIO_MOBILE } from '../../data/portfolio'
 
 const portfolioSites = PORTFOLIO_SITES
 const portfolioFacebook = PORTFOLIO_FACEBOOK
 const portfolioWordpress = PORTFOLIO_WORDPRESS
-const portfolioExamples = [...portfolioWordpress, ...portfolioFacebook, ...portfolioSites]
+const porfolioMobile = PORTFOLIO_MOBILE
+const portfolioExamples = [...portfolioWordpress, ...portfolioFacebook, ...portfolioSites, ...porfolioMobile]
 
 export default () => {
   const renderPortfolio = () =>
