@@ -15,11 +15,8 @@ const slugify = string => {
 module.exports = () => {
   const ARTICLES = require('../data/blog/articles')
 
-  // Blog - `/blog/:category/:slug`
   const articles = ARTICLES.Articles.reduce((pages, { category, slug }) => {
     const catSlug = slugify(category)
-
-    console.log(catSlug, slug)
 
     return Object.assign({}, pages, {
       [`/blog/${catSlug}/${slug}`]: {
