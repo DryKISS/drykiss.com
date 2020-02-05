@@ -15,6 +15,8 @@ import Layout from 'layout'
 import { Google } from 'config'
 
 // Font awesome
+import { faCopyright } from '@fortawesome/pro-duotone-svg-icons'
+
 import {
   faBars,
   faBlog,
@@ -41,6 +43,7 @@ library.add(
   faBars,
   faBlog,
   faCalendarAlt,
+  faCopyright,
   faExternalLink,
   faFileUser,
   faHomeHeart,
