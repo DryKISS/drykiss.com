@@ -56,13 +56,11 @@ export default () => {
   }, [query, articleParams])
 
   const meta = {
+    content: `/static/blog/${query.articleId}/hero.jpg`,
     description: article.description,
     path: `${Blog.path}/${query.categoryId}/${query.articleId}`,
-    title: article.title,
     property: 'og:image',
-    content: `/static/blog/${query.articleId}/hero.jpg`,
-    name: 'twitter:image',
-    content: `/static/blog/${query.articleId}/hero.jpg`
+    title: article.title
   }
 
   return (
