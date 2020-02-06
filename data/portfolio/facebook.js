@@ -25,7 +25,7 @@ export const PORTFOLIO_FACEBOOK = [
     type: 'facebook'
   },
   {
-    active: false,
+    active: true,
     client: 'triangle-solutions',
     slug: 'love-football',
     title: 'Love Football',
@@ -39,14 +39,14 @@ export const PORTFOLIO_FACEBOOK = [
     type: 'facebook'
   },
   {
-    active: false,
+    active: true,
     client: 'triangle-solutions',
     slug: 'would-you',
     title: 'Would You',
     type: 'facebook'
   },
   {
-    active: false,
+    active: true,
     client: 'triangle-solutions',
     slug: 'zingo',
     title: 'Zingo',
