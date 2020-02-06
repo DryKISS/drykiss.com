@@ -4,6 +4,7 @@
 
 // Next
 import Router from 'next/router'
+import Head from 'next/head'
 
 // UI
 import { GoogleAnalyticsPageView, HubSpot, MyApp } from 'industry-ui'
@@ -71,4 +72,16 @@ Router.events.on('routeChangeComplete', url => {
   }
 })
 
-export default props => <MyApp Layout={Layout} {...props} />
+export default props => (
+  <>
+    <Head>
+      <meta
+        content='https://drykiss.com/static/social/drykiss-facebook.png'
+        key='og:image'
+        property='og:image'
+      />
+      <meta name='twitter:image' content='https://drykiss.com/static/social/drykiss-facebook.png' />
+    </Head>
+    <MyApp Layout={Layout} {...props} />
+  </>
+)

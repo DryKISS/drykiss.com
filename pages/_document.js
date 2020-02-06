@@ -51,11 +51,7 @@ export default class MyDocument extends Document {
           <meta name='author' content='DryKISS' key='author' />
 
           <meta property='og:type' content='website' />
-          <meta
-            content='https://drykiss.com/static/social/drykiss-facebook.png'
-            key='ogImage'
-            property='og:image'
-          />
+
           <meta property='og:site_name' content='DryKISS' />
           <meta property='og:locale' content='en_GB' />
           <meta property='og:image:width' content='1200' />
@@ -65,10 +61,6 @@ export default class MyDocument extends Document {
           <meta name='twitter:card' content='summary_large_image' />
           <meta name='twitter:creator' content='@drykiss' />
           <meta name='twitter:site' content='@drykiss' />
-          <meta
-            name='twitter:image'
-            content='https://drykiss.com/static/social/drykiss-facebook.png'
-          />
           <meta name='twitter:image:alt' content='DryKISS logo and strapline' />
 
           <link
