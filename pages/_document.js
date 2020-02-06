@@ -52,8 +52,9 @@ export default class MyDocument extends Document {
 
           <meta property='og:type' content='website' />
           <meta
-            property='og:image'
             content='https://drykiss.com/static/social/drykiss-facebook.png'
+            key='ogImage'
+            property='og:image'
           />
           <meta property='og:site_name' content='DryKISS' />
           <meta property='og:locale' content='en_GB' />
@@ -75,6 +76,7 @@ export default class MyDocument extends Document {
             sizes='180x180'
             href='/static/favicon/apple-touch-icon.png'
           />
+
           <link rel='icon' type='image/png' sizes='32x32' href='/static/favicon/favicon.png' />
           <link rel='icon' type='image/png' sizes='16x16' href='/static/favicon/favicon.png' />
 
@@ -94,9 +96,7 @@ export default class MyDocument extends Document {
 
           {Google && Google.apiKey && (
             <script
-              src={`https://maps.googleapis.com/maps/api/js?key=${
-                Google.apiKey
-              }&amp;libraries=places`}
+              src={`https://maps.googleapis.com/maps/api/js?key=${Google.apiKey}&amp;libraries=places`}
             />
           )}
 
