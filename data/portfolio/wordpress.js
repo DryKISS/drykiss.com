@@ -4,8 +4,8 @@
 export const PORTFOLIO_WORDPRESS = [
   {
     active: true,
-    client: 'Razorfish',
-    slug: 'blackberry',
+    client: 'razorfish',
+    slug: 'blackberry-challenge',
     title: 'Blackberry Youth Challenge',
     type: 'wordpress'
   },
