@@ -51,10 +51,7 @@ export default class MyDocument extends Document {
           <meta name='author' content='DryKISS' key='author' />
 
           <meta property='og:type' content='website' />
-          <meta
-            property='og:image'
-            content='https://drykiss.com/static/social/drykiss-facebook.png'
-          />
+
           <meta property='og:site_name' content='DryKISS' />
           <meta property='og:locale' content='en_GB' />
           <meta property='og:image:width' content='1200' />
@@ -64,10 +61,6 @@ export default class MyDocument extends Document {
           <meta name='twitter:card' content='summary_large_image' />
           <meta name='twitter:creator' content='@drykiss' />
           <meta name='twitter:site' content='@drykiss' />
-          <meta
-            name='twitter:image'
-            content='https://drykiss.com/static/social/drykiss-facebook.png'
-          />
           <meta name='twitter:image:alt' content='DryKISS logo and strapline' />
 
           <link
@@ -75,6 +68,7 @@ export default class MyDocument extends Document {
             sizes='180x180'
             href='/static/favicon/apple-touch-icon.png'
           />
+
           <link rel='icon' type='image/png' sizes='32x32' href='/static/favicon/favicon.png' />
           <link rel='icon' type='image/png' sizes='16x16' href='/static/favicon/favicon.png' />
 
@@ -94,9 +88,7 @@ export default class MyDocument extends Document {
 
           {Google && Google.apiKey && (
             <script
-              src={`https://maps.googleapis.com/maps/api/js?key=${
-                Google.apiKey
-              }&amp;libraries=places`}
+              src={`https://maps.googleapis.com/maps/api/js?key=${Google.apiKey}&amp;libraries=places`}
             />
           )}
 

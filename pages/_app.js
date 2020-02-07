@@ -4,6 +4,7 @@
 
 // Next
 import Router from 'next/router'
+import Head from 'next/head'
 
 // UI
 import { GoogleAnalyticsPageView, HubSpot, MyApp } from 'industry-ui'
@@ -15,6 +16,8 @@ import Layout from 'layout'
 import { Google } from 'config'
 
 // Font awesome
+import { faCopyright } from '@fortawesome/pro-duotone-svg-icons'
+
 import {
   faBars,
   faBlog,
@@ -41,6 +44,7 @@ library.add(
   faBars,
   faBlog,
   faCalendarAlt,
+  faCopyright,
   faExternalLink,
   faFileUser,
   faHomeHeart,
@@ -68,4 +72,16 @@ Router.events.on('routeChangeComplete', url => {
   }
 })
 
-export default props => <MyApp Layout={Layout} {...props} />
+export default props => (
+  <>
+    <Head>
+      <meta
+        content='https://drykiss.com/static/social/drykiss-facebook.png'
+        key='og:image'
+        property='og:image'
+      />
+      <meta name='twitter:image' content='https://drykiss.com/static/social/drykiss-facebook.png' />
+    </Head>
+    <MyApp Layout={Layout} {...props} />
+  </>
+)

@@ -6,13 +6,15 @@
 import { Card, Column, Image, Page, Row } from 'industry-ui'
 
 // Data
-import { PORTFOLIO_FACEBOOK } from 'data'
-import { PORTFOLIO_SITES } from 'data'
-import { PORTFOLIO_WORDPRESS } from 'data'
-import { PORTFOLIO_MOBILE } from 'data'
+import { PORTFOLIO_FACEBOOK, PORTFOLIO_MOBILE, PORTFOLIO_SITES, PORTFOLIO_WORDPRESS } from 'data'
 
 export default () => {
-  const portfolioExamples = [...PORTFOLIO_FACEBOOK, ...PORTFOLIO_SITES, ...PORTFOLIO_WORDPRESS, ...PORTFOLIO_MOBILE]
+  const portfolioExamples = [
+    ...PORTFOLIO_FACEBOOK,
+    ...PORTFOLIO_SITES,
+    ...PORTFOLIO_WORDPRESS,
+    ...PORTFOLIO_MOBILE
+  ]
 
   const renderPortfolio = () =>
     portfolioExamples.map(({ active, client, slug, title, type }, index) => {
@@ -37,11 +39,8 @@ export default () => {
     })
 
   const meta = {
-    description: `
-      DryKISS is a full service internet and mobile digital production house.
-      Our services span consulting, strategy; planning; development; testing
-      and analytics.
-    `,
+    description: `DryKISS is a full service internet and mobile digital production house. Our
+      services span consulting, strategy; planning; development; testing and analytics.`,
     path: '/our-work',
     title: 'DryKISS develops hybrid mobile and responsive websites'
   }
