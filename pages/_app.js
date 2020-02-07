@@ -76,11 +76,11 @@ export default props => (
   <>
     <Head>
       <meta
-        content='https://drykiss.com/static/social/drykiss-facebook.png'
+        content='https://drykiss.com/static/social/drykiss-facebook.jpg'
         key='og:image'
         property='og:image'
       />
-      <meta name='twitter:image' content='https://drykiss.com/static/social/drykiss-facebook.png' />
+      <meta name='twitter:image' content='https://drykiss.com/static/social/drykiss-facebook.jpg' />
     </Head>
     <MyApp Layout={Layout} {...props} />
   </>
