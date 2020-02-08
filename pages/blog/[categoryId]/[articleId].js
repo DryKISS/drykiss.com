@@ -47,7 +47,7 @@ const BlogArticle = ({ article, query }) => {
     <Page meta={meta}>
       <Head>
         <meta
-          content={`https://drykiss.com/static/blog/${article.slug}/hero.jpg`}
+          content={`https://drykiss.com/static/blog/${article.slug}/hero.jpg?v=1.00`}
           key='og:image'
           property='og:image'
         />
