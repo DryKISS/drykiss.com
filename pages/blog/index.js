@@ -23,12 +23,12 @@ export default () => {
   return (
     <Page meta={meta}>
       <Row>
-        <Column lg={8}>
+        <Column md={8}>
           <BlogHero articles={Articles} config={Blog} />
           <BlogCategories articles={Articles} config={Blog} />
         </Column>
 
-        <Column lg={4}>
+        <Column md={4}>
           <BlogSidebar articles={Articles} config={Blog} facebook={Facebook} />
         </Column>
       </Row>

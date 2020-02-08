@@ -4,21 +4,21 @@
 export const PORTFOLIO_SITES = [
   {
     active: true,
-    client: 'Alpha Founders',
-    slug: 'askhanuman',
+    client: 'alpha-founders',
+    slug: 'ask-hanuman',
     title: 'Ask Hanuman',
     type: 'site'
   },
   {
     active: true,
-    client: 'Beep Taxt',
+    client: 'beep-taxi',
     slug: 'beep-services',
     title: 'Beep Services',
     type: 'site'
   },
   {
     active: true,
-    client: 'Beep Taxi',
+    client: 'beep-taxi',
     slug: 'beep-taxi',
     title: 'Beep Taxi',
     type: 'site'
@@ -32,13 +32,14 @@ export const PORTFOLIO_SITES = [
   },
   {
     active: true,
-    client: 'Dungbeetle',
+    client: 'dungbeetle',
     slug: 'logotribe',
     title: 'Logotribe',
     type: 'site'
   },
   {
-    client: 'greentouch',
+    active: true,
+    client: 'drykiss',
     slug: 'greentouch-pi',
     title: 'Greentouch PI',
     type: 'site'
@@ -46,7 +47,7 @@ export const PORTFOLIO_SITES = [
   {
     active: true,
     client: 'ibm',
-    slug: 'ibm-pivot',
+    slug: 'pivot',
     title: 'IBM Pivot',
     type: 'site'
   },
@@ -59,56 +60,56 @@ export const PORTFOLIO_SITES = [
   },
   {
     active: true,
-    client: 'Triangle Solutions',
+    client: 'triangle-solutions',
     slug: 'php-multiple-newsletters',
     title: 'PHP Multiple Newsletters',
     type: 'site'
   },
   {
     active: true,
-    client: 'Triangle Solutions',
+    client: 'triangle-solutions',
     slug: 'php-support-tickets',
     title: 'PHP Support Tickets',
     type: 'site'
   },
   {
     active: true,
-    client: 'Triangle Solutions',
+    client: 'triangle-solutions',
     slug: 'sms-million',
     title: 'SMS Million',
     type: 'site'
   },
   {
     active: true,
-    client: 'Surchek',
+    client: 'surfchek',
     slug: 'surfchek',
     title: 'Surfchek',
     type: 'site'
   },
   {
     active: true,
-    client: 'Dungbeetle',
+    client: 'dungbeetle',
     slug: 'tip-text',
     title: 'Tip Text',
     type: 'site'
   },
   {
     active: true,
-    client: 'Tips Star',
+    client: 'tips-star',
     slug: 'tips-star',
     title: 'Tips Star',
     type: 'site'
   },
   {
     active: true,
-    client: 'Xpansif',
+    client: 'xpansif',
     slug: 'easiwebsite',
     title: 'Easi Web Site',
     type: 'site'
   },
   {
     active: true,
-    client: 'Yofone',
+    client: 'yofone',
     slug: 'yofone',
     title: 'Yofone',
     type: 'site'
