@@ -45,11 +45,11 @@ export default () => {
           <Heading content='Tasks' tag='h3' />
 
           <List>
-            <span>Developed Javascript algorithm to create name</span>
-            <span>Database creation to manage users and names</span>
-            <span>Deployed on Facebook platform</span>
-            <span>Social and Viral actions enhanced</span>
-            <span>Interlinked with other Facebook apps</span>
+            <span>Developed Javascript algorithm to create name</span><br />
+            <span>Database creation to manage users and names</span><br />
+            <span>Deployed on Facebook platform</span><br />
+            <span>Social and Viral actions enhanced</span><br />
+            <span>Interlinked with other Facebook apps</span><br />
           </List>
 
           <Heading content='Project Duration' tag='h3' />
@@ -61,7 +61,7 @@ export default () => {
           <Heading content='Outcome' tag='h3' />
 
           <List>
-            <span>Tens of thousands of downloads</span>
+            <span>Tens of thousands of downloads</span><br />
             <span>Ceased due to Facebook changing profile rules</span>
           </List>
 

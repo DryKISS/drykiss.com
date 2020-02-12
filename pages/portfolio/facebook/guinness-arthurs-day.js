@@ -1,5 +1,5 @@
 /**
- * Brazil Soccer Name
+ * Guinness® Facebook Page
  */
 
 // UI
@@ -37,6 +37,7 @@ export default () => {
           <Link to='https://en.wikipedia.org/wiki/Arthur%27s_Day'>
             <a target='_blank'>Arthur's Day</a>
           </Link>
+          <p />
 
           <Link to='https://www.youtube.com/watch?v=nJA4AifqbsM&feature=youtu.be'>
             <a target='_blank'>Arthur's Day Video</a>
@@ -49,11 +50,11 @@ export default () => {
           <Heading content='Tasks' tag='h3' />
 
           <List>
-            <span>Developed PHP and Javascript page tab.</span>
-            <span>Custom slider because Facebook JS was very limited</span>
-            <span>Deployed onto Facebook page</span>
-            <span>Social and Viral actions added</span>
-            <span>Videos and Images optimised for speed of delivery</span>
+            <span>Developed PHP and Javascript page tab.</span><br />
+            <span>Custom slider because Facebook JS was very limited</span><br />
+            <span>Deployed onto Facebook page</span><br />
+            <span>Social and Viral actions added</span><br />
+            <span>Videos and Images optimised for speed of delivery</span><br />
           </List>
 
           <Heading content='Project Duration' tag='h3' />
@@ -65,14 +66,14 @@ export default () => {
           <Heading content='Outcome' tag='h3' />
 
           <List>
-            <span>Successfully delivered ontime</span>
+            <span>Successfully delivered ontime</span><br />
             <span>Marketed to thousands of Guinness and Diageo fans</span>
           </List>
 
           <Heading content='Team' tag='h3' />
 
           <List>
-            <span>Ian Warner - Developer</span>
+            <span>Ian Warner - Developer</span><br />
             <span>James Mulligan - PM</span>
           </List>
         </Column>

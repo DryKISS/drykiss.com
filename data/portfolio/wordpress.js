@@ -12,7 +12,7 @@ export const PORTFOLIO_WORDPRESS = [
   {
     active: true,
     client: 'deliveroo',
-    slug: 'rebrand',
+    slug: 'deliveroo-rebrand',
     title: 'Deliveroo Rebrand',
     type: 'wordpress'
   }

@@ -1,5 +1,5 @@
 /**
- * Brazil Soccer Name
+ * Walt Disney® Prince of Persia
  */
 
 // UI
@@ -11,8 +11,11 @@ export default () => {
       Walt Disney required a Facebook page for the movie Prince of Persia that
       could be localised and distributed.
     `,
-    path: '/portfolio/facebook/brazil-soccer-name',
-    title: 'Walt Disney® Prince of Persia'
+    path: '/pages/portfolio/facebook/walt-disney-prince-of-persia',
+    title: 'Love Football',
+    author: 'Ian Warner',
+    type: 'article',
+    image: '/static/portfolio/digital-outlook/hero.png'
   }
 
   return (
@@ -21,7 +24,7 @@ export default () => {
         <Column md={12}>
           <Image
             alt='Prince of Persia'
-            src='/static/portfolio/digital-outlook/walt-disney-prince-of-persia/hero.png'
+            src='/static/portfolio/digital-outlook/hero.png'
           />
         </Column>
       </Row>
@@ -47,10 +50,10 @@ export default () => {
           <Heading content='Tasks' tag='h3' />
 
           <List>
-            <span>Developed in PHP and Javascript</span>
-            <span>Localised over 7 countries on individual Facebook pages</span>
-            <span>Deployed on Facebook platform</span>
-            <span>Social and Viral actions enhanced</span>
+            <span>Developed in PHP and Javascript</span><br />
+            <span>Localised over 7 countries on individual Facebook pages</span><br />
+            <span>Deployed on Facebook platform</span><br />
+            <span>Social and Viral actions enhanced</span><br />
           </List>
 
           <Heading content='Project Duration' tag='h3' />
@@ -62,15 +65,15 @@ export default () => {
           <Heading content='Outcome' tag='h3' />
 
           <List>
-            <span>Marketed in locations as the film showed in the theatre</span>
+            <span>Marketed in locations as the film showed in the theatre</span><br />
             <span>Delivered on time</span>
           </List>
 
           <Heading content='Team' tag='h3' />
 
           <List>
-            <span>Ian Warner - Developer</span>
-            <span>Mikael Gotlib - PM</span>
+            <span>Ian Warner - Developer</span><br />
+            <span>Mikael Gotlib - PM</span><br />
             <span>Threeya Thirunathan - PM</span>
           </List>
         </Column>

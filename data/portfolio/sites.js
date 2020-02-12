@@ -103,7 +103,7 @@ export const PORTFOLIO_SITES = [
   {
     active: true,
     client: 'xpansif',
-    slug: 'easiwebsite',
+    slug: 'xpansif-easiwebsite',
     title: 'Easi Web Site',
     type: 'site'
   },

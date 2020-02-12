@@ -1,5 +1,5 @@
 /**
- * Brazil Soccer Name
+ * Circus Street
  */
 
 // UI
@@ -14,16 +14,34 @@ export default () => {
     title: 'Circus Street - Video e-learning platform',
     author: 'Ian Warner',
     type: 'article',
-    image: 'http://drykiss.com/assets/images/portfolio/circusstreet/circusstreet-home.png'
+    image: '/static/portfolio/drykiss/circus-street/hero.png'
   }
 
   return (
     <Page heading='Circus Street - Video e-learning platform' meta={meta}>
       <Row>
-        <Column md={12}>
+        <Column md={3}>
           <Image
             alt='circus street'
-            src='/static/portfolio/circus-street/circus-street/hero.png'
+            src='/static/portfolio/drykiss/circus-street/circus-street-home-mobile.jpeg'
+          />
+        </Column>
+        <Column md={3}>
+          <Image
+            alt='circusstreet-jargon-mobile'
+            src='/static/portfolio/drykiss/circus-street/circusstreet-jargon-mobile.jpeg'
+          />
+        </Column>
+        <Column md={3}>
+          <Image
+            alt='circusstreet-lesson-mobile'
+            src='/static/portfolio/drykiss/circus-street/circusstreet-lesson-mobile.jpeg'
+          />
+        </Column>
+        <Column md={3}>
+          <Image
+            alt='circusstreet-video-mobile'
+            src='/static/portfolio/drykiss/circus-street/circusstreet-video-mobile.jpeg'
           />
         </Column>
       </Row>
@@ -36,25 +54,13 @@ export default () => {
 
           <Heading content='Links' tag='h3' />
 
-          <Link to='https://en.wikipedia.org/wiki/Arthur%27s_Day'>
-            <a target='_blank'>Arthur's Day</a>
-          </Link>
-
-          <Link to='https://www.youtube.com/watch?v=nJA4AifqbsM&feature=youtu.be'>
-            <a target='_blank'>Arthur's Day Video</a>
-          </Link>
-          <p />
-
-          {/* https://www.irishpubsglobal.com/guinness-unveils-2011-arthurs-day-line-up/ */}
-          {/* https://www.youtube.com/watch?v=OKEQ_NuRl2c */}
-
           <Heading content='Tasks' tag='h3' />
 
           <List>
-            <span>Hybrid mobile development</span>
-            <span>Offline capabilities</span>
-            <span>Responsive development</span>
-            <span>Deployment</span>
+            <span>Hybrid mobile development</span><br />
+            <span>Offline capabilities</span><br />
+            <span>Responsive development</span><br />
+            <span>Deployment</span><br />
             <span>Analytics</span>
           </List>
 
@@ -67,14 +73,14 @@ export default () => {
           <Heading content='Outcome' tag='h3' />
 
           <List>
-            <span>Deployed new hybrid apps to iOS and Android</span>
+            <span>Deployed new hybrid apps to iOS and Android</span><br />
             <span>Engagement rising on both apps</span>
           </List>
 
           <Heading content='Team' tag='h3' />
 
           <List>
-            <span>Ian Warner - Technical lead</span>
+            <span>Ian Warner - Technical Lead</span>
           </List>
         </Column>
 
