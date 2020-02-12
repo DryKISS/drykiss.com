@@ -14,7 +14,7 @@ export default () => {
     title: 'Xpansif',
     author: 'Ian Warner',
     type: 'article',
-    image: '/static/portfolio/xpansif/hero.png'
+    image: '/static/portfolio/xpansif/easiwebsite/hero.png'
   }
 
   return (
@@ -23,7 +23,7 @@ export default () => {
         <Column md={12}>
           <Image
             alt='Xpansif'
-            src='/static/portfolio/xpansif/hero.png'
+            src='/static/portfolio/xpansif/easiwebsite/hero.png'
           />
         </Column>
       </Row>
