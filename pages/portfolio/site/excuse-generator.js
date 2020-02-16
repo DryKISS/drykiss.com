@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row } from 'industry-ui'
+import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -43,31 +43,31 @@ export default () => {
 
           <Heading content='Tasks' tag='h3' />
           <List>
-            <span>Marketing application</span><br />
-            <span>7 languages</span><br />
-            <span>Automatic image generation</span><br />
-            <span>Social sharing</span><br />
-            <span>Adaptive development</span><br />
-            <span>Analytics</span>
+            <ListItem>Marketing application</ListItem>
+            <ListItem>7 languages</ListItem>
+            <ListItem>Automatic image generation</ListItem>
+            <ListItem>Social sharing</ListItem>
+            <ListItem>Adaptive development</ListItem>
+            <ListItem>Analytics</ListItem>
           </List>
 
           <Heading content='Project Duration' tag='h3' />
 
           <List>
-            <span>3 weeks development</span>
+            <ListItem>3 weeks development</ListItem>
           </List>
 
           <Heading content='Outcome' tag='h3' />
 
           <List>
-            <span>Delivered on time</span><br />
-            <span>Many change requests handled</span>
+            <ListItem>Delivered on time</ListItem>
+            <ListItem>Many change requests handled</ListItem>
           </List>
 
           <Heading content='Team' tag='h3' />
 
           <List>
-            <span>Ian Warner - Technical Lead</span>
+            <ListItem>Ian Warner - Technical Lead</ListItem>
           </List>
         </Column>
 

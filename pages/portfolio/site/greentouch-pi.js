@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row } from 'industry-ui'
+import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -62,48 +62,48 @@ export default () => {
           <Heading content='Tasks' tag='h3' />
 
           <List>
-            <span>Keyword research</span><br />
-            <span>SEO</span><br />
-            <span>UX</span><br />
-            <span>Design</span><br />
-            <span>Responsive development</span><br />
-            <span>Deployment</span><br />
-            <span>Analytics</span><br />
-            <span>Google search console</span><br />
-            <span>Social pages, Facebook, Google and Wahanda</span>
+            <ListItem>Keyword research</ListItem>
+            <ListItem>SEO</ListItem>
+            <ListItem>UX</ListItem>
+            <ListItem>Design</ListItem>
+            <ListItem>Responsive development</ListItem>
+            <ListItem>Deployment</ListItem>
+            <ListItem>Analytics</ListItem>
+            <ListItem>Google search console</ListItem>
+            <ListItem>Social pages, Facebook, Google and Wahanda</ListItem>
           </List>
 
           <Heading content='Project Duration' tag='h3' />
 
           <List>
-            <span>5 days research and reporting</span><br />
-            <span>5 days development</span>
+            <ListItem>5 days research and reporting</ListItem>
+            <ListItem>5 days development</ListItem>
           </List>
 
           {/* <Heading content='Technologies' tag='h3' />
 
           <List>
-            <span>Middleman</span>
-            <span>AngularJS</span>
-            <span>HAML</span>
-            <span>CoffeeScript</span>
-            <span>Sass</span>
-            <span>GitHub hosting</span>
+            <ListItem>Middleman</ListItem>
+            <ListItem>AngularJS</ListItem>
+            <ListItem>HAML</ListItem>
+            <ListItem>CoffeeScript</ListItem>
+            <ListItem>Sass</ListItem>
+            <ListItem>GitHub hosting</ListItem>
           </List> */}
 
           <Heading content='Outcome' tag='h3' />
 
           <List>
-            <span>Page 1 on Google for search phrase "Massage Wimbledon"</span><br />
-            <span>Business up 600% since launch</span><br />
-            <span>4x the original staff levels</span>
+            <ListItem>Page 1 on Google for search phrase "Massage Wimbledon"</ListItem>
+            <ListItem>Business up 600% since launch</ListItem>
+            <ListItem>4x the original staff levels</ListItem>
           </List>
 
           <Heading content='Team' tag='h3' />
 
           <List>
-            <span>Ian Warner - Technical leadr</span><br />
-            <span>May Tran - Digital Marketing</span>
+            <ListItem>Ian Warner - Technical leadr</ListItem>
+            <ListItem>May Tran - Digital Marketing</ListItem>
           </List>
         </Column>
 

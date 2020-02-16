@@ -5,7 +5,7 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row } from 'industry-ui'
+import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -45,30 +45,31 @@ export default () => {
           <Heading content='Tasks' tag='h3' />
 
           <List>
-            <span>Developed Javascript algorithm to create name</span><br />
-            <span>Database creation to manage users and names</span><br />
-            <span>Deployed on Facebook platform</span><br />
-            <span>Social and Viral actions enhanced</span><br />
-            <span>Interlinked with other Facebook apps</span><br />
+            <ListItem>Developed Javascript algorithm to create name</ListItem>
+            <ListItem>Database creation to manage users and names</ListItem>
+            <ListItem>Deployed on Facebook platform</ListItem>
+            <ListItem>Social and Viral actions enhanced</ListItem>
+            <ListItem>InterListlinked with other Facebook apps</ListItem>
           </List>
+          <p />
 
           <Heading content='Project Duration' tag='h3' />
 
           <List>
-            <span>2 weeks development</span>
+            <ListItem>2 weeks development</ListItem>
           </List>
 
           <Heading content='Outcome' tag='h3' />
 
           <List>
-            <span>Tens of thousands of downloads</span><br />
-            <span>Ceased due to Facebook changing profile rules</span>
+            <ListItem>Tens of thousands of downloads</ListItem>
+            <ListItem>Ceased due to Facebook changing profile rules</ListItem>
           </List>
 
           <Heading content='Team' tag='h3' />
 
           <List>
-            <span>Ian Warner - Developer</span>
+            <ListItem>Ian Warner - Developer</ListItem>
           </List>
         </Column>
 

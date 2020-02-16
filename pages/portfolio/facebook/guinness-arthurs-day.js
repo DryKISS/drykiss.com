@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row } from 'industry-ui'
+import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -50,31 +50,31 @@ export default () => {
           <Heading content='Tasks' tag='h3' />
 
           <List>
-            <span>Developed PHP and Javascript page tab.</span><br />
-            <span>Custom slider because Facebook JS was very limited</span><br />
-            <span>Deployed onto Facebook page</span><br />
-            <span>Social and Viral actions added</span><br />
-            <span>Videos and Images optimised for speed of delivery</span><br />
+            <ListItem>Developed PHP and Javascript page tab.</ListItem>
+            <ListItem>Custom slider because Facebook JS was very limited</ListItem>
+            <ListItem>Deployed onto Facebook page</ListItem>
+            <ListItem>Social and Viral actions added</ListItem>
+            <ListItem>Videos and Images optimised for speed of delivery</ListItem>
           </List>
 
           <Heading content='Project Duration' tag='h3' />
 
           <List>
-            <span>1 month development</span>
+            <ListItem>1 month development</ListItem>
           </List>
 
           <Heading content='Outcome' tag='h3' />
 
           <List>
-            <span>Successfully delivered ontime</span><br />
-            <span>Marketed to thousands of Guinness and Diageo fans</span>
+            <ListItem>Successfully delivered ontime</ListItem>
+            <ListItem>Marketed to thousands of Guinness and Diageo fans</ListItem>
           </List>
 
           <Heading content='Team' tag='h3' />
 
           <List>
-            <span>Ian Warner - Developer</span><br />
-            <span>James Mulligan - PM</span>
+            <ListItem>Ian Warner - Developer</ListItem>
+            <ListItem>James Mulligan - PM</ListItem>
           </List>
         </Column>
 

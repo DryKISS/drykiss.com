@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row } from 'industry-ui'
+import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -14,7 +14,7 @@ export default () => {
     title: 'Surfchek',
     author: 'Ian Warner',
     type: 'article',
-    image: '/static/portfolio/surfchek/hero.png'
+    image: '/static/portfolio/surfchek/surfchek/hero.png'
   }
 
   return (
@@ -23,7 +23,7 @@ export default () => {
         <Column md={12}>
           <Image
             alt='Surfchek'
-            src='/static/portfolio/surfchek/hero.png'
+            src='/static/portfolio/surfchek/surfchek/hero.png'
           />
         </Column>
       </Row>
@@ -38,28 +38,14 @@ export default () => {
 
           <Heading content='Tasks' tag='h3' />
 
-          <List>
-            <span />
-            <span />
-          </List>
-
           <Heading content='Project Duration' tag='h3' />
 
-          <List>
-            <span />
-          </List>
-
           <Heading content='Outcome' tag='h3' />
-
-          <List>
-            <span />
-            <span />
-          </List>
 
           <Heading content='Team' tag='h3' />
 
           <List>
-            <span>Ian Warner - Developer</span>
+            <ListItem>Ian Warner - Developer</ListItem>
           </List>
         </Column>
 

@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row } from 'industry-ui'
+import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -11,7 +11,7 @@ export default () => {
     Jack Morton Sabic
     `,
     path: '/portfolio/mobile/sabic',
-    title: 'Circus Street - Video e-learning platform',
+    title: 'Jack Morton Sabic',
     author: 'Ian Warner',
     type: 'article',
     image: '/static/portfolio/jack-morton/sabic/hero.png'
@@ -38,28 +38,18 @@ export default () => {
 
           <Heading content='Tasks' tag='h3' />
 
-          <List>
-            <span />
-            <span />
-          </List>
-
           <Heading content='Project Duration' tag='h3' />
 
           <List>
-            <span>7 days development</span>
+            <ListItem>7 days development</ListItem>
           </List>
 
           <Heading content='Outcome' tag='h3' />
 
-          <List>
-            <span />
-            <span />
-          </List>
-
           <Heading content='Team' tag='h3' />
 
           <List>
-            <span>Ian Warner - Technical lead</span>
+            <ListItem>Ian Warner - Technical lead</ListItem>
           </List>
         </Column>
 

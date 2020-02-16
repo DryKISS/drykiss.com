@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row } from 'industry-ui'
+import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -59,55 +59,55 @@ export default () => {
           <Heading content='Tasks' tag='h3' />
 
           <List>
-            <span>Accessibility</span><br />
-            <span>SEO</span><br />
-            <span>UX</span><br />
-            <span>Responsive development</span><br />
-            <span>Deployment</span><br />
-            <span>Analytics</span>
+            <ListItem>Accessibility</ListItem>
+            <ListItem>SEO</ListItem>
+            <ListItem>UX</ListItem>
+            <ListItem>Responsive development</ListItem>
+            <ListItem>Deployment</ListItem>
+            <ListItem>Analytics</ListItem>
           </List>
 
           <Heading content='Project Duration' tag='h3' />
 
           <List>
-            <span>1 year of development</span>
+            <ListItem>1 year of development</ListItem>
           </List>
 
           {/* <Heading content='Technologies' tag='h3' />
 
           <List>
-            <span>Middleman</span>
-            <span>AngularJS</span>
-            <span>HAML</span>
-            <span>CoffeeScript</span>
-            <span>Sass</span>
-            <span>Scrum</span>
-            <span>BlueMix</span>
-            <span>NodeJS</span>
-            <span>CloudAnt</span>
-            <span>Cordova</span>
-            <span>Protractor</span>
-            <span>Karma</span>
-            <span>Prototyping</span>
+            <ListItem>Middleman</ListItem>
+            <ListItem>AngularJS</ListItem>
+            <ListItem>HAML</ListItem>
+            <ListItem>CoffeeScript</ListItem>
+            <ListItem>Sass</ListItem>
+            <ListItem>Scrum</ListItem>
+            <ListItem>BlueMix</ListItem>
+            <ListItem>NodeJS</ListItem>
+            <ListItem>CloudAnt</ListItem>
+            <ListItem>Cordova</ListItem>
+            <ListItem>Protractor</ListItem>
+            <ListItem>Karma</ListItem>
+            <ListItem>Prototyping</ListItem>
           </List> */}
 
           <Heading content='Outcome' tag='h3' />
 
           <List>
-            <span />
-            <span />
+            <ListItem />
+            <ListItem />
           </List>
 
           <Heading content='Team' tag='h3' />
 
           <List>
-            <span>Ian Warner - Lead Developer</span><br />
-            <span>Guillermo Noain Molina - Node Developer</span><br />
-            <span>Matthew Parish - AngularJS Developer</span><br />
-            <span>Fenton Butcher - UX</span><br />
-            <span>Leila d'Angelo - Content</span><br />
-            <span>Patrick Odey - Product Owner</span><br />
-            <span>Krishna Chodipilli - Scrum Master</span>
+            <ListItem>Ian Warner - Lead Developer</ListItem>
+            <ListItem>Guillermo Noain Molina - Node Developer</ListItem>
+            <ListItem>Matthew Parish - AngularJS Developer</ListItem>
+            <ListItem>Fenton Butcher - UX</ListItem>
+            <ListItem>Leila d'Angelo - Content</ListItem>
+            <ListItem>Patrick Odey - Product Owner</ListItem>
+            <ListItem>Krishna Chodipilli - Scrum Master</ListItem>
           </List>
         </Column>
 

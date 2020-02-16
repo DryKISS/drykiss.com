@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row } from 'industry-ui'
+import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -14,11 +14,11 @@ export default () => {
     title: 'Deliveroo - Food home delivery',
     author: 'Ian Warner',
     type: 'article',
-    image: '/static/portfolio/deliveroo/blog/hero.png'
+    image: '/static/portfolio/deliveroo/rebrand/hero.png'
   }
 
   return (
-    <Page heading='Brazil Soccer Name Generator' meta={meta}>
+    <Page heading='Deliveroo - Food home delivery' meta={meta}>
       <Row>
         <Column md={3}>
           <Image
@@ -56,29 +56,29 @@ export default () => {
           <Heading content='Tasks' tag='h3' />
 
           <List>
-            <span>Wordpress theme edits</span><br />
-            <span>Wordpress plug-in edits</span><br />
-            <span>Responsive development</span><br />
-            <span>Deployment</span>
+            <ListItem>Wordpress theme edits</ListItem>
+            <ListItem>Wordpress plug-in edits</ListItem>
+            <ListItem>Responsive development</ListItem>
+            <ListItem>Deployment</ListItem>
           </List>
 
           <Heading content='Project Duration' tag='h3' />
 
           <List>
-            <span>3 days development</span>
+            <ListItem>3 days development</ListItem>
           </List>
 
           <Heading content='Outcome' tag='h3' />
 
           <List>
-            <span>Delivered edits on time</span><br />
-            <span>Deployed at midnight</span>
+            <ListItem>Delivered edits on time</ListItem>
+            <ListItem>Deployed at midnight</ListItem>
           </List>
 
           <Heading content='Team' tag='h3' />
 
           <List>
-            <span>Ian Warner - Technical Lead</span>
+            <ListItem>Ian Warner - Technical Lead</ListItem>
           </List>
         </Column>
 

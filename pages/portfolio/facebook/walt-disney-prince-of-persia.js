@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row } from 'industry-ui'
+import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -12,10 +12,10 @@ export default () => {
       could be localised and distributed.
     `,
     path: '/pages/portfolio/facebook/walt-disney-prince-of-persia',
-    title: 'Love Football',
+    title: 'Walt Disney® Prince of Persia',
     author: 'Ian Warner',
     type: 'article',
-    image: '/static/portfolio/digital-outlook/hero.png'
+    image: '/static/portfolio/digital-outlook/walt-disney-prince-of-persia/hero.png'
   }
 
   return (
@@ -24,7 +24,7 @@ export default () => {
         <Column md={12}>
           <Image
             alt='Prince of Persia'
-            src='/static/portfolio/digital-outlook/hero.png'
+            src='/static/portfolio/digital-outlook/walt-disney-prince-of-persia/hero.png'
           />
         </Column>
       </Row>
@@ -50,31 +50,31 @@ export default () => {
           <Heading content='Tasks' tag='h3' />
 
           <List>
-            <span>Developed in PHP and Javascript</span><br />
-            <span>Localised over 7 countries on individual Facebook pages</span><br />
-            <span>Deployed on Facebook platform</span><br />
-            <span>Social and Viral actions enhanced</span><br />
+            <ListItem>Developed in PHP and Javascript</ListItem>
+            <ListItem>Localised over 7 countries on individual Facebook pages</ListItem>
+            <ListItem>Deployed on Facebook platform</ListItem>
+            <ListItem>Social and Viral actions enhanced</ListItem>
           </List>
 
           <Heading content='Project Duration' tag='h3' />
 
           <List>
-            <span>1 month development</span>
+            <ListItem>1 month development</ListItem>
           </List>
 
           <Heading content='Outcome' tag='h3' />
 
           <List>
-            <span>Marketed in locations as the film showed in the theatre</span><br />
-            <span>Delivered on time</span>
+            <ListItem>Marketed in locations as the film showed in the theatre</ListItem>
+            <ListItem>Delivered on time</ListItem>
           </List>
 
           <Heading content='Team' tag='h3' />
 
           <List>
-            <span>Ian Warner - Developer</span><br />
-            <span>Mikael Gotlib - PM</span><br />
-            <span>Threeya Thirunathan - PM</span>
+            <ListItem>Ian Warner - Developer</ListItem>
+            <ListItem>Mikael Gotlib - PM</ListItem>
+            <ListItem>Threeya Thirunathan - PM</ListItem>
           </List>
         </Column>
 

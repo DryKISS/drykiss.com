@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row } from 'industry-ui'
+import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -57,30 +57,30 @@ export default () => {
           <Heading content='Tasks' tag='h3' />
 
           <List>
-            <span>Hybrid mobile development</span><br />
-            <span>Offline capabilities</span><br />
-            <span>Responsive development</span><br />
-            <span>Deployment</span><br />
-            <span>Analytics</span>
+            <ListItem>Hybrid mobile development</ListItem>
+            <ListItem>Offline capabilities</ListItem>
+            <ListItem>Responsive development</ListItem>
+            <ListItem>Deployment</ListItem>
+            <ListItem>Analytics</ListItem>
           </List>
 
           <Heading content='Project Duration' tag='h3' />
 
           <List>
-            <span>3 month development</span>
+            <ListItem>3 month development</ListItem>
           </List>
 
           <Heading content='Outcome' tag='h3' />
 
           <List>
-            <span>Deployed new hybrid apps to iOS and Android</span><br />
-            <span>Engagement rising on both apps</span>
+            <ListItem>Deployed new hybrid apps to iOS and Android</ListItem>
+            <ListItem>Engagement rising on both apps</ListItem>
           </List>
 
           <Heading content='Team' tag='h3' />
 
           <List>
-            <span>Ian Warner - Technical Lead</span>
+            <ListItem>Ian Warner - Technical Lead</ListItem>
           </List>
         </Column>
 

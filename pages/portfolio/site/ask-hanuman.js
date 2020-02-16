@@ -3,14 +3,14 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row } from 'industry-ui'
+import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
 
 export default () => {
   const meta = {
     description: `
       AskHanuman
     `,
-    path: '/pages/portfolio/site/ask-hanuma',
+    path: '/pages/portfolio/site/ask-hanuman',
     title: 'AskHanuman',
     author: 'Ian Warner',
     type: 'article',
@@ -23,7 +23,7 @@ export default () => {
         <Column md={12}>
           <Image
             alt='AskHanuman'
-            src='/static/portfolio/alpha-founder/hero.png'
+            src='/static/portfolio/alpha-founders/ask-hanuman/hero.png'
           />
         </Column>
       </Row>
@@ -38,28 +38,14 @@ export default () => {
 
           <Heading content='Tasks' tag='h3' />
 
-          <List>
-            <span />
-            <span />
-          </List>
-
           <Heading content='Project Duration' tag='h3' />
 
-          <List>
-            <span />
-          </List>
-
           <Heading content='Outcome' tag='h3' />
-
-          <List>
-            <span />
-            <span />
-          </List>
 
           <Heading content='Team' tag='h3' />
 
           <List>
-            <span>Ian Warner - Developer</span>
+            <ListItem>Ian Warner - Developer</ListItem>
           </List>
         </Column>
 
