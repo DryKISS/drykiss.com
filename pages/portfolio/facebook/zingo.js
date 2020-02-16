@@ -13,12 +13,21 @@ export default () => {
     path: '/pages/portfolio/facebook/zingo',
     title: 'Zingo',
     author: 'Ian Warner',
-    type: 'article',
-    image: '/static/portfolio/triangle-solutions/zingo/hero.png'
+    type: 'article'
   }
 
   return (
     <Page heading='Zingo' meta={meta}>
+
+      <Head>
+        <meta
+          content='https://drykiss.com/static/portfolio/triangle-solutions/zingo/hero.jpg?v=1.00'
+          key='og:image'
+          property='og:image'
+        />
+        <script async defer key='instagram' src='https://platform.instagram.com/en_US/embeds.js' />
+      </Head>
+
       <Row>
         <Column md={12}>
           <Image

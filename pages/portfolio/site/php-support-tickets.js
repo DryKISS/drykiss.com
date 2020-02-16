@@ -5,6 +5,9 @@
 // UI
 import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
 
+// Next
+import Head from 'next/head'
+
 export default () => {
   const meta = {
     description: `
@@ -13,12 +16,21 @@ export default () => {
     path: '/pages/portfolio/site/php-support-tickets',
     title: 'PHP Support Tickets',
     author: 'Ian Warner',
-    type: 'article',
-    image: '/static/portfolio/triangle-solutions/php-support-tickets/hero.png'
+    type: 'article'
   }
 
   return (
     <Page heading='PHP Support Tickets' meta={meta}>
+
+      <Head>
+        <meta
+          content='https://drykiss.com/static/portfolio/triangle-solutions/php-support-tickets/hero.jpg?v=1.00'
+          key='og:image'
+          property='og:image'
+        />
+        <script async defer key='instagram' src='https://platform.instagram.com/en_US/embeds.js' />
+      </Head>
+
       <Row>
         <Column md={12}>
           <Image
