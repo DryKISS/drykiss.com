@@ -29,7 +29,6 @@ export default () => {
           key='og:image'
           property='og:image'
         />
-        <script async defer key='instagram' src='https://platform.instagram.com/en_US/embeds.js' />
       </Head>
 
       <Row>
