@@ -5,7 +5,10 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row } from 'industry-ui'
+import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
+
+// Next
+import Head from 'next/head'
 
 export default () => {
   const meta = {
@@ -20,6 +23,15 @@ export default () => {
 
   return (
     <Page heading='Brazil Soccer Name Generator' meta={meta}>
+
+      <Head>
+        <meta
+          content='https://drykiss.com/static/portfolio/triangle-solutions/brazil-soccer-name-generator/hero.jpg?v=1.00'
+          key='og:image'
+          property='og:image'
+        />
+      </Head>
+
       <Row>
         <Column md={12}>
           <Image
@@ -45,30 +57,31 @@ export default () => {
           <Heading content='Tasks' tag='h3' />
 
           <List>
-            <span>Developed Javascript algorithm to create name</span>
-            <span>Database creation to manage users and names</span>
-            <span>Deployed on Facebook platform</span>
-            <span>Social and Viral actions enhanced</span>
-            <span>Interlinked with other Facebook apps</span>
+            <ListItem>Developed Javascript algorithm to create name</ListItem>
+            <ListItem>Database creation to manage users and names</ListItem>
+            <ListItem>Deployed on Facebook platform</ListItem>
+            <ListItem>Social and Viral actions enhanced</ListItem>
+            <ListItem>InterListlinked with other Facebook apps</ListItem>
           </List>
+          <p />
 
           <Heading content='Project Duration' tag='h3' />
 
           <List>
-            <span>2 weeks development</span>
+            <ListItem>2 weeks development</ListItem>
           </List>
 
           <Heading content='Outcome' tag='h3' />
 
           <List>
-            <span>Tens of thousands of downloads</span>
-            <span>Ceased due to Facebook changing profile rules</span>
+            <ListItem>Tens of thousands of downloads</ListItem>
+            <ListItem>Ceased due to Facebook changing profile rules</ListItem>
           </List>
 
           <Heading content='Team' tag='h3' />
 
           <List>
-            <span>Ian Warner - Developer</span>
+            <ListItem>Ian Warner - Developer</ListItem>
           </List>
         </Column>
 

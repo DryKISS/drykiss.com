@@ -1,9 +1,12 @@
 /**
- * Brazil Soccer Name
+ * Guinness® Facebook Page
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row } from 'industry-ui'
+import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
+
+// Next
+import Head from 'next/head'
 
 export default () => {
   const meta = {
@@ -17,6 +20,15 @@ export default () => {
 
   return (
     <Page heading='Guinness® Arthurs Day' meta={meta}>
+
+      <Head>
+        <meta
+          content='https://drykiss.com/static/portfolio/tribal-ddb/guinness-arthurs-day/hero.jpg?v=1.00'
+          key='og:image'
+          property='og:image'
+        />
+      </Head>
+
       <Row>
         <Column md={12}>
           <Image
@@ -37,6 +49,7 @@ export default () => {
           <Link to='https://en.wikipedia.org/wiki/Arthur%27s_Day'>
             <a target='_blank'>Arthur's Day</a>
           </Link>
+          <p />
 
           <Link to='https://www.youtube.com/watch?v=nJA4AifqbsM&feature=youtu.be'>
             <a target='_blank'>Arthur's Day Video</a>
@@ -49,31 +62,31 @@ export default () => {
           <Heading content='Tasks' tag='h3' />
 
           <List>
-            <span>Developed PHP and Javascript page tab.</span>
-            <span>Custom slider because Facebook JS was very limited</span>
-            <span>Deployed onto Facebook page</span>
-            <span>Social and Viral actions added</span>
-            <span>Videos and Images optimised for speed of delivery</span>
+            <ListItem>Developed PHP and Javascript page tab.</ListItem>
+            <ListItem>Custom slider because Facebook JS was very limited</ListItem>
+            <ListItem>Deployed onto Facebook page</ListItem>
+            <ListItem>Social and Viral actions added</ListItem>
+            <ListItem>Videos and Images optimised for speed of delivery</ListItem>
           </List>
 
           <Heading content='Project Duration' tag='h3' />
 
           <List>
-            <span>1 month development</span>
+            <ListItem>1 month development</ListItem>
           </List>
 
           <Heading content='Outcome' tag='h3' />
 
           <List>
-            <span>Successfully delivered ontime</span>
-            <span>Marketed to thousands of Guinness and Diageo fans</span>
+            <ListItem>Successfully delivered ontime</ListItem>
+            <ListItem>Marketed to thousands of Guinness and Diageo fans</ListItem>
           </List>
 
           <Heading content='Team' tag='h3' />
 
           <List>
-            <span>Ian Warner - Developer</span>
-            <span>James Mulligan - PM</span>
+            <ListItem>Ian Warner - Developer</ListItem>
+            <ListItem>James Mulligan - PM</ListItem>
           </List>
         </Column>
 

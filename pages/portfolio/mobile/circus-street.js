@@ -1,9 +1,12 @@
 /**
- * Brazil Soccer Name
+ * Circus Street
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row } from 'industry-ui'
+import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
+
+// Next
+import Head from 'next/head'
 
 export default () => {
   const meta = {
@@ -13,17 +16,43 @@ export default () => {
     path: '/portfolio/mobile/circus-street',
     title: 'Circus Street - Video e-learning platform',
     author: 'Ian Warner',
-    type: 'article',
-    image: 'http://drykiss.com/assets/images/portfolio/circusstreet/circusstreet-home.png'
+    type: 'article'
   }
 
   return (
     <Page heading='Circus Street - Video e-learning platform' meta={meta}>
+
+      <Head>
+        <meta
+          content='https://drykiss.com/static/portfolio/drykiss/circus-street/hero.jpg?v=1.00'
+          key='og:image'
+          property='og:image'
+        />
+      </Head>
+
       <Row>
-        <Column md={12}>
+        <Column md={3}>
           <Image
             alt='circus street'
-            src='/static/portfolio/circus-street/circus-street/hero.png'
+            src='/static/portfolio/drykiss/circus-street/circus-street-home-mobile.jpeg'
+          />
+        </Column>
+        <Column md={3}>
+          <Image
+            alt='circusstreet-jargon-mobile'
+            src='/static/portfolio/drykiss/circus-street/circusstreet-jargon-mobile.jpeg'
+          />
+        </Column>
+        <Column md={3}>
+          <Image
+            alt='circusstreet-lesson-mobile'
+            src='/static/portfolio/drykiss/circus-street/circusstreet-lesson-mobile.jpeg'
+          />
+        </Column>
+        <Column md={3}>
+          <Image
+            alt='circusstreet-video-mobile'
+            src='/static/portfolio/drykiss/circus-street/circusstreet-video-mobile.jpeg'
           />
         </Column>
       </Row>
@@ -36,45 +65,33 @@ export default () => {
 
           <Heading content='Links' tag='h3' />
 
-          <Link to='https://en.wikipedia.org/wiki/Arthur%27s_Day'>
-            <a target='_blank'>Arthur's Day</a>
-          </Link>
-
-          <Link to='https://www.youtube.com/watch?v=nJA4AifqbsM&feature=youtu.be'>
-            <a target='_blank'>Arthur's Day Video</a>
-          </Link>
-          <p />
-
-          {/* https://www.irishpubsglobal.com/guinness-unveils-2011-arthurs-day-line-up/ */}
-          {/* https://www.youtube.com/watch?v=OKEQ_NuRl2c */}
-
           <Heading content='Tasks' tag='h3' />
 
           <List>
-            <span>Hybrid mobile development</span>
-            <span>Offline capabilities</span>
-            <span>Responsive development</span>
-            <span>Deployment</span>
-            <span>Analytics</span>
+            <ListItem>Hybrid mobile development</ListItem>
+            <ListItem>Offline capabilities</ListItem>
+            <ListItem>Responsive development</ListItem>
+            <ListItem>Deployment</ListItem>
+            <ListItem>Analytics</ListItem>
           </List>
 
           <Heading content='Project Duration' tag='h3' />
 
           <List>
-            <span>3 month development</span>
+            <ListItem>3 month development</ListItem>
           </List>
 
           <Heading content='Outcome' tag='h3' />
 
           <List>
-            <span>Deployed new hybrid apps to iOS and Android</span>
-            <span>Engagement rising on both apps</span>
+            <ListItem>Deployed new hybrid apps to iOS and Android</ListItem>
+            <ListItem>Engagement rising on both apps</ListItem>
           </List>
 
           <Heading content='Team' tag='h3' />
 
           <List>
-            <span>Ian Warner - Technical lead</span>
+            <ListItem>Ian Warner - Technical Lead</ListItem>
           </List>
         </Column>
 
