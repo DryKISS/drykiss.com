@@ -6,14 +6,13 @@
  */
 
 // React
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
 // Lodash
 import find from 'lodash/find'
 
 // Next
 import Head from 'next/head'
-import { useRouter } from 'next/router'
 
 // Config
 import { Blog, Facebook } from 'config'
@@ -25,8 +24,6 @@ import { Article, BlogSidebar, Column, Page, Row } from 'industry-ui'
 import { Articles } from 'data/blog'
 
 const BlogArticle = ({ article, query }) => {
-  const [isLoading, setIsLoading] = useState(true)
-
   useEffect(() => {
     if (window.instgrm && window.instgrm.Embeds) {
       window.instgrm.Embeds.process()

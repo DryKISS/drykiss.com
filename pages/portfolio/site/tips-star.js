@@ -3,16 +3,14 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
+import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from 'industry-ui'
 
 // Next
 import Head from 'next/head'
 
 export default () => {
   const meta = {
-    description: `
-    Tips star
-    `,
+    description: 'Tips star',
     path: '/pages/portfolio/site/tips-star',
     title: 'Tips star',
     author: 'Ian Warner',
@@ -21,7 +19,6 @@ export default () => {
 
   return (
     <Page heading='Tips star' meta={meta}>
-
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/tips-star/tips-star/hero.jpg?v=1.00'
@@ -32,10 +29,7 @@ export default () => {
 
       <Row>
         <Column md={12}>
-          <Image
-            alt='Tips star'
-            src='/static/portfolio/tips-star/tips-star/hero.png'
-          />
+          <Image alt='Tips star' src='/static/portfolio/tips-star/tips-star/hero.png' />
         </Column>
       </Row>
 
@@ -62,7 +56,6 @@ export default () => {
 
         <Column md={9}>
           <Heading content='Description' tag='h2' />
-
         </Column>
       </Row>
     </Page>

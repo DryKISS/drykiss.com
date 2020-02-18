@@ -10,9 +10,7 @@ import Head from 'next/head'
 
 export default () => {
   const meta = {
-    description: `
-      Deliveroo - Excuse generator
-    `,
+    description: 'Deliveroo - Excuse generator',
     path: '/portfolio/site/deliveroo-excuse-generator',
     title: 'Deliveroo - Excuse generator',
     author: 'Ian Warner',
@@ -21,7 +19,6 @@ export default () => {
 
   return (
     <Page heading='Deliveroo - Excuse generator' meta={meta}>
-
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/deliveroo/excuse-generator/hero.jpg?v=1.00'
@@ -47,9 +44,7 @@ export default () => {
 
           <Heading content='Links' tag='h3' />
 
-          <Link to='http://excuse-generator.com/'>
-            <a target='_blank'>Deliveroo Excuse generator</a>
-          </Link>
+          <Link to='http://excuse-generator.com/'>Deliveroo Excuse generator</Link>
           <p />
 
           <Heading content='Tasks' tag='h3' />
@@ -84,17 +79,14 @@ export default () => {
 
         <Column md={9}>
           <Heading content='Description' tag='h2' />
-
           <p>
-            DryKISS completed what is the most ambitious digital marketing
-            build for Deliveroo in it's history.
+            DryKISS completed what is the most ambitious digital marketing build for Deliveroo in
+            it's history.
           </p>
-
           <p>
-            They required in a short development window the development of a
-            global site for their #AnyExcuse campaign.
+            They required in a short development window the development of a global site for their
+            #AnyExcuse campaign.
           </p>
-
         </Column>
       </Row>
     </Page>

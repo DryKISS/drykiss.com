@@ -3,16 +3,14 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
+import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from 'industry-ui'
 
 // Next
 import Head from 'next/head'
 
 export default () => {
   const meta = {
-    description: `
-    SMS Million
-    `,
+    description: 'SMS Million',
     path: '/pages/portfolio/site/sms-million',
     title: 'SMS Million',
     author: 'Ian Warner',
@@ -21,7 +19,6 @@ export default () => {
 
   return (
     <Page heading='SMS Million' meta={meta}>
-
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/triangle-solutions/sms-million/hero.jpg?v=1.00'
@@ -62,7 +59,6 @@ export default () => {
 
         <Column md={9}>
           <Heading content='Description' tag='h2' />
-
         </Column>
       </Row>
     </Page>

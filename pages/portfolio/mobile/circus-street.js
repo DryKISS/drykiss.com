@@ -2,11 +2,11 @@
  * Circus Street
  */
 
-// UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
-
 // Next
 import Head from 'next/head'
+
+// UI
+import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -21,7 +21,6 @@ export default () => {
 
   return (
     <Page heading='Circus Street - Video e-learning platform' meta={meta}>
-
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/drykiss/circus-street/hero.jpg?v=1.00'
@@ -98,19 +97,16 @@ export default () => {
         <Column md={9}>
           <Heading content='Description' tag='h2' />
 
+          <p>DryKISS made contact with Circus Street through the YunoJuno platform.</p>
+
           <p>
-            DryKISS made contact with Circus Street through the YunoJuno platform.
+            They were in quite a desperate need for some rapid development and decisions on the
+            direction of their Hybrid project.
           </p>
 
           <p>
-            They were in quite a desperate need for some rapid development and
-            decisions on the direction of their Hybrid project.
-          </p>
-
-          <p>
-            They had already built a native iPad application previously, but
-            wanted to use the Cordova technology to enable a cross platform,
-            multi-device experience.
+            They had already built a native iPad application previously, but wanted to use the
+            Cordova technology to enable a cross platform, multi-device experience.
           </p>
         </Column>
       </Row>

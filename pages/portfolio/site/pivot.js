@@ -10,9 +10,7 @@ import Head from 'next/head'
 
 export default () => {
   const meta = {
-    description: `
-    IBM - Pivot
-    `,
+    description: 'IBM - Pivot',
     path: '/pages/portfolio/site/pivot',
     title: 'IBM - Pivot',
     author: 'Ian Warner',
@@ -21,7 +19,6 @@ export default () => {
 
   return (
     <Page heading='IBM - Pivot' meta={meta}>
-
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/ibm/pivot/hero.jpg?v=1.00'
@@ -32,10 +29,7 @@ export default () => {
 
       <Row>
         <Column md={12}>
-          <Image
-            alt='IBM - Pivot'
-            src='/static/portfolio/ibm/pivot/hero.png'
-          />
+          <Image alt='IBM - Pivot' src='/static/portfolio/ibm/pivot/hero.png' />
         </Column>
       </Row>
 
@@ -47,24 +41,16 @@ export default () => {
 
           <Heading content='Links' tag='h3' />
 
-          <Link to='http://fentonbutcher.co.uk/news/'>
-            <a target='_blank'>IBM - Pivot</a>
-          </Link>
+          <Link to='http://fentonbutcher.co.uk/news/'>IBM - Pivot</Link>
           <p />
 
-          <Link to='https://www.youtube.com/watch?v=2wN-vgbFnoc'>
-            <a target='_blank'>IBM iX London Studio Video</a>
-          </Link>
+          <Link to='https://www.youtube.com/watch?v=2wN-vgbFnoc'>IBM iX London Studio Video</Link>
           <p />
 
-          <Link to='http://studios.ibm.com/'>
-            <a target='_blank'>IBM Studios</a>
-          </Link>
+          <Link to='http://studios.ibm.com/'>IBM Studios</Link>
           <p />
 
-          <Link to='https://www-03.ibm.com/press/uk/en/pressrelease/46148.wss'>
-            <a target='_blank'>IBM London</a>
-          </Link>
+          <Link to='https://www-03.ibm.com/press/uk/en/pressrelease/46148.wss'>IBM London</Link>
           <p />
 
           <Heading content='Tasks' tag='h3' />
@@ -84,7 +70,7 @@ export default () => {
             <ListItem>1 year of development</ListItem>
           </List>
 
-          {/* <Heading content='Technologies' tag='h3' />
+          <Heading content='Technologies' tag='h3' />
 
           <List>
             <ListItem>Middleman</ListItem>
@@ -100,7 +86,7 @@ export default () => {
             <ListItem>Protractor</ListItem>
             <ListItem>Karma</ListItem>
             <ListItem>Prototyping</ListItem>
-          </List> */}
+          </List>
 
           <Heading content='Outcome' tag='h3' />
 
@@ -124,7 +110,6 @@ export default () => {
 
         <Column md={9}>
           <Heading content='Description' tag='h2' />
-
         </Column>
       </Row>
     </Page>

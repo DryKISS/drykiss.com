@@ -1,7 +1,5 @@
 /**
  * Brazil Soccer Name
- *
- * @todo Add when
  */
 
 // UI
@@ -23,7 +21,6 @@ export default () => {
 
   return (
     <Page heading='Brazil Soccer Name Generator' meta={meta}>
-
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/triangle-solutions/brazil-soccer-name-generator/hero.jpg?v=1.00'
@@ -49,9 +46,7 @@ export default () => {
 
           <Heading content='Links' tag='h3' />
 
-          <Link to=''>
-            <a>Brazil Soccer Name</a>
-          </Link>
+          <Link to=''>Brazil Soccer Name</Link>
           <p />
 
           <Heading content='Tasks' tag='h3' />
@@ -87,12 +82,10 @@ export default () => {
 
         <Column md={9}>
           <Heading content='Description' tag='h2' />
-
           <p>
             Brazil Soccer Name was a small fun Facebook application created in a very short time to
             really amplify the conversions we wanted on Love Football.
           </p>
-
           <p>
             It was very successful with tens of thousands of downloads, and many thousands of social
             interactions such as shares and likes.

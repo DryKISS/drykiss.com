@@ -11,8 +11,8 @@ import Head from 'next/head'
 export default () => {
   const meta = {
     description: `
-      Walt Disney required a Facebook page for the movie Prince of Persia that
-      could be localised and distributed.
+      Walt Disney required a Facebook page for the movie Prince of Persia that could be localised
+      and distributed.
     `,
     path: '/pages/portfolio/facebook/walt-disney-prince-of-persia',
     title: 'Walt Disney® Prince of Persia',
@@ -22,7 +22,6 @@ export default () => {
 
   return (
     <Page heading='Walt Disney® Prince of Persia' meta={meta}>
-
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/digital-outlook/walt-disney-prince-of-persia/hero.jpg?v=1.00'
@@ -48,14 +47,10 @@ export default () => {
 
           <Heading content='Links' tag='h3' />
 
-          <Link to='https://www.facebook.com/Prince-of-Persia-UK-111470518895615/'>
-            <a target='_blank'>Page</a>
-          </Link>
+          <Link to='https://www.facebook.com/Prince-of-Persia-UK-111470518895615/'>Page</Link>
           <p />
 
-          <Link to='https://www.facebook.com/PrinceOfPersiaMovie/'>
-            <a target='_blank'>Film</a>
-          </Link>
+          <Link to='https://www.facebook.com/PrinceOfPersiaMovie/'>Film</Link>
           <p />
 
           <Heading content='Tasks' tag='h3' />

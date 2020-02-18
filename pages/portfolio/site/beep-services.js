@@ -1,18 +1,16 @@
 /**
-* Beep Services
-*/
+ * Beep Services
+ */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
+import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from 'industry-ui'
 
 // Next
 import Head from 'next/head'
 
 export default () => {
   const meta = {
-    description: `
-      Beep Services
-    `,
+    description: 'Beep Services',
     path: '/pages/portfolio/site/beep-service',
     title: 'Beep Services',
     author: 'Ian Warner',
@@ -22,7 +20,6 @@ export default () => {
 
   return (
     <Page heading='Beep Services' meta={meta}>
-
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/beep-taxi/beep-services/hero.jpg?v=1.00'
@@ -33,10 +30,7 @@ export default () => {
 
       <Row>
         <Column md={12}>
-          <Image
-            alt='Beep Services'
-            src='/static/portfolio/beep-taxi/beep-services/hero.png'
-          />
+          <Image alt='Beep Services' src='/static/portfolio/beep-taxi/beep-services/hero.png' />
         </Column>
       </Row>
 

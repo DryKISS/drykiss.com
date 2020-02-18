@@ -2,17 +2,15 @@
  * Would You
  */
 
-// UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
-
 // Next
 import Head from 'next/head'
 
+// UI
+import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from 'industry-ui'
+
 export default () => {
   const meta = {
-    description: `
-    Would You
-    `,
+    description: 'Would You',
     path: '/pages/portfolio/facebook/would-you',
     title: 'Would You',
     author: 'Ian Warner',
@@ -21,7 +19,6 @@ export default () => {
 
   return (
     <Page heading='Would You' meta={meta}>
-
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/triangle-solutions/would-you/hero.jpg?v=1.00'
@@ -32,10 +29,7 @@ export default () => {
 
       <Row>
         <Column md={12}>
-          <Image
-            alt='Would You'
-            src='/static/portfolio/triangle-solutions/would-you/hero.png'
-          />
+          <Image alt='Would You' src='/static/portfolio/triangle-solutions/would-you/hero.png' />
         </Column>
       </Row>
 
@@ -62,7 +56,6 @@ export default () => {
 
         <Column md={9}>
           <Heading content='Description' tag='h2' />
-
         </Column>
       </Row>
     </Page>

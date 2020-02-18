@@ -21,7 +21,6 @@ export default () => {
 
   return (
     <Page heading='Jack Morton Samsung' meta={meta}>
-
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/jack-morton/samsung/hero.jpg?v=1.00'
@@ -32,10 +31,7 @@ export default () => {
 
       <Row>
         <Column md={12}>
-          <Image
-            alt='Jack Morton Samsung'
-            src='/static/portfolio/jack-morton/samsung/hero.png'
-          />
+          <Image alt='Jack Morton Samsung' src='/static/portfolio/jack-morton/samsung/hero.png' />
         </Column>
       </Row>
 
@@ -48,7 +44,7 @@ export default () => {
           <Heading content='Links' tag='h3' />
 
           <Link to='http://www.eventmagazine.co.uk/samsung-galaxy-studio-showcases-devices-portobello-road/destinations/article/1217188'>
-            <a target='_blank'>Jack Morton Samsung</a>
+            Jack Morton Samsung
           </Link>
           <p />
 
@@ -67,7 +63,6 @@ export default () => {
 
         <Column md={9}>
           <Heading content='Description' tag='h2' />
-
         </Column>
       </Row>
     </Page>

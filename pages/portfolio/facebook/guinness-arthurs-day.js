@@ -20,7 +20,6 @@ export default () => {
 
   return (
     <Page heading='Guinness® Arthurs Day' meta={meta}>
-
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/tribal-ddb/guinness-arthurs-day/hero.jpg?v=1.00'
@@ -46,13 +45,11 @@ export default () => {
 
           <Heading content='Links' tag='h3' />
 
-          <Link to='https://en.wikipedia.org/wiki/Arthur%27s_Day'>
-            <a target='_blank'>Arthur's Day</a>
-          </Link>
+          <Link to='https://en.wikipedia.org/wiki/Arthur%27s_Day'>Arthur's Day</Link>
           <p />
 
           <Link to='https://www.youtube.com/watch?v=nJA4AifqbsM&feature=youtu.be'>
-            <a target='_blank'>Arthur's Day Video</a>
+            Arthur's Day Video
           </Link>
           <p />
 
@@ -92,17 +89,14 @@ export default () => {
 
         <Column md={9}>
           <Heading content='Description' tag='h2' />
-
           <p>
             Arthurs Day was an annual celebration at Guinness to celebrate the birthday of it's
             founder Arthur Guinness.
           </p>
-
           <p>
             DryKISS through TribalDDB created the Facebook page application to market the musical
             event.
           </p>
-
           <p>
             It contained band profiles with videos and imagery, the page was then marketed globally
             to all Guinness fans.

@@ -3,16 +3,14 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
+import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from 'industry-ui'
 
 // Next
 import Head from 'next/head'
 
 export default () => {
   const meta = {
-    description: `
-    Xpansif - Easi Website
-    `,
+    description: 'Xpansif - Easi Website',
     path: '/pages/portfolio/site/easiwebsite',
     title: 'Xpansif',
     author: 'Ian Warner',
@@ -22,7 +20,6 @@ export default () => {
 
   return (
     <Page heading='Xpansif - Easi Website' meta={meta}>
-
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/xpansif/easiwebsite/hero.jpg?v=1.00'
@@ -33,10 +30,7 @@ export default () => {
 
       <Row>
         <Column md={12}>
-          <Image
-            alt='Xpansif'
-            src='/static/portfolio/xpansif/easiwebsite/hero.png'
-          />
+          <Image alt='Xpansif' src='/static/portfolio/xpansif/easiwebsite/hero.png' />
         </Column>
       </Row>
 
@@ -63,7 +57,6 @@ export default () => {
 
         <Column md={9}>
           <Heading content='Description' tag='h2' />
-
         </Column>
       </Row>
     </Page>
