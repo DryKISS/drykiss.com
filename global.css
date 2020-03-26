@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/static/fonts/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('/static/fonts/woff/JetBrainsMono-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+}
