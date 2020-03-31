@@ -6,18 +6,43 @@
 import { node, oneOf, string } from 'prop-types'
 
 // UI
-import { CONTEXT, SIZE } from 'industry-ui'
+import { CONTEXT, SIZE, MEDIA_QUERY } from 'industry-ui'
 
 // Style
 import styled, { css } from 'styled-components'
 
-export const Text = ({ children, content, context, size }) => {
-  return <StyledText>{content || children}</StyledText>
+export const Text = ({ align, children, className, content, context, size }) => {
+  return (
+    <StyledText align={align} className={className} context={context} size={size}>
+      {content || children}
+    </StyledText>
+  )
 }
 
 const StyledText = styled.p`
   margin: 0;
   padding: 0;
+  text-align: ${({ align }) => align};
+  ${({ size }) =>
+    size === 'xxxl' &&
+    css`
+      color: ${({ context }) => context};
+      font-family: 'JetBrains Mono ExtraBold';
+      font-size: 1.5rem;
+      line-height: 1.5;
+
+      ${MEDIA_QUERY.desktop`
+        font-size: 4rem;
+      `}
+    `}
+
+  ${({ size }) =>
+    size === 'xl' &&
+    css`
+      font-size: 1.5rem;
+      line-height: 1.5;
+    `}
+
   ${({ size }) =>
     size === 'lg' &&
     css`
@@ -33,7 +58,7 @@ const StyledText = styled.p`
     `}
 
   ${({ size }) =>
-    size === 'md' &&
+    size === 'sm' &&
     css`
       font-size: 0.75rem;
       line-height: 1.333;
@@ -41,6 +66,7 @@ const StyledText = styled.p`
 `
 
 Text.protoTypes = {
+  align: string,
   children: node,
   content: string,
   context: oneOf(Object.values(CONTEXT)),
@@ -48,6 +74,6 @@ Text.protoTypes = {
 }
 
 Text.defaultProps = {
-  context: 'white',
+  context: 'black',
   size: 'md'
 }

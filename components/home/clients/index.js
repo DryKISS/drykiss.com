@@ -1,11 +1,11 @@
 /**
- * Components - Home - Services
+ * Components - Home - Clients
  *
  * Images: 256x162
  */
 
 // UI
-import { Column, Heading, Image, Row } from 'industry-ui'
+import { Column, Container, Heading, Image, Row } from 'industry-ui'
 
 // Style
 import styled from 'styled-components'
@@ -15,7 +15,7 @@ import { ClientsData } from './data'
 
 export const Clients = () => {
   return (
-    <>
+    <Container>
       <StyledTitle content='Clients' tag='h2' />
       <StyledSubTitle content='Trusted by the world’s companies including:' tag='h5' />
 
@@ -28,7 +28,7 @@ export const Clients = () => {
           </Column>
         ))}
       </Row>
-    </>
+    </Container>
   )
 }
 

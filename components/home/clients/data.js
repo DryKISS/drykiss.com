@@ -1,5 +1,5 @@
 /**
- * Clients
+ * Components - Home - Clients - Data
  */
 export const ClientsData = [
   {

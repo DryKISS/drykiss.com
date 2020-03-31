@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Column, Heading, Image, Row } from 'industry-ui'
+import { Column, Container, Heading, Image, Row } from 'industry-ui'
 import { Text } from 'components'
 
 // Style
@@ -11,7 +11,7 @@ import styled from 'styled-components'
 
 export const Services = () => {
   return (
-    <>
+    <Container>
       <StyledTitle content='Services' tag='h2' />
 
       <StyledSubTitle
@@ -50,7 +50,7 @@ export const Services = () => {
           </Text>
         </Column>
       </Row>
-    </>
+    </Container>
   )
 }
 

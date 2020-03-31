@@ -4,7 +4,7 @@
 
 // UI
 import { Hero, Page } from 'industry-ui'
-import { Clients, Contact, Services } from 'components/'
+import { Clients, Contact, Ethos, Principles, Services } from 'components/'
 
 // Config
 import { Brand } from 'config'
@@ -21,7 +21,7 @@ export default () => {
   }
 
   return (
-    <Page brand={Brand} meta={meta}>
+    <Page brand={Brand} fluid meta={meta}>
       <StyledBox>
         <StyledHero
           background='/static/hero/background.png'
@@ -32,6 +32,14 @@ export default () => {
 
       <StyledBox>
         <Clients />
+      </StyledBox>
+
+      <StyledBox>
+        <Ethos />
+      </StyledBox>
+
+      <StyledBox>
+        <Principles />
       </StyledBox>
 
       <StyledBox>
