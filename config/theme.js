@@ -2,11 +2,6 @@
  * DryKiss Theme
  *
  */
-const TYPOGRAPHY = {
-  font: '"JetBrains Mono"',
-  fontColour: '#666',
-  fontSizeBase: '1rem;'
-}
 
 export const HEADINGS = {
   h1: {
@@ -49,7 +44,18 @@ export const HEADINGS = {
   }
 }
 
+const PAGE = {
+  backGroundColour: '#fff'
+}
+
+const TYPOGRAPHY = {
+  font: '"JetBrains Mono"',
+  fontColour: '#666',
+  fontSizeBase: '1rem;'
+}
+
 export const Theme = {
-  TYPOGRAPHY,
-  HEADINGS
+  HEADINGS,
+  PAGE,
+  TYPOGRAPHY
 }

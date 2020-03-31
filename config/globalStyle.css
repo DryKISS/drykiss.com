@@ -9,3 +9,9 @@
   src: url('/static/fonts/jet-brains-mono/woff2/bold.woff2'),
     url('/static/fonts/jet-brains-mono/woff/bold.woff');
 }
+
+@font-face {
+  font-family: 'JetBrains Mono ExtraBold';
+  src: url('/static/fonts/jet-brains-mono/woff2/extra-bold.woff2'),
+    url('/static/fonts/jet-brains-mono/woff/extra-bold.woff');
+}
