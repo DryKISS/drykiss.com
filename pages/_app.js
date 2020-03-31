@@ -40,20 +40,10 @@ export default props => (
         key='og:image'
         property='og:image'
       />
+
       <meta name='twitter:image' content='https://drykiss.com/static/social/drykiss-facebook.jpg' />
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-          @font-face {
-            font-family: 'JetBrains Mono';
-            src: url('/static/fonts/woff2/JetBrainsMono-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-            url('/static/fonts/woff/JetBrainsMono-Regular.woff') format('woff'); /* Pretty Modern Browsers */
-          }
-      }
-      `
-        }}
-      />
     </Head>
+
     <MyApp Layout={Layout} {...props} theme={Theme} />
   </>
 )
