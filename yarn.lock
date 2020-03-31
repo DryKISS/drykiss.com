@@ -1320,6 +1320,11 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
+"@popperjs/core@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.1.1.tgz#12c572ab88ef7345b43f21883fca26631c223085"
+  integrity sha512-sLqWxCzC5/QHLhziXSCAksBxHfOnQlhPRVgPK0egEw+ktWvG75T2k+aYWVjVh9+WKeT3tlG3ZNbZQvZLmfuOIw==
+
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.0.tgz#ecdf48d532c58ea477acfcab80348424f8d0662f"
@@ -8814,6 +8819,13 @@ react-dom@^16.12.0:
     prop-types "^15.6.2"
     scheduler "^0.18.0"
 
+react-dropzone-uploader@^2.11.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/react-dropzone-uploader/-/react-dropzone-uploader-2.11.0.tgz#6579e83f4f98c8248a3f3b5825c436ca3d6441cf"
+  integrity sha512-1DpdPMGKP7vYL5SeCh13HCl+Xrz0F6jGrDPU5Tj2ojEIXGMCtfflrZhyXdr7u40IkQ+hYjAUEEtJW24SiY8WRA==
+  dependencies:
+    "@babel/runtime" "^7.1.2"
+
 react-dropzone@^10.2.1:
   version "10.2.1"
   resolved "https://registry.yarnpkg.com/react-dropzone/-/react-dropzone-10.2.1.tgz#b7520124c4a3b66f96d49f7879027c7a475eaa20"
@@ -10554,6 +10566,13 @@ timers-browserify@^2.0.4:
   integrity sha512-60aV6sgJ5YEbzUdn9c8kYGIqOubPoUdqQCul3SBAsRCZ40s6Y5cMcrW4dt3/k/EsbLVJNl9n6Vz3fTc+k2GeKQ==
   dependencies:
     setimmediate "^1.0.4"
+
+tippy.js@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/tippy.js/-/tippy.js-6.1.0.tgz#9c58b94f92f3044d5e861b9d83da3c2a6d3d4323"
+  integrity sha512-cRFydlVZlvo4soQSUfVNbH2K77zDUhDAzaAjxseyn81gGIa+j72y98yDL2yB0n8gas/E+Zlr1iOyR5ckslUFqA==
+  dependencies:
+    "@popperjs/core" "^2.1.1"
 
 tmp@^0.0.33:
   version "0.0.33"
