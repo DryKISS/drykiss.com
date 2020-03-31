@@ -1,8 +1,11 @@
 /**
  * Config
  */
+
 export const apiConfig = {}
 export const jwtConfig = {}
+export const AccessPages = {}
+export const AccessRules = {}
 
 const Canonical = require('./canonical')
 export { Canonical }
