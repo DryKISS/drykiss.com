@@ -15,3 +15,13 @@
   src: url('/static/fonts/jet-brains-mono/woff2/extra-bold.woff2'),
     url('/static/fonts/jet-brains-mono/woff/extra-bold.woff');
 }
+
+@font-face {
+  font-family: 'Monorama';
+  src: url('/static/fonts/monorama/woff2/regular.woff2'),
+    url('/static/fonts/monorama/woff2/regular.woff');
+}
+
+mark {
+  background-color: #80FF00;
+}

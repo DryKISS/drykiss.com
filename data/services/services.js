@@ -36,5 +36,12 @@ export const Services = [
     all other social networks.`,
     name: 'Digital Social Marketing',
     to: '/digital-marketing'
+  },
+  {
+    description: `DryKISS can strategise, plan and curate a social marketing
+    plan for your business. Posting content on Facebook, Twitter, LinkedIn and
+    all other social networks.`,
+    name: 'Pricing',
+    to: '/pricing'
   }
 ]

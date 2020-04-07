@@ -3,21 +3,38 @@
  */
 
 // UI
-import { Button, Card, CardFooter, CardDecks, Link, Page } from 'industry-ui'
+import { Page, Divider, Card, Link } from 'industry-ui'
+import { Text, Space } from 'components'
 
 // Data
 import { Services } from 'data'
 
+// Style
+import styled from 'styled-components'
+
 export default () => {
   const RenderServices = () =>
     Services.map(({ description, name, to }, index) => (
-      <Card body={description} bordered deck header={name} key={index} shadow>
-        <CardFooter>
-          <Link to={`/what-we-do/services${to}`}>
-            <Button content='Read more' context='primary' size='lg' />
+      <StyledCard key={index}>
+        <Space>
+          <Link to={`/what-we-do/services${to}`} border={false}>
+            <StyledText size='xxl' stroke='true'>{name}</StyledText>
           </Link>
-        </CardFooter>
-      </Card>
+        </Space>
+        <Space>
+          <Text size='md'>
+            {description}
+          </Text>
+        </Space>
+        <Space>
+          <Link to={`/what-we-do/services${to}`} border>
+            <StyledText size='xs'>Read: {name} ->></StyledText>
+          </Link>
+        </Space>
+        <Space>
+          <Divider />
+        </Space>
+      </StyledCard>
     ))
 
   const meta = {
@@ -32,11 +49,25 @@ export default () => {
 
   return (
     <Page pageHeading={{ heading: 'What we do' }} meta={meta}>
-      <p>DryKISS can offer a full service development and marketing solution.</p>
-
-      <CardDecks>
-        <RenderServices />
-      </CardDecks>
+      <Space>
+        <Text size='lg'>
+          DryKISS can offer a full service development and marketing solution.
+        </Text>
+      </Space>
+      <RenderServices />
     </Page>
   )
 }
+
+const StyledText = styled(Text)`
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    color: #000;
+  }
+`
+
+const StyledCard = styled(Card)`
+  display: inline-block;
+`
