@@ -15,49 +15,9 @@ import Layout from 'layout'
 // Config
 import { Google, Theme } from 'config'
 
-// Font awesome
-import { faCopyright } from '@fortawesome/pro-duotone-svg-icons'
-
-import {
-  faBars,
-  faBlog,
-  faCalendarAlt,
-  faExternalLink,
-  faFileUser,
-  faHomeHeart,
-  faStopwatch,
-  faTimes,
-  faUser
-} from '@fortawesome/pro-regular-svg-icons'
-
-import {
-  faFacebookSquare,
-  faGithub,
-  faLinkedin,
-  faPinterestSquare,
-  faTwitterSquare
-} from '@fortawesome/free-brands-svg-icons'
-
-import { library } from '@fortawesome/fontawesome-svg-core'
-
-library.add(
-  faBars,
-  faBlog,
-  faCalendarAlt,
-  faCopyright,
-  faExternalLink,
-  faFileUser,
-  faHomeHeart,
-  faStopwatch,
-  faTimes,
-  faUser,
-
-  faFacebookSquare,
-  faGithub,
-  faLinkedin,
-  faPinterestSquare,
-  faTwitterSquare
-)
+// UI
+import 'config/icons'
+import 'config/globalStyle.css'
 
 // Track pageViews
 Router.events.on('routeChangeComplete', url => {
@@ -80,20 +40,10 @@ export default props => (
         key='og:image'
         property='og:image'
       />
+
       <meta name='twitter:image' content='https://drykiss.com/static/social/drykiss-facebook.jpg' />
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-          @font-face {
-            font-family: 'JetBrains Mono';
-            src: url('/static/fonts/woff2/JetBrainsMono-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-            url('/static/fonts/woff/JetBrainsMono-Regular.woff') format('woff'); /* Pretty Modern Browsers */
-          }
-      }
-      `
-        }}
-      />
     </Head>
+
     <MyApp Layout={Layout} {...props} theme={Theme} />
   </>
 )

@@ -22,11 +22,6 @@ export default () => {
       icon: 'github'
     },
     {
-      id: 'octohedron',
-      name: 'Gustavo Rodríguez',
-      link: 'https://www.linkedin.com/in/gustavo-rodr%C3%ADguez-aa88096b/'
-    },
-    {
       id: 'izemqi',
       name: 'Mi Zemkina',
       link: 'https://www.linkedin.com/in/zemqi/'
