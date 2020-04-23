@@ -4,6 +4,7 @@
 
 // UI
 import { Card, CardBody, Icon, Image, Column, Page, Row } from 'industry-ui'
+import { Space, Text } from 'components'
 
 // Style
 import styled from 'styled-components'
@@ -27,11 +28,6 @@ export default () => {
       link: 'https://www.linkedin.com/in/zemqi/'
     },
     {
-      id: 'majid',
-      name: 'Majid Amiri',
-      link: 'https://www.linkedin.com/in/majidamiriii/'
-    },
-    {
       id: 'xxinyiwho',
       name: 'Xinyi Wu',
       link: 'https://www.linkedin.com/in/xinyi-wu-78722a92/'
@@ -52,18 +48,22 @@ export default () => {
 
   return (
     <Page pageHeading={{ heading: 'Meet the DryKISS squad!' }} meta={meta}>
-      <p>
+      <Text>
         At DryKISS, we offer full service web development and marketing solutions to meet all your
         business, startup and minimum viable product needs. We are prepared to listen to your every
         desire so we can perfectly craft your projects, bring to life your ideas and boost your
         revenue.
-      </p>
+      </Text>
 
-      <p>
+      <Space />
+
+      <Text>
         Our team comprises of highly skilled professionals with over 20+ years of experiences in web
         development, digital marketing, SEO and tech consulting. We are bold, global, agile, lean
         and love thinking outside the box.
-      </p>
+      </Text>
+
+      <Space />
 
       <Row>
         {teamMembers.map(member => (
