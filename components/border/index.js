@@ -78,8 +78,8 @@ const StyledBackground = styled.div`
 
   background: ${({ theme }) =>
     transparentize(
-      0.04,
-      mix(0.5, tint(0.04, theme.COLOUR.black), tint(0.96, theme.COLOUR.primary))
+      0.08,
+      mix(0.8, tint(0.04, theme.COLOUR.black), tint(0.96, theme.COLOUR.primary))
     )};
 
   padding: 2rem 0;
