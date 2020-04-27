@@ -27,13 +27,13 @@ export const Principles = () => {
         principles.
       </Text>
       <StyledWrapper>
-        {PrinciplesData.map(({ angle, left, top, zIndex }, index) => (
+        {PrinciplesData.map(({ angle, left, src, top, zIndex }, index) => (
           <StyledImage
             alt='DryKISS Banner'
             angle={angle}
             key={index}
             left={left}
-            src='/static/placeholder/banner.svg'
+            src={src}
             top={top}
             zIndex={zIndex}
           />
