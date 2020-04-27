@@ -54,5 +54,7 @@ export const Navigation = () => {
     ]
   }
 
-  return <Navbar brand={Brand.logo} widgets={Default} />
+  return (
+    <Navbar animational brand={Brand.logo} custom widgets={Default} />
+  )
 }
