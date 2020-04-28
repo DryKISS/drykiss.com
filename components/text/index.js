@@ -57,7 +57,7 @@ const StyledText = styled.p`
   ${({ size }) =>
     size === 'xxl' &&
     css`
-      color: ${({ context }) => context};
+      color: ${({ context, theme: { COLOUR } }) => COLOUR[context]};
       font-family: 'JetBrains Mono ExtraBold';
       font-size: 1.25rem;
       line-height: 1.25;
@@ -77,7 +77,7 @@ const StyledText = styled.p`
   ${({ size }) =>
     size === 'xxxl' &&
     css`
-      color: ${({ context }) => context};
+      color: ${({ context, theme: { COLOUR } }) => COLOUR[context]};
       font-family: 'JetBrains Mono ExtraBold';
       font-size: 2.5rem;
       line-height: 1.25;
