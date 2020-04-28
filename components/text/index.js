@@ -23,35 +23,30 @@ const StyledText = styled.p`
   margin: 0;
   padding: 0;
   text-align: ${({ align }) => align};
-
   ${({ size }) =>
     size === 'xs' &&
     css`
       font-size: 0.75rem;
       line-height: 1.333;
     `}
-
   ${({ size }) =>
     size === 'sm' &&
     css`
       font-size: 0.875rem;
       line-height: 1.429;
     `}
-
   ${({ size }) =>
     size === 'md' &&
     css`
       font-size: 1rem;
       line-height: 1.5;
     `}
-
   ${({ size }) =>
     size === 'lg' &&
     css`
       font-size: 1.25rem;
       line-height: 1.4;
     `}
-
   ${({ size }) =>
     size === 'xl' &&
     css`
@@ -59,26 +54,26 @@ const StyledText = styled.p`
       font-size: 1.5rem;
       line-height: 1.333;
     `}
-
   ${({ size }) =>
     size === 'xxl' &&
     css`
       color: ${({ context }) => context};
       font-family: 'JetBrains Mono ExtraBold';
-      font-size: 2rem;
+      font-size: 1.25rem;
       line-height: 1.25;
-
+      ${MEDIA_QUERY.phone`
+        font-size: 2rem;
+      `}
       ${MEDIA_QUERY.tablet`
-        font-size: calc(2rem * 1.5);
+        font-size: 3rem;
       `}
       ${MEDIA_QUERY.desktop`
-        font-size: calc(2rem * 2);
+        font-size: 4rem;
       `}
       ${MEDIA_QUERY.giant`
-        font-size: calc(2rem * 2.5);
+        font-size: 5rem;
       `}
     `}
-
   ${({ size }) =>
     size === 'xxxl' &&
     css`
@@ -86,24 +81,24 @@ const StyledText = styled.p`
       font-family: 'JetBrains Mono ExtraBold';
       font-size: 2.5rem;
       line-height: 1.25;
-
+      ${MEDIA_QUERY.phone`
+        font-size: 5rem;
+      `}
       ${MEDIA_QUERY.tablet`
-        font-size: calc(2.5rem * 1.5);
+        font-size: 6rem;
       `}
       ${MEDIA_QUERY.desktop`
-        font-size: calc(2.5rem * 2);
+        font-size: 7rem;
       `}
       ${MEDIA_QUERY.giant`
-        font-size: calc(2.5rem * 2.5);
+        font-size: 8rem;
       `}
     `}
-
   ${({ stroke }) =>
     stroke === 'true' &&
     css`
       -webkit-text-stroke: 1px #000;
       color: transparent;
-
       ${MEDIA_QUERY.tablet`
         -webkit-text-stroke: 2px #000;
       `}
