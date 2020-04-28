@@ -22,23 +22,13 @@ export const Border = ({ children, content, size, backgroundSide }) => {
 
 const StyledBorder = styled.div`
   border: 10px solid transparent;
-  -moz-border-image: url(/static/border/border10.svg) 10;
-  -webkit-border-image: url(/static/border/border10.svg) 10;
-  -o-border-image: url(/static/border/border10.svg) 10;
   border-image: url(/static/border/border10.svg) 10;
-
   ${MEDIA_QUERY.tablet`
     border: 18px solid transparent;
-    -moz-border-image: url(/static/border/border18.svg) 18;
-    -webkit-border-image: url(/static/border/border18.svg) 18;
-    -o-border-image: url(/static/border/border18.svg) 18;
     border-image: url(/static/border/border18.svg) 18;
   `}
   ${MEDIA_QUERY.desktop`
     border: 42px solid transparent;
-    -moz-border-image: url(/static/border/border42.svg) 42;
-    -webkit-border-image: url(/static/border/border42.svg) 42;
-    -o-border-image: url(/static/border/border42.svg) 42;
     border-image: url(/static/border/border42.svg) 42;
   `}
 `
@@ -54,7 +44,6 @@ const StyledBackground = styled.div`
     margin-left: -40px;
     margin-bottom: -40px;
   `}
-
   ${({ backgroundSide }) =>
     backgroundSide === 'right' &&
     css`
@@ -79,9 +68,8 @@ const StyledBackground = styled.div`
   background: ${({ theme }) =>
     transparentize(
       0.08,
-      mix(0.8, tint(0.04, theme.COLOUR.black), tint(0.96, theme.COLOUR.primary))
+      mix(0.88, tint(0.04, theme.COLOUR.black), tint(0.96, theme.COLOUR.primary))
     )};
-
   padding: 2rem 0;
 `
 
