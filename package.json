@@ -33,12 +33,22 @@
     "printWidth": 100
   },
   "standard": {
-    "globals": ["__SITE__", "cy", "describe", "it"],
-    "ignore": ["node_modules/**", "*.bundle*.js"],
+    "globals": [
+      "__SITE__",
+      "cy",
+      "describe",
+      "it"
+    ],
+    "ignore": [
+      "node_modules/**",
+      "*.bundle*.js"
+    ],
     "parser": "babel-eslint"
   },
   "stylelint": {
-    "processors": ["stylelint-processor-styled-components"],
+    "processors": [
+      "stylelint-processor-styled-components"
+    ],
     "extends": [
       "stylelint-config-standard",
       "stylelint-config-prettier",
@@ -52,6 +62,7 @@
     "@fortawesome/pro-regular-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
     "next": "^9.3.3",
+    "polished": "^3.5.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.0.1"

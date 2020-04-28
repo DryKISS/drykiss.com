@@ -5,7 +5,7 @@
  */
 
 // UI
-import { Column, Container, Heading, Image, Row } from 'industry-ui'
+import { Column, Container, Heading, Image, MEDIA_QUERY, Row } from 'industry-ui'
 
 // Style
 import styled from 'styled-components'
@@ -16,12 +16,11 @@ import { ClientsData } from './data'
 export const Clients = () => {
   return (
     <Container>
-      <StyledTitle content='Clients' tag='h2' />
-      <StyledSubTitle content='Trusted by the world’s companies including:' tag='h5' />
+      <StyledHeading content='Trusted by the world’s companies including:' tag='h5' />
 
       <Row>
-        {ClientsData.map(({ name }, index) => (
-          <Column key={name + index} lg={3} md={6} sm={12}>
+        {ClientsData.map(({ id, name }) => (
+          <Column id={id} key={name} sm={6} lg={3}>
             <StyledContainer>
               <StyledImage alt={name} src={`/static/clients/${name}.svg`} title={name} />
             </StyledContainer>
@@ -36,17 +35,26 @@ const StyledTitle = styled(Heading)`
   margin: 0 0 2rem 0;
 `
 
-const StyledSubTitle = styled(StyledTitle)``
+const StyledHeading = styled(StyledTitle)`
+  text-align: center;
+`
 
 const StyledContainer = styled.div`
   align-items: center;
-  background-color: #000;
   display: flex;
   flex-flow: row nowrap;
-  height: 162px;
+  min-height: 80px;
   justify-content: center;
+  margin-bottom: 2rem;
 `
-
 const StyledImage = styled(Image)`
-  width: 75%;
+  filter: grayscale(100%);
+  width: 64%;
+
+  ${MEDIA_QUERY.phone`
+    width: 48%;
+  `}
+  ${MEDIA_QUERY.tablet`
+    width: 40%;
+  `}
 `
