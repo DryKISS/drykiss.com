@@ -15,6 +15,7 @@ export const Contact = () => {
         content='If you have a great idea, now is the time to execute it. Contact us!'
         tag='h5'
       />
+
       <Space marginBottom='xl' />
 
       <Text size='xxl'>+44 (0) 778 043 5329</Text>

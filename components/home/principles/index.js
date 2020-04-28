@@ -26,6 +26,7 @@ export const Principles = () => {
         </Link>{' '}
         principles.
       </Text>
+
       <StyledWrapper>
         {PrinciplesData.map(({ angle, left, name, top, zIndex }, index) => (
           <StyledImage
