@@ -61,7 +61,10 @@ const StyledWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem;
+  padding: 1rem 2rem;
+  ${MEDIA_QUERY.desktop`
+    padding: 2rem 4rem;
+  `}
   h1 {
     color: ${({ theme }) => theme.COLOUR.transparent};
     -webkit-text-stroke: 2px ${({ theme }) => transparentize(0.08, theme.COLOUR.secondary)};
@@ -87,7 +90,7 @@ const StyledWrapper = styled.div`
     font-family: 'JetBrains Mono Bold', sans-serif;
     left: 0.5rem;
     background: ${({ theme }) => theme.COLOUR.secondary};
-    padding: 1rem 1.25rem;
+    padding: 0.875rem 1rem;
     margin-bottom: 2rem;
     font-size: 0.875rem;
     color: ${({ theme }) => theme.COLOUR.black};
@@ -102,6 +105,9 @@ const StyledWrapper = styled.div`
       -3px 3px 0 ${({ theme }) => theme.COLOUR.black},
       -2px 2px 0 ${({ theme }) => theme.COLOUR.black},
       -1px 1px 0 ${({ theme }) => theme.COLOUR.black};
+    ${MEDIA_QUERY.desktop`
+      padding: 1rem 1.25rem;
+    `}
     &:hover {
       color: ${({ theme }) => theme.COLOUR.black};
       background: ${({ theme }) => shade(0.16, theme.COLOUR.secondary)};
