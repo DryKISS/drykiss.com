@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Button, Heading, MEDIA_QUERY, Page } from 'industry-ui'
+import { Button, Heading, Link, MEDIA_QUERY, Page } from 'industry-ui'
 import { Border, Clients, Contact, Ethos, Principles, Services, Space } from 'components/'
 
 // Config
@@ -33,7 +33,9 @@ export default () => {
             tag='h2'
           />
           <Space marginBottom='xl' />
-          <Button>Get a free consultation</Button>
+          <Link border={false} to='/contact' passHref>
+            <Button>Get a free consultation</Button>
+          </Link>
         </StyledWrapper>
       </Border>
       <Space marginBottom='xl' />
