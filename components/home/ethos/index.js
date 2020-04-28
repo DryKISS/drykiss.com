@@ -17,16 +17,16 @@ export const Ethos = () => {
   return (
     <Container>
       {EthosData.map(({ context, description, id, name }) => (
-        <StyledWrapper key={id}>
-
+        <StyledWrapper key={`${id}${name}`}>
           <StyledTextWrapper>
-            <Text context={context} size='xxxl'>{name}</Text>
+            <Text context={context} size='xxxl'>
+              {name}
+            </Text>
           </StyledTextWrapper>
 
           <Text size='md'>{description}</Text>
 
           <Space marginBottom='xl' />
-
         </StyledWrapper>
       ))}
     </Container>
@@ -37,6 +37,7 @@ const StyledWrapper = styled.div`
   margin-bottom: 2rem;
   border-bottom: 2px solid #000;
 `
+
 const StyledTextWrapper = styled.div`
   margin-bottom: 1rem;
   height: 2.35rem;
