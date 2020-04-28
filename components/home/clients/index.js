@@ -19,7 +19,7 @@ export const Clients = () => {
       <StyledHeading content='Trusted by the world’s companies including:' tag='h5' />
 
       <Row>
-        {ClientsData.map(({ name, id }) => (
+        {ClientsData.map(({ id, name }) => (
           <Column key={id} sm={6} lg={3}>
             <StyledContainer>
               <StyledImage alt={name} src={`/static/clients/${name}.svg`} title={name} />
