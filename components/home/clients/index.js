@@ -52,7 +52,7 @@ const StyledImage = styled(Image)`
   width: 64%;
 
   ${MEDIA_QUERY.phone`
-    width: 56%;
+    width: 48%;
   `}
   ${MEDIA_QUERY.tablet`
     width: 40%;
