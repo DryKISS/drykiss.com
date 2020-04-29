@@ -39,5 +39,6 @@
     "parser": "babel-eslint"
   },
   // Typescript
-  "typescript.validate.enable": false
+  "typescript.validate.enable": false,
+  "editor.fontLigatures": false
 }
