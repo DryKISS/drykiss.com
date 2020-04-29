@@ -4,19 +4,18 @@
 export const ClientsData = [
   {
     id: 1,
-    name: 'Visa'
+    name: 'visa'
   },
   {
-
     id: 2,
-    name: 'IBM'
+    name: 'ibm'
   },
   {
     id: 3,
-    name: 'Homyze'
+    name: 'homyze'
   },
   {
     id: 4,
-    name: 'Deliveroo'
+    name: 'deliveroo'
   }
 ]

@@ -20,7 +20,7 @@ export const Clients = () => {
 
       <Row>
         {ClientsData.map(({ id, name }) => (
-          <Column id={id} key={name} sm={6} lg={3}>
+          <Column key={name} sm={6} lg={3}>
             <StyledContainer>
               <StyledImage alt={name} src={`/static/clients/${name}.svg`} title={name} />
             </StyledContainer>
@@ -43,10 +43,11 @@ const StyledContainer = styled.div`
   align-items: center;
   display: flex;
   flex-flow: row nowrap;
-  min-height: 80px;
   justify-content: center;
   margin-bottom: 2rem;
+  min-height: 80px;
 `
+
 const StyledImage = styled(Image)`
   filter: grayscale(100%);
   width: 64%;
