@@ -16,7 +16,7 @@ export default () => {
   }
 
   return (
-    <Page heading='JavaScript Linting' meta={meta}>
+    <Page pageHeading={{ heading: 'JavaScript Linting' }} meta={meta}>
       <Row>
         <Column lg={3}>
           <p>

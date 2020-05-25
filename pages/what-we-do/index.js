@@ -3,8 +3,7 @@
  */
 
 // UI
-import { Page, Divider, Card, Link } from 'industry-ui'
-import { Text, Space } from 'components'
+import { Page, Divider, Card, Link, Space, Text } from 'industry-ui'
 
 // Data
 import { Services } from 'data'
@@ -18,19 +17,22 @@ export default () => {
       <StyledCard key={index}>
         <Space>
           <Link to={`/what-we-do/services${to}`} border={false}>
-            <StyledText size='xxl' stroke='true'>{name}</StyledText>
+            <StyledText size='xxl' stroke='true'>
+              {name}
+            </StyledText>
           </Link>
         </Space>
+
         <Space>
-          <Text size='md'>
-            {description}
-          </Text>
+          <Text size='md'>{description}</Text>
         </Space>
+
         <Space>
           <Link to={`/what-we-do/services${to}`} border>
             <StyledText size='xs'>Read: {name} ->></StyledText>
           </Link>
         </Space>
+
         <Space>
           <Divider />
         </Space>
@@ -50,9 +52,7 @@ export default () => {
   return (
     <Page pageHeading={{ heading: 'What we do' }} meta={meta}>
       <Space>
-        <Text size='lg'>
-          DryKISS can offer a full service development and marketing solution.
-        </Text>
+        <Text size='lg'>DryKISS can offer a full service development and marketing solution.</Text>
       </Space>
       <RenderServices />
     </Page>

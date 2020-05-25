@@ -18,7 +18,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Tip text' meta={meta}>
+    <Page pageHeading={{ heading: 'Tip text' }} meta={meta}>
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/dungbeetle/tip-text/hero.jpg?v=1.00'

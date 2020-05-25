@@ -1,22 +1,11 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es6",
-    "allowSyntheticDefaultImports": false,
-    "baseUrl": "./",
-    "paths": {
-      "components": [
-        "./components"
-      ],
-      "config": [
-        "./config"
-      ]
-    }
+    "baseUrl": "."
   },
   "include": [
     "components/**/*",
     "config/**/*",
-    "pages/**/*",
-    "layouts/**/*"
+    "layouts/**/*",
+    "pages/**/*"
   ]
 }

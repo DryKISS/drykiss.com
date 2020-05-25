@@ -33,7 +33,7 @@ export default ({ category }) => {
 
   return (
     // <Page heading={capitalize(query.categorySlug)} meta={meta}></Page>
-    <Page heading='Category' meta={meta}>
+    <Page pageHeading={{ heading: 'Category' }} meta={meta}>
       <Row>
         <Column lg={8}>
           <BlogListing articles={Articles} category={category} />

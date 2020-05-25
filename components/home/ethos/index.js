@@ -3,9 +3,7 @@
  */
 
 // UI
-import { Container, MEDIA_QUERY } from 'industry-ui'
-import { Space } from 'components/space'
-import { Text } from 'components/text'
+import { Container, MEDIA_QUERY, Space, Text } from 'industry-ui'
 
 // Style
 import styled from 'styled-components'

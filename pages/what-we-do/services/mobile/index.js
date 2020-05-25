@@ -17,7 +17,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Mobile' meta={meta}>
+    <Page pageHeading={{ heading: 'Mobile' }} meta={meta}>
       Hybrid mobile application development.
     </Page>
   )

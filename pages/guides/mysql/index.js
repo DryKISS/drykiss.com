@@ -17,7 +17,7 @@ export default () => {
   }
 
   return (
-    <Page heading='MySQL Best Practices' meta={meta}>
+    <Page pageHeading={{ heading: 'MySQL Best Practices' }} meta={meta}>
       <Heading content='Installation' tag='h2' />
       <pre>$ brew info mysql</pre>
       <pre>$ brew install mysql</pre>

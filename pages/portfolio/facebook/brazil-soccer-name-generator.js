@@ -20,7 +20,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Brazil Soccer Name Generator' meta={meta}>
+    <Page pageHeading={{ heading: 'Brazil Soccer Name Generator' }} meta={meta}>
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/triangle-solutions/brazil-soccer-name-generator/hero.jpg?v=1.00'

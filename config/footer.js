@@ -3,45 +3,54 @@
  */
 export const Footer = [
   {
-    size: { sm: 6, md: 3 },
-    header: 'About',
-    text: `
-      <p>
-        DryKISS is a full service internet and mobile digital production house.
-      </p>
-      <p>
-        Our core services span consulting, strategy; planning; development;
-        testing and analytics. Using cutting edge technologies within
-        disciplined processes.
-      </p>
-      `,
+    header: {
+      content: 'About'
+    },
+    size: { sm: 12, md: 3 },
+    text: {
+      items: [
+        {
+          content: 'DryKISS is a full service internet and mobile digital production house.'
+        },
+        {
+          content: `Our core services span consulting, strategy; planning; development; testing and
+          analytics. Using cutting edge technologies within disciplined processes.`
+        }
+      ]
+    },
     links: {
       items: [
         {
           id: 'footerTeam',
           name: 'DryKISS Team',
-          to: '/team'
+          to: '/'
         }
       ]
     }
   },
   {
-    size: { sm: 6, md: 3 },
-    header: 'What We Do',
-    text: `
-      <p>
-        DryKISS develops hybrid mobile apps (iOS &amp; Android); responsive
-        internet sites; administration systems and social applications.
-      </p>
-      <p>
-        Using our platform we tune for SEO, accessibility and conversion at the
-        very start.
-      </p>
-    `
+    size: { sm: 12, md: 3 },
+    header: {
+      content: 'What We Do'
+    },
+    text: {
+      items: [
+        {
+          content: `DryKISS develops hybrid mobile apps (iOS &amp; Android); responsive internet sites;
+            administration systems and social applications.`
+        },
+        {
+          content:
+            'Using our platform we tune for SEO, accessibility and conversion at the very start.'
+        }
+      ]
+    }
   },
   {
-    size: { sm: 6, md: 3 },
-    header: 'Social',
+    size: { sm: 12, md: 3 },
+    header: {
+      content: 'Social'
+    },
     links: {
       items: [
         {
@@ -61,21 +70,29 @@ export const Footer = [
         }
       ]
     },
-    text: `
-      We are experts in creating social media apps and pages.
-    `
+    text: {
+      items: [
+        {
+          content: 'We are experts in creating social media apps and pages.'
+        }
+      ]
+    }
   },
   {
-    size: { sm: 6, md: 3 },
-    header: 'Contact',
-    text: `
-      <p>
-        If you have a brief, and want to discuss how we would approach it.
-      </p>
-      <address>
-        Wimbledon, London, UK
-      </address>
-    `,
+    size: { sm: 12, md: 3 },
+    header: {
+      content: 'Contact'
+    },
+    text: {
+      items: [
+        {
+          content: `If you have a brief, and want to discuss how we would approach it.
+          <address>
+            Wimbledon, London, UK
+          </address>`
+        }
+      ]
+    },
     links: {
       items: [
         {

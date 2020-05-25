@@ -3,8 +3,7 @@
  */
 
 // UI
-import { Container, Divider, Heading } from 'industry-ui'
-import { Space, Text } from 'components'
+import { Container, Divider, Heading, Space, Text } from 'industry-ui'
 
 export const Contact = () => {
   return (

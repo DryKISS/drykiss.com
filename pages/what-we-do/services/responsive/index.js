@@ -3,8 +3,21 @@
  */
 
 // UI
-import { Page, Link, Container, Row, Column, Image, Divider, Button, List, ListItem, MEDIA_QUERY } from 'industry-ui'
-import { Text, Space } from 'components'
+import {
+  Page,
+  Link,
+  Container,
+  Row,
+  Column,
+  Image,
+  Divider,
+  Button,
+  List,
+  ListItem,
+  MEDIA_QUERY,
+  Space,
+  Text
+} from 'industry-ui'
 
 // Style
 import styled from 'styled-components'
@@ -26,10 +39,9 @@ export default () => {
         <Row>
           <Column sm={12}>
             <Space>
-              <StyledHeading>
-                Responsive Sites
-              </StyledHeading>
+              <StyledHeading>Responsive Sites</StyledHeading>
             </Space>
+
             <Space>
               <Divider />
             </Space>
@@ -42,7 +54,10 @@ export default () => {
           <Column offset={{ md: 1, lg: 2 }} md={9} lg={8}>
             <Space>
               <Text size='xl'>
-                <Link to='#' border>DryKISS</Link> is a full service internet and mobile digital production house.
+                <Link to='#' border>
+                  DryKISS
+                </Link>{' '}
+                is a full service internet and mobile digital production house.
               </Text>
             </Space>
           </Column>
@@ -52,7 +67,8 @@ export default () => {
           <Column offset={{ md: 1, lg: 2 }} md={9} lg={8}>
             <Space>
               <Text>
-                Our core services span consulting, strategy; planning; development; testing and analytics. Using cutting edge technologies within disciplined processes.
+                Our core services span consulting, strategy; planning; development; testing and
+                analytics. Using cutting edge technologies within disciplined processes.
               </Text>
             </Space>
           </Column>
@@ -80,8 +96,13 @@ export default () => {
           <Column offset={{ md: 1, lg: 2 }} md={9} lg={8}>
             <Space>
               <Text>
-                <mark>Our core services span consulting, strategy; planning; development; testing and analytics.</mark> Using cutting edge technologies within disciplined processes.
-                Our core services span consulting, strategy; planning; development; testing and analytics. Using cutting edge technologies within disciplined processes.
+                <mark>
+                  Our core services span consulting, strategy; planning; development; testing and
+                  analytics.
+                </mark>{' '}
+                Using cutting edge technologies within disciplined processes. Our core services span
+                consulting, strategy; planning; development; testing and analytics. Using cutting
+                edge technologies within disciplined processes.
               </Text>
             </Space>
           </Column>
@@ -96,14 +117,39 @@ export default () => {
                 </Space>
                 <Space>
                   <Text size='xl'>
-                    Our core services span <Link to='#' border>consulting</Link>, <Link to='#' border>strategy</Link>; <Link to='#' border>planning</Link>; <Link to='#' border>development</Link>; <Link to='#' border>testing</Link> and <Link to='#' border>analytics</Link>. Using cutting edge technologies within disciplined processes.
+                    Our core services span{' '}
+                    <Link to='#' border>
+                      consulting
+                    </Link>
+                    ,{' '}
+                    <Link to='#' border>
+                      strategy
+                    </Link>
+                    ;{' '}
+                    <Link to='#' border>
+                      planning
+                    </Link>
+                    ;{' '}
+                    <Link to='#' border>
+                      development
+                    </Link>
+                    ;{' '}
+                    <Link to='#' border>
+                      testing
+                    </Link>{' '}
+                    and{' '}
+                    <Link to='#' border>
+                      analytics
+                    </Link>
+                    . Using cutting edge technologies within disciplined processes.
                   </Text>
                 </Space>
               </StyledBlockquote>
             </Space>
             <Space>
               <Text>
-                Our core services span consulting, strategy; planning; development; testing and analytics. Using cutting edge technologies within disciplined processes.
+                Our core services span consulting, strategy; planning; development; testing and
+                analytics. Using cutting edge technologies within disciplined processes.
               </Text>
             </Space>
           </Column>
@@ -113,7 +159,8 @@ export default () => {
           <Column offset={{ md: 1, lg: 2 }} md={9} lg={8}>
             <Space>
               <Text>
-                Our core services span consulting, strategy; planning; development; testing and analytics. Using cutting edge technologies within disciplined processes.
+                Our core services span consulting, strategy; planning; development; testing and
+                analytics. Using cutting edge technologies within disciplined processes.
               </Text>
             </Space>
           </Column>
@@ -131,12 +178,37 @@ export default () => {
           <Column offset={{ md: 1, lg: 2 }} md={9} lg={8}>
             <Space>
               <Text size='lg'>
-                Our core services span <Link to='/' border>consulting</Link>, <Link to='/' border>strategy</Link>; <Link to='/' border>planning</Link>; <Link to='/' border>development</Link>; <Link to='/' border>testing</Link> and <Link to='/' border>analytics</Link>. Using cutting edge technologies within disciplined processes.
+                Our core services span{' '}
+                <Link to='/' border>
+                  consulting
+                </Link>
+                ,{' '}
+                <Link to='/' border>
+                  strategy
+                </Link>
+                ;{' '}
+                <Link to='/' border>
+                  planning
+                </Link>
+                ;{' '}
+                <Link to='/' border>
+                  development
+                </Link>
+                ;{' '}
+                <Link to='/' border>
+                  testing
+                </Link>{' '}
+                and{' '}
+                <Link to='/' border>
+                  analytics
+                </Link>
+                . Using cutting edge technologies within disciplined processes.
               </Text>
             </Space>
             <Space>
               <Text size='sm'>
-                Our core services span consulting, strategy; planning; development; testing and analytics. Using cutting edge technologies within disciplined processes.
+                Our core services span consulting, strategy; planning; development; testing and
+                analytics. Using cutting edge technologies within disciplined processes.
               </Text>
             </Space>
           </Column>
@@ -151,7 +223,8 @@ export default () => {
           <Column sm={12} md={4}>
             <Space>
               <Text size='lg'>
-                Our core services span consulting, strategy; planning; development; testing and analytics. Using cutting edge technologies within disciplined processes.
+                Our core services span consulting, strategy; planning; development; testing and
+                analytics. Using cutting edge technologies within disciplined processes.
               </Text>
             </Space>
           </Column>
@@ -170,7 +243,8 @@ export default () => {
             <Space>
               <Text>
                 <mark>
-                  Our core services span consulting, strategy; planning; development; testing and analytics. Using cutting edge technologies within disciplined processes.
+                  Our core services span consulting, strategy; planning; development; testing and
+                  analytics. Using cutting edge technologies within disciplined processes.
                 </mark>
               </Text>
             </Space>
@@ -181,7 +255,8 @@ export default () => {
           <Column offset={{ md: 1, lg: 2 }} md={9} lg={8}>
             <Space>
               <Text>
-                Our core services span consulting, strategy; planning; development; testing and analytics. Using cutting edge technologies within disciplined processes.
+                Our core services span consulting, strategy; planning; development; testing and
+                analytics. Using cutting edge technologies within disciplined processes.
               </Text>
             </Space>
           </Column>
@@ -191,7 +266,8 @@ export default () => {
           <Column offset={{ md: 1, lg: 2 }} md={5} lg={4}>
             <Space>
               <Text size='lg'>
-                Our core services span consulting, strategy; planning; development; testing and analytics. Using cutting edge technologies within disciplined processes.
+                Our core services span consulting, strategy; planning; development; testing and
+                analytics. Using cutting edge technologies within disciplined processes.
               </Text>
             </Space>
           </Column>
@@ -214,7 +290,31 @@ export default () => {
           <Column offset={{ md: 1, lg: 2 }} md={10} lg={8}>
             <Space>
               <Text size='xl'>
-                Our core services span <Link to='#' border>consulting</Link>, <Link to='#' border>strategy</Link>; <Link to='#' border>planning</Link>; <Link to='#' border>development</Link>; <Link to='#' border>testing</Link> and <Link to='#' border>analytics</Link>. Using cutting edge technologies within disciplined processes.
+                Our core services span{' '}
+                <Link to='#' border>
+                  consulting
+                </Link>
+                ,{' '}
+                <Link to='#' border>
+                  strategy
+                </Link>
+                ;{' '}
+                <Link to='#' border>
+                  planning
+                </Link>
+                ;{' '}
+                <Link to='#' border>
+                  development
+                </Link>
+                ;{' '}
+                <Link to='#' border>
+                  testing
+                </Link>{' '}
+                and{' '}
+                <Link to='#' border>
+                  analytics
+                </Link>
+                . Using cutting edge technologies within disciplined processes.
               </Text>
             </Space>
           </Column>
@@ -224,12 +324,14 @@ export default () => {
           <Column offset={{ md: 1, lg: 2 }} md={10} lg={8}>
             <Space>
               <Text>
-                Our core services span consulting, strategy; planning; development; testing and analytics. Using cutting edge technologies within disciplined processes.
+                Our core services span consulting, strategy; planning; development; testing and
+                analytics. Using cutting edge technologies within disciplined processes.
               </Text>
             </Space>
             <Space>
               <Text>
-                Our core services span consulting, strategy; planning; development; testing and analytics. Using cutting edge technologies within disciplined processes.
+                Our core services span consulting, strategy; planning; development; testing and
+                analytics. Using cutting edge technologies within disciplined processes.
               </Text>
             </Space>
             <Space>
@@ -249,7 +351,31 @@ export default () => {
                 </Space>
                 <Space>
                   <Text size='xl'>
-                    Our core services span <Link to='#' border>consulting</Link>, <Link to='#' border>strategy</Link>; <Link to='#' border>planning</Link>; <Link to='#' border>development</Link>; <Link to='#' border>testing</Link> and <Link to='#' border>analytics</Link>. Using cutting edge technologies within disciplined processes.
+                    Our core services span{' '}
+                    <Link to='#' border>
+                      consulting
+                    </Link>
+                    ,{' '}
+                    <Link to='#' border>
+                      strategy
+                    </Link>
+                    ;{' '}
+                    <Link to='#' border>
+                      planning
+                    </Link>
+                    ;{' '}
+                    <Link to='#' border>
+                      development
+                    </Link>
+                    ;{' '}
+                    <Link to='#' border>
+                      testing
+                    </Link>{' '}
+                    and{' '}
+                    <Link to='#' border>
+                      analytics
+                    </Link>
+                    . Using cutting edge technologies within disciplined processes.
                   </Text>
                 </Space>
               </StyledBlockquote>
@@ -261,7 +387,8 @@ export default () => {
           <Column offset={{ md: 1, lg: 2 }} md={9} lg={8}>
             <Space>
               <Text>
-                Our core services span consulting, strategy; planning; development; testing and analytics. Using cutting edge technologies within disciplined processes.
+                Our core services span consulting, strategy; planning; development; testing and
+                analytics. Using cutting edge technologies within disciplined processes.
               </Text>
             </Space>
           </Column>
@@ -283,7 +410,8 @@ export default () => {
           <Column offset={{ md: 1, lg: 2 }} md={9} lg={8}>
             <Space>
               <Text>
-                Our core services span consulting, strategy; planning; development; testing and analytics. Using cutting edge technologies within disciplined processes.
+                Our core services span consulting, strategy; planning; development; testing and
+                analytics. Using cutting edge technologies within disciplined processes.
               </Text>
             </Space>
           </Column>

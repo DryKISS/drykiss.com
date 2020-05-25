@@ -3,8 +3,7 @@
  */
 
 // UI
-import { Card, CardBody, Icon, Image, Column, Page, Row } from 'industry-ui'
-import { Space, Text } from 'components'
+import { Card, CardBody, Icon, Image, Column, Page, Row, Space, Text } from 'industry-ui'
 
 // Style
 import styled from 'styled-components'
@@ -21,11 +20,6 @@ export default () => {
       name: 'Kristian Heruc',
       link: 'https://github.com/kheruc',
       icon: 'github'
-    },
-    {
-      id: 'izemqi',
-      name: 'Mi Zemkina',
-      link: 'https://www.linkedin.com/in/zemqi/'
     },
     {
       id: 'xxinyiwho',

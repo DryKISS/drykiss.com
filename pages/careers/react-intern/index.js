@@ -16,7 +16,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Careers - Intern React Developer' meta={meta}>
+    <Page pageHeading={{ heading: 'Careers - Intern React Developer' }} meta={meta}>
       <p>
         <b>ONLY Individuals need to Apply Please</b>
         <br />

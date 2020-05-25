@@ -3,7 +3,7 @@
  */
 
 // Layout
-import { Page } from 'industry-ui'
+import { Page, Space, Text } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -18,7 +18,8 @@ export default () => {
 
   return (
     <Page pageHeading={{ heading: 'About' }} meta={meta}>
-      DryKISS Ltd was setup to simplify the process of development.
+      <Text>DryKISS Ltd was setup to simplify the process of development.</Text>
+      <Space />
     </Page>
   )
 }

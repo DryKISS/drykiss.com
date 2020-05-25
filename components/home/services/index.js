@@ -3,8 +3,7 @@
  */
 
 // UI
-import { Column, Container, Heading, Image, Row } from 'industry-ui'
-import { Space, Text } from 'components'
+import { Column, Container, Heading, Image, Row, Space, Text } from 'industry-ui'
 
 export const Services = () => {
   return (
@@ -18,6 +17,7 @@ export const Services = () => {
 
       <Image alt='Services' src='/static/services/services.jpg' title='Services' />
       <Space marginBottom='xl' />
+
       <Row>
         <Column md={12} lg={4}>
           <Heading content='User Experience' tag='h6' />
@@ -26,6 +26,7 @@ export const Services = () => {
             We help brands create valuable experiences across digital channels by focusing on the
             habits and needs of their audience.
           </Text>
+
           <Space marginBottom='xl' />
         </Column>
 
@@ -36,6 +37,7 @@ export const Services = () => {
             Focused creativity is the engine for all we do. Our cross-platform, and specifically
             mobile experience makes our approach always flexible, responsive and dynamic.
           </Text>
+
           <Space marginBottom='xl' />
         </Column>
 
@@ -47,6 +49,7 @@ export const Services = () => {
             delivering projects based on known processes. This enables us to deliver cutting edge
             code quickly and within budget.
           </Text>
+
           <Space marginBottom='xl' />
         </Column>
       </Row>

@@ -18,7 +18,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Greentouch PI' meta={meta}>
+    <Page pageHeading={{ heading: 'Greentouch PI' }} meta={meta}>
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/drykiss/greentouch-pi/hero.jpg?v=1.00'

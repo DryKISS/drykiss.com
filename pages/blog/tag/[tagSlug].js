@@ -24,7 +24,7 @@ export default ({ tag }) => {
 
   return (
     // <Page heading={`Tagged: ${capitalize(tag)}`} meta={meta}></Page>
-    <Page heading='Tagged' meta={meta}>
+    <Page pageHeading={{ heading: 'Tagged' }} meta={meta}>
       <Row>
         <Column lg={8}>
           <BlogListing articles={Articles} config={Blog} tag={tag} />

@@ -13,7 +13,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Tools' meta={meta}>
+    <Page pageHeading={{ heading: 'Tools' }} meta={meta}>
       <List>
         <ListItem>GitHub</ListItem>
         <ListItem>Slack</ListItem>

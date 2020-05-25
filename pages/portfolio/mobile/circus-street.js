@@ -20,7 +20,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Circus Street - Video e-learning platform' meta={meta}>
+    <Page pageHeading={{ heading: 'Circus Street - Video e-learning platform' }} meta={meta}>
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/drykiss/circus-street/hero.jpg?v=1.00'

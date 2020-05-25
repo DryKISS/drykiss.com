@@ -10,7 +10,7 @@ import Head from 'next/head'
 import { GoogleAnalyticsPageView, HubSpot, MyApp } from 'industry-ui'
 
 // Layout
-import Layout from 'layout'
+import Layout from 'layouts'
 
 // Config
 import { Google, Theme } from 'config'

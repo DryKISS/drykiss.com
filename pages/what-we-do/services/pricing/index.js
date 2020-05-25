@@ -17,7 +17,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Pricing' meta={meta}>
+    <Page pageHeading={{ heading: 'Pricing' }} meta={meta}>
       Pricing
     </Page>
   )

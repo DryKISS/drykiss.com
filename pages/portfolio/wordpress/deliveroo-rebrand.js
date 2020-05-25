@@ -20,7 +20,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Deliveroo - Food home delivery' meta={meta}>
+    <Page pageHeading={{ heading: 'Deliveroo - Food home delivery' }} meta={meta}>
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/deliveroo/rebrand/hero.jpg?v=1.00'

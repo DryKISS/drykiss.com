@@ -19,7 +19,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Xpansif - Easi Website' meta={meta}>
+    <Page pageHeading={{ heading: 'Xpansif - Easi Website' }} meta={meta}>
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/xpansif/easiwebsite/hero.jpg?v=1.00'

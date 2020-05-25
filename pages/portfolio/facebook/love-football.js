@@ -18,7 +18,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Love Football' meta={meta}>
+    <Page pageHeading={{ heading: 'Love Football' }} meta={meta}>
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/triangle-solutions/love-football/hero.jpg?v=1.00'

@@ -28,7 +28,7 @@ export default ({ author }) => {
 
   return (
     // <Page heading={`Author: ${capitalize(author)}`} meta={meta}></Page>
-    <Page heading='Author' meta={meta}>
+    <Page pageHeading={{ heading: 'Author' }} meta={meta}>
       <Row>
         <Column lg={8}>
           <BlogListing articles={Articles} author={author} />

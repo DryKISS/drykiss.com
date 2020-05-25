@@ -21,7 +21,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Walt Disney® Prince of Persia' meta={meta}>
+    <Page pageHeading={{ heading: 'Walt Disney® Prince of Persia' }} meta={meta}>
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/digital-outlook/walt-disney-prince-of-persia/hero.jpg?v=1.00'

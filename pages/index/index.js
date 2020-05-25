@@ -3,8 +3,8 @@
  */
 
 // UI
-import { Button, Heading, Link, MEDIA_QUERY, Page } from 'industry-ui'
-import { Border, Clients, Contact, Ethos, Principles, Services, Space } from 'components/'
+import { Button, Heading, Link, MEDIA_QUERY, Page, Space } from 'industry-ui'
+import { Border, Clients, Contact, Ethos, Principles, Services } from 'components'
 
 // Config
 import { Brand } from 'config'
@@ -28,16 +28,20 @@ export default () => {
       <Border backgroundSide='left'>
         <StyledWrapper>
           <Heading content='We do MVPs' tag='h1' />
+
           <Heading
             content='Talk to us to transform your project idea into a working digital product.'
             tag='h2'
           />
+
           <Space marginBottom='xl' />
+
           <Link border={false} to='/contact' passHref>
             <Button>Get a free consultation</Button>
           </Link>
         </StyledWrapper>
       </Border>
+
       <Space marginBottom='xl' />
 
       <Clients />

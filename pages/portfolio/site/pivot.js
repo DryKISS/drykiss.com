@@ -18,7 +18,7 @@ export default () => {
   }
 
   return (
-    <Page heading='IBM - Pivot' meta={meta}>
+    <Page pageHeading={{ heading: 'IBM - Pivot' }} meta={meta}>
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/ibm/pivot/hero.jpg?v=1.00'

@@ -13,7 +13,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Git' meta={meta}>
+    <Page pageHeading={{ heading: 'GIT' }} meta={meta}>
       <p>
         This is a guide on how DRYKISS utilise{' '}
         <a href='https://git-scm.com' target='_blank' rel='noopener noreferrer'>

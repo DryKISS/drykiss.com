@@ -18,7 +18,7 @@ export default () => {
   }
 
   return (
-    <Page heading='PHP Support Tickets' meta={meta}>
+    <Page pageHeading={{ heading: 'PHP Support Tickets' }} meta={meta}>
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/triangle-solutions/php-support-tickets/hero.jpg?v=1.00'

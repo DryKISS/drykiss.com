@@ -20,7 +20,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Blackberry® Youth Challenge' meta={meta}>
+    <Page pageHeading={{ heading: 'Blackberry® Youth Challenge' }} meta={meta}>
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/razorfish/blackberry-challenge/hero.jpg?v=1.00'

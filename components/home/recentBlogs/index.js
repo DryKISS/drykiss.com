@@ -3,8 +3,7 @@
  */
 
 // UI
-import { Column, Heading, Row } from 'industry-ui'
-import { Text } from 'components'
+import { Column, Heading, Row, Text } from 'industry-ui'
 
 // Style
 import styled from 'styled-components'

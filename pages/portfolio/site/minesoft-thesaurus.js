@@ -18,7 +18,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Minesoft' meta={meta}>
+    <Page pageHeading={{ heading: 'Minesoft' }} meta={meta}>
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/Minesoft/hero.jpg?v=1.00'

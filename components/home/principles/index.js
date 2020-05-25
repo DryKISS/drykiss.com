@@ -3,8 +3,7 @@
  */
 
 // UI
-import { Image, Link, MEDIA_QUERY } from 'industry-ui'
-import { Text } from 'components'
+import { Image, Link, MEDIA_QUERY, Text } from 'industry-ui'
 
 // Style
 import styled from 'styled-components'

@@ -3,7 +3,7 @@
  */
 
 // UI
-import { List, Page } from 'industry-ui'
+import { List, ListItem, Page } from 'industry-ui'
 
 export default () => {
   const meta = {
@@ -13,25 +13,25 @@ export default () => {
   }
 
   return (
-    <Page heading='Anatomy of a Page' meta={meta}>
+    <Page pageHeading={{ heading: 'Anatomy of a Page' }} meta={meta}>
       <p>Hidden elements of a web page can be</p>
 
       <List>
-        <span>Meta properties</span>
-        <span>Responsive</span>
-        <span>Accesibility</span>
-        <span>Micro formats</span>
-        <span>Accesibility</span>
+        <ListItem>Meta properties</ListItem>
+        <ListItem>Responsive</ListItem>
+        <ListItem>Accesibility</ListItem>
+        <ListItem>Micro formats</ListItem>
+        <ListItem>Accesibility</ListItem>
       </List>
 
       <p>The basic building blocks of a web page can be considered to be made of the following.</p>
 
       <List>
-        <span>Navigation</span>
-        <span>Headings</span>
-        <span>Body</span>
-        <span>Footer</span>
-        <span>Cookie acceptance</span>
+        <ListItem>Navigation</ListItem>
+        <ListItem>Headings</ListItem>
+        <ListItem>Body</ListItem>
+        <ListItem>Footer</ListItem>
+        <ListItem>Cookie acceptance</ListItem>
       </List>
     </Page>
   )

@@ -18,7 +18,7 @@ export default () => {
   }
 
   return (
-    <Page heading='SMS Million' meta={meta}>
+    <Page pageHeading={{ heading: 'SMS Million' }} meta={meta}>
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/triangle-solutions/sms-million/hero.jpg?v=1.00'

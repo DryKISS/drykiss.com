@@ -18,7 +18,7 @@ export default () => {
   }
 
   return (
-    <Page heading='YoFone' meta={meta}>
+    <Page pageHeading={{ heading: 'YoFone' }} meta={meta}>
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/yofone/yofone/hero.jpg?v=1.00'

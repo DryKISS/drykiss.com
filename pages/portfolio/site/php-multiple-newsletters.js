@@ -18,7 +18,7 @@ export default () => {
   }
 
   return (
-    <Page heading='PHP Multiple Newsletters' meta={meta}>
+    <Page pageHeading={{ heading: 'PHP Multiple Newsletters' }} meta={meta}>
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/triangle-solutions/php-multiple-newsletters/hero.jpg?v=1.00'

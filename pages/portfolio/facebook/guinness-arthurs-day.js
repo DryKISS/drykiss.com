@@ -19,7 +19,7 @@ export default () => {
   }
 
   return (
-    <Page heading='Guinness® Arthurs Day' meta={meta}>
+    <Page pageHeading={{ heading: 'Guinness® Arthurs Day' }} meta={meta}>
       <Head>
         <meta
           content='https://drykiss.com/static/portfolio/tribal-ddb/guinness-arthurs-day/hero.jpg?v=1.00'
