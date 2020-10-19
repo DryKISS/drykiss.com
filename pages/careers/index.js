@@ -42,7 +42,7 @@ const PageCareers = () => {
           <Card
             alt='React job opening'
             bordered
-            image='/static/careers/react.svg'
+            image='/images/careers/react.svg'
             shadow
             to='/careers/react'
           >
@@ -54,7 +54,7 @@ const PageCareers = () => {
           <Card
             alt='React job opening'
             bordered
-            image='/static/careers/react.svg'
+            image='/images/careers/react.svg'
             shadow
             to='/careers/react-junior'
           >
@@ -66,7 +66,7 @@ const PageCareers = () => {
           <Card
             alt='React job opening'
             bordered
-            image='/static/careers/react.svg'
+            image='/images/careers/react.svg'
             shadow
             to='/careers/react-intern'
           >

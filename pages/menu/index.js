@@ -21,7 +21,7 @@ const PageMenu = () => {
   return (
     <Page meta={meta}>
       <StyledHero
-        background='/static/sections/kiss.jpg'
+        background='/images/sections/kiss.jpg'
         strapline={`
           We take the hassle and cost out of constantly designing and printing
           expensive menus by offering a simple alternative. Let us focus on the

@@ -21,7 +21,7 @@ const PageSabic = () => {
     <Page pageHeading={{ heading: 'Jack Morton Sabic' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/jack-morton/sabic/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/jack-morton/sabic/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -29,7 +29,7 @@ const PageSabic = () => {
 
       <Row>
         <Column md={12}>
-          <Image alt='circus street' src='/static/portfolio/jack-morton/sabic/hero.png' />
+          <Image alt='circus street' src='/images/portfolio/jack-morton/sabic/hero.png' />
         </Column>
       </Row>
 

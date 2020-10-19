@@ -32,7 +32,7 @@ const PageGuiness = () => {
     <Page pageHeading={{ heading: 'Guinness® Arthurs Day' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/tribal-ddb/guinness-arthurs-day/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/tribal-ddb/guinness-arthurs-day/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -42,7 +42,7 @@ const PageGuiness = () => {
         <Column md={12}>
           <Image
             alt='Arthurs Day'
-            src='/static/portfolio/tribal-ddb/guinness-arthurs-day/hero.png'
+            src='/images/portfolio/tribal-ddb/guinness-arthurs-day/hero.png'
           />
         </Column>
       </Row>

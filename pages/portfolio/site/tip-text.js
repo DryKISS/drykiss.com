@@ -21,7 +21,7 @@ const PageTipText = () => {
     <Page pageHeading={{ heading: 'Tip text' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/dungbeetle/tip-text/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/dungbeetle/tip-text/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -29,7 +29,7 @@ const PageTipText = () => {
 
       <Row>
         <Column md={12}>
-          <Image alt='Tip text' src='/static/portfolio/dungbeetle/tip-text/hero.png' />
+          <Image alt='Tip text' src='/images/portfolio/dungbeetle/tip-text/hero.png' />
         </Column>
       </Row>
 

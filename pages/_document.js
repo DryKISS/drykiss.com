@@ -63,11 +63,11 @@ export default class MyDocument extends Document {
           <link
             rel='apple-touch-icon'
             sizes='180x180'
-            href='/static/favicon/apple-touch-icon.png'
+            href='/images/favicon/apple-touch-icon.png'
           />
 
-          <link rel='icon' type='image/png' sizes='32x32' href='/static/favicon/favicon.png' />
-          <link rel='icon' type='image/png' sizes='16x16' href='/static/favicon/favicon.png' />
+          <link rel='icon' type='image/png' sizes='32x32' href='/images/favicon/favicon.png' />
+          <link rel='icon' type='image/png' sizes='16x16' href='/images/favicon/favicon.png' />
 
           {Pinterest && Pinterest.verify && (
             <meta name='p:domain_verify' content={Pinterest.verify} />

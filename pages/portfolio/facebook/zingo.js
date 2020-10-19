@@ -21,7 +21,7 @@ const PagePortfolioZingo = () => {
     <Page pageHeading={{ heading: 'Zingo' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/triangle-solutions/zingo/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/triangle-solutions/zingo/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -29,7 +29,7 @@ const PagePortfolioZingo = () => {
 
       <Row>
         <Column md={12}>
-          <Image alt='Zingo' src='/static/portfolio/triangle-solutions/zingo/hero.png' />
+          <Image alt='Zingo' src='/images/portfolio/triangle-solutions/zingo/hero.png' />
         </Column>
       </Row>
 

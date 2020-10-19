@@ -24,14 +24,14 @@ export const Border = ({ children, content, size, backgroundSide }) => {
 
 const StyledBorder = styled.div`
   border: 10px solid transparent;
-  border-image: url(/static/border/border10.svg) 10;
+  border-image: url(/images/border/border10.svg) 10;
   ${MEDIA_QUERY.tablet`
     border: 18px solid transparent;
-    border-image: url(/static/border/border18.svg) 18;
+    border-image: url(/images/border/border18.svg) 18;
   `}
   ${MEDIA_QUERY.desktop`
     border: 42px solid transparent;
-    border-image: url(/static/border/border42.svg) 42;
+    border-image: url(/images/border/border42.svg) 42;
   `}
 `
 

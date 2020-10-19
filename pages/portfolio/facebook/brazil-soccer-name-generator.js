@@ -33,7 +33,7 @@ const PageBrazilName = () => {
     <Page pageHeading={{ heading: 'Brazil Soccer Name Generator' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/triangle-solutions/brazil-soccer-name-generator/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/triangle-solutions/brazil-soccer-name-generator/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -43,7 +43,7 @@ const PageBrazilName = () => {
         <Column md={12}>
           <Image
             alt='Brazil Soccer Name'
-            src='/static/portfolio/triangle-solutions/brazil-soccer-name-generator/hero.png'
+            src='/images/portfolio/triangle-solutions/brazil-soccer-name-generator/hero.png'
           />
         </Column>
       </Row>

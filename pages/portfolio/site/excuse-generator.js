@@ -31,7 +31,7 @@ const PageExcuseGenerator = () => {
     <Page pageHeading={{ heading: 'Deliveroo - Excuse generator' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/deliveroo/excuse-generator/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/deliveroo/excuse-generator/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -41,7 +41,7 @@ const PageExcuseGenerator = () => {
         <Column md={12}>
           <Image
             alt='Deliveroo - Excuse generator'
-            src='/static/portfolio/deliveroo/excuse-generator/hero.png'
+            src='/images/portfolio/deliveroo/excuse-generator/hero.png'
           />
         </Column>
       </Row>

@@ -21,7 +21,7 @@ const PageSMSMillion = () => {
     <Page pageHeading={{ heading: 'SMS Million' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/triangle-solutions/sms-million/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/triangle-solutions/sms-million/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -31,7 +31,7 @@ const PageSMSMillion = () => {
         <Column md={12}>
           <Image
             alt='SMS Million'
-            src='/static/portfolio/triangle-solutions/sms-million/hero.png'
+            src='/images/portfolio/triangle-solutions/sms-million/hero.png'
           />
         </Column>
       </Row>

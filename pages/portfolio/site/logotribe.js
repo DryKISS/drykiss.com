@@ -21,7 +21,7 @@ const PageLogotribe = () => {
     <Page pageHeading={{ heading: 'Logotribe' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/dungbeetle/logotribe/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/dungbeetle/logotribe/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -29,7 +29,7 @@ const PageLogotribe = () => {
 
       <Row>
         <Column md={12}>
-          <Image alt='Logotribe' src='/static/portfolio/dungbeetle/logotribe/hero.png' />
+          <Image alt='Logotribe' src='/images/portfolio/dungbeetle/logotribe/hero.png' />
         </Column>
       </Row>
 

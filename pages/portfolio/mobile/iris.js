@@ -22,7 +22,7 @@ const PageIris = () => {
     <Page pageHeading={{ heading: 'Hybrid iPad application' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/ibm/iris/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/ibm/iris/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -30,7 +30,7 @@ const PageIris = () => {
 
       <Row>
         <Column md={12}>
-          <Image alt='ibm iris' src='/static/portfolio/ibm/iris/hero.png' />
+          <Image alt='ibm iris' src='/images/portfolio/ibm/iris/hero.png' />
         </Column>
       </Row>
 

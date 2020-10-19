@@ -31,7 +31,7 @@ const PageOurWork = () => {
                 }
               }}
             >
-              <Image alt={title} src={`/static/portfolio/${client}/${slug}/hero.png`} />
+              <Image alt={title} src={`/images/portfolio/${client}/${slug}/hero.png`} />
             </Card>
           </Column>
         )

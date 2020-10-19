@@ -23,7 +23,7 @@ const PageCircusStreet = () => {
     <Page pageHeading={{ heading: 'Circus Street - Video e-learning platform' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/drykiss/circus-street/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/drykiss/circus-street/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -33,25 +33,25 @@ const PageCircusStreet = () => {
         <Column md={3}>
           <Image
             alt='circus street'
-            src='/static/portfolio/drykiss/circus-street/circus-street-home-mobile.jpeg'
+            src='/images/portfolio/drykiss/circus-street/circus-street-home-mobile.jpeg'
           />
         </Column>
         <Column md={3}>
           <Image
             alt='circusstreet-jargon-mobile'
-            src='/static/portfolio/drykiss/circus-street/circusstreet-jargon-mobile.jpeg'
+            src='/images/portfolio/drykiss/circus-street/circusstreet-jargon-mobile.jpeg'
           />
         </Column>
         <Column md={3}>
           <Image
             alt='circusstreet-lesson-mobile'
-            src='/static/portfolio/drykiss/circus-street/circusstreet-lesson-mobile.jpeg'
+            src='/images/portfolio/drykiss/circus-street/circusstreet-lesson-mobile.jpeg'
           />
         </Column>
         <Column md={3}>
           <Image
             alt='circusstreet-video-mobile'
-            src='/static/portfolio/drykiss/circus-street/circusstreet-video-mobile.jpeg'
+            src='/images/portfolio/drykiss/circus-street/circusstreet-video-mobile.jpeg'
           />
         </Column>
       </Row>

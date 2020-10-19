@@ -33,7 +33,7 @@ export const Principles = () => {
             angle={angle}
             key={index}
             left={left}
-            src={`/static/placeholder/${name}.svg`}
+            src={`/images/placeholder/${name}.svg`}
             top={top}
             zIndex={zIndex}
           />

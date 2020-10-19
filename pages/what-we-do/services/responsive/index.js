@@ -77,7 +77,7 @@ const PageServicesResponsive = () => {
         <Row>
           <Column sm={12}>
             <Space>
-              <Image alt='Services' src='/static/services/services.jpg' title='Services' />
+              <Image alt='Services' src='/images/services/services.jpg' title='Services' />
             </Space>
           </Column>
         </Row>
@@ -217,7 +217,7 @@ const PageServicesResponsive = () => {
         <Row align='center'>
           <Column sm={12} md={6}>
             <Space>
-              <Image alt='Services' src='/static/services/services.jpg' title='Services' />
+              <Image alt='Services' src='/images/services/services.jpg' title='Services' />
             </Space>
           </Column>
           <Column sm={12} md={4}>
@@ -273,7 +273,7 @@ const PageServicesResponsive = () => {
           </Column>
           <Column sm={12} md={6}>
             <Space>
-              <Image alt='Services' src='/static/services/services.jpg' title='Services' />
+              <Image alt='Services' src='/images/services/services.jpg' title='Services' />
             </Space>
           </Column>
         </Row>
@@ -454,10 +454,10 @@ const StyledBlockquote = styled.div`
   color: #000;
   padding: 1rem 2rem;
   border: 10px solid transparent;
-  -moz-border-image: url(/static/border/border.svg) 10;
-  -webkit-border-image: url(/static/border/border.svg) 10;
-  -o-border-image: url(/static/border/border.svg) 10;
-  border-image: url(/static/border/border.svg) 10;
+  -moz-border-image: url(/images/border/border.svg) 10;
+  -webkit-border-image: url(/images/border/border.svg) 10;
+  -o-border-image: url(/images/border/border.svg) 10;
+  border-image: url(/images/border/border.svg) 10;
   left: -10px;
   top: -10px;
   right: -10px;

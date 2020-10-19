@@ -15,7 +15,7 @@ export const Services = () => {
         tag='h5'
       />
 
-      <Image alt='Services' src='/static/services/services.jpg' title='Services' />
+      <Image alt='Services' src='/images/services/services.jpg' title='Services' />
       <Space marginBottom='xl' />
 
       <Row>

@@ -30,14 +30,14 @@ const PageApp = props => {
     <>
       <Head>
         <meta
-          content='https://drykiss.com/static/social/drykiss-facebook.jpg'
+          content='https://drykiss.com/images/social/drykiss-facebook.jpg'
           key='og:image'
           property='og:image'
         />
 
         <meta
           name='twitter:image'
-          content='https://drykiss.com/static/social/drykiss-facebook.jpg'
+          content='https://drykiss.com/images/social/drykiss-facebook.jpg'
         />
       </Head>
       <MyApp config={Config} Layout={Layout} offCanvas pageProgressBar theme={Theme} {...props} />

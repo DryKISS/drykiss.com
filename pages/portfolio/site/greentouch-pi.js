@@ -31,7 +31,7 @@ const PageGreentouch = () => {
     <Page pageHeading={{ heading: 'Greentouch PI' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/drykiss/greentouch-pi/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/drykiss/greentouch-pi/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -41,25 +41,25 @@ const PageGreentouch = () => {
         <Column md={3}>
           <Image
             alt='greentouch-contact'
-            src='/static/portfolio/drykiss/greentouch-pi/greentouch-contact.png'
+            src='/images/portfolio/drykiss/greentouch-pi/greentouch-contact.png'
           />
         </Column>
         <Column md={3}>
           <Image
             alt='greentouch-pi-1'
-            src='/static/portfolio/drykiss/greentouch-pi/greentouch-pi-1.png'
+            src='/images/portfolio/drykiss/greentouch-pi/greentouch-pi-1.png'
           />
         </Column>
         <Column md={3}>
           <Image
             alt='greentouch-service'
-            src='/static/portfolio/drykiss/greentouch-pi/greentouch-service.png'
+            src='/images/portfolio/drykiss/greentouch-pi/greentouch-service.png'
           />
         </Column>
         <Column md={3}>
           <Image
             alt='greentouch-tea'
-            src='/static/portfolio/drykiss/greentouch-pi/greentouch-tea.png'
+            src='/images/portfolio/drykiss/greentouch-pi/greentouch-tea.png'
           />
         </Column>
       </Row>

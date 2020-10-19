@@ -21,7 +21,7 @@ const PageSurfchek = () => {
     <Page pageHeading={{ heading: 'Surchek' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/surfchek/surfchek/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/surfchek/surfchek/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -29,7 +29,7 @@ const PageSurfchek = () => {
 
       <Row>
         <Column md={12}>
-          <Image alt='Surfchek' src='/static/portfolio/surfchek/surfchek/hero.png' />
+          <Image alt='Surfchek' src='/images/portfolio/surfchek/surfchek/hero.png' />
         </Column>
       </Row>
 
