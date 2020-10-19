@@ -3,12 +3,22 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
+import {
+  Column,
+  Divider,
+  Heading,
+  Image,
+  Link,
+  List,
+  Page,
+  Row,
+  ListItem
+} from '@drykiss/industry-ui'
 
 // Next
 import Head from 'next/head'
 
-export default () => {
+const PageMinesoft = () => {
   const meta = {
     description: 'Minesoft - Patbase thesaurus - DryKISS',
     path: '/pages/portfolio/site/minesoft-thesaurus',
@@ -155,3 +165,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageMinesoft

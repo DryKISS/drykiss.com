@@ -3,12 +3,12 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from 'industry-ui'
+import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from '@drykiss/industry-ui'
 
 // Next
 import Head from 'next/head'
 
-export default () => {
+const PageLoveFootball = () => {
   const meta = {
     description: 'Love Football',
     path: '/pages/portfolio/facebook/love-football',
@@ -64,3 +64,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageLoveFootball

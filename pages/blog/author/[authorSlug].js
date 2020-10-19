@@ -10,12 +10,12 @@
 import { Blog, Facebook } from 'config'
 
 // UI
-import { BlogListing, BlogSidebar, Column, Page, Row } from 'industry-ui'
+import { BlogListing, BlogSidebar, Column, Page, Row } from '@drykiss/industry-ui'
 
 // Data
 import { Articles } from 'data/blog'
 
-export default ({ author }) => {
+const PageBlogAuthor = ({ author }) => {
   const meta = {
     description: `
       DryKISS is a full service internet and mobile digital production house.
@@ -41,3 +41,5 @@ export default ({ author }) => {
     </Page>
   )
 }
+
+export default PageBlogAuthor

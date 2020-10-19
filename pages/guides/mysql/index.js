@@ -3,9 +3,9 @@
  */
 
 // UI
-import { Heading, Page } from 'industry-ui'
+import { Heading, Page } from '@drykiss/industry-ui'
 
-export default () => {
+const PageGuidesMysql = () => {
   const meta = {
     description: `
       DryKISS prefers using a relational database over document storage, simply
@@ -85,3 +85,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageGuidesMysql

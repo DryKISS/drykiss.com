@@ -3,12 +3,12 @@
  */
 
 // UI
-import { Column, Blockquote, Heading, Hero, Page, Row } from 'industry-ui'
+import { Column, Blockquote, Heading, Hero, Page, Row } from '@drykiss/industry-ui'
 
 // Style
 import styled from 'styled-components'
 
-export default () => {
+const PageMenu = () => {
   const meta = {
     description: `
       DryKISS creates a simple option for restaurants and cafes to have their
@@ -129,3 +129,5 @@ const StyledHero = styled(Hero)`
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
   }
 `
+
+export default PageMenu

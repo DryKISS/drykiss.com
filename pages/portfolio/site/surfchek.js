@@ -3,12 +3,12 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from 'industry-ui'
+import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from '@drykiss/industry-ui'
 
 // Next
 import Head from 'next/head'
 
-export default () => {
+const PageSurfchek = () => {
   const meta = {
     description: 'Surfchek',
     path: '/pages/portfolio/site/surfchek',
@@ -61,3 +61,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageSurfchek

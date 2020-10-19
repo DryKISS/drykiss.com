@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Page } from 'industry-ui'
+import { Page } from '@drykiss/industry-ui'
 
 export default () => {
   const meta = {
@@ -22,3 +22,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageServicesMobile

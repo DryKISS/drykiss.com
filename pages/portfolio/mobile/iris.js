@@ -3,12 +3,12 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from 'industry-ui'
+import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from '@drykiss/industry-ui'
 
 // Next
 import Head from 'next/head'
 
-export default () => {
+const PageIris = () => {
   const meta = {
     description:
       'Sales enablement hybrid iPad application to facilitate the client seller communication',
@@ -66,3 +66,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageIris

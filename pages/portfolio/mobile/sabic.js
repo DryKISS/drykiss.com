@@ -3,12 +3,12 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from 'industry-ui'
+import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from '@drykiss/industry-ui'
 
 // Next
 import Head from 'next/head'
 
-export default () => {
+const PageSabic = () => {
   const meta = {
     description: 'Jack Morton Sabic',
     path: '/portfolio/mobile/sabic',
@@ -65,3 +65,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageSabic

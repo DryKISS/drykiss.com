@@ -3,12 +3,22 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
+import {
+  Column,
+  Divider,
+  Heading,
+  Image,
+  Link,
+  List,
+  Page,
+  Row,
+  ListItem
+} from '@drykiss/industry-ui'
 
 // Next
 import Head from 'next/head'
 
-export default () => {
+const PageBrazilName = () => {
   const meta = {
     description: `
       DryKISS developed Brazil Soccer Name as an early Facebook platform
@@ -95,3 +105,4 @@ export default () => {
     </Page>
   )
 }
+export default PageBrazilName

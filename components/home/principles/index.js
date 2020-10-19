@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Image, Link, MEDIA_QUERY, Text } from 'industry-ui'
+import { Image, Link, MEDIA_QUERY, Text } from '@drykiss/industry-ui'
 
 // Style
 import styled from 'styled-components'

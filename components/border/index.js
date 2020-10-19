@@ -6,10 +6,12 @@
 import { node, string } from 'prop-types'
 
 // UI
-import { MEDIA_QUERY } from 'industry-ui'
+import { MEDIA_QUERY } from '@drykiss/industry-ui'
 
 // Style
 import styled, { css } from 'styled-components'
+
+// Polished
 import { mix, tint, transparentize } from 'polished'
 
 export const Border = ({ children, content, size, backgroundSide }) => {

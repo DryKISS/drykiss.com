@@ -3,9 +3,9 @@
  */
 
 // UI
-import { Button, Heading, List, ListItem, Page, Space, Text } from 'industry-ui'
+import { Button, Heading, List, ListItem, Page, Space, Text } from '@drykiss/industry-ui'
 
-export default () => {
+const PageCareersReact = () => {
   const meta = {
     description: `DryKISS wants a remote senior react developer to join our growing team. This is a
     full time position with flexible everything. Click to view the requirements and apply.`,
@@ -95,3 +95,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageCareersReact

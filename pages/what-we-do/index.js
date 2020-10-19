@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Page, Divider, Card, Link, Space, Text } from 'industry-ui'
+import { Page, Divider, Card, Link, Space, Text } from '@drykiss/industry-ui'
 
 // Data
 import { Services } from 'data'
@@ -11,7 +11,7 @@ import { Services } from 'data'
 // Style
 import styled from 'styled-components'
 
-export default () => {
+const PageWhatWeDo = () => {
   const RenderServices = () =>
     Services.map(({ description, name, to }, index) => (
       <StyledCard key={index}>
@@ -61,7 +61,7 @@ export default () => {
 
 const StyledText = styled(Text)`
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover {
     color: #000;
@@ -71,3 +71,5 @@ const StyledText = styled(Text)`
 const StyledCard = styled(Card)`
   display: inline-block;
 `
+
+export default PageWhatWeDo

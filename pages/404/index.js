@@ -3,9 +3,9 @@
  */
 
 // Layout
-import { Page, Space, Text } from 'industry-ui'
+import { Page, Space, Text } from '@drykiss/industry-ui'
 
-export default () => {
+const PageError404 = () => {
   const meta = {
     description: `
       DryKISS is a full service internet and mobile digital production house.
@@ -22,7 +22,10 @@ export default () => {
         The page you were looking for no longer exists or never did. Please use the links at the top
         of your screen to get back in the game, or click here to go home and start again.
       </Text>
+
       <Space />
     </Page>
   )
 }
+
+export default PageError404

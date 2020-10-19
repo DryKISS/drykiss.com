@@ -3,7 +3,7 @@
  */
 
 // UI
-import { List, ListItem, Page } from 'industry-ui'
+import { List, ListItem, Page } from '@drykiss/industry-ui'
 
 export default () => {
   const meta = {

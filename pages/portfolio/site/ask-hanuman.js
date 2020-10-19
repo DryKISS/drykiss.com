@@ -3,12 +3,12 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from 'industry-ui'
+import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from '@drykiss/industry-ui'
 
 // Next
 import Head from 'next/head'
 
-export default () => {
+const PageAskHanuman = () => {
   const meta = {
     description: 'AskHanuman',
     path: '/pages/portfolio/site/ask-hanuman',
@@ -61,3 +61,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageAskHanuman

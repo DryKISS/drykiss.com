@@ -5,7 +5,7 @@
 // UI
 import { Column, Blockquote, Heading, Page, Row } from 'industry-ui'
 
-export default () => {
+const PageMenuCreate = () => {
   const meta = {
     description: `
       Create a simple menu that meets customer needs. Translation, legal and
@@ -104,3 +104,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageMenuCreate

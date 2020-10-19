@@ -6,7 +6,7 @@
 import { node } from 'prop-types'
 
 // UI
-import { Bootstrap } from 'industry-ui'
+import { Bootstrap } from '@drykiss/industry-ui'
 
 // Data
 import { Brand, Copyright, Footer, Navigation } from 'config'

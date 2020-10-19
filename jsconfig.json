@@ -2,10 +2,5 @@
   "compilerOptions": {
     "baseUrl": "."
   },
-  "include": [
-    "components/**/*",
-    "config/**/*",
-    "layouts/**/*",
-    "pages/**/*"
-  ]
+  "include": ["components/**/*", "config/**/*", "data/**/*", "layouts/**/*", "pages/**/*"]
 }

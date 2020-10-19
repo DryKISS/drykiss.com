@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Column, Container, Heading, Image, Row, Space, Text } from 'industry-ui'
+import { Column, Container, Heading, Image, Row, Space, Text } from '@drykiss/industry-ui'
 
 export const Services = () => {
   return (

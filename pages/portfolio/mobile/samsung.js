@@ -3,12 +3,22 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
+import {
+  Column,
+  Divider,
+  Heading,
+  Image,
+  Link,
+  List,
+  Page,
+  Row,
+  ListItem
+} from '@drykiss/industry-ui'
 
 // Next
 import Head from 'next/head'
 
-export default () => {
+const PageSamsung = () => {
   const meta = {
     description: `
       Jack Morton Samsung
@@ -68,3 +78,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageSamsung

@@ -3,12 +3,12 @@
  */
 
 // UI
-import { Card, CardBody, Icon, Image, Column, Page, Row, Space, Text } from 'industry-ui'
+import { Card, CardBody, Icon, Image, Column, Page, Row, Space, Text } from '@drykiss/industry-ui'
 
 // Style
 import styled from 'styled-components'
 
-export default () => {
+const PageTeam = () => {
   const teamMembers = [
     {
       id: 'iwarner',
@@ -87,3 +87,5 @@ export default () => {
 const StyledImage = styled(Image)`
   filter: grayscale(100%);
 `
+
+export default PageTeam

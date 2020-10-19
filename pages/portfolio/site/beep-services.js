@@ -3,12 +3,12 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from 'industry-ui'
+import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from '@drykiss/industry-ui'
 
 // Next
 import Head from 'next/head'
 
-export default () => {
+const PageBeepServices = () => {
   const meta = {
     description: 'Beep Services',
     path: '/pages/portfolio/site/beep-service',
@@ -63,3 +63,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageBeepServices

@@ -4,7 +4,6 @@
   "license": "ISC",
   "version": "1.0.0",
   "scripts": {
-    "check": "npm-check -s -u",
     "start": "next",
     "lint": "standard | snazzy",
     "lint-fix": "standard --fix --verbose | snazzy",
@@ -33,22 +32,12 @@
     "printWidth": 100
   },
   "standard": {
-    "globals": [
-      "__SITE__",
-      "cy",
-      "describe",
-      "it"
-    ],
-    "ignore": [
-      "node_modules/**",
-      "*.bundle*.js"
-    ],
+    "globals": ["__SITE__", "cy", "describe", "it"],
+    "ignore": ["node_modules/**", "*.bundle*.js"],
     "parser": "babel-eslint"
   },
   "stylelint": {
-    "processors": [
-      "stylelint-processor-styled-components"
-    ],
+    "processors": ["stylelint-processor-styled-components"],
     "extends": [
       "stylelint-config-standard",
       "stylelint-config-prettier",
@@ -56,34 +45,29 @@
     ]
   },
   "dependencies": {
+    "@apollo/client": "^3.0.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/pro-duotone-svg-icons": "^5.13.0",
     "@fortawesome/pro-regular-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
     "@tanem/react-nprogress": "^3.0.27",
+    "@tippyjs/react": "^4.1.0",
+    "axios": "^0.19.2",
     "graphql-tag": "^2.10.3",
     "next": "^9.3.3",
     "polished": "^3.5.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-gtm-module": "^2.0.10",
     "styled-components": "^5.0.1"
   },
   "devDependencies": {
-    "@apollo/react-hooks": "^3.1.3",
-    "@fullcalendar/core": "^4.4.0",
-    "@fullcalendar/daygrid": "^4.4.0",
-    "@fullcalendar/interaction": "^4.4.0",
-    "@fullcalendar/list": "^4.4.0",
-    "@fullcalendar/react": "^4.4.0",
-    "@fullcalendar/timegrid": "^4.4.0",
     "@nivo/bar": "^0.61.1",
     "@nivo/generators": "^0.61.0",
     "@nivo/line": "^0.61.1",
     "@nivo/pie": "^0.61.1",
     "@typeform/embed": "^0.16.0",
-    "apollo-client": "^2.6.8",
-    "axios": "^0.19.2",
     "babel-eslint": "^10.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "babel-plugin-styled-components": "^1.10.7",
@@ -97,8 +81,6 @@
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
-    "next-transpile-modules": "^3.1.0",
-    "npm-check": "^5.9.2",
     "prettier-standard": "^16.2.1",
     "push-dir": "^0.4.1",
     "react-datepicker": "^2.14.1",
@@ -107,7 +89,6 @@
     "react-google-maps": "^9.4.5",
     "react-hook-form": "^5.2.0",
     "react-select": "^3.1.0",
-    "react-tooltip": "^4.1.3",
     "serve": "^11.3.0",
     "sitemap": "^6.1.0",
     "snazzy": "^8.0.0",
@@ -117,7 +98,6 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.10.0",
-    "tippy.js": "^6.1.0",
     "yup": "^0.28.3"
   }
 }

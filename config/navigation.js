@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Navbar } from 'industry-ui'
+import { Navbar } from '@drykiss/industry-ui'
 
 // Config
 import { Blog, Brand } from 'config'
@@ -54,7 +54,5 @@ export const Navigation = () => {
     ]
   }
 
-  return (
-    <Navbar animational brand={Brand.logo} custom widgets={Default} />
-  )
+  return <Navbar animational brand={Brand.logo} custom widgets={Default} />
 }

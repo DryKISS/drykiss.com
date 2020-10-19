@@ -3,9 +3,9 @@
  */
 
 // UI
-import { Heading, List, ListItem, Page } from 'industry-ui'
+import { Heading, List, ListItem, Page } from '@drykiss/industry-ui'
 
-export default () => {
+const PageGuidesGit = () => {
   const meta = {
     description: 'How DRYKISS utilise git to acheive a coherrent CI process.',
     path: '/guides/continuous-intergration/git',
@@ -152,3 +152,5 @@ git checkout -b belgium_language
     </Page>
   )
 }
+
+export default PageGuidesGit

@@ -6,9 +6,9 @@
 import Head from 'next/head'
 
 // UI
-import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from 'industry-ui'
+import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from '@drykiss/industry-ui'
 
-export default () => {
+const PagePortfolioWouldYou = () => {
   const meta = {
     description: 'Would You',
     path: '/pages/portfolio/facebook/would-you',
@@ -61,3 +61,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PagePortfolioWouldYou

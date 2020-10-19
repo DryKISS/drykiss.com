@@ -3,9 +3,10 @@
  */
 
 // UI
-import { Page } from 'industry-ui'
+import { Page } from '@drykiss/industry-ui'
+import PageSMSMillion from 'pages/portfolio/site/sms-million'
 
-export default () => {
+const PageSiteMap = () => {
   const meta = {
     description: `
       DryKISS is a full service internet and mobile digital production house.
@@ -22,3 +23,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageSiteMap

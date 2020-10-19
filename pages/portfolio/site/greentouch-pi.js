@@ -3,12 +3,22 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
+import {
+  Column,
+  Divider,
+  Heading,
+  Image,
+  Link,
+  List,
+  Page,
+  Row,
+  ListItem
+} from '@drykiss/industry-ui'
 
 // Next
 import Head from 'next/head'
 
-export default () => {
+const PageGreentouch = () => {
   const meta = {
     description: 'Greentouch PI',
     path: '/pages/portfolio/site/greentouch-pi',
@@ -202,3 +212,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageGreentouch

@@ -7,12 +7,12 @@
 import { Blog, Facebook } from 'config'
 
 // UI
-import { BlogCategories, BlogHero, BlogSidebar, Column, Page, Row } from 'industry-ui'
+import { BlogCategories, BlogHero, BlogSidebar, Column, Page, Row } from '@drykiss/industry-ui'
 
 // Data
 import { Articles } from 'data/blog'
 
-export default () => {
+const PageBlog = () => {
   const meta = {
     description: `DryKISS is a full service internet and mobile digital production house. Our
       services span consulting, strategy; planning; development; testing and analytics.`,
@@ -35,3 +35,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageBlog

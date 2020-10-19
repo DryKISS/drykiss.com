@@ -3,12 +3,12 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from 'industry-ui'
+import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from '@drykiss/industry-ui'
 
 // Next
 import Head from 'next/head'
 
-export default () => {
+const PageEasiWebSite = () => {
   const meta = {
     description: 'Xpansif - Easi Website',
     path: '/pages/portfolio/site/easiwebsite',
@@ -62,3 +62,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageEasiWebSite

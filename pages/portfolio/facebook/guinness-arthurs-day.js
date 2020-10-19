@@ -3,12 +3,22 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
+import {
+  Column,
+  Divider,
+  Heading,
+  Image,
+  Link,
+  List,
+  Page,
+  Row,
+  ListItem
+} from '@drykiss/industry-ui'
 
 // Next
 import Head from 'next/head'
 
-export default () => {
+const PageGuiness = () => {
   const meta = {
     description: `
       To celebrate Arthur's Day, Guinness required a Facebook page that could be
@@ -106,3 +116,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageGuiness

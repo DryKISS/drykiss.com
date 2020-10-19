@@ -3,12 +3,12 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from 'industry-ui'
+import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from '@drykiss/industry-ui'
 
 // Next
 import Head from 'next/head'
 
-export default () => {
+const PageYofone = () => {
   const meta = {
     description: 'YoFone',
     path: '/pages/portfolio/site/yofone',
@@ -61,3 +61,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageYofone

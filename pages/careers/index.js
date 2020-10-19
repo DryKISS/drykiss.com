@@ -6,9 +6,9 @@
  */
 
 // UI
-import { Card, CardBody, Column, Heading, Page, Row } from 'industry-ui'
+import { Card, CardBody, Column, Heading, Page, Row } from '@drykiss/industry-ui'
 
-export default () => {
+const PageCareers = () => {
   const meta = {
     description: `
       DryKISS is a full service internet and mobile digital production house.
@@ -77,3 +77,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageCareers

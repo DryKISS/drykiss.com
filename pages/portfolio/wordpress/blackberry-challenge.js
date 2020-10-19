@@ -3,12 +3,12 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from 'industry-ui'
+import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from '@drykiss/industry-ui'
 
 // Next
 import Head from 'next/head'
 
-export default () => {
+const PageBlackberryChallenge = () => {
   const meta = {
     description: `
     Blackberry wanted to hook into the Youth market. We built the site using a Custom Wordpress theme and plugins
@@ -63,3 +63,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageBlackberryChallenge

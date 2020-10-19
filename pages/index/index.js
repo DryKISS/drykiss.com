@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Button, Heading, Link, MEDIA_QUERY, Page, Space } from 'industry-ui'
+import { Button, Heading, Link, MEDIA_QUERY, Page, Space } from '@drykiss/industry-ui'
 import { Border, Clients, Contact, Ethos, Principles, Services } from 'components'
 
 // Config
@@ -15,7 +15,7 @@ import styled from 'styled-components'
 // COLOURS
 import { shade, transparentize } from 'polished'
 
-export default () => {
+const PageIndex = () => {
   const meta = {
     description: `DryKISS is a full service internet and mobile digital production house. Our
       services span consulting, strategy; planning; development; testing and analytics.`,
@@ -126,3 +126,5 @@ const StyledWrapper = styled.div`
     }
   }
 `
+
+export default PageIndex

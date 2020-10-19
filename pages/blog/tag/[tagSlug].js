@@ -10,12 +10,12 @@
 import { Blog, Facebook } from 'config'
 
 // UI
-import { BlogListing, BlogSidebar, Column, Page, Row } from 'industry-ui'
+import { BlogListing, BlogSidebar, Column, Page, Row } from '@drykiss/industry-ui'
 
 // Data
 import { Articles } from 'data/blog'
 
-export default ({ tag }) => {
+const PageBlogTag = ({ tag }) => {
   const meta = {
     description: `Articles tagged: ${tag}`,
     path: `${Blog.path}/tag/${tag}`,
@@ -37,3 +37,5 @@ export default ({ tag }) => {
     </Page>
   )
 }
+
+export default PageBlogTag

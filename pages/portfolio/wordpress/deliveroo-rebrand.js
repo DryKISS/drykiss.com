@@ -3,12 +3,22 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
+import {
+  Column,
+  Divider,
+  Heading,
+  Image,
+  Link,
+  List,
+  Page,
+  Row,
+  ListItem
+} from '@drykiss/industry-ui'
 
 // Next
 import Head from 'next/head'
 
-export default () => {
+const PageDeliverooRebrand = () => {
   const meta = {
     description: `
     Deliveroo - Food home delivery"
@@ -142,3 +152,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageDeliverooRebrand

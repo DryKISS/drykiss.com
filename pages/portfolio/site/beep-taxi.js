@@ -6,9 +6,19 @@
 import Head from 'next/head'
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
+import {
+  Column,
+  Divider,
+  Heading,
+  Image,
+  Link,
+  List,
+  Page,
+  Row,
+  ListItem
+} from '@drykiss/industry-ui'
 
-export default () => {
+const PageBeepTaxi = () => {
   const meta = {
     description: 'Beep Taxi',
     path: '/pages/portfolio/site/beep-taxi',
@@ -113,3 +123,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageBeepTaxi

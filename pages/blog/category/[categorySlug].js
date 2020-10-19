@@ -13,12 +13,12 @@ import { useRouter } from 'next/router'
 import { Blog, Facebook } from 'config'
 
 // UI
-import { BlogListing, BlogSidebar, Column, Page, Row } from 'industry-ui'
+import { BlogListing, BlogSidebar, Column, Page, Row } from '@drykiss/industry-ui'
 
 // Data
 import { Articles } from 'data/blog'
 
-export default ({ category }) => {
+const PageBlogCategory = ({ category }) => {
   const { query } = useRouter()
 
   const meta = {
@@ -46,3 +46,5 @@ export default ({ category }) => {
     </Page>
   )
 }
+
+export default PageBlogCategory

@@ -3,9 +3,9 @@
  */
 
 // Layout
-import { Page, Space, Text } from 'industry-ui'
+import { Page, Space, Text } from '@drykiss/industry-ui'
 
-export default () => {
+const PageAbout = () => {
   const meta = {
     description: `
       DryKISS is a full service internet and mobile digital production house.
@@ -23,3 +23,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageAbout

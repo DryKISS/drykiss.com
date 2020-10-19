@@ -3,9 +3,9 @@
  */
 
 // UI
-import { Column, Page, Row } from 'industry-ui'
+import { Column, Page, Row } from '@drykiss/industry-ui'
 
-export default () => {
+const PageGuidesLinting = () => {
   const meta = {
     description: `
       DryKISS utilise StandardJS for all JavaScript Linting. We love the ease of
@@ -28,3 +28,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageGuidesLinting

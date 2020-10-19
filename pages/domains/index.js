@@ -4,12 +4,12 @@
  */
 
 // UI
-import { Link, Page, Table } from 'industry-ui'
+import { Link, Page, Table } from '@drykiss/industry-ui'
 
 // Data
 import { Domains as Data } from 'data'
 
-export default () => {
+const PageDomains = () => {
   const AnalyticsLink = ({ row }) => (
     <Link to={`https://analytics.google.com/analytics/web/#/report-home/${row.analytics}`}>
       Analytics
@@ -74,3 +74,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageDomains

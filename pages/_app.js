@@ -7,7 +7,7 @@ import Router from 'next/router'
 import Head from 'next/head'
 
 // UI
-import { GoogleAnalyticsPageView, HubSpot, MyApp } from 'industry-ui'
+import { GoogleAnalyticsPageView, HubSpot, MyApp } from '@drykiss/industry-ui'
 
 // Layout
 import Layout from 'layouts'

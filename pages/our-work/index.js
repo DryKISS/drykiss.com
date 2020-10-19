@@ -3,12 +3,12 @@
  */
 
 // UI
-import { Card, Column, Image, Page, Row } from 'industry-ui'
+import { Card, Column, Image, Page, Row } from '@drykiss/industry-ui'
 
 // Data
 import { PORTFOLIO_FACEBOOK, PORTFOLIO_MOBILE, PORTFOLIO_SITES, PORTFOLIO_WORDPRESS } from 'data'
 
-export default () => {
+const PageOurWork = () => {
   const portfolioExamples = [
     ...PORTFOLIO_SITES,
     ...PORTFOLIO_FACEBOOK,
@@ -51,3 +51,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageOurWork

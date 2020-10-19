@@ -6,9 +6,9 @@
 import Head from 'next/head'
 
 // UI
-import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from 'industry-ui'
+import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from '@drykiss/industry-ui'
 
-export default () => {
+const PageCircusStreet = () => {
   const meta = {
     description: `
     Circus Street - Video e-learning platform
@@ -113,3 +113,4 @@ export default () => {
     </Page>
   )
 }
+export default PageCircusStreet

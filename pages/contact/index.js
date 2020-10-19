@@ -6,12 +6,12 @@
 import { useEffect } from 'react'
 
 // UI
-import { Page } from 'industry-ui'
+import { Page } from '@drykiss/industry-ui'
 
 // Config
 import { HubSpot } from 'config'
 
-export default () => {
+const PageContact = () => {
   useEffect(() => {
     const script = document.createElement('script')
 
@@ -45,3 +45,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageContact

@@ -4,9 +4,9 @@
  */
 
 // UI
-import { Button, Heading, List, ListItem, Page } from 'industry-ui'
+import { Button, Heading, List, ListItem, Page } from '@drykiss/industry-ui'
 
-export default () => {
+const PageCareersReactJunior = () => {
   const meta = {
     description: `DryKISS wants a junior react developer to join the growing team in Valencia Spain.
       This is a full time position with flexible eveything. Click to view the requirements and
@@ -126,3 +126,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageCareersReactJunior

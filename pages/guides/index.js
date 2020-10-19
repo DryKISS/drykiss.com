@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Card, CardBody, Column, Page, Row } from 'industry-ui'
+import { Card, CardBody, Column, Page, Row } from '@drykiss/industry-ui'
 
 export default () => {
   const meta = {

@@ -17,12 +17,12 @@ import {
   MEDIA_QUERY,
   Space,
   Text
-} from 'industry-ui'
+} from '@drykiss/industry-ui'
 
 // Style
 import styled from 'styled-components'
 
-export default () => {
+const PageServicesResponsive = () => {
   const meta = {
     description: `
       DryKISS is a full service internet and mobile digital production house.
@@ -468,7 +468,7 @@ const StyledButton = styled(Button)`
   position: relative;
   font-family: 'JetBrains Mono Bold';
   left: 0.5rem;
-  background: #80FF00;
+  background: #80ff00;
   padding: 1rem 1.25rem;
   margin-bottom: 2rem;
   font-size: 1rem;
@@ -476,20 +476,13 @@ const StyledButton = styled(Button)`
   border-radius: 0px;
   border: 2px solid #000000;
   cursor: pointer;
-  box-shadow:
-    -8px 8px 0 #000000,
-    -7px 7px 0 #000000,
-    -6px 6px 0 #000000,
-    -5px 5px 0 #000000,
-    -4px 4px 0 #000000,
-    -3px 3px 0 #000000,
-    -2px 2px 0 #000000,
-    -1px 1px 0 #000000;
+  box-shadow: -8px 8px 0 #000000, -7px 7px 0 #000000, -6px 6px 0 #000000, -5px 5px 0 #000000,
+    -4px 4px 0 #000000, -3px 3px 0 #000000, -2px 2px 0 #000000, -1px 1px 0 #000000;
 
   &:hover {
     background: #000;
     color: #fff;
-    border: 2px solid #80FF00;
+    border: 2px solid #80ff00;
   }
 
   &:active {
@@ -541,3 +534,5 @@ const StyledHeading = styled.h1`
         -1px 1px 0 #000;
     `}
 `
+
+export default PageServicesResponsive

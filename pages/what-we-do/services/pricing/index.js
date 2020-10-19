@@ -3,9 +3,9 @@
  */
 
 // UI
-import { Page } from 'industry-ui'
+import { Page } from '@drykiss/industry-ui'
 
-export default () => {
+const PageServicesPricing = () => {
   const meta = {
     description: `
       DryKISS is a full service internet and mobile digital production house.
@@ -22,3 +22,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageServicesPricing

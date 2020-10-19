@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Container, Divider, Heading, Space, Text } from 'industry-ui'
+import { Container, Divider, Heading, Space, Text } from '@drykiss/industry-ui'
 
 export const Contact = () => {
   return (

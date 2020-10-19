@@ -18,7 +18,7 @@ import Head from 'next/head'
 import { Blog, Facebook } from 'config'
 
 // UI
-import { Article, BlogSidebar, Column, Page, Row } from 'industry-ui'
+import { Article, BlogSidebar, Column, Page, Row } from '@drykiss/industry-ui'
 
 // Data
 import { Articles } from 'data/blog'

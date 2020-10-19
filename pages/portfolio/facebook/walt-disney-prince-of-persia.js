@@ -3,12 +3,22 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, Link, List, Page, Row, ListItem } from 'industry-ui'
+import {
+  Column,
+  Divider,
+  Heading,
+  Image,
+  Link,
+  List,
+  Page,
+  Row,
+  ListItem
+} from '@drykiss/industry-ui'
 
 // Next
 import Head from 'next/head'
 
-export default () => {
+const PagePrincePersia = () => {
   const meta = {
     description: `
       Walt Disney required a Facebook page for the movie Prince of Persia that could be localised
@@ -112,3 +122,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PagePrincePersia

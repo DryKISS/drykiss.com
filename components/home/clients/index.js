@@ -5,7 +5,7 @@
  */
 
 // UI
-import { Column, Container, Heading, Image, MEDIA_QUERY, Row } from 'industry-ui'
+import { Column, Container, Heading, Image, MEDIA_QUERY, Row } from '@drykiss/industry-ui'
 
 // Style
 import styled from 'styled-components'

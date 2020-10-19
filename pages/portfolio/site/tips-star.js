@@ -3,12 +3,13 @@
  */
 
 // UI
-import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from 'industry-ui'
+import { Column, Divider, Heading, Image, List, Page, Row, ListItem } from '@drykiss/industry-ui'
 
 // Next
 import Head from 'next/head'
+import PageTipText from './tip-text'
 
-export default () => {
+const PageTipsStar = () => {
   const meta = {
     description: 'Tips star',
     path: '/pages/portfolio/site/tips-star',
@@ -61,3 +62,5 @@ export default () => {
     </Page>
   )
 }
+
+export default PageTipsStar

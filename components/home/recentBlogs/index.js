@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Column, Heading, Row, Text } from 'industry-ui'
+import { Column, Heading, Row, Text } from '@drykiss/industry-ui'
 
 // Style
 import styled from 'styled-components'
