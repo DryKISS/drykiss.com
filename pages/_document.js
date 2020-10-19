@@ -3,7 +3,7 @@
  */
 
 // Next
-import Document, { Head, Main, NextScript } from 'next/document'
+import Document, { Head, Html, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
 // Config
@@ -38,7 +38,7 @@ export default class MyDocument extends Document {
 
   render () {
     return (
-      <html className='no-js' lang='en' dir='ltr' prefix='og: http://ogp.me/ns#'>
+      <Html className='no-js' lang='en' dir='ltr' prefix='og: http://ogp.me/ns#'>
         <Head>
           <meta name='viewport' content='width=device-width, initial-scale=1' key='viewport' />
           <meta charSet='UTF-8' key='charset' />
@@ -114,7 +114,7 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     )
   }
 }
