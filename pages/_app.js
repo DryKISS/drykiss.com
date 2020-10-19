@@ -1,19 +1,18 @@
 /**
  * App
  */
-
 // Next
 import Router from 'next/router'
 import Head from 'next/head'
 
 // UI
-import { GoogleAnalyticsPageView, HubSpot, MyApp } from '@drykiss/industry-ui'
+import { GoogleAnalyticsPageView, MyApp } from '@drykiss/industry-ui'
 
 // Layout
 import Layout from 'layouts'
 
 // Config
-import { Google, Theme } from 'config'
+import { Config, Google, Theme } from 'config'
 
 // UI
 import 'config/icons'
@@ -24,26 +23,26 @@ Router.events.on('routeChangeComplete', url => {
   if (Google && Google.analytics) {
     GoogleAnalyticsPageView(url, Google.analytics)
   }
-
-  if (HubSpot && HubSpot.id) {
-    const _hsq = (window._hsq = window._hsq || [])
-    _hsq.push(['setPath', url])
-    _hsq.push(['trackPageView'])
-  }
 })
 
-export default props => (
-  <>
-    <Head>
-      <meta
-        content='https://drykiss.com/static/social/drykiss-facebook.jpg'
-        key='og:image'
-        property='og:image'
-      />
+const PageApp = props => {
+  return (
+    <>
+      <Head>
+        <meta
+          content='https://drykiss.com/static/social/drykiss-facebook.jpg'
+          key='og:image'
+          property='og:image'
+        />
 
-      <meta name='twitter:image' content='https://drykiss.com/static/social/drykiss-facebook.jpg' />
-    </Head>
+        <meta
+          name='twitter:image'
+          content='https://drykiss.com/static/social/drykiss-facebook.jpg'
+        />
+      </Head>
+      <MyApp config={Config} Layout={Layout} offCanvas pageProgressBar theme={Theme} {...props} />
+    </>
+  )
+}
 
-    <MyApp Layout={Layout} {...props} theme={Theme} />
-  </>
-)
+export default PageApp
