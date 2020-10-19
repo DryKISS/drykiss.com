@@ -32,12 +32,22 @@
     "printWidth": 100
   },
   "standard": {
-    "globals": ["__SITE__", "cy", "describe", "it"],
-    "ignore": ["node_modules/**", "*.bundle*.js"],
+    "globals": [
+      "__SITE__",
+      "cy",
+      "describe",
+      "it"
+    ],
+    "ignore": [
+      "node_modules/**",
+      "*.bundle*.js"
+    ],
     "parser": "babel-eslint"
   },
   "stylelint": {
-    "processors": ["stylelint-processor-styled-components"],
+    "processors": [
+      "stylelint-processor-styled-components"
+    ],
     "extends": [
       "stylelint-config-standard",
       "stylelint-config-prettier",
@@ -45,59 +55,34 @@
     ]
   },
   "dependencies": {
-    "@apollo/client": "^3.0.2",
+    "@drykiss/industry-ui": "^1.5.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
-    "@fortawesome/free-brands-svg-icons": "^5.13.0",
-    "@fortawesome/pro-duotone-svg-icons": "^5.13.0",
-    "@fortawesome/pro-regular-svg-icons": "^5.13.0",
-    "@fortawesome/react-fontawesome": "^0.1.9",
-    "@tanem/react-nprogress": "^3.0.27",
-    "@tippyjs/react": "^4.1.0",
-    "axios": "^0.19.2",
-    "graphql-tag": "^2.10.3",
-    "next": "^9.3.3",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/pro-duotone-svg-icons": "^5.15.1",
+    "@fortawesome/pro-regular-svg-icons": "^5.15.1",
+    "@fortawesome/pro-solid-svg-icons": "^5.15.1",
+    "next": "^9.5.5",
     "polished": "^3.5.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-gtm-module": "^2.0.10",
-    "styled-components": "^5.0.1"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "styled-components": "^5.2.0"
   },
   "devDependencies": {
-    "@nivo/bar": "^0.61.1",
-    "@nivo/generators": "^0.61.0",
-    "@nivo/line": "^0.61.1",
-    "@nivo/pie": "^0.61.1",
-    "@typeform/embed": "^0.16.0",
     "babel-eslint": "^10.1.0",
-    "babel-plugin-module-resolver": "^4.0.0",
-    "babel-plugin-styled-components": "^1.10.7",
-    "bcryptjs": "^2.4.3",
-    "emoji-mart": "^3.0.0",
-    "express": "^4.17.1",
-    "fs-extra": "^9.0.0",
-    "graphql": "^14.6.0",
-    "gravatar": "^1.8.0",
-    "holderjs": "^2.9.6",
-    "jsonwebtoken": "^8.5.1",
-    "lodash": "^4.17.15",
-    "moment": "^2.24.0",
-    "prettier-standard": "^16.2.1",
+    "babel-plugin-styled-components": "^1.11.1",
+    "fs-extra": "^9.0.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "prettier-standard": "^16.4.1",
     "push-dir": "^0.4.1",
-    "react-datepicker": "^2.14.1",
-    "react-dropzone": "^10.2.2",
-    "react-dropzone-uploader": "^2.11.0",
-    "react-google-maps": "^9.4.5",
-    "react-hook-form": "^5.2.0",
-    "react-select": "^3.1.0",
-    "serve": "^11.3.0",
-    "sitemap": "^6.1.0",
+    "serve": "^11.3.2",
     "snazzy": "^8.0.0",
-    "standard": "^14.3.3",
-    "stylelint": "^13.2.1",
-    "stylelint-config-prettier": "^8.0.1",
+    "standard": "^14.3.4",
+    "start-server-and-test": "^1.11.5",
+    "stylelint": "^13.7.2",
+    "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.10.0",
-    "yup": "^0.28.3"
+    "stylelint-processor-styled-components": "^1.10.0"
   }
 }
