@@ -1,43 +1,44 @@
 // Font awesome
-import { faCopyright } from '@fortawesome/pro-duotone-svg-icons'
+import { faBars, faCopyright } from '@fortawesome/pro-solid-svg-icons'
+
+import { faCopyright as fadCopyright } from '@fortawesome/pro-duotone-svg-icons'
 
 import {
-  faBars,
-  faBlog,
-  faCalendarAlt,
-  faExternalLink,
-  faFileUser,
-  faHomeHeart,
-  faStopwatch,
-  faTimes,
-  faUser
+  faBlog as fadBlog,
+  faCalendarAlt as fadCalendarAlt,
+  faExternalLink as fadExternalLink,
+  faFileUser as fadFileUser,
+  faHomeHeart as fadHomeHeart,
+  faStopwatch as fadStopwatch,
+  faTimes as fadTimes,
+  faUser as fadUser
 } from '@fortawesome/pro-regular-svg-icons'
 
 import {
-  faFacebookSquare,
-  faGithub,
-  faLinkedin,
-  faPinterestSquare,
-  faTwitterSquare
+  faFacebookSquare as fabFacebookSquare,
+  faGithub as fabGithub,
+  faLinkedin as fabLinkedin,
+  faPinterestSquare as fabPinterestSquare,
+  faTwitterSquare as fabTwitterSquare
 } from '@fortawesome/free-brands-svg-icons'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 library.add(
   faBars,
-  faBlog,
-  faCalendarAlt,
   faCopyright,
-  faExternalLink,
-  faFileUser,
-  faHomeHeart,
-  faStopwatch,
-  faTimes,
-  faUser,
-
-  faFacebookSquare,
-  faGithub,
-  faLinkedin,
-  faPinterestSquare,
-  faTwitterSquare
+  fabFacebookSquare,
+  fabGithub,
+  fabLinkedin,
+  fabPinterestSquare,
+  fabTwitterSquare,
+  fadBlog,
+  fadCalendarAlt,
+  fadCopyright,
+  fadExternalLink,
+  fadFileUser,
+  fadHomeHeart,
+  fadStopwatch,
+  fadTimes,
+  fadUser
 )
