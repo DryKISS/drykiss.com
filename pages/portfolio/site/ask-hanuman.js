@@ -21,7 +21,7 @@ const PageAskHanuman = () => {
     <Page pageHeading={{ heading: 'AskHanuman' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/alpha-founders/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/alpha-founders/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -29,7 +29,7 @@ const PageAskHanuman = () => {
 
       <Row>
         <Column md={12}>
-          <Image alt='AskHanuman' src='/static/portfolio/alpha-founders/ask-hanuman/hero.png' />
+          <Image alt='AskHanuman' src='/images/portfolio/alpha-founders/ask-hanuman/hero.png' />
         </Column>
       </Row>
 

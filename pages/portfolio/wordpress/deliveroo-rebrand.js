@@ -33,7 +33,7 @@ const PageDeliverooRebrand = () => {
     <Page pageHeading={{ heading: 'Deliveroo - Food home delivery' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/deliveroo/rebrand/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/deliveroo/rebrand/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -43,17 +43,17 @@ const PageDeliverooRebrand = () => {
         <Column md={3}>
           <Image
             alt='deliveroo-home-mobile'
-            src='/static/portfolio/deliveroo/blog/deliveroo-home-mobile.png'
+            src='/images/portfolio/deliveroo/blog/deliveroo-home-mobile.png'
           />
         </Column>
         <Column md={3}>
           <Image
             alt='deliveroo-post-mobile'
-            src='/static/portfolio/deliveroo/blog/deliveroo-post-mobile.png'
+            src='/images/portfolio/deliveroo/blog/deliveroo-post-mobile.png'
           />
         </Column>
         <Column md={3}>
-          <Image alt='deliveroo-post' src='/static/portfolio/deliveroo/blog/deliveroo-post.png' />
+          <Image alt='deliveroo-post' src='/images/portfolio/deliveroo/blog/deliveroo-post.png' />
         </Column>
       </Row>
 

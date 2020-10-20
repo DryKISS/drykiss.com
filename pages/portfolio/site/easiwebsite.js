@@ -15,14 +15,14 @@ const PageEasiWebSite = () => {
     title: 'Xpansif',
     author: 'Ian Warner',
     type: 'article',
-    image: '/static/portfolio/xpansif/easiwebsite/hero.png'
+    image: '/images/portfolio/xpansif/easiwebsite/hero.png'
   }
 
   return (
     <Page pageHeading={{ heading: 'Xpansif - Easi Website' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/xpansif/easiwebsite/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/xpansif/easiwebsite/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -30,7 +30,7 @@ const PageEasiWebSite = () => {
 
       <Row>
         <Column md={12}>
-          <Image alt='Xpansif' src='/static/portfolio/xpansif/easiwebsite/hero.png' />
+          <Image alt='Xpansif' src='/images/portfolio/xpansif/easiwebsite/hero.png' />
         </Column>
       </Row>
 

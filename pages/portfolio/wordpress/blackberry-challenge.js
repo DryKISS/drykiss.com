@@ -23,7 +23,7 @@ const PageBlackberryChallenge = () => {
     <Page pageHeading={{ heading: 'Blackberry® Youth Challenge' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/razorfish/blackberry-challenge/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/razorfish/blackberry-challenge/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -31,7 +31,7 @@ const PageBlackberryChallenge = () => {
 
       <Row>
         <Column md={12}>
-          <Image alt='blackberry' src='/static/portfolio/razorfish/blackberry-challenge/hero.png' />
+          <Image alt='blackberry' src='/images/portfolio/razorfish/blackberry-challenge/hero.png' />
         </Column>
       </Row>
 

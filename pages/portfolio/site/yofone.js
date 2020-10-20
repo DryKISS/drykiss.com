@@ -21,7 +21,7 @@ const PageYofone = () => {
     <Page pageHeading={{ heading: 'YoFone' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/yofone/yofone/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/yofone/yofone/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -29,7 +29,7 @@ const PageYofone = () => {
 
       <Row>
         <Column md={12}>
-          <Image alt='YoFone' src='/static/portfolio/yofone/yofone/hero.png' />
+          <Image alt='YoFone' src='/images/portfolio/yofone/yofone/hero.png' />
         </Column>
       </Row>
 

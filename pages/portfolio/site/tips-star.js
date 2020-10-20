@@ -22,7 +22,7 @@ const PageTipsStar = () => {
     <Page pageHeading={{ heading: 'Tips star' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/tips-star/tips-star/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/tips-star/tips-star/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -30,7 +30,7 @@ const PageTipsStar = () => {
 
       <Row>
         <Column md={12}>
-          <Image alt='Tips star' src='/static/portfolio/tips-star/tips-star/hero.png' />
+          <Image alt='Tips star' src='/images/portfolio/tips-star/tips-star/hero.png' />
         </Column>
       </Row>
 

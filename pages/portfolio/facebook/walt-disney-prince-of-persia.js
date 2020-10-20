@@ -34,7 +34,7 @@ const PagePrincePersia = () => {
     <Page pageHeading={{ heading: 'Walt Disney® Prince of Persia' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/digital-outlook/walt-disney-prince-of-persia/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/digital-outlook/walt-disney-prince-of-persia/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -44,7 +44,7 @@ const PagePrincePersia = () => {
         <Column md={12}>
           <Image
             alt='Prince of Persia'
-            src='/static/portfolio/digital-outlook/walt-disney-prince-of-persia/hero.png'
+            src='/images/portfolio/digital-outlook/walt-disney-prince-of-persia/hero.png'
           />
         </Column>
       </Row>

@@ -15,14 +15,14 @@ const PageBeepServices = () => {
     title: 'Beep Services',
     author: 'Ian Warner',
     type: 'article',
-    image: '/static/portfolio/beep-taxi/beep-services/hero.png'
+    image: '/images/portfolio/beep-taxi/beep-services/hero.png'
   }
 
   return (
     <Page pageHeading={{ heading: 'Beep Services' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/beep-taxi/beep-services/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/beep-taxi/beep-services/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -30,7 +30,7 @@ const PageBeepServices = () => {
 
       <Row>
         <Column md={12}>
-          <Image alt='Beep Services' src='/static/portfolio/beep-taxi/beep-services/hero.png' />
+          <Image alt='Beep Services' src='/images/portfolio/beep-taxi/beep-services/hero.png' />
         </Column>
       </Row>
 

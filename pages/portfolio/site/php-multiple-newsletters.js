@@ -21,7 +21,7 @@ const PageNewsletters = () => {
     <Page pageHeading={{ heading: 'PHP Multiple Newsletters' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/triangle-solutions/php-multiple-newsletters/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/triangle-solutions/php-multiple-newsletters/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -31,7 +31,7 @@ const PageNewsletters = () => {
         <Column md={12}>
           <Image
             alt='PHP Multiple Newsletters'
-            src='/static/portfolio/triangle-solutions/php-multiple-newsletters/hero.png'
+            src='/images/portfolio/triangle-solutions/php-multiple-newsletters/hero.png'
           />
         </Column>
       </Row>

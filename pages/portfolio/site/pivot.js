@@ -31,7 +31,7 @@ const PagePivot = () => {
     <Page pageHeading={{ heading: 'IBM - Pivot' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/ibm/pivot/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/ibm/pivot/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -39,7 +39,7 @@ const PagePivot = () => {
 
       <Row>
         <Column md={12}>
-          <Image alt='IBM - Pivot' src='/static/portfolio/ibm/pivot/hero.png' />
+          <Image alt='IBM - Pivot' src='/images/portfolio/ibm/pivot/hero.png' />
         </Column>
       </Row>
 

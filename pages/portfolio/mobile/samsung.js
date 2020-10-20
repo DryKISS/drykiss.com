@@ -33,7 +33,7 @@ const PageSamsung = () => {
     <Page pageHeading={{ heading: 'Jack Morton Samsung' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/jack-morton/samsung/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/jack-morton/samsung/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -41,7 +41,7 @@ const PageSamsung = () => {
 
       <Row>
         <Column md={12}>
-          <Image alt='Jack Morton Samsung' src='/static/portfolio/jack-morton/samsung/hero.png' />
+          <Image alt='Jack Morton Samsung' src='/images/portfolio/jack-morton/samsung/hero.png' />
         </Column>
       </Row>
 

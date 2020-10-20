@@ -63,7 +63,7 @@ const PageTeam = () => {
         {teamMembers.map(member => (
           <Column key={member.id} lg={3}>
             <Card center bordered to={member.link}>
-              <StyledImage alt={member.name} src={`/static/team/${member.id}.jpg`} />
+              <StyledImage alt={member.name} src={`/images/team/${member.id}.jpg`} />
 
               <CardBody>
                 {member.name}

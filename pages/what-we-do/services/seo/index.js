@@ -21,7 +21,7 @@ const PageServicesResponsive = () => {
   return (
     <Page meta={meta}>
       <Hero
-        background='/static/sections/kiss.jpg'
+        background='/images/sections/kiss.jpg'
         strapline={`
           London web and mobile development. Crafting modern digital mobile and
           web solutions; using state of the art technologies; within

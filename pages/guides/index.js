@@ -19,7 +19,7 @@ export default () => {
           <Card
             alt='Git'
             bordered
-            image='/static/guides/git/git.svg'
+            image='/images/guides/git/git.svg'
             shadow
             to='/guides/continuous-intergration/git'
           >
@@ -31,7 +31,7 @@ export default () => {
           <Card
             alt='Github'
             bordered
-            image='/static/guides/git/git.svg'
+            image='/images/guides/git/git.svg'
             shadow
             to='/guides/continuous-intergration/github'
           >
@@ -43,7 +43,7 @@ export default () => {
           <Card
             alt='Page anatomy'
             bordered
-            image='/static/guides/nextjs/anatomy.svg'
+            image='/images/guides/nextjs/anatomy.svg'
             shadow
             to='/guides/nextjs/anatomy'
           >
@@ -55,7 +55,7 @@ export default () => {
           <Card
             alt='Onboarding'
             bordered
-            image='/static/guides/git/git.svg'
+            image='/images/guides/git/git.svg'
             shadow
             to='/guides/onboarding/tools'
           >

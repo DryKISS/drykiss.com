@@ -31,7 +31,7 @@ const PageBeepTaxi = () => {
     <Page pageHeading={{ heading: 'Beep Taxi' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/beep-taxi/beep-taxi/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/beep-taxi/beep-taxi/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -39,7 +39,7 @@ const PageBeepTaxi = () => {
 
       <Row>
         <Column md={12}>
-          <Image alt='Beep Taxi' src='/static/portfolio/beep-taxi/beep-taxi/hero.png' />
+          <Image alt='Beep Taxi' src='/images/portfolio/beep-taxi/beep-taxi/hero.png' />
         </Column>
       </Row>
 

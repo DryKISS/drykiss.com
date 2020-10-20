@@ -21,7 +21,7 @@ const PageTickets = () => {
     <Page pageHeading={{ heading: 'PHP Support Tickets' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/triangle-solutions/php-support-tickets/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/triangle-solutions/php-support-tickets/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -31,7 +31,7 @@ const PageTickets = () => {
         <Column md={12}>
           <Image
             alt='PHP Support Tickets'
-            src='/static/portfolio/triangle-solutions/php-support-tickets/hero.png'
+            src='/images/portfolio/triangle-solutions/php-support-tickets/hero.png'
           />
         </Column>
       </Row>

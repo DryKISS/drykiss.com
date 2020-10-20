@@ -31,7 +31,7 @@ const PageMinesoft = () => {
     <Page pageHeading={{ heading: 'Minesoft' }} meta={meta}>
       <Head>
         <meta
-          content='https://drykiss.com/static/portfolio/Minesoft/hero.jpg?v=1.00'
+          content='https://drykiss.com/images/portfolio/Minesoft/hero.jpg?v=1.00'
           key='og:image'
           property='og:image'
         />
@@ -41,25 +41,25 @@ const PageMinesoft = () => {
         <Column md={3}>
           <Image
             alt='minesoft-chemical'
-            src='/static/portfolio/minesoft/minesoft-thesaurus/minesoft-chemical.png'
+            src='/images/portfolio/minesoft/minesoft-thesaurus/minesoft-chemical.png'
           />
         </Column>
         <Column md={3}>
           <Image
             alt='minesoft-edit'
-            src='/static/portfolio/minesoft/minesoft-thesaurus/minesoft-edit.png'
+            src='/images/portfolio/minesoft/minesoft-thesaurus/minesoft-edit.png'
           />
         </Column>
         <Column md={3}>
           <Image
             alt='minesoft-language'
-            src='/static/portfolio/minesoft/minesoft-thesaurus/minesoft-language.png'
+            src='/images/portfolio/minesoft/minesoft-thesaurus/minesoft-language.png'
           />
         </Column>
         <Column md={3}>
           <Image
             alt='minesoft-search'
-            src='/static/portfolio/minesoft/minesoft-thesaurus/minesoft-search.png'
+            src='/images/portfolio/minesoft/minesoft-thesaurus/minesoft-search.png'
           />
         </Column>
       </Row>
