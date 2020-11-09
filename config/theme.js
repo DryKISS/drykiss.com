@@ -7,11 +7,11 @@
 import { tint } from 'polished'
 
 export const COLOUR = {
-  drykiss_lightBlue: 'rgb(0, 225, 218)',
-  drykiss_darkPink: 'rgb(255, 0, 99)',
+  drykiss_lightBlue: '#00D2D2',
+  drykiss_darkPink: '#FF6E91',
 
   active: '#000000',
-  visited: '#0000ff',
+  visited: '#00D2D2',
 
   white: '#ffffff',
   black: '#000000',
@@ -19,8 +19,8 @@ export const COLOUR = {
   dark: 'rgb(92, 111, 127)',
   light: 'rgb(236, 240, 243)',
 
-  primary: '#0000ff',
-  secondary: '#00FF00',
+  primary: '#00D2D2',
+  secondary: '#FF6E91',
   success: 'rgb(54, 197, 58)',
   info: 'rgb(148, 148, 126)',
   warning: 'rgb(222, 127, 40)',
@@ -77,18 +77,19 @@ export const HEADINGS = {
 
 const NAVBAR = {
   // Navbar
-  background: COLOUR.transparent,
+  background: '#242424',
   borderTopWidth: '0.125rem',
+  borderTopColor: COLOUR.primary,
   padding: '1rem 1rem 0 1rem',
   paddingTablet: '1rem 1rem 0 1.5rem',
   paddingDesktop: '1rem 1rem 0 3rem',
 
   // Overlay
-  backgroundOverlay: tint(0.96, COLOUR.black),
+  backgroundOverlay: '#242424',
   widthOverlay: '180px',
 
   // Toggler
-  colourToggler: COLOUR.black,
+  colourToggler: COLOUR.white,
   fontSizeToggler: '0.875',
   paddingToggler: '0.25rem 0',
   colourHoverToggler: COLOUR.success,
@@ -98,21 +99,21 @@ const NAVBAR = {
 
   // Link
   paddingLink: '0 1rem',
-  colourDefault: COLOUR.black,
+  colourDefault: COLOUR.white,
   colourHover: COLOUR.primary,
-  colourDefaultDesktop: COLOUR.black,
+  colourDefaultDesktop: COLOUR.white,
   colourHoverDesktop: COLOUR.primary,
 
   // List
-  fontSizeList: '0.875rem',
+  fontSizeList: '12px',
 
   // ListItem
   borderTopListItem: 'none',
   backgroundListItem: COLOUR.transparent,
   justifyContentDesktopListItem: 'flex-start',
-  marginBottomDesktopListItem: '1rem',
+  marginBottomDesktopListItem: 'none',
   backgroundHoverListItem: COLOUR.transparent,
-  borderBottomHoverListItem: '2px solid #000'
+  borderBottomHoverListItem: 'none'
 }
 
 const PAGE = {
@@ -121,7 +122,7 @@ const PAGE = {
 }
 
 const TYPOGRAPHY = {
-  font: '"JetBrains Mono"',
+  font: "'OpenSans'",
   fontColour: COLOUR.black,
   fontSizeBase: '1rem'
 }

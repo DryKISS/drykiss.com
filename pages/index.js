@@ -4,7 +4,7 @@
 
 // UI
 import { Button, Heading, Link, MEDIA_QUERY, Page, Space } from '@drykiss/industry-ui'
-import { Border, Clients, Contact, Ethos, Principles, Services } from 'components'
+import { Border, Clients, Contact, Ethos, HomeTestimonial, Principles, Services } from 'components'
 
 // Config
 import { Brand } from 'config'
@@ -25,6 +25,9 @@ const PageIndex = () => {
 
   return (
     <Page marginTop brand={Brand} fluid meta={meta}>
+      <HomeTestimonial />
+      <Space marginBottom='xl' />
+
       <Border backgroundSide='left'>
         <StyledWrapper>
           <Heading content='We do MVPs' tag='h1' />

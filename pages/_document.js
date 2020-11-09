@@ -69,6 +69,11 @@ export default class MyDocument extends Document {
           <link rel='icon' type='image/png' sizes='32x32' href='/images/favicon/favicon.png' />
           <link rel='icon' type='image/png' sizes='16x16' href='/images/favicon/favicon.png' />
 
+          <link
+            href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap'
+            rel='stylesheet'
+          />
+
           {Pinterest && Pinterest.verify && (
             <meta name='p:domain_verify' content={Pinterest.verify} />
           )}

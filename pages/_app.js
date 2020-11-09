@@ -40,7 +40,7 @@ const PageApp = props => {
           content='https://drykiss.com/images/social/drykiss-facebook.jpg'
         />
       </Head>
-      <MyApp config={Config} Layout={Layout} offCanvas pageProgressBar theme={Theme} {...props} />
+      <MyApp config={Config} Layout={Layout} pageProgressBar theme={Theme} {...props} />
     </>
   )
 }

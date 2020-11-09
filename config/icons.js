@@ -1,5 +1,11 @@
 // Font awesome
-import { faBars, faCopyright } from '@fortawesome/pro-solid-svg-icons'
+import {
+  faBars,
+  faChevronLeft,
+  faChevronRight,
+  faCopyright,
+  faTimes
+} from '@fortawesome/pro-solid-svg-icons'
 
 import { faCopyright as fadCopyright } from '@fortawesome/pro-duotone-svg-icons'
 
@@ -26,7 +32,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 library.add(
   faBars,
+  faChevronLeft,
+  faChevronRight,
   faCopyright,
+  faTimes,
   fabFacebookSquare,
   fabGithub,
   fabLinkedin,
