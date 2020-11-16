@@ -3,22 +3,27 @@
  */
 
 // UI
-import { Carousel, Container, Heading } from '@drykiss/industry-ui'
+import { Button, Carousel, Container, Heading } from '@drykiss/industry-ui'
 
 // Style
 import styled from 'styled-components'
 
+// Components
+import { SectionHeading } from 'components'
 import { TestimonialItem } from './item'
-import { TestimonialData } from './data'
+import { testimonialData } from './data'
 
 export const HomeTestimonial = () => {
   return (
     <Container>
-      <StyledHeading content='Testimonials' tag='h5' />
+      <SectionHeading content='Testimonials' />
 
       <Carousel
-        height='130px'
-        slides={TestimonialData.map(testimonial => ({
+        fullWidth
+        leftNavComponent={<StyledNav startIcon='chevron-left' size='sm' />}
+        rightNavComponent={<StyledNav startIcon='chevron-right' size='sm' />}
+        height='75px'
+        slides={testimonialData.map(testimonial => ({
           node: <TestimonialItem key={testimonial.name} {...testimonial} />,
           text: ' '
         }))}
@@ -33,4 +38,15 @@ const StyledTitle = styled(Heading)`
 
 const StyledHeading = styled(StyledTitle)`
   text-align: center;
+`
+
+const StyledNav = styled(Button)`
+  border-radius: 100%;
+  width: 38px;
+  height: 38px;
+  background-color: ${({ theme }) => theme.COLOUR.light};
+
+  svg {
+    color: ${({ theme }) => theme.COLOUR.dark};
+  }
 `

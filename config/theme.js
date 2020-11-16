@@ -3,8 +3,9 @@
  *
  */
 
-// COLOURS
-import { tint } from 'polished'
+const fonts = {
+  openSans: "'Open Sans'"
+}
 
 export const COLOUR = {
   drykiss_lightBlue: '#00D2D2',
@@ -19,7 +20,7 @@ export const COLOUR = {
   dark: 'rgb(92, 111, 127)',
   light: 'rgb(236, 240, 243)',
 
-  primary: '#00D2D2',
+  primary: '#289BC3',
   secondary: '#FF6E91',
   success: 'rgb(54, 197, 58)',
   info: 'rgb(148, 148, 126)',
@@ -36,42 +37,40 @@ export const COLOUR = {
 
 export const HEADINGS = {
   h1: {
-    fontFamily: 'JetBrains Mono Bold',
-    fontSize: '2rem',
+    fontFamily: fonts.openSans,
+    fontSize: '3rem',
     lineHeight: '1.25',
     textTransform: 'initial'
   },
   h2: {
-    fontFamily: 'JetBrains Mono Bold',
-    fontSize: '1.75rem',
-    lineHeight: '1.25',
+    fontFamily: fonts.openSans,
+    fontSize: '2.25rem',
+    lineHeight: '1',
     textTransform: 'initial'
   },
   h3: {
-    fontFamily: 'JetBrains Mono Bold',
-    fontSize: '1.5rem',
-    lineHeight: '1.25',
+    fontFamily: fonts.openSans,
+    fontSize: '1.875rem',
+    lineHeight: '1',
     textTransform: 'initial'
   },
   h4: {
-    fontFamily: 'JetBrains Mono Bold',
-    fontSize: '1.25rem',
-    lineHeight: '1.25',
+    fontFamily: fonts.openSans,
+    fontSize: '1.5rem',
+    lineHeight: '1.75',
     textTransform: 'initial'
   },
   h5: {
-    fontFamily: 'JetBrains Mono',
-    fontSize: '1rem',
+    fontFamily: fonts.openSans,
+    fontSize: '1.25rem',
     lineHeight: '1.5',
-    letterSpacing: '2px',
-    textTransform: 'uppercase'
+    textTransform: 'initial'
   },
   h6: {
-    fontFamily: 'JetBrains Mono',
-    fontSize: '0.875rem',
+    fontFamily: fonts.openSans,
+    fontSize: '1.125rem',
     lineHeight: '1.5',
-    letterSpacing: '2px',
-    textTransform: 'uppercase'
+    textTransform: 'initial'
   }
 }
 
@@ -80,9 +79,9 @@ const NAVBAR = {
   background: '#242424',
   borderTopWidth: '0.125rem',
   borderTopColor: COLOUR.primary,
-  padding: '1rem 1rem 0 1rem',
-  paddingTablet: '1rem 1rem 0 1.5rem',
-  paddingDesktop: '1rem 1rem 0 3rem',
+  padding: '0 1rem',
+  paddingTablet: '0 1rem',
+  paddingDesktop: '0 10rem',
 
   // Overlay
   backgroundOverlay: '#242424',
@@ -98,7 +97,7 @@ const NAVBAR = {
   positionCollapse: 'fixed',
 
   // Link
-  paddingLink: '0 1rem',
+  paddingLink: '1rem',
   colourDefault: COLOUR.white,
   colourHover: COLOUR.primary,
   colourDefaultDesktop: COLOUR.white,
@@ -122,7 +121,7 @@ const PAGE = {
 }
 
 const TYPOGRAPHY = {
-  font: "'OpenSans'",
+  font: fonts.openSans,
   fontColour: COLOUR.black,
   fontSizeBase: '1rem'
 }

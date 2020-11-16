@@ -3,29 +3,41 @@
  */
 
 // UI
-import { Avatar, Column, Divider, Row, Text } from '@drykiss/industry-ui'
+import { Avatar, Column, Divider, MEDIA_QUERY_MAX, Row, Text } from '@drykiss/industry-ui'
 
 // Style
 import styled from 'styled-components'
 
 export const TestimonialItem = ({ name, position, src, text }) => {
   return (
-    <Row align='center'>
-      <Column md={1}>
+    <StyledRow align='center'>
+      <Column md={1} sm={4}>
         <StyledAvatar content={name} src={src} size='xxl' />
       </Column>
 
-      <Column md={2}>
+      <Column md={2} sm={8}>
         <Text content={name} context='primary' />
         <Text content={position} />
       </Column>
 
       <Divider flexItem vertical />
 
-      <Column md={8}>{text}</Column>
-    </Row>
+      <StyledTextColumn md={8} sm={12}>
+        {text}
+      </StyledTextColumn>
+    </StyledRow>
   )
 }
+
+const StyledRow = styled(Row)`
+  padding: 0 48px;
+`
+
+const StyledTextColumn = styled(Column)`
+  ${MEDIA_QUERY_MAX.phone`
+    margin-top: 1rem;
+  `}
+`
 
 const StyledAvatar = styled(Avatar)`
   img {
