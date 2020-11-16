@@ -127,8 +127,20 @@ const TYPOGRAPHY = {
   fontSizeBase: '1rem'
 }
 
+const FOOTER = {
+  background: '#1A1A1A',
+  colour: COLOUR.white
+}
+
+const COPYRIGHT = {
+  background: '#1A1A1A',
+  colour: COLOUR.white
+}
+
 export const Theme = {
   COLOUR,
+  COPYRIGHT,
+  FOOTER,
   HEADINGS,
   NAVBAR,
   PAGE,
