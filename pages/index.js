@@ -9,6 +9,7 @@ import {
   HomeClients,
   Contact,
   Ethos,
+  HomeOurWorks,
   HomeTestimonial,
   Principles,
   Services
@@ -33,11 +34,14 @@ const PageIndex = () => {
 
   return (
     <Page marginTop brand={Brand} fluid meta={meta}>
+      <HomeOurWorks />
+      <Space marginBottom='xxxl' />
+
       <HomeClients />
       <Space marginBottom='xxxl' />
 
       <HomeTestimonial />
-      <Space marginBottom='xl' />
+      <Space marginBottom='xxxl' />
 
       <Border backgroundSide='left'>
         <StyledWrapper>
