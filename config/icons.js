@@ -7,7 +7,11 @@ import {
   faTimes
 } from '@fortawesome/pro-solid-svg-icons'
 
-import { faCopyright as fadCopyright } from '@fortawesome/pro-duotone-svg-icons'
+import {
+  faCopyright as fadCopyright,
+  faEnvelope as fadEnvelope,
+  faPhone as fadPhone
+} from '@fortawesome/pro-duotone-svg-icons'
 
 import {
   faBlog as fadBlog,
@@ -44,9 +48,11 @@ library.add(
   fadBlog,
   fadCalendarAlt,
   fadCopyright,
+  fadEnvelope,
   fadExternalLink,
   fadFileUser,
   fadHomeHeart,
+  fadPhone,
   fadStopwatch,
   fadTimes,
   fadUser
