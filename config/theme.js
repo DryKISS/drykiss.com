@@ -122,6 +122,7 @@ const PAGE = {
 
 const TYPOGRAPHY = {
   font: fonts.openSans,
+  fontFamilies: fonts,
   fontColour: COLOUR.black,
   fontSizeBase: '1rem'
 }

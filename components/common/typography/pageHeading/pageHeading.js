@@ -3,17 +3,16 @@
  */
 
 // UI
-import { Heading } from '@drykiss/industry-ui'
+import { PageHeading as DKPageHeading } from '@drykiss/industry-ui'
 
 // Style
 import styled from 'styled-components'
 
-export const PageHeading = ({ content }) => {
-  return <StyledHeading content={content} tag='h1' />
+export const PageHeading = props => {
+  return <StyledHeading {...props} />
 }
 
-const StyledHeading = styled(Heading)`
-  text-align: center;
+const StyledHeading = styled(DKPageHeading)`
   font-weight: 800;
   color: ${({ theme }) => theme.COLOUR.white};
   padding-bottom: 1rem;

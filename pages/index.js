@@ -4,7 +4,15 @@
 
 // UI
 import { Button, Heading, Link, MEDIA_QUERY, Page, Space } from '@drykiss/industry-ui'
-import { Border, Clients, Contact, Ethos, HomeTestimonial, Principles, Services } from 'components'
+import {
+  Border,
+  HomeClients,
+  Contact,
+  Ethos,
+  HomeTestimonial,
+  Principles,
+  Services
+} from 'components'
 
 // Config
 import { Brand } from 'config'
@@ -25,6 +33,9 @@ const PageIndex = () => {
 
   return (
     <Page marginTop brand={Brand} fluid meta={meta}>
+      <HomeClients />
+      <Space marginBottom='xxxl' />
+
       <HomeTestimonial />
       <Space marginBottom='xl' />
 
@@ -45,9 +56,6 @@ const PageIndex = () => {
         </StyledWrapper>
       </Border>
 
-      <Space marginBottom='xl' />
-
-      <Clients />
       <Space marginBottom='xl' />
 
       <Ethos />
@@ -96,7 +104,6 @@ const StyledWrapper = styled.div`
   }
   button {
     position: relative;
-    font-family: 'JetBrains Mono Bold', sans-serif;
     left: 0.5rem;
     background: ${({ theme }) => theme.COLOUR.secondary};
     padding: 0.875rem 1rem;

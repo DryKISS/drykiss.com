@@ -466,7 +466,6 @@ const StyledBlockquote = styled.div`
 
 const StyledButton = styled(Button)`
   position: relative;
-  font-family: 'JetBrains Mono Bold';
   left: 0.5rem;
   background: #80ff00;
   padding: 1rem 1.25rem;
