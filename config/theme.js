@@ -19,6 +19,7 @@ export const COLOUR = {
 
   dark: 'rgb(92, 111, 127)',
   light: 'rgb(236, 240, 243)',
+  gray90: '#1A1A1A',
 
   primary: '#289BC3',
   secondary: '#FF6E91',
@@ -76,7 +77,7 @@ export const HEADINGS = {
 
 const NAVBAR = {
   // Navbar
-  background: '#242424',
+  background: COLOUR.gray90,
   borderTopWidth: '0.125rem',
   borderTopColor: COLOUR.primary,
   padding: '0 1rem',
@@ -84,7 +85,7 @@ const NAVBAR = {
   paddingDesktop: '0 10rem',
 
   // Overlay
-  backgroundOverlay: '#242424',
+  backgroundOverlay: COLOUR.gray90,
   widthOverlay: '180px',
 
   // Toggler

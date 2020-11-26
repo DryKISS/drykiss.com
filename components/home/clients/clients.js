@@ -5,50 +5,55 @@
  */
 
 // UI
-import { Carousel, Container, Image } from '@drykiss/industry-ui'
+import { Column, Container, Image, Row, Space } from '@drykiss/industry-ui'
 
 // Style
 import styled from 'styled-components'
 
 // Components
-import { CarouselNav, SectionHeading } from 'components'
+import { SectionHeading } from 'components'
 import { clientsData } from './data'
+import { HomeTestimonial } from './testimonial'
 
 export const HomeClients = () => {
   return (
-    <Container>
-      <SectionHeading content='Our Clients' />
+    <StyledWrapper>
+      <Container>
+        <SectionHeading content='Our Clients' />
 
-      <Carousel
-        fullWidth
-        height='50px'
-        leftNavComponent={<CarouselNav left />}
-        rightNavComponent={<CarouselNav right />}
-        numberOfItems={{
-          576: 1,
-          768: 2,
-          992: 3,
-          1200: 4
-        }}
-        slides={clientsData.map(client => ({
-          node: (
-            <StyledImage
-              alt={client.name}
-              src={`/images/clients/${client.name}.svg`}
-              title={client.name}
-            />
-          ),
-          text: ' '
-        }))}
-      />
-    </Container>
+        <StyledRow>
+          {clientsData.map(client => (
+            <Column xs={6} md={3} key={client.name}>
+              <StyledImage
+                alt={client.name}
+                src={`/images/clients/${client.name}.svg`}
+                title={client.name}
+              />
+            </Column>
+          ))}
+        </StyledRow>
+      </Container>
+
+      <Space marginBottom='xxxl' />
+      <HomeTestimonial />
+    </StyledWrapper>
   )
 }
+
+const StyledWrapper = styled.div`
+  background: ${({ theme }) => theme.COLOUR.white} url('images/hero/pattern-2.svg') no-repeat left
+    bottom;
+  padding-bottom: 40px;
+`
+
+const StyledRow = styled(Row)`
+  text-align: center;
+`
 
 const StyledImage = styled(Image)`
   filter: grayscale(100%);
   transition: all 0.1s ease-in-out;
-  height: 100%;
+  height: 50px;
   object-fit: contain;
 
   :hover {

@@ -5,8 +5,8 @@
 // Style
 import styled from 'styled-components'
 
-export const Paragraph = ({ content }) => {
-  return <StyledParagraph>{content}</StyledParagraph>
+export const Paragraph = ({ content, ...props }) => {
+  return <StyledParagraph {...props}>{content}</StyledParagraph>
 }
 
 const StyledParagraph = styled.p`
