@@ -1137,10 +1137,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@drykiss/industry-ui@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@drykiss/industry-ui/-/industry-ui-1.5.0.tgz#bb386686258dee329672ad608c139b99db4c3f45"
-  integrity sha512-R+S1Er2VMCT8Vn51JgXgjHMM6dOzIebShoMQhlCcX9Te3TFXEctA9JH9J4pxsOyQ9HE0URio2ccqe4oKQqZp3w==
+"@drykiss/industry-ui@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@drykiss/industry-ui/-/industry-ui-1.6.0.tgz#cdb2949731ce5a09bc7d2ed291df66e70977d5db"
+  integrity sha512-lwfcI/1Y/ZOCzynY3+UEeY6ucFxkNOo+CqiHFK9GXwkToRWXeW62q1qgYyUFoMFP7KNRQZqKgD5lDrly5vAGkA==
   dependencies:
     "@apollo/client" "^3.2.1"
     "@fortawesome/fontawesome-svg-core" "^1.2.20"
@@ -1186,7 +1186,7 @@
     react-dropzone-uploader "^2.11.0"
     react-google-maps "^9.4.5"
     react-gtm-module "^2.0.11"
-    react-hook-form "^6.8.6"
+    react-hook-form "^6.9.4"
     react-resize-detector "^5.2.0"
     react-select "^3.1.0"
     yup "^0.29.3"
@@ -8625,10 +8625,10 @@ react-gtm-module@^2.0.11:
   resolved "https://registry.yarnpkg.com/react-gtm-module/-/react-gtm-module-2.0.11.tgz#14484dac8257acd93614e347c32da9c5ac524206"
   integrity sha512-8gyj4TTxeP7eEyc2QKawEuQoAZdjKvMY4pgWfycGmqGByhs17fR+zEBs0JUDq4US/l+vbTl+6zvUIx27iDo/Vw==
 
-react-hook-form@^6.8.6:
-  version "6.9.4"
-  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-6.9.4.tgz#750f4d115f11e53600977f829ea09ba90f9ea99f"
-  integrity sha512-9zD9iKYt6pN6aUxKvJycAmnMGuNmZJzO11V+uOxiQkq/8DncomqROjqdck2u2/wbDYN8/mAFamQmmBaIkn4ziw==
+react-hook-form@^6.9.4:
+  version "6.11.2"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-6.11.2.tgz#a0d81f71f85551457aa06892599aa07605f42154"
+  integrity sha512-3Go23kq3JAsUi5xNtOBi2YVJALufmycyS8eA/hdriAbj3U7/lffPlcl0QWviSy4L0EE+dsQwEX2YSTyMMADQsw==
 
 react-input-autosize@^2.2.2:
   version "2.2.2"

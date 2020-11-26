@@ -15,7 +15,7 @@ export const Blog = {
 }
 
 export const Brand = {
-  logo: '/images/logo/drykiss.svg',
+  logo: '/images/logo/drykiss-white.svg',
   name: 'DryKISS Ltd'
 }
 

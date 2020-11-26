@@ -1,7 +1,7 @@
 /**
  * Components - Home - Clients - Data
  */
-export const ClientsData = [
+export const clientsData = [
   {
     id: 1,
     name: 'visa'

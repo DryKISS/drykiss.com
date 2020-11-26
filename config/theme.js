@@ -3,24 +3,26 @@
  *
  */
 
-// COLOURS
-import { tint } from 'polished'
+const fonts = {
+  openSans: "'Open Sans'"
+}
 
 export const COLOUR = {
-  drykiss_lightBlue: 'rgb(0, 225, 218)',
-  drykiss_darkPink: 'rgb(255, 0, 99)',
+  drykiss_lightBlue: '#00D2D2',
+  drykiss_darkPink: '#FF6E91',
 
   active: '#000000',
-  visited: '#0000ff',
+  visited: '#00D2D2',
 
   white: '#ffffff',
   black: '#000000',
 
   dark: 'rgb(92, 111, 127)',
   light: 'rgb(236, 240, 243)',
+  gray90: '#1A1A1A',
 
-  primary: '#0000ff',
-  secondary: '#00FF00',
+  primary: '#289BC3',
+  secondary: '#FF6E91',
   success: 'rgb(54, 197, 58)',
   info: 'rgb(148, 148, 126)',
   warning: 'rgb(222, 127, 40)',
@@ -36,59 +38,58 @@ export const COLOUR = {
 
 export const HEADINGS = {
   h1: {
-    fontFamily: 'JetBrains Mono Bold',
-    fontSize: '2rem',
+    fontFamily: fonts.openSans,
+    fontSize: '3rem',
     lineHeight: '1.25',
     textTransform: 'initial'
   },
   h2: {
-    fontFamily: 'JetBrains Mono Bold',
-    fontSize: '1.75rem',
-    lineHeight: '1.25',
+    fontFamily: fonts.openSans,
+    fontSize: '2.25rem',
+    lineHeight: '1',
     textTransform: 'initial'
   },
   h3: {
-    fontFamily: 'JetBrains Mono Bold',
-    fontSize: '1.5rem',
-    lineHeight: '1.25',
+    fontFamily: fonts.openSans,
+    fontSize: '1.875rem',
+    lineHeight: '1',
     textTransform: 'initial'
   },
   h4: {
-    fontFamily: 'JetBrains Mono Bold',
-    fontSize: '1.25rem',
-    lineHeight: '1.25',
+    fontFamily: fonts.openSans,
+    fontSize: '1.5rem',
+    lineHeight: '1.75',
     textTransform: 'initial'
   },
   h5: {
-    fontFamily: 'JetBrains Mono',
-    fontSize: '1rem',
+    fontFamily: fonts.openSans,
+    fontSize: '1.25rem',
     lineHeight: '1.5',
-    letterSpacing: '2px',
-    textTransform: 'uppercase'
+    textTransform: 'initial'
   },
   h6: {
-    fontFamily: 'JetBrains Mono',
-    fontSize: '0.875rem',
+    fontFamily: fonts.openSans,
+    fontSize: '1.125rem',
     lineHeight: '1.5',
-    letterSpacing: '2px',
-    textTransform: 'uppercase'
+    textTransform: 'initial'
   }
 }
 
 const NAVBAR = {
   // Navbar
-  background: COLOUR.transparent,
+  background: COLOUR.gray90,
   borderTopWidth: '0.125rem',
-  padding: '1rem 1rem 0 1rem',
-  paddingTablet: '1rem 1rem 0 1.5rem',
-  paddingDesktop: '1rem 1rem 0 3rem',
+  borderTopColor: COLOUR.primary,
+  padding: '0 1rem',
+  paddingTablet: '0 1rem',
+  paddingDesktop: '0 10rem',
 
   // Overlay
-  backgroundOverlay: tint(0.96, COLOUR.black),
+  backgroundOverlay: COLOUR.gray90,
   widthOverlay: '180px',
 
   // Toggler
-  colourToggler: COLOUR.black,
+  colourToggler: COLOUR.white,
   fontSizeToggler: '0.875',
   paddingToggler: '0.25rem 0',
   colourHoverToggler: COLOUR.success,
@@ -97,22 +98,22 @@ const NAVBAR = {
   positionCollapse: 'fixed',
 
   // Link
-  paddingLink: '0 1rem',
-  colourDefault: COLOUR.black,
+  paddingLink: '1rem',
+  colourDefault: COLOUR.white,
   colourHover: COLOUR.primary,
-  colourDefaultDesktop: COLOUR.black,
+  colourDefaultDesktop: COLOUR.white,
   colourHoverDesktop: COLOUR.primary,
 
   // List
-  fontSizeList: '0.875rem',
+  fontSizeList: '12px',
 
   // ListItem
   borderTopListItem: 'none',
   backgroundListItem: COLOUR.transparent,
   justifyContentDesktopListItem: 'flex-start',
-  marginBottomDesktopListItem: '1rem',
+  marginBottomDesktopListItem: 'none',
   backgroundHoverListItem: COLOUR.transparent,
-  borderBottomHoverListItem: '2px solid #000'
+  borderBottomHoverListItem: 'none'
 }
 
 const PAGE = {
@@ -121,13 +122,26 @@ const PAGE = {
 }
 
 const TYPOGRAPHY = {
-  font: '"JetBrains Mono"',
+  font: fonts.openSans,
+  fontFamilies: fonts,
   fontColour: COLOUR.black,
   fontSizeBase: '1rem'
 }
 
+const FOOTER = {
+  background: '#1A1A1A',
+  colour: COLOUR.white
+}
+
+const COPYRIGHT = {
+  background: '#1A1A1A',
+  colour: COLOUR.white
+}
+
 export const Theme = {
   COLOUR,
+  COPYRIGHT,
+  FOOTER,
   HEADINGS,
   NAVBAR,
   PAGE,

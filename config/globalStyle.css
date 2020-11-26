@@ -1,25 +1,3 @@
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('/fonts/jet-brains-mono/woff2/regular.woff2'),
-    url('/fonts/jet-brains-mono/woff/regular.woff');
-}
-
-@font-face {
-  font-family: 'JetBrains Mono Bold';
-  src: url('/fonts/jet-brains-mono/woff2/bold.woff2'), url('/fonts/jet-brains-mono/woff/bold.woff');
-}
-
-@font-face {
-  font-family: 'JetBrains Mono ExtraBold';
-  src: url('/fonts/jet-brains-mono/woff2/extra-bold.woff2'),
-    url('/fonts/jet-brains-mono/woff/extra-bold.woff');
-}
-
-@font-face {
-  font-family: 'Monorama';
-  src: url('/fonts/monorama/woff2/regular.woff2'), url('/fonts/monorama/woff2/regular.woff');
-}
-
 mark {
   background-color: #00ff00;
 }

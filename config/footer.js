@@ -6,7 +6,7 @@ export const Footer = [
     header: {
       content: 'About'
     },
-    size: { sm: 12, md: 3 },
+    size: { sm: 12, md: 4 },
     text: {
       items: [
         {
@@ -17,37 +17,10 @@ export const Footer = [
           analytics. Using cutting edge technologies within disciplined processes.`
         }
       ]
-    },
-    links: {
-      items: [
-        {
-          id: 'footerTeam',
-          name: 'DryKISS Team',
-          to: '/'
-        }
-      ]
     }
   },
   {
-    size: { sm: 12, md: 3 },
-    header: {
-      content: 'What We Do'
-    },
-    text: {
-      items: [
-        {
-          content: `DryKISS develops hybrid mobile apps (iOS &amp; Android); responsive internet sites;
-            administration systems and social applications.`
-        },
-        {
-          content:
-            'Using our platform we tune for SEO, accessibility and conversion at the very start.'
-        }
-      ]
-    }
-  },
-  {
-    size: { sm: 12, md: 3 },
+    size: { sm: 12, md: 4 },
     header: {
       content: 'Social'
     },
@@ -55,31 +28,27 @@ export const Footer = [
       items: [
         {
           id: 'footerFacebook',
+          icon: 'facebook',
           name: 'Facebook',
           to: 'https://www.facebook.com/DryKISSLtd'
         },
         {
           id: 'footerTwitter',
+          icon: 'twitter',
           name: 'Twitter',
           to: 'https://twitter.com/DryKISSLtd'
         },
         {
           id: 'footerLinkedIn',
+          icon: 'linkedin',
           name: 'LinkedIn',
           to: 'https://www.linkedin.com/company/drykiss-ltd'
-        }
-      ]
-    },
-    text: {
-      items: [
-        {
-          content: 'We are experts in creating social media apps and pages.'
         }
       ]
     }
   },
   {
-    size: { sm: 12, md: 3 },
+    size: { sm: 12, md: 4 },
     header: {
       content: 'Contact'
     },
@@ -97,16 +66,13 @@ export const Footer = [
       items: [
         {
           id: 'footerCall',
+          icon: 'phone',
           name: '44 (0) 778 043 5329',
           to: 'tel:+447780435329'
         },
         {
-          id: 'footerContact',
-          name: 'Please get in touch',
-          to: '/contact'
-        },
-        {
           id: 'footerEmail',
+          icon: 'envelope',
           name: 'info@drykiss.com',
           to: 'mailto:info@drykiss.com'
         }

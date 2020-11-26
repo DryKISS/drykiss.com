@@ -54,5 +54,13 @@ export const Navigation = () => {
     ]
   }
 
-  return <Navbar animational brand={Brand.logo} custom widgets={Default} />
+  return (
+    <Navbar
+      animational
+      brand={Brand.logo}
+      custom
+      style={{ alignItems: 'center' }}
+      widgets={Default}
+    />
+  )
 }

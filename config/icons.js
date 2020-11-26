@@ -1,7 +1,17 @@
 // Font awesome
-import { faBars, faCopyright } from '@fortawesome/pro-solid-svg-icons'
+import {
+  faBars,
+  faChevronLeft,
+  faChevronRight,
+  faCopyright,
+  faTimes
+} from '@fortawesome/pro-solid-svg-icons'
 
-import { faCopyright as fadCopyright } from '@fortawesome/pro-duotone-svg-icons'
+import {
+  faCopyright as fadCopyright,
+  faEnvelope as fadEnvelope,
+  faPhone as fadPhone
+} from '@fortawesome/pro-duotone-svg-icons'
 
 import {
   faBlog as fadBlog,
@@ -26,7 +36,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 library.add(
   faBars,
+  faChevronLeft,
+  faChevronRight,
   faCopyright,
+  faTimes,
   fabFacebookSquare,
   fabGithub,
   fabLinkedin,
@@ -35,9 +48,11 @@ library.add(
   fadBlog,
   fadCalendarAlt,
   fadCopyright,
+  fadEnvelope,
   fadExternalLink,
   fadFileUser,
   fadHomeHeart,
+  fadPhone,
   fadStopwatch,
   fadTimes,
   fadUser
