@@ -1,5 +1,3 @@
-export * from './pageHeading'
-export * from './pageSubHeading'
 export * from './paragraph'
 export * from './sectionHeading'
 export * from './sectionSubHeading'
