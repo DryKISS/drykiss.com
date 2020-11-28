@@ -9,19 +9,9 @@ import styled from 'styled-components'
 import { Card, Column, Container, Image, Space, Row } from '@drykiss/industry-ui'
 import { Paragraph } from '../..'
 
-// Data
-import { PORTFOLIO_FACEBOOK, PORTFOLIO_MOBILE, PORTFOLIO_SITES, PORTFOLIO_WORDPRESS } from 'data'
-
-export const OurWorkList = () => {
-  const portfolioExamples = [
-    ...PORTFOLIO_SITES,
-    ...PORTFOLIO_FACEBOOK,
-    ...PORTFOLIO_WORDPRESS,
-    ...PORTFOLIO_MOBILE
-  ]
-
+export const OurWorkList = ({ items }) => {
   const renderPortfolio = () =>
-    portfolioExamples.map(({ active, client, slug, title, type }, index) => {
+    items.map(({ active, client, slug, title, type }, index) => {
       if (active) {
         return (
           <StyledItem key={index}>
