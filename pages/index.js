@@ -23,10 +23,10 @@ const PageIndex = () => {
 
   return (
     <Page
-      heading='We do MVPs'
-      heroImage='images/home/hero.png'
+      heroHeading='We do MVPs'
+      heroImage='/images/home/hero.png'
+      heroSubHeading='Talk to us to transform your projects idea into a working digital products'
       meta={meta}
-      subHeading='Talk to us to transform your projects idea into a working digital products'
     >
       <HomeWhoWeAre />
       <Space marginBottom='xxxl' />

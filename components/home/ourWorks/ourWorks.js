@@ -24,7 +24,7 @@ export const HomeOurWorks = () => {
         </Column>
 
         <Column sm={12} md={6}>
-          <StyledImage src='images/portfolio/razorfish/blackberry-challenge/hero.png' />
+          <StyledImage src='/images/home/our-works.png' />
         </Column>
       </Row>
     </Container>

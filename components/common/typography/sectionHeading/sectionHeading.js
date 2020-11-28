@@ -8,13 +8,13 @@ import { Heading } from '@drykiss/industry-ui'
 // Style
 import styled from 'styled-components'
 
-export const SectionHeading = ({ content }) => {
-  return <StyledHeading content={content} tag='h2' />
+export const SectionHeading = ({ align, content, paddingBottom }) => {
+  return <StyledHeading align={align} content={content} paddingBottom={paddingBottom} tag='h2' />
 }
 
 const StyledHeading = styled(Heading)`
-  text-align: center;
+  text-align: ${({ align }) => align || 'center'};
   font-weight: bold;
   color: ${({ theme }) => theme.COLOUR.primary};
-  padding-bottom: 2rem;
+  padding-bottom: ${({ paddingBottom }) => paddingBottom || 2}rem;
 `

@@ -17,15 +17,15 @@ export const HomeMiddleHero = () => {
       <Container>
         <Row>
           <Column sm={12} md={6}>
-            <Image src='images/home/services.svg' />
+            <Image src='/images/home/services.svg' />
           </Column>
 
           <Column sm={12} md={6}>
             <StyledParagraph content='We help brands create valuable experiences across digital channels by focusing on the habits and needs of their audience.' />
-            <Space size='xxxl' />
+            <Space marginBottom='xxxl' />
 
             <StyledParagraph content='Focused creativity is the engine for all we do. Our cross-platform, and specifically mobile experience makes our approach always flexible, responsive and dynamic.' />
-            <Space size='xxxl' />
+            <Space marginBottom='xxxl' />
 
             <StyledParagraph content='By using the best and latest frameworks we are not re-inventing the wheel, but delivering projects based on known processes. This enables us to deliver cutting edge code quickly and within budget.' />
           </Column>
