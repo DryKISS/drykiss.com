@@ -1,6 +1,6 @@
 /**
  * Components
  */
-export * from './border'
 export * from './common'
 export * from './home'
+export * from './ourWork'

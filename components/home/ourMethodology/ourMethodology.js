@@ -25,15 +25,15 @@ export const HomeOurMethodology = () => {
           </Column>
 
           <Column sm={12} md={6}>
-            <Image src='images/home/shatels.svg' />
+            <Image src='/images/home/shatels.svg' />
           </Column>
         </Row>
 
-        <Space size='xxxl' />
+        <Space marginBottom='xxxl' />
 
-        <Row>
+        <Row align='center'>
           <Column sm={12} md={6}>
-            <Image src='images/home/shatels.svg' />
+            <Image src='/images/home/etho.svg' />
           </Column>
 
           <Column sm={12} md={6}>
@@ -48,7 +48,7 @@ export const HomeOurMethodology = () => {
 }
 
 const StyledWrapper = styled.div`
-  background: ${({ theme }) => theme.COLOUR.white} url('images/hero/pattern-2.svg') no-repeat right
+  background: ${({ theme }) => theme.COLOUR.white} url('/images/hero/pattern-2.svg') no-repeat right
     bottom;
   padding-bottom: 40px;
 `

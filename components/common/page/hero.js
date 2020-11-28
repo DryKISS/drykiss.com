@@ -11,7 +11,7 @@ import { PageHeading, PageSubHeading } from '../'
 
 export const PageHero = ({ heading, image, subHeading }) => {
   return (
-    <StyledWrapper>
+    <StyledWrapper withImage={!!image}>
       <Container>
         <Row>
           <Column xs={12} md={5}>
@@ -32,12 +32,12 @@ export const PageHero = ({ heading, image, subHeading }) => {
 }
 
 const StyledWrapper = styled.div`
-  background: ${({ theme }) => theme.COLOUR.gray90} url('images/hero/pattern.svg') no-repeat fixed
+  background: ${({ theme }) => theme.COLOUR.gray90} url('/images/hero/pattern.svg') no-repeat fixed
     right;
   color: ${({ theme }) => theme.COLOUR.white};
   height: 435px;
   padding-top: 180px;
-  margin-bottom: 160px;
+  margin-bottom: ${({ withImage }) => (withImage ? 160 : 40)}px;
   box-sizing: border-box;
 
   ${MEDIA_QUERY_MAX.phone`
