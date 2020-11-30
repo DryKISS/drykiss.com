@@ -23,7 +23,7 @@ export const OurWorkShow = ({ data }) => {
 
           <SectionSubHeading content='Links' />
 
-          {data.links.length > 0 ? (
+          {data.links?.length > 0 ? (
             <List>
               {data.links.map(link => (
                 <ListItem key={link.label}>
@@ -47,7 +47,7 @@ export const OurWorkShow = ({ data }) => {
         <Column md={6}>
           <SectionSubHeading content='Tasks' />
 
-          {data.tasks.length > 0 ? (
+          {data.tasks?.length > 0 ? (
             <List>
               {data.tasks.map(task => (
                 <ListItem key={task}>{task}</ListItem>
@@ -61,7 +61,7 @@ export const OurWorkShow = ({ data }) => {
 
           <SectionSubHeading content='Team' />
 
-          {data.team.length > 0 ? (
+          {data.team?.length > 0 ? (
             <List>
               {data.team.map(t => (
                 <ListItem key={t}>{t}</ListItem>
@@ -75,7 +75,7 @@ export const OurWorkShow = ({ data }) => {
         <Column md={6}>
           <SectionSubHeading content='Project Duration' />
 
-          {data.duration.length > 0 ? (
+          {data.duration?.length > 0 ? (
             <List>
               {data.duration.map(duration => (
                 <ListItem key={duration}>{duration}</ListItem>
@@ -89,7 +89,7 @@ export const OurWorkShow = ({ data }) => {
 
           <SectionSubHeading content='Outcome' />
 
-          {data.outcome.length > 0 ? (
+          {data.outcome?.length > 0 ? (
             <List>
               {data.outcome.map(oc => (
                 <ListItem key={oc}>{oc}</ListItem>
@@ -102,6 +102,10 @@ export const OurWorkShow = ({ data }) => {
       </Row>
     </Container>
   )
+}
+
+OurWorkShow.defaultProps = {
+  data: {}
 }
 
 const StyledCover = styled(Image)`

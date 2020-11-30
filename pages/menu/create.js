@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Column, Blockquote, Heading, Page, Row } from 'industry-ui'
+import { Column, Blockquote, Heading, Page, Row } from '@drykiss/industry-ui'
 
 const PageMenuCreate = () => {
   const meta = {
