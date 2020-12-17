@@ -2,8 +2,7 @@
  * About
  */
 
-// Layout
-import { Page, Space, Text } from '@drykiss/industry-ui'
+import { About, Page } from 'components'
 
 const PageAbout = () => {
   const meta = {
@@ -17,9 +16,8 @@ const PageAbout = () => {
   }
 
   return (
-    <Page pageHeading={{ heading: 'About' }} meta={meta}>
-      <Text>DryKISS Ltd was setup to simplify the process of development.</Text>
-      <Space />
+    <Page heading='We Do the MVPs' heroHeading='About Us' meta={meta}>
+      <About />
     </Page>
   )
 }
