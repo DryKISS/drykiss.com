@@ -14,7 +14,7 @@
     "export": "next export",
     "package": "yarn run build && yarn run export",
     "postexport": "node ./scripts/postExport.js",
-    "production": "push-dir --dir=out --remote=git@github.com:DryKISS/drykiss.com.git --branch=gh-pages",
+    "production": "push-dir --dir=out --remote=git@github.com:DryKISS/dev.drykiss.com.git --branch=gh-pages",
     "clean-cache": "rimraf -rf ./node_modules/.cache",
     "serve": "serve out"
   },

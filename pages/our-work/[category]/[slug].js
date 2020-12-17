@@ -24,7 +24,7 @@ const DATA = [
 export async function getStaticPaths () {
   return {
     paths: DATA.map(item => ({ params: { category: item.type, slug: item.slug } })),
-    fallback: true
+    fallback: false
   }
 }
 
@@ -58,6 +58,10 @@ const PageOurWorkShow = ({ work }) => {
       <OurWorkShow data={work} />
     </Page>
   )
+}
+
+PageOurWorkShow.defaultProps = {
+  work: {}
 }
 
 export default PageOurWorkShow

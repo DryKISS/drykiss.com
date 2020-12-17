@@ -27,11 +27,6 @@ export const Navigation = () => {
         to: '/our-work'
       },
       {
-        id: 'navGuides',
-        name: 'Guides',
-        to: '/guides'
-      },
-      {
         id: 'navBlog',
         name: 'Blog',
         to: Blog.path
@@ -47,9 +42,14 @@ export const Navigation = () => {
         to: '/team'
       },
       {
-        id: 'navDomains',
-        name: 'Domains',
-        to: '/domains'
+        id: 'navAbout',
+        name: 'About',
+        to: '/about'
+      },
+      {
+        id: 'navContact',
+        name: 'Contact',
+        to: '/contact'
       }
     ]
   }

@@ -4,7 +4,6 @@
 
 // UI
 import { Page } from '@drykiss/industry-ui'
-import PageSMSMillion from 'pages/portfolio/site/sms-million'
 
 const PageSiteMap = () => {
   const meta = {

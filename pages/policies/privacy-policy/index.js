@@ -5,7 +5,7 @@
 // UI
 import { Page } from '@drykiss/industry-ui'
 
-consy PagePrivacy =  () => {
+const PagePrivacy = () => {
   const meta = {
     description: `
       DryKISS is a full service internet and mobile digital production house.
