@@ -2,7 +2,7 @@
  * What we do
  */
 
-import { Paragraph, SectionHeading, SectionSubHeading } from 'components'
+import { Paragraph, SectionSubHeading } from 'components'
 
 // Styled
 import styled from 'styled-components'

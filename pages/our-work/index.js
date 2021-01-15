@@ -17,7 +17,7 @@ const DATA = [
 
 export async function getStaticProps () {
   return {
-    props: { namespacesRequired: ['use-cases-show'], works: DATA }
+    props: { works: DATA }
   }
 }
 
