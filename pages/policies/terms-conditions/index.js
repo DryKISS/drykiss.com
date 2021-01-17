@@ -3,7 +3,8 @@
  */
 
 // UI
-import { Page } from '@drykiss/industry-ui'
+import { Container } from '@drykiss/industry-ui'
+import { Page } from 'components'
 
 const PageTerms = () => {
   const meta = {
@@ -17,8 +18,8 @@ const PageTerms = () => {
   }
 
   return (
-    <Page pageHeading={{ heading: 'Terms &amp; Conditions' }} meta={meta}>
-      Terms and Conditions
+    <Page heroHeading='Terms &amp; Conditions' meta={meta}>
+      <Container>Terms and Conditions</Container>
     </Page>
   )
 }

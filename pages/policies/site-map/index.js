@@ -3,7 +3,8 @@
  */
 
 // UI
-import { Page } from '@drykiss/industry-ui'
+import { Container } from '@drykiss/industry-ui'
+import { Page } from 'components'
 
 const PageSiteMap = () => {
   const meta = {
@@ -17,8 +18,8 @@ const PageSiteMap = () => {
   }
 
   return (
-    <Page pageHeading={{ heading: 'Site Map' }} meta={meta}>
-      Site Map
+    <Page heroHeading='Site Map' meta={meta}>
+      <Container>Site map</Container>
     </Page>
   )
 }
