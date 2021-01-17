@@ -3,7 +3,8 @@
  */
 
 // UI
-import { Page } from '@drykiss/industry-ui'
+import { Container } from '@drykiss/industry-ui'
+import { Page } from 'components'
 
 const PagePrivacy = () => {
   const meta = {
@@ -17,8 +18,8 @@ const PagePrivacy = () => {
   }
 
   return (
-    <Page pageHeading={{ heading: 'Private Policy' }} meta={meta}>
-      Privacy Policy
+    <Page heroHeading='Privacy Policy' meta={meta}>
+      <Container>Privacy Policy</Container>
     </Page>
   )
 }

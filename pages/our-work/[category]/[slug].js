@@ -33,7 +33,7 @@ export async function getStaticProps ({ params }) {
   const work = DATA.find(item => item.type === category && item.slug === slug)
 
   return {
-    props: { namespacesRequired: ['use-cases-show'], work }
+    props: { work }
   }
 }
 

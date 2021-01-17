@@ -26,11 +26,11 @@ export const Navigation = () => {
         name: 'Our Work',
         to: '/our-work'
       },
-      {
-        id: 'navBlog',
-        name: 'Blog',
-        to: Blog.path
-      },
+      // {
+      //   id: 'navBlog',
+      //   name: 'Blog',
+      //   to: Blog.path
+      // },
       {
         id: 'navCareer',
         name: 'Careers',
