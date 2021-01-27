@@ -1197,10 +1197,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@drykiss/industry-ui@^1.10.1":
-  version "1.10.1"
-  resolved "https://registry.yarnpkg.com/@drykiss/industry-ui/-/industry-ui-1.10.1.tgz#25206042c08f87d818a742c9a53aaf4fe22c9f1c"
-  integrity sha512-z5QuHSXUkOBB3psjic60klD16R1iMhEBzHlZpTPEjlpJUoEttN9oZJhMz/7dJvUd2wSg5hLA15GfoyYRqHYv2w==
+"@drykiss/industry-ui@^1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@drykiss/industry-ui/-/industry-ui-1.11.1.tgz#3bfbec95ba18e9034d1108b02b5a46ed8d458e0e"
+  integrity sha512-7umV3jB+TgTxWXlnmFbP3vm7bA861DCBshK/RGyfieHGUPWM5Kp4g4K0+LItVTWoZFdunpj59CiueA2iRlYQgA==
   dependencies:
     "@apollo/client" "^3.2.1"
     "@fortawesome/fontawesome-svg-core" "^1.2.32"

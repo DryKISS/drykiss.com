@@ -4,7 +4,8 @@
 export const Footer = [
   {
     header: {
-      content: 'About'
+      content: 'About',
+      context: 'white'
     },
     size: { sm: 12, md: 4 },
     text: {
@@ -22,9 +23,11 @@ export const Footer = [
   {
     size: { sm: 12, md: 4 },
     header: {
-      content: 'Social'
+      content: 'Social',
+      context: 'white'
     },
     links: {
+      context: 'white',
       items: [
         {
           id: 'footerFacebook',
@@ -50,7 +53,8 @@ export const Footer = [
   {
     size: { sm: 12, md: 4 },
     header: {
-      content: 'Contact'
+      content: 'Contact',
+      context: 'white'
     },
     text: {
       items: [
@@ -63,6 +67,7 @@ export const Footer = [
       ]
     },
     links: {
+      context: 'white',
       items: [
         {
           id: 'footerCall',
