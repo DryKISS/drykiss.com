@@ -20,6 +20,7 @@ export const HomeTestimonial = () => {
         leftNavComponent={<CarouselNav left />}
         rightNavComponent={<CarouselNav right />}
         height='75px'
+        numberOfItems={1}
         slides={testimonialData.map(testimonial => ({
           node: <TestimonialItem key={testimonial.name} {...testimonial} />,
           text: ' '

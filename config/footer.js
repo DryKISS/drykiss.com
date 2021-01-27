@@ -4,7 +4,8 @@
 export const Footer = [
   {
     header: {
-      content: 'About'
+      content: 'About',
+      context: 'white'
     },
     size: { sm: 12, md: 4 },
     text: {
@@ -22,25 +23,30 @@ export const Footer = [
   {
     size: { sm: 12, md: 4 },
     header: {
-      content: 'Social'
+      content: 'Social',
+      context: 'white'
     },
     links: {
+      context: 'white',
       items: [
         {
           id: 'footerFacebook',
-          icon: 'facebook',
+          icon: 'facebook-square',
+          iconPrefix: 'fab',
           name: 'Facebook',
           to: 'https://www.facebook.com/DryKISSLtd'
         },
         {
           id: 'footerTwitter',
-          icon: 'twitter',
+          icon: 'twitter-square',
+          iconPrefix: 'fab',
           name: 'Twitter',
           to: 'https://twitter.com/DryKISSLtd'
         },
         {
           id: 'footerLinkedIn',
           icon: 'linkedin',
+          iconPrefix: 'fab',
           name: 'LinkedIn',
           to: 'https://www.linkedin.com/company/drykiss-ltd'
         }
@@ -50,7 +56,8 @@ export const Footer = [
   {
     size: { sm: 12, md: 4 },
     header: {
-      content: 'Contact'
+      content: 'Contact',
+      context: 'white'
     },
     text: {
       items: [
@@ -63,6 +70,7 @@ export const Footer = [
       ]
     },
     links: {
+      context: 'white',
       items: [
         {
           id: 'footerCall',
