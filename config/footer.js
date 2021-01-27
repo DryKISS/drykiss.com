@@ -31,19 +31,22 @@ export const Footer = [
       items: [
         {
           id: 'footerFacebook',
-          icon: 'facebook',
+          icon: 'facebook-square',
+          iconPrefix: 'fab',
           name: 'Facebook',
           to: 'https://www.facebook.com/DryKISSLtd'
         },
         {
           id: 'footerTwitter',
-          icon: 'twitter',
+          icon: 'twitter-square',
+          iconPrefix: 'fab',
           name: 'Twitter',
           to: 'https://twitter.com/DryKISSLtd'
         },
         {
           id: 'footerLinkedIn',
           icon: 'linkedin',
+          iconPrefix: 'fab',
           name: 'LinkedIn',
           to: 'https://www.linkedin.com/company/drykiss-ltd'
         }
