@@ -71,3 +71,7 @@ dist
 # Coverage #
 ############
 coverage
+
+# ENV #
+############
+.env
