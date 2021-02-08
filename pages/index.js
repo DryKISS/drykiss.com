@@ -25,7 +25,7 @@ const PageIndex = () => {
     <Page
       heroHeading='We do MVPs'
       heroImage='/images/home/hero.png'
-      heroSubHeading='Talk to us to transform your projects idea into a working digital products'
+      heroSubHeading='Supercharge your startup and launch your application. Validate your idea.'
       meta={meta}
     >
       <HomeWhoWeAre />

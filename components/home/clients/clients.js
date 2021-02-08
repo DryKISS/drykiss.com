@@ -13,7 +13,7 @@ import styled from 'styled-components'
 // Components
 import { SectionHeading } from 'components'
 import { clientsData } from './data'
-import { HomeTestimonial } from './testimonial'
+// import { HomeTestimonial } from './testimonial'
 
 export const HomeClients = () => {
   return (
@@ -35,7 +35,7 @@ export const HomeClients = () => {
       </Container>
 
       <Space marginBottom='xxxl' />
-      <HomeTestimonial />
+      {/* <HomeTestimonial /> */}
     </StyledWrapper>
   )
 }

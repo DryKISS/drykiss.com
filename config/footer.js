@@ -11,11 +11,11 @@ export const Footer = [
     text: {
       items: [
         {
-          content: 'DryKISS is a full service internet and mobile digital production house.'
+          content: 'DryKISS is a full-service internet and mobile digital production house.'
         },
         {
-          content: `Our core services span consulting, strategy; planning; development; testing and
-          analytics. Using cutting edge technologies within disciplined processes.`
+          content:
+            'Our core services span consulting, strategy, planning, development, testing and analytics. Using cutting edge technologies within disciplined processes.'
         }
       ]
     }
@@ -62,7 +62,7 @@ export const Footer = [
     text: {
       items: [
         {
-          content: `If you have a brief, and want to discuss how we would approach it.
+          content: `We’d love to hear about your project. Contact us below.
           <address>
             Wimbledon, London, UK
           </address>`

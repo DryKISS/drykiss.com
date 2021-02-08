@@ -16,11 +16,11 @@ export const HomeOurWorks = () => {
     <Container>
       <SectionHeading content='Our Works' />
 
-      <Row>
+      <Row align='center'>
         <Column sm={12} md={6}>
           <SectionSubHeading content='Projects we worked on' />
 
-          <Paragraph content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit' />
+          <Paragraph content='Our fully remote development team has helped built new technologies, modernised products and services, and have worked on projects from all over the world. Take a look at our portfolio.' />
         </Column>
 
         <Column sm={12} md={6}>
