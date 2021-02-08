@@ -16,7 +16,7 @@ const PageWhatWeDo = ({ works }) => {
   return (
     <Page
       heroHeading='Our Services'
-      heroSubHeading='DryKISS can offer a full service development and marketing solution.'
+      heroSubHeading='We offer a full-service web development and marketing solution'
       meta={meta}
     >
       <WhatWeDo items={works} />
