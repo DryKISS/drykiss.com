@@ -16,9 +16,6 @@ module.exports = () => {
 
     // Careers
     '/careers': { page: '/careers' },
-    '/careers/react': { page: '/careers/react' },
-    '/careers/react-intern': { page: '/careers/react-intern' },
-    '/careers/react-junior': { page: '/careers/react-junior' },
 
     // Contact
     '/contact': { page: '/contact' },
@@ -30,17 +27,6 @@ module.exports = () => {
     '/policies/privacy-policy': { page: '/policies/privacy-policy' },
     '/policies/terms-conditions': { page: '/policies/terms-conditions' },
     '/policies/site-map': { page: '/policies/site-map' },
-
-    // Portfolio
-    '/portfolio/facebook/brazil-soccer-name-generator': {
-      page: '/portfolio/facebook/brazil-soccer-name-generator'
-    },
-    '/portfolio/facebook/guinness-arthurs-day': {
-      page: '/portfolio/facebook/guinness-arthurs-day'
-    },
-    '/portfolio/facebook/walt-disney-prince-of-persia': {
-      page: '/portfolio/facebook/walt-disney-prince-of-persia'
-    },
 
     // Team
     '/team': { page: '/team' },
