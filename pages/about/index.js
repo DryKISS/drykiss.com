@@ -16,7 +16,12 @@ const PageAbout = () => {
   }
 
   return (
-    <Page heading='We Do the MVPs' heroHeading='About Us' meta={meta}>
+    <Page
+      heading='We do MVPs and MORE'
+      heroHeading='About Us'
+      heroSubHeading='Let us create something that not only looks great but deliver results for you.'
+      meta={meta}
+    >
       <About />
     </Page>
   )
