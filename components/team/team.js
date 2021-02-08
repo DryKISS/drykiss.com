@@ -10,10 +10,13 @@ export const Team = ({ members }) => {
   return (
     <Container>
       <Text>
-        At DryKISS, we offer full service web development and marketing solutions to meet all your
-        business, startup and minimum viable product needs. We are prepared to listen to your every
-        desire so we can perfectly craft your projects, bring to life your ideas and boost your
-        revenue.
+        At DryKISS, we offer full-service web development and marketing solutions to meet all your
+        business, startup and minimum viable product needs.
+      </Text>
+
+      <Text>
+        We listen to your ideas and problems so we can perfectly craft your projects, provide the
+        best solutions and boost your revenue.
       </Text>
 
       <Space />
@@ -21,7 +24,7 @@ export const Team = ({ members }) => {
       <Text>
         Our team comprises of highly skilled professionals with over 20+ years of experiences in web
         development, digital marketing, SEO and tech consulting. We are bold, global, agile, lean
-        and love thinking outside the box.
+        and love thinking outside the box
       </Text>
 
       <Space />
