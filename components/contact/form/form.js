@@ -123,7 +123,7 @@ export const ContactForm = ({ defaultTreatment }) => {
         </>
       )}
 
-      <Button content='Submit' disabled={loading} type='submit' />
+      <Button content='Submit' disabled={loading} size='lg' type='submit' />
     </Form>
   )
 }

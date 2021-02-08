@@ -32,8 +32,7 @@ export const PageHero = ({ heading, image, subHeading }) => {
 }
 
 const StyledWrapper = styled.div`
-  background: ${({ theme }) => theme.COLOUR.gray90} url('/images/hero/pattern.svg') no-repeat fixed
-    right;
+  background: ${({ theme }) => theme.COLOUR.gray90} url('/images/hero/pattern.svg') no-repeat right;
   color: ${({ theme }) => theme.COLOUR.white};
   height: 435px;
   padding-top: 180px;

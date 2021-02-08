@@ -30,9 +30,9 @@ const PageCareers = ({ careers }) => {
 
   return (
     <Page
-      heading='Current job openings'
-      heroHeading='Careers'
-      heroSubHeading='Join a talented team to crete great products'
+      heading='Current Jobs Openings'
+      heroHeading='Opening Positions'
+      heroSubHeading='Join a team that values talent and thinking outside the box. Together we will create great products'
       meta={meta}
     >
       <CareersList items={careers} />

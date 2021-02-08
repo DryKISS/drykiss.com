@@ -27,9 +27,9 @@ const PageTeam = ({ members }) => {
 
   return (
     <Page
-      heading='Meet the DryKiss Squad'
+      heading='Meet the DryKiss Team'
       heroHeading='The Team'
-      heroSubHeading='The People behind the great works of DryKiss'
+      heroSubHeading='The People Behind DryKISS'
       meta={meta}
     >
       <Team members={members} />

@@ -34,7 +34,7 @@ export const OurWorkList = ({ items }) => {
 
   return (
     <Container>
-      <Paragraph content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea' />
+      <Paragraph content='Here are some of the amazing projects we have worked on' />
 
       <Space marginBottom='xxxl' />
 

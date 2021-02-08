@@ -18,9 +18,9 @@ const PageContact = () => {
 
   return (
     <Page
-      heading='Contact Us for any inquiries'
+      heading='Find a team of passionate people who will give it their best.'
       heroHeading='Contact Us'
-      heroSubHeading='Get in Touch with Us'
+      heroSubHeading='Get in Touch For A Free Consultation'
       meta={meta}
     >
       <Contact />

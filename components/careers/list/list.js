@@ -3,24 +3,46 @@
  */
 
 // UI
-import { Card, CardBody, Column, Container, Row, Space } from '@drykiss/industry-ui'
+import { Card, CardBody, Column, Container, List, ListItem, Row, Space } from '@drykiss/industry-ui'
 
 export const CareersList = ({ items }) => {
   return (
     <Container>
-      <p>
-        At DryKISS, we thrive on being the best; we love to continually learn, use the latest
-        technologies and prototype everything. Our main goal though is to keep our clients and their
-        customers happy. We do this by crafting top notch Accessible and SEO friendly sites. Quality
-        is essential around everything we do.
-      </p>
+      <p>DryKISS core values:</p>
 
-      <p>
-        We are looking to expand what we do to Valencia, a city we have fallen in love with. We
-        believe it promotes the work life balance that is so essential these days. We can work hard
-        and sleep easy. If you are passionate about quality, entrepreneurial at heart and have a
-        passion for what you do then please get in touch.
-      </p>
+      <List>
+        <ListItem>
+          Embrace responsibility - With great power comes with great responsibilities. We give you
+          the ability to influence the outcome but always consider the consequences thoroughly.
+        </ListItem>
+
+        <ListItem>
+          Constantly learning - We encourage the use of the latest technologies and prototype
+          everything. Our main goal is to keep our clients and their customers happy. To do this, we
+          start by learning ourselves and crafting top-notch solutions.
+        </ListItem>
+
+        <ListItem>
+          Be humble - Accept when things are wrong. We do not try to blame the designer nor the
+          marketing department. We work together collectively as a team and there is no room for
+          high egos.
+        </ListItem>
+
+        <ListItem>
+          Be honest - We love transparency and can only build a better relationship with clients,
+          partners and staff if we all communicate the good and the bad.
+        </ListItem>
+
+        <ListItem>
+          Work-life balance - It should not be something to strive for, but to live it every day. We
+          work hard, we play hard.
+        </ListItem>
+
+        <ListItem>
+          If you are passionate about producing quality development, is entrepreneurial at heart and
+          have a passion for what you do, get in touch with us.
+        </ListItem>
+      </List>
 
       <Row>
         {items.map(career => (
