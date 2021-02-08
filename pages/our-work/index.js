@@ -33,7 +33,7 @@ const PageOurWork = ({ works }) => {
     <Page
       heading='Projects we worked on'
       heroHeading='Our Work'
-      heroSubHeading='Talk to us to transform your projects idea into a working digital products'
+      heroSubHeading='Transform your idea into a working digital product'
       meta={meta}
     >
       <OurWorkList items={works} />
