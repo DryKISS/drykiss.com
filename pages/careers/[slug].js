@@ -6,7 +6,7 @@
 import Head from 'next/head'
 
 // UI
-import { CareerShow } from '../../components/careers/show/show'
+import { CareerShow } from '../../components/careers/show'
 import { Page } from '../../components/common/page/page'
 import { CAREERS } from '../../data/careers'
 
