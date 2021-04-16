@@ -2,33 +2,13 @@
  * Our Work - Show
  */
 
-// Styled Components
-import styled from 'styled-components'
-
-// UI
-import { CareerShow, Page, Paragraph, SectionHeading, SectionSubHeading } from 'components'
-
 // Next
 import Head from 'next/head'
 
-// Data
-import { CAREERS } from 'data'
-
-export async function getStaticPaths () {
-  return {
-    paths: CAREERS.map(item => ({ params: { slug: item.slug } })),
-    fallback: false
-  }
-}
-
-export async function getStaticProps ({ params }) {
-  const { slug } = params
-  const career = CAREERS.find(item => item.slug === slug)
-
-  return {
-    props: { career }
-  }
-}
+// UI
+import { CareerShow } from '../../components/careers/show/show'
+import { Page } from '../../components/common/page/page'
+import { CAREERS } from '../../data/careers'
 
 const PageCareerShow = ({ career }) => {
   const meta = {
@@ -37,14 +17,30 @@ const PageCareerShow = ({ career }) => {
   }
 
   return (
-    <Page heroHeading='Careers' heroSubHeading={career.title} meta={meta}>
+    <Page heroHeading="Careers" heroSubHeading={career.title} meta={meta}>
       <Head>
-        <meta content={career.cover} key='og:image' property='og:image' />
+        <meta content={career.cover} key="og:image" property="og:image" />
       </Head>
 
       <CareerShow data={career} />
     </Page>
   )
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: CAREERS.map((item) => ({ params: { slug: item.slug } })),
+    fallback: false
+  }
+}
+
+export async function getStaticProps({ params }) {
+  const { slug } = params
+  const career = CAREERS.find((item) => item.slug === slug)
+
+  return {
+    props: { career }
+  }
 }
 
 PageCareerShow.defaultProps = {

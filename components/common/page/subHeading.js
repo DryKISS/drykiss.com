@@ -5,7 +5,7 @@
 // Style
 import styled from 'styled-components'
 
-export const PageSubHeading = props => {
+export const PageSubHeading = (props) => {
   return <StyledSubHeading {...props} />
 }
 

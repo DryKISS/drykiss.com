@@ -2,21 +2,20 @@
  * About
  */
 
-import { Paragraph } from 'components'
-
-// Layout
+// UI
 import { Container, List, ListItem } from '@drykiss/industry-ui'
+import { Paragraph } from '../common/typography/paragraph'
 
 export const About = () => {
   return (
     <Container>
-      <Paragraph content='DryKISS is a full-service digital production studio, helping Startups and their Founders bring their ideas to market quickly.' />
+      <Paragraph content="DryKISS is a full-service digital production studio, helping Startups and their Founders bring their ideas to market quickly." />
 
-      <Paragraph content='We design, build and launch Minimum Viable Products (MVP). Or iterate existing products. This helps you showcase social proof to potential investors at every round of funding from Venture Capital to Series A, B, C and IPO.' />
+      <Paragraph content="We design, build and launch Minimum Viable Products (MVP). Or iterate existing products. This helps you showcase social proof to potential investors at every round of funding from Venture Capital to Series A, B, C and IPO." />
 
-      <Paragraph content='Skilled at crafting responsive website design, app development, marketplaces and eCommerce, we help create products that validate your idea. We will craft it around your value proposition, proprietary technology and competitive advantage. Our core services cover strategy, planning, testing, analytics, design and build. From the first concept to the grand release.' />
+      <Paragraph content="Skilled at crafting responsive website design, app development, marketplaces and eCommerce, we help create products that validate your idea. We will craft it around your value proposition, proprietary technology and competitive advantage. Our core services cover strategy, planning, testing, analytics, design and build. From the first concept to the grand release." />
 
-      <Paragraph content='We can also help your startup:' />
+      <Paragraph content="We can also help your startup:" />
 
       <List>
         <ListItem>
@@ -32,7 +31,7 @@ export const About = () => {
         </ListItem>
       </List>
 
-      <Paragraph content='Our technology stack' />
+      <Paragraph content="Our technology stack" />
 
       <List>
         <ListItem>React</ListItem>

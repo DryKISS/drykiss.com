@@ -6,16 +6,9 @@
  */
 
 // UI
-import { CareersList, Page } from 'components'
-
-// Data
-import { CAREERS } from 'data'
-
-export async function getStaticProps () {
-  return {
-    props: { careers: CAREERS }
-  }
-}
+import { CareersList } from '../../components/careers/list'
+import { Page } from '../../components/common/page/page'
+import { CAREERS } from '../../data/careers'
 
 const PageCareers = ({ careers }) => {
   const meta = {
@@ -30,14 +23,20 @@ const PageCareers = ({ careers }) => {
 
   return (
     <Page
-      heading='Current Jobs Openings'
-      heroHeading='Opening Positions'
-      heroSubHeading='Join a team that values talent and thinking outside the box. Together we will create great products'
+      heading="Current Jobs Openings"
+      heroHeading="Opening Positions"
+      heroSubHeading="Join a team that values talent and thinking outside the box. Together we will create great products"
       meta={meta}
     >
       <CareersList items={careers} />
     </Page>
   )
+}
+
+export async function getStaticProps() {
+  return {
+    props: { careers: CAREERS }
+  }
 }
 
 export default PageCareers

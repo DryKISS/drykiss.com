@@ -2,13 +2,13 @@
  * Components - Common - Typography - Section Heading
  */
 
-// UI
-import { Heading } from '@drykiss/industry-ui'
-
 // Style
 import styled from 'styled-components'
 
-export const PageHeading = props => {
+// UI
+import { Heading } from '@drykiss/industry-ui'
+
+export const PageHeading = (props) => {
   return <StyledHeading {...props} />
 }
 

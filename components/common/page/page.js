@@ -1,17 +1,17 @@
 /**
  * Components - Common — Page
  */
+
 // Style
 import styled from 'styled-components'
 
 // UI
 import { Container, MetaHead } from '@drykiss/industry-ui'
+import { PageHero } from './hero'
+import { SectionHeading } from '../typography/sectionHeading'
 
 // Config
-import { Brand, Canonical } from 'config'
-
-// Components
-import { PageHero, SectionHeading } from '..'
+import { Brand, Canonical } from '../../../config/config'
 
 export const Page = ({
   children,
@@ -30,7 +30,7 @@ export const Page = ({
 
       {heading && (
         <Container>
-          <SectionHeading align='left' content={heading} paddingBottom={1} />
+          <SectionHeading align="left" content={heading} paddingBottom={1} />
         </Container>
       )}
 

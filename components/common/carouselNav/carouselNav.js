@@ -2,14 +2,14 @@
  * Components - Common - Carousel Nav
  */
 
-// UI
-import { Button } from '@drykiss/industry-ui'
-
 // Style
 import styled from 'styled-components'
 
+// UI
+import { Button } from '@drykiss/industry-ui'
+
 export const CarouselNav = ({ right, left }) => {
-  return <StyledNav startIcon={left ? 'chevron-left' : 'chevron-right'} size='sm' />
+  return <StyledNav startIcon={left ? 'chevron-left' : 'chevron-right'} size="sm" />
 }
 
 const StyledNav = styled(Button)`

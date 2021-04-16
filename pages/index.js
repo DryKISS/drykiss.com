@@ -4,14 +4,12 @@
 
 // UI
 import { Space } from '@drykiss/industry-ui'
-import {
-  HomeClients,
-  Page,
-  HomeMiddleHero,
-  HomeOurMethodology,
-  HomeOurWorks,
-  HomeWhoWeAre
-} from 'components'
+import { HomeClients } from '../components/home/clients'
+import { HomeMiddleHero } from '../components/home/middleHero'
+import { HomeOurMethodology } from '../components/home/ourMethodology'
+import { HomeOurWorks } from '../components/home/ourWorks'
+import { HomeWhoWeAre } from '../components/home/whoWeAre'
+import { Page } from '../components/common/page/page'
 
 const PageIndex = () => {
   const meta = {
@@ -23,21 +21,21 @@ const PageIndex = () => {
 
   return (
     <Page
-      heroHeading='We do MVPs'
-      heroImage='/images/home/hero.png'
-      heroSubHeading='Supercharge your startup and launch your application. Validate your idea.'
+      heroHeading="We do MVPs"
+      heroImage="/images/home/hero.png"
+      heroSubHeading="Supercharge your startup and launch your application. Validate your idea."
       meta={meta}
     >
       <HomeWhoWeAre />
-      <Space marginBottom='xxxl' />
+      <Space marginBottom="xxxl" />
 
       <HomeOurMethodology />
 
       <HomeMiddleHero />
-      <Space marginBottom='xxxl' />
+      <Space marginBottom="xxxl" />
 
       <HomeOurWorks />
-      <Space marginBottom='xxxl' />
+      <Space marginBottom="xxxl" />
 
       <HomeClients />
     </Page>

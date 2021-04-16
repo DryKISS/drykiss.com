@@ -1,11 +1,16 @@
 /**
  * Contact - Form
  */
+
 // React
 import { useState } from 'react'
 
 // Axios
 import axios from 'axios'
+
+// React Hook Form
+import { useForm } from 'react-hook-form'
+import { yupResolver } from '@hookform/resolvers/yup'
 
 // UI
 import {
@@ -18,9 +23,7 @@ import {
   FormLabel,
   Row,
   Space,
-  TextareaField,
-  useForm,
-  yupResolver
+  TextareaField
 } from '@drykiss/industry-ui'
 
 import { schema } from './schema'
@@ -28,14 +31,15 @@ import { schema } from './schema'
 export const ContactForm = ({ defaultTreatment }) => {
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState({
-    type: '',
+    type: 'success',
     text: ''
   })
+
   const { errors, handleSubmit, register, reset } = useForm({
     resolver: yupResolver(schema)
   })
 
-  const onSubmit = data => {
+  const onSubmit = (data) => {
     setLoading(true)
 
     axios
@@ -63,25 +67,25 @@ export const ContactForm = ({ defaultTreatment }) => {
     register: register
   }
 
-  const ErrMessage = message => <FormError message={message} />
+  const ErrMessage = (message) => <FormError message={message} />
 
   return (
     <Form handleSubmit={handleSubmit(onSubmit)}>
       <Row>
         <Column xs={12} md={8}>
-          <FormLabel size='md' label='* Full name'>
-            <FormField {...defaultProps} name='fullName' placeholder='Enter first and surname' />
+          <FormLabel size="md" label="* Full name">
+            <FormField {...defaultProps} name="fullName" placeholder="Enter first and surname" />
 
             {errors.fullName && ErrMessage(errors.fullName.message)}
           </FormLabel>
         </Column>
 
         <Column xs={12} md={8}>
-          <FormLabel size='md' label='* Mobile Number'>
+          <FormLabel size="md" label="* Mobile Number">
             <FormField
               {...defaultProps}
-              name='mobileNumber'
-              placeholder='Enter your mobile phone number'
+              name="mobileNumber"
+              placeholder="Enter your mobile phone number"
             />
 
             {errors.mobileNumber && ErrMessage(errors.mobileNumber.message)}
@@ -89,12 +93,12 @@ export const ContactForm = ({ defaultTreatment }) => {
         </Column>
 
         <Column xs={12} md={8}>
-          <FormLabel size='md' label='* Email'>
+          <FormLabel size="md" label="* Email">
             <FormField
               {...defaultProps}
               helperMessage="We'll never share your email with anyone else."
-              name='email'
-              placeholder='Enter email address'
+              name="email"
+              placeholder="Enter email address"
             />
 
             {errors.email && ErrMessage(errors.email.message)}
@@ -102,11 +106,11 @@ export const ContactForm = ({ defaultTreatment }) => {
         </Column>
 
         <Column xs={12} md={12}>
-          <FormLabel label='* Message'>
+          <FormLabel label="* Message">
             <TextareaField
               {...defaultProps}
-              name='message'
-              placeholder='Enter your message'
+              name="message"
+              placeholder="Enter your message"
               rows={2}
             />
 
@@ -118,12 +122,11 @@ export const ContactForm = ({ defaultTreatment }) => {
       {message.text && (
         <>
           <Alert content={message.text} context={message.type} />
-
-          <Space marginBottom='lg' />
+          <Space marginBottom="lg" />
         </>
       )}
 
-      <Button content='Submit' disabled={loading} size='lg' type='submit' />
+      <Button content="Submit" disabled={loading} size="lg" type="submit" />
     </Form>
   )
 }

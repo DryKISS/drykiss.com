@@ -1,4 +1,0 @@
-/**
- * Careers
- */
-export * from './careers'

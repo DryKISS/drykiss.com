@@ -1,12 +1,12 @@
 /**
- * Team
+ * Team - Card
  */
-
-// UI
-import { Card, CardBody, Icon, Image } from '@drykiss/industry-ui'
 
 // Style
 import styled from 'styled-components'
+
+// UI
+import { Card, CardBody, Icon, Image } from '@drykiss/industry-ui'
 
 export const TeamCard = ({ data }) => {
   return (
@@ -17,11 +17,11 @@ export const TeamCard = ({ data }) => {
         {data.name}
 
         <Icon
-          context='primary'
+          context="primary"
           icon={data.icon || 'linkedin'}
-          prefix='fab'
-          size='lg'
-          pull='right'
+          prefix="fab"
+          size="lg"
+          pull="right"
         />
       </CardBody>
     </Card>

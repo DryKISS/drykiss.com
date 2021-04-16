@@ -1,44 +1,31 @@
 {
-  // CSS
-  "css.validate": false,
+  // ESlint
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
+  },
+  "eslint.validate": [
+    "javascript"
+  ],
   // Editor
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.rulers": [
     100
   ],
   "editor.tabSize": 2,
   // Files
-  "files.autoSave": "onFocusChange",
+  "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
-  // Javascript
-  "javascript.validate.enable": false,
-  "[javascript]": {
-    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true
   },
-  // LESS
-  "less.validate": false,
-  // Prettier
-  "prettier.semi": false,
-  "prettier.printWidth": 100,
-  // SCSS
+  // CSS
   "scss.validate": false,
-  // Standard
-  "standard.enable": true,
-  "standard.autoFixOnSave": true,
-  "standard.options": {
-    "globals": [
-      "cy",
-      "it",
-      "test",
-      "expect",
-      "describe"
-    ],
-    "ignore": [
-      "node_modules/**"
-    ],
-    "parser": "babel-eslint"
-  },
-  // Typescript
-  "typescript.validate.enable": false,
-  "editor.fontLigatures": false
+  "less.validate": false,
+  "css.validate": false
 }

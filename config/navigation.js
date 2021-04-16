@@ -4,9 +4,7 @@
 
 // UI
 import { Navbar } from '@drykiss/industry-ui'
-
-// Config
-import { Blog, Brand } from 'config'
+import { Brand } from '../config/config'
 
 export const Navigation = () => {
   const Default = {
@@ -26,11 +24,6 @@ export const Navigation = () => {
         name: 'Our Work',
         to: '/our-work'
       },
-      // {
-      //   id: 'navBlog',
-      //   name: 'Blog',
-      //   to: Blog.path
-      // },
       {
         id: 'navCareer',
         name: 'Careers',

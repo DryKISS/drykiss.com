@@ -30,14 +30,14 @@ export const Team = ({ members }) => {
       <Space />
 
       <Row>
-        {members.map(member => (
+        {members.map((member) => (
           <Column key={member.id} lg={3}>
             <TeamCard data={member} />
           </Column>
         ))}
       </Row>
 
-      <Space marginBottom='xxl' />
+      <Space marginBottom="xxl" />
     </Container>
   )
 }

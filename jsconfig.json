@@ -1,6 +1,0 @@
-{
-  "compilerOptions": {
-    "baseUrl": "."
-  },
-  "include": ["components/**/*", "config/**/*", "data/**/*", "layouts/**/*", "pages/**/*"]
-}

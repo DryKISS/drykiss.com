@@ -1,11 +1,13 @@
-import { yup } from '@drykiss/industry-ui'
+/**
+ * Components - Contact - Form
+ */
 
-export const schema = yup.object().shape({
-  fullName: yup.string().required('Full name is required'),
-  email: yup
-    .string()
-    .email('Email is not valid')
-    .required('Email is required'),
-  message: yup.string().required('Message is required'),
-  mobileNumber: yup.string().required('Mobile number is required')
+// Yup
+import { object, string } from 'yup'
+
+export const schema = object().shape({
+  fullName: string().required('Full name is required'),
+  email: string().email('Email is not valid').required('Email is required'),
+  message: string().required('Message is required'),
+  mobileNumber: string().required('Mobile number is required')
 })

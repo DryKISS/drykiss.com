@@ -2,12 +2,13 @@
  * Components - Home - Hero
  */
 
-// Styled Components
+// Style
 import styled from 'styled-components'
 
 // UI
 import { Container, Column, Image, MEDIA_QUERY_MAX, Row } from '@drykiss/industry-ui'
-import { PageHeading, PageSubHeading } from '../'
+import { PageHeading } from '../../common/page/heading'
+import { PageSubHeading } from '../../common/page/subHeading'
 
 export const PageHero = ({ heading, image, subHeading }) => {
   return (
@@ -22,7 +23,7 @@ export const PageHero = ({ heading, image, subHeading }) => {
 
           {image && (
             <Column xs={12} md={7}>
-              <Image src={image} />
+              <Image alt="Hero" src={image} />
             </Column>
           )}
         </Row>

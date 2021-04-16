@@ -3,10 +3,12 @@
  */
 
 // UI
-import { OurWorkList, Page } from 'components'
-
-// Data
-import { PORTFOLIO_FACEBOOK, PORTFOLIO_MOBILE, PORTFOLIO_SITES, PORTFOLIO_WORDPRESS } from 'data'
+import { OurWorkList } from '../../components/ourWork/list'
+import { Page } from '../../components/common/page/page'
+import { PORTFOLIO_FACEBOOK } from '../../data/portfolio/facebook'
+import { PORTFOLIO_MOBILE } from '../../data/portfolio/mobile'
+import { PORTFOLIO_SITES } from '../../data/portfolio/sites'
+import { PORTFOLIO_WORDPRESS } from '../../data/portfolio/wordpress'
 
 const DATA = [
   ...PORTFOLIO_SITES,
@@ -15,7 +17,7 @@ const DATA = [
   ...PORTFOLIO_MOBILE
 ]
 
-export async function getStaticProps () {
+export async function getStaticProps() {
   return {
     props: { works: DATA }
   }
@@ -31,9 +33,9 @@ const PageOurWork = ({ works }) => {
 
   return (
     <Page
-      heading='Projects we worked on'
-      heroHeading='Our Work'
-      heroSubHeading='Transform your idea into a working digital product'
+      heading="Projects we worked on"
+      heroHeading="Our Work"
+      heroSubHeading="Transform your idea into a working digital product"
       meta={meta}
     >
       <OurWorkList items={works} />
