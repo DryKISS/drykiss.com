@@ -4,8 +4,8 @@
 
 // UI
 import { Button, Column, Container, List, ListItem, Row, Space } from '@drykiss/industry-ui'
-import { SectionHeading } from '../../common/typography/sectionHeading'
-import { SectionSubHeading } from '../../common/typography/sectionSubHeading'
+import { SectionHeading } from '../common/typography/sectionHeading'
+import { SectionSubHeading } from '../common/typography/sectionSubHeading'
 
 export const CareerShow = ({ data }) => {
   const { applyWith, benefits, details, needs, youAre, youWill } = data
