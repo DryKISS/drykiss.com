@@ -14,7 +14,6 @@ import { Theme } from '../config/theme'
 
 // UI
 import '../config/icons'
-// import 'config/globalStyle.css'
 
 // Track pageViews
 Router.events.on('routeChangeComplete', (url) => {

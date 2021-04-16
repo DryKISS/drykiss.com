@@ -1,12 +1,6 @@
 /**
  * Config
  */
-
-export const apiConfig = {}
-export const jwtConfig = {}
-export const AccessPages = {}
-export const AccessRules = {}
-
 const Canonical = require('./canonical')
 export { Canonical }
 
@@ -48,8 +42,6 @@ export const Mailchimp = {
 export const Pinterest = {
   verify: '18cdcea1be80cd72ded2e50bb5d21050'
 }
-
-export const Sidebar = {}
 
 export const Config = {
   Blog,

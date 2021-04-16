@@ -1,4 +1,4 @@
 /**
  * Canonical
  */
-module.exports = 'https://dev.drykiss.com'
+module.exports = 'https://drykiss.com'

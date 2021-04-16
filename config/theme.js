@@ -80,40 +80,20 @@ const NAVBAR = {
   background: COLOUR.gray90,
   borderTopWidth: '0.125rem',
   borderTopColor: COLOUR.primary,
-  padding: '0 1rem',
-  paddingTablet: '0 1rem',
-  paddingDesktop: '0 10rem',
 
   // Overlay
   backgroundOverlay: COLOUR.gray90,
-  widthOverlay: '180px',
 
   // Toggler
   colourToggler: COLOUR.white,
-  fontSizeToggler: '0.875',
-  paddingToggler: '0.25rem 0',
-  colourHoverToggler: COLOUR.success,
-
-  // Collapse
-  positionCollapse: 'fixed',
+  colourHoverToggler: COLOUR.white,
 
   // Link
-  paddingLink: '1rem',
-  colourDefault: COLOUR.white,
-  colourHover: COLOUR.primary,
-  colourDefaultDesktop: COLOUR.white,
-  colourHoverDesktop: COLOUR.primary,
-
-  // List
-  fontSizeList: '12px',
+  colourDefault: COLOUR.light,
+  colourDefaultDesktop: COLOUR.light,
 
   // ListItem
-  borderTopListItem: 'none',
-  backgroundListItem: COLOUR.transparent,
-  justifyContentDesktopListItem: 'flex-start',
-  marginBottomDesktopListItem: 'none',
-  backgroundHoverListItem: COLOUR.transparent,
-  borderBottomHoverListItem: 'none'
+  backgroundHoverListItem: COLOUR.dark
 }
 
 const PAGE = {
