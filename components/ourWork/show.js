@@ -60,6 +60,20 @@ export const OurWorkShow = ({ data }) => {
 
           <Space marginBottom="lg" />
 
+          <SectionSubHeading content="Technologies" />
+
+          {data.technologies?.length > 0 ? (
+            <List>
+              {data.technologies.map((tech) => (
+                <ListItem key={tech}>{tech}</ListItem>
+              ))}
+            </List>
+          ) : (
+            '-'
+          )}
+
+          <Space marginBottom="lg" />
+
           <SectionSubHeading content="Team" />
 
           {data.team?.length > 0 ? (
