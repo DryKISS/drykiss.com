@@ -17,7 +17,6 @@ const DATA = [
   ...PORTFOLIO_MOBILE
 ]
 
-
 const meta = {
   description: `DryKISS is a full service internet and mobile digital production house. Our
     services span consulting, strategy; planning; development; testing and analytics.`,
@@ -34,7 +33,7 @@ export async function getStaticProps() {
 const PageOurWork = ({ works }) => {
   return (
     <Page
-      heading="Projects we worked on"
+      heading="Our Projects"
       heroHeading="Our Work"
       heroSubHeading="Transform your idea into a working digital product"
       meta={meta}
