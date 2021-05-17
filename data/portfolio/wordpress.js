@@ -11,8 +11,8 @@ export const PORTFOLIO_WORDPRESS = [
     duration: [],
     links: [],
     meta: {
-      description:
-        'Blackberry wanted to hook into the Youth market. We built the site using a Custom Wordpress theme and plugins',
+      description: `Blackberry wanted to hook into the Youth market. We built the site using a
+      Custom Wordpress theme and plugins`,
       title: 'Blackberry® Youth Challenge',
       type: 'article'
     },
@@ -35,15 +35,15 @@ export const PORTFOLIO_WORDPRESS = [
         brand launch on Sunday 4th September 2016.
       </p>
       <p>
-        The blog actually consisted of a Wordpress MulitSite holding seven international blogs.
-        Each one would have to be tested and edited.
+        The blog actually consisted of a Wordpress multisite holding seven international blogs in
+        7 different languages! Each one would have to have access to a CMS with the ability to
+        edit, reviewed and published by several content managers.
       </p>
-      <p>It just happened we were contacted just three days earlier...</p>
 
       <h3>Business understanding</h3>
       <p>
         The discovery phase for the work required had to be undertaken over Skype due to the
-        tight deadline. DryKISS set up our usual scrum Trello board and placed all the features
+        tight deadline. DryKISS set up a scrum Trello board and placed all the features
         and work packages that needed to be delivered.
       </p>
       <p>
@@ -56,16 +56,6 @@ export const PORTFOLIO_WORDPRESS = [
       <p>Getting setup on the development system was unknown</p>
       <p>Wordpress setup was unknown</p>
 
-      <h3>Goal</h3>
-      <p>
-        The overriding goal was to complete the brand re-design of all the pages of the blog
-        before a newsletter to 2 million users was distributed.
-      </p>
-      <p>
-        This meant working incredibly fast to make the changes to facilitate a suitable sign
-        off.
-      </p>
-
       <h3>Developement</h3>
       <p>
         The Wordpress theme and internal mechanics were understood quickly. So it was then just
@@ -73,21 +63,26 @@ export const PORTFOLIO_WORDPRESS = [
         compatibility, responsive look and feel and new font inclusion.
       </p>
       <p>
-        DrKISS complete the changes mid-day on the Sunday, to allow a full spectrum text by the
-        client. Everything was deployed at midnight with just some minor changes to the caching
-        mechanism to set it live.
+        DryKISS completed the changes to allow a full spectrum text by the client. Everything was
+        deployed at midnight with just some minor changes to the caching mechanism to set it live.
+      </p>
+      <p>
+        Not only has Deliveroo FoodScene reached a wider audience through its daily blog (covering
+        such topics as insider profiles on some of the top restaurants around the world, secret
+        recipes from chefs etc), it has also increased its brand reach, helped customers choose a
+        tasty Friday night meal and provided SEO opportunities for its website.
       </p>
     `,
     duration: ['3 days development'],
     links: [
       {
-        href: 'https://deliveroo.co.uk/blog/',
+        href: 'https://foodscene.deliveroo.co.uk',
         label: 'Deliveroo Blog'
       }
     ],
     meta: {
       description: 'Deliveroo - Food home delivery',
-      title: 'Deliveroo - Food home delivery',
+      title: 'Rebranding Deliveroo FoodScene blog',
       type: 'article'
     },
     outcome: ['Delivered edits on time', 'Deployed at midnight'],
