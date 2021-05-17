@@ -3,6 +3,59 @@
  */
 export const PORTFOLIO_SITES = [
   {
+    active: true,
+    author: 'Ian Warner',
+    client: 'homyze',
+    cover: '/images/portfolio/homyze/cleverly/hero.png',
+    description: `
+      <p>
+        Cleverly, owned by Homyze, needed a solution to challenge the way major office buildings,
+        retail and even care homes were maintained. Imagine the commercial management of 26 floors
+        of office space in the Shad, London!
+      </p>
+      <p>
+      Homyze wanted an integrated property maintenance and facilities management solution that will
+      handle the workflow (requesting plumbers, gathering quotes, tracking onsite visit, completion
+        of jobs, issuing of invoices, payment resolution etc) and all the paperwork that follows.
+      </p>
+    `,
+    duration: [],
+    links: [
+      {
+        href: 'https://www.homyze.com',
+        label: 'Homyze'
+      },
+      {
+        href: 'https://cleverly.works',
+        label: 'Cleverly'
+      }
+    ],
+    meta: {
+      description: 'How Homyze and Cleverly.works digitalised facilities management',
+      title: 'Cleverly',
+      type: 'article'
+    },
+    outcome: [
+      `By creating a custom application, DryKISS was able to build a desktop and mobile-friendly
+      platform that will allow clients, vendors and suppliers to have access to important data and
+      reporting at their fingertips.`,
+      `The application also provided for Planned Preventative Maintenance (PPM) to be in compliance
+      with building regulations, security protocols and ensured services and equipment are
+      all maintained at regular intervals.`,
+      `Real-time communication was a major feature of the platform, along with the ability to send
+      "jobs" with before and after photos. Customised alerts and trigger events such as sensors
+      were built into the platform to maximise usage and reduce maintenance costs ie: counting the
+      number of times a bathroom door opens will result in an automated callout for a cleaner.`,
+      `Not only did it increase workflow efficiency, but it also tracked jobs and allows requests
+      to be made all online without picking up a phone. `
+    ],
+    slug: 'cleverly',
+    tasks: [],
+    team: ['Ian Warner - CTO', 'Kristian Heruc - Lead Developer', 'Ali Sharafi - Developer'],
+    title: 'Cleverly',
+    type: 'site'
+  },
+  {
     active: false,
     author: 'Ian Warner',
     client: 'alpha-founders',
