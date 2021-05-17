@@ -99,7 +99,7 @@ export const PORTFOLIO_FACEBOOK = [
     type: 'facebook'
   },
   {
-    active: true,
+    active: false,
     author: 'Ian Warner',
     client: 'triangle-solutions',
     cover: '/images/portfolio/triangle-solutions/love-football/hero.png',
@@ -178,7 +178,7 @@ export const PORTFOLIO_FACEBOOK = [
     type: 'facebook'
   },
   {
-    active: true,
+    active: false,
     author: 'Ian Warner',
     client: 'triangle-solutions',
     cover: '/images/portfolio/triangle-solutions/would-you/hero.png',
@@ -198,7 +198,7 @@ export const PORTFOLIO_FACEBOOK = [
     type: 'facebook'
   },
   {
-    active: true,
+    active: false,
     author: 'Ian Warner',
     client: 'triangle-solutions',
     cover: '/images/portfolio/triangle-solutions/zingo/hero.png',

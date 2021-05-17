@@ -3,7 +3,7 @@
  */
 export const PORTFOLIO_SITES = [
   {
-    active: true,
+    active: false,
     author: 'Ian Warner',
     client: 'alpha-founders',
     cover: '/images/portfolio/alpha-founders/ask-hanuman/hero.png',
@@ -23,7 +23,7 @@ export const PORTFOLIO_SITES = [
     type: 'site'
   },
   {
-    active: true,
+    active: false,
     author: 'Ian Warner',
     client: 'beep-taxi',
     cover: '/images/portfolio/beep-taxi/beep-services/hero.png',
@@ -160,7 +160,7 @@ export const PORTFOLIO_SITES = [
     type: 'site'
   },
   {
-    active: true,
+    active: false,
     author: 'Ian Warner',
     client: 'dungbeetle',
     cover: '/images/portfolio/dungbeetle/logotribe/hero.png',
@@ -429,7 +429,7 @@ export const PORTFOLIO_SITES = [
     type: 'site'
   },
   {
-    active: true,
+    active: false,
     author: 'Ian Warner',
     client: 'triangle-solutions',
     cover: '/images/portfolio/triangle-solutions/php-multiple-newsletters/hero.png',
@@ -449,7 +449,7 @@ export const PORTFOLIO_SITES = [
     type: 'site'
   },
   {
-    active: true,
+    active: false,
     author: 'Ian Warner',
     client: 'triangle-solutions',
     cover: '/images/portfolio/triangle-solutions/php-support-tickets/hero.png',
@@ -469,7 +469,7 @@ export const PORTFOLIO_SITES = [
     type: 'site'
   },
   {
-    active: true,
+    active: false,
     author: 'Ian Warner',
     client: 'triangle-solutions',
     cover: '/images/portfolio/triangle-solutions/sms-million/hero.png',
@@ -489,7 +489,7 @@ export const PORTFOLIO_SITES = [
     type: 'site'
   },
   {
-    active: true,
+    active: false,
     author: 'Ian Warner',
     client: 'surfchek',
     cover: '/images/portfolio/surfchek/surfchek/hero.png',
@@ -509,7 +509,7 @@ export const PORTFOLIO_SITES = [
     type: 'site'
   },
   {
-    active: true,
+    active: false,
     author: 'Ian Warner',
     client: 'dungbeetle',
     cover: '/images/portfolio/dungbeetle/tip-text/hero.png',
@@ -529,7 +529,7 @@ export const PORTFOLIO_SITES = [
     type: 'site'
   },
   {
-    active: true,
+    active: false,
     author: 'Ian Warner',
     client: 'tips-star',
     cover: '/images/portfolio/tips-star/tips-star/hero.png',
@@ -549,7 +549,7 @@ export const PORTFOLIO_SITES = [
     type: 'site'
   },
   {
-    active: true,
+    active: false,
     author: 'Ian Warner',
     client: 'xpansif',
     cover: '/images/portfolio/xpansif/easiwebsite/hero.png',
@@ -569,7 +569,7 @@ export const PORTFOLIO_SITES = [
     type: 'site'
   },
   {
-    active: true,
+    active: false,
     author: 'Ian Warner',
     client: 'yofone',
     cover: '/images/portfolio/yofone/yofone/hero.png',

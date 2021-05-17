@@ -3,7 +3,7 @@
  */
 export const PORTFOLIO_WORDPRESS = [
   {
-    active: true,
+    active: false,
     author: 'Ian Warner',
     client: 'razorfish',
     cover: '/images/portfolio/razorfish/blackberry-challenge/hero.png',

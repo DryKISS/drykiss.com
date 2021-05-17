@@ -41,7 +41,7 @@ export const PORTFOLIO_MOBILE = [
     type: 'mobile'
   },
   {
-    active: true,
+    active: false,
     author: 'Ian Warner',
     client: 'ibm',
     cover: '/images/portfolio/ibm/iris/hero.png',
@@ -66,7 +66,7 @@ export const PORTFOLIO_MOBILE = [
     type: 'mobile'
   },
   {
-    active: true,
+    active: false,
     author: 'Ian Warner',
     client: 'jack-morton',
     cover: '/images/portfolio/jack-morton/sabic/hero.png',
@@ -86,7 +86,7 @@ export const PORTFOLIO_MOBILE = [
     type: 'mobile'
   },
   {
-    active: true,
+    active: false,
     author: 'Ian Warner',
     client: 'jack-morton',
     cover: '/images/portfolio/jack-morton/samsung/hero.png',
