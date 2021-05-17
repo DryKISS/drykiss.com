@@ -5,19 +5,18 @@ export const MEMBERS = [
     link: 'https://www.linkedin.com/in/iwarner'
   },
   {
-    id: 'kheruc',
-    name: 'Kristian Heruc',
-    link: 'https://github.com/kheruc',
-    icon: 'github'
-  },
-  {
-    id: 'xxinyiwho',
-    name: 'Xinyi Wu',
-    link: 'https://www.linkedin.com/in/xinyi-wu-78722a92/'
-  },
-  {
     id: 'may',
     name: 'May Tran',
     link: 'https://www.linkedin.com/in/maytran007/'
+  },
+  {
+    id: 'kheruc',
+    name: 'Kristian Heruc',
+    link: 'https://www.linkedin.com/in/kheruc/'
+  },
+  {
+    id: 'ali',
+    name: 'Ali Sharafi',
+    link: 'https://www.linkedin.com/in/ali-sharafi/'
   }
 ]

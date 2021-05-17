@@ -22,9 +22,9 @@ export const Team = ({ members }) => {
       <Space />
 
       <Text>
-        Our team comprises of highly skilled professionals with over 20+ years of experiences in web
+        Our team are highly skilled professionals with a combined 20+ years of experiences in web
         development, digital marketing, SEO and tech consulting. We are bold, global, agile, lean
-        and love thinking outside the box
+        and love thinking outside the box.
       </Text>
 
       <Space />

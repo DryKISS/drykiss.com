@@ -8,10 +8,9 @@ import { Team } from '../components/team/team'
 import { MEMBERS } from '../data/members'
 
 const meta = {
-  description: `DryKISS is a full service internet and mobile digital production house. Our
-    services span consulting, strategy; planning; development; testing and analytics.`,
+  description: `The people that work at DryKISS Ltd`,
   path: '/team',
-  title: 'DryKISS develops hybrid mobile and responsive websites'
+  title: 'DryKISS Ltd Team'
 }
 
 const PageTeam = ({ members }) => {
