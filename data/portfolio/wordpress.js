@@ -91,7 +91,7 @@ export const PORTFOLIO_WORDPRESS = [
       'Wordpress theme edits',
       'Wordpress plug-in edits',
       'Responsive development',
-      'Deployment</ListItem>'
+      'Deployment'
     ],
     team: ['Ian Warner - Technical Lead'],
     title: 'Deliveroo Rebrand',
