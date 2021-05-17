@@ -7,14 +7,14 @@ import { Page } from '../components/common/page/page'
 import { Team } from '../components/team/team'
 import { MEMBERS } from '../data/members'
 
-const PageTeam = ({ members }) => {
-  const meta = {
-    description: `DryKISS is a full service internet and mobile digital production house. Our
-      services span consulting, strategy; planning; development; testing and analytics.`,
-    path: '/team',
-    title: 'DryKISS develops hybrid mobile and responsive websites'
-  }
+const meta = {
+  description: `DryKISS is a full service internet and mobile digital production house. Our
+    services span consulting, strategy; planning; development; testing and analytics.`,
+  path: '/team',
+  title: 'DryKISS develops hybrid mobile and responsive websites'
+}
 
+const PageTeam = ({ members }) => {
   return (
     <Page
       heading="Meet the DryKiss Team"

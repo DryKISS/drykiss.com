@@ -10,17 +10,17 @@ import { CareersList } from '../../components/careers/list'
 import { Page } from '../../components/common/page/page'
 import { CAREERS } from '../../data/careers'
 
-const PageCareers = ({ careers }) => {
-  const meta = {
-    description: `
-      DryKISS is a full service internet and mobile digital production house.
-      Our services span consulting, strategy; planning; development; testing
-      and analytics.
-    `,
-    path: '/careers',
-    title: 'DryKISS develops hybrid mobile and responsive websites'
-  }
+const meta = {
+  description: `
+    DryKISS is a full service internet and mobile digital production house.
+    Our services span consulting, strategy; planning; development; testing
+    and analytics.
+  `,
+  path: '/careers',
+  title: 'DryKISS develops hybrid mobile and responsive websites'
+}
 
+const PageCareers = ({ careers }) => {
   return (
     <Page
       heading="Current Jobs Openings"

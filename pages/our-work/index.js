@@ -17,6 +17,14 @@ const DATA = [
   ...PORTFOLIO_MOBILE
 ]
 
+
+const meta = {
+  description: `DryKISS is a full service internet and mobile digital production house. Our
+    services span consulting, strategy; planning; development; testing and analytics.`,
+  path: '/our-work',
+  title: 'DryKISS develops hybrid mobile and responsive websites'
+}
+
 export async function getStaticProps() {
   return {
     props: { works: DATA }
@@ -24,13 +32,6 @@ export async function getStaticProps() {
 }
 
 const PageOurWork = ({ works }) => {
-  const meta = {
-    description: `DryKISS is a full service internet and mobile digital production house. Our
-      services span consulting, strategy; planning; development; testing and analytics.`,
-    path: '/our-work',
-    title: 'DryKISS develops hybrid mobile and responsive websites'
-  }
-
   return (
     <Page
       heading="Projects we worked on"
