@@ -356,7 +356,18 @@ export const PORTFOLIO_SITES = [
     author: 'Ian Warner',
     client: 'ibm',
     cover: '/images/portfolio/ibm/pivot/hero.png',
-    description: '',
+    description: `
+      <p>
+        IBM needed a solution to track and monitor their internal sales and leads. The current
+        system was old and out of date with the UX being hard to use and a lack of user uptake.
+      </p>
+      <h3>DryKISS Solution</h3>
+      <p>
+        The idea was to develop a hybrid iPad/desktop application for sales enablement. This in
+        turn lead to developing an internal application aimed at improving the conversion rate of
+        the sales funnel by identifying nurture opportunities.
+      </p>
+    `,
     duration: ['1 year of development'],
     links: [
       {
@@ -381,9 +392,33 @@ export const PORTFOLIO_SITES = [
       title: 'IBM - Pivot',
       type: 'article'
     },
-    outcome: [],
+    outcome: [
+      `Highest NPS score of any IBM Studios product that is still being used internally to date.
+    MVP delivered 6 months working in a cross-functional scrum team.`
+    ],
     slug: 'pivot',
     tasks: ['Accessibility', 'SEO', 'UX', 'Responsive development', 'Deployment', 'Analytics'],
+    technologies: [
+      'Scrum',
+      'Middleman',
+      'AngularJS',
+      'SCSS',
+      'HAML',
+      'CoffeeScript',
+      'Node.js',
+      'CloudAnt',
+      'BlueMix',
+      'APIs',
+      'JSON',
+      'Cordova',
+      'Phonegap',
+      'Laravel',
+      'PHP',
+      'Jenkins',
+      'Protractor',
+      'Karma',
+      'Prototyping'
+    ],
     team: [
       'Ian Warner - Lead Developer',
       'Guillermo Noain Molina - Node Developer',
