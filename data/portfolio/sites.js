@@ -19,7 +19,7 @@ export const PORTFOLIO_SITES = [
         of jobs, issuing of invoices, payment resolution etc) and all the paperwork that follows.
       </p>
     `,
-    duration: [],
+    duration: ['One and a half years ongoing'],
     links: [
       {
         href: 'https://www.homyze.com',
@@ -51,6 +51,17 @@ export const PORTFOLIO_SITES = [
     ],
     slug: 'cleverly',
     tasks: [],
+    technologies: [
+      'React',
+      'Next.js',
+      'GraphQL',
+      'Hasura',
+      'Postgres',
+      'Node.js',
+      'AWS',
+      'Storybook',
+      'Cypress'
+    ],
     team: ['Ian Warner - CTO', 'Kristian Heruc - Lead Developer', 'Ali Sharafi - Developer'],
     title: 'Cleverly',
     type: 'site'
