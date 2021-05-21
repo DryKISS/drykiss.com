@@ -110,13 +110,13 @@ const TYPOGRAPHY = {
 }
 
 const FOOTER = {
-  background: '#1A1A1A',
-  colour: COLOUR.white
+  background: '#002B54',
+  colour: '#B5DBFF'
 }
 
 const COPYRIGHT = {
-  background: '#1A1A1A',
-  colour: COLOUR.white
+  background: '#002B54',
+  colour: '#B5DBFF'
 }
 
 export const Theme = {
