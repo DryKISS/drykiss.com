@@ -21,7 +21,7 @@ export const COLOUR = {
   light: 'rgb(236, 240, 243)',
   gray90: '#1A1A1A',
 
-  primary: '#289BC3',
+  primary: '#0F7CE3',
   secondary: '#FF6E91',
   success: 'rgb(54, 197, 58)',
   info: 'rgb(148, 148, 126)',
@@ -77,7 +77,8 @@ export const HEADINGS = {
 
 const NAVBAR = {
   // Navbar
-  background: COLOUR.gray90,
+  background: COLOUR.primary,
+  borderBottom: 'none',
   borderTopWidth: '0.125rem',
   borderTopColor: COLOUR.primary,
 

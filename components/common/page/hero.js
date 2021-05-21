@@ -33,12 +33,19 @@ export const PageHero = ({ heading, image, subHeading }) => {
 }
 
 const StyledWrapper = styled.div`
-  background: ${({ theme }) => theme.COLOUR.gray90} url('/images/hero/pattern.svg') no-repeat right;
+  background: ${({ theme }) => theme.COLOUR.primary} url('/images/hero/pattern.svg') no-repeat right;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
   color: ${({ theme }) => theme.COLOUR.white};
   height: 435px;
-  padding-top: 180px;
   margin-bottom: ${({ withImage }) => (withImage ? 160 : 40)}px;
-  box-sizing: border-box;
+  overflow: hidden;
+  padding-top: 75px;
+
+  img {
+    max-width: 350px;
+    text-align: center;
+  }
 
   ${MEDIA_QUERY_MAX.phone`
     padding-top: 90px;

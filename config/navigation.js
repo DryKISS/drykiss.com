@@ -10,39 +10,34 @@ export const Navigation = () => {
   const Default = {
     right: [
       {
-        id: 'navHome',
-        name: 'Home',
-        to: '/'
+        id: 'navServices',
+        name: 'Services',
+        to: '/services'
       },
       {
-        id: 'navWhatWeDo',
-        name: 'What We Do',
-        to: '/what-we-do'
+        id: 'navCaseStudies',
+        name: 'Case Studies',
+        to: '/case-studies'
+      },
+      // {
+      //   id: 'navCareer',
+      //   name: 'Careers',
+      //   to: '/careers'
+      // },
+      {
+        id: 'navOurCompany',
+        name: 'Our Company',
+        to: '/our-company'
       },
       {
-        id: 'navOurWork',
-        name: 'Our Work',
-        to: '/our-work'
+        id: 'navInsights',
+        name: 'Insights',
+        to: '/insights'
       },
       {
-        id: 'navCareer',
-        name: 'Careers',
-        to: '/careers'
-      },
-      {
-        id: 'navTeam',
-        name: 'Team',
-        to: '/team'
-      },
-      {
-        id: 'navAbout',
-        name: 'About',
-        to: '/about'
-      },
-      {
-        id: 'navContact',
-        name: 'Contact',
-        to: '/contact'
+        id: 'navContacts',
+        name: 'Contacts',
+        to: '/contacts'
       }
     ]
   }
