@@ -10,6 +10,8 @@ const fonts = {
 export const COLOUR = {
   drykiss_lightBlue: '#00D2D2',
   drykiss_darkPink: '#FF6E91',
+  darkBlue: '#002B54',
+  lightBlue: '#E8EDFC',
 
   active: '#000000',
   visited: '#00D2D2',

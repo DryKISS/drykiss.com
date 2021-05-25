@@ -11,22 +11,25 @@ import styled from 'styled-components'
 import { Column, Container, Image, Row, Space } from '@drykiss/industry-ui'
 import { SectionHeading } from '../common/typography/sectionHeading'
 import { clientsData } from './data'
+import AC from '../adaptorComponent'
 
 export const HomeClients = () => {
   return (
     <StyledWrapper>
       <Container>
-        <SectionHeading content="Our Clients" />
+        <SectionHeading content="Our happy Customers" />
 
         <StyledRow>
           {clientsData.map((client) => (
-            <Column xs={6} md={3} key={client.name}>
-              <StyledImage
+            <AC as={Column} xs={12} md={6} lg={3} key={client.name} center>
+              <AC
+                as={StyledImage}
                 alt={client.name}
                 src={`/images/clients/${client.name}.svg`}
                 title={client.name}
+                pointer
               />
-            </Column>
+            </AC>
           ))}
         </StyledRow>
       </Container>
@@ -47,7 +50,7 @@ const StyledRow = styled(Row)`
 `
 
 const StyledImage = styled(Image)`
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   transition: all 0.1s ease-in-out;
   height: 50px;
   object-fit: contain;

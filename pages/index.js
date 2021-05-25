@@ -10,6 +10,8 @@ import { HomeOurMethodology } from '../components/home/ourMethodology'
 import { HomeOurWorks } from '../components/home/ourWorks'
 import { HomeWhoWeAre } from '../components/home/whoWeAre'
 import { Page } from '../components/common/page/page'
+import LetsTalk from '../components/common/page/home/letsTalk'
+import HomeSubHeading from '../components/common/page/home/subHeading'
 
 const meta = {
   description: `DryKISS is a full service internet and mobile digital production house. Our
@@ -23,20 +25,18 @@ const PageIndex = () => {
     <Page
       heroHeading="We do MVPs"
       heroImage="/images/home/hero.png"
-      heroSubHeading="Supercharge your startup. Launch your application and Validate your idea."
+      onImage={<LetsTalk />}
+      heroSubHeading={<HomeSubHeading />}
       meta={meta}
     >
+      <HomeClients />
       <HomeWhoWeAre />
       <Space marginBottom="xxxl" />
-
       <HomeOurMethodology />
-
       <HomeMiddleHero />
       <Space marginBottom="xxxl" />
-
       <HomeOurWorks />
       <Space marginBottom="xxxl" />
-
       <HomeClients />
     </Page>
   )

@@ -10,6 +10,14 @@ module.exports = {
           {
             extensions: ['.css']
           }
+        ],
+        [
+          'styled-components',
+          {
+            ssr: true,
+            displayName: true,
+            preprocess: false
+          }
         ]
       ]
     }

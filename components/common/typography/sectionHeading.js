@@ -13,8 +13,9 @@ export const SectionHeading = ({ align, content, paddingBottom }) => {
 }
 
 const StyledHeading = styled(Heading)`
+  font-size: 1rem;
   text-align: ${({ align }) => align || 'center'};
   font-weight: bold;
-  color: ${({ theme }) => theme.COLOUR.primary};
+  color: ${({ theme }) => theme.COLOUR.darkBlue};
   padding-bottom: ${({ paddingBottom }) => paddingBottom || 2}rem;
 `

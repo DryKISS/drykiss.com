@@ -15,7 +15,7 @@ import { Brand, Canonical } from '../../../config/config'
 
 export const Page = ({
   children,
-  fluid,
+  onImage,
   heading,
   heroHeading,
   heroImage,
@@ -26,7 +26,12 @@ export const Page = ({
     <StyledPage>
       {meta && <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />}
 
-      <PageHero heading={heroHeading} image={heroImage} subHeading={heroSubHeading} />
+      <PageHero
+        heading={heroHeading}
+        image={heroImage}
+        onImage={onImage}
+        subHeading={heroSubHeading}
+      />
 
       {heading && (
         <Container>

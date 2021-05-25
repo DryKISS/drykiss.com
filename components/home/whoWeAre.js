@@ -14,14 +14,13 @@ import { SectionSubHeading } from '../common/typography/sectionSubHeading'
 export const HomeWhoWeAre = () => {
   return (
     <Container>
+      <SectionHeading align="center" content="Who We Are" />
       <Row align="center">
         <Column sm={12} md={6}>
           <StyledImage alt="Slogan" src="/images/home/slogans.svg" />
         </Column>
 
         <Column sm={12} md={6}>
-          <SectionHeading align="left" content="Who We Are" />
-
           <SectionSubHeading content="Why DryKISS?" />
 
           <Paragraph content="With over 20+ years experience, we understand your challenges and want to help you learn about your users, business requirements and solve customer pain points. We are a full-service software development company; building deliverables from early stages to successful projects." />
