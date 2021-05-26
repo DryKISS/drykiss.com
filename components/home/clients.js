@@ -13,11 +13,11 @@ import { SectionHeading } from '../common/typography/sectionHeading'
 import { clientsData } from './data'
 import AC from '../adaptorComponent'
 
-export const HomeClients = () => {
+export const HomeClients = ({textSize}) => {
   return (
     <StyledWrapper>
       <Container>
-        <SectionHeading content="Our happy Customers" />
+        <SectionHeading content="Our happy Customers" textSize={textSize} />
 
         <StyledRow>
           {clientsData.map((client) => (
