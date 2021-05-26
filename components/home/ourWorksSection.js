@@ -46,7 +46,7 @@ const ourWorksData = [
   }
 ]
 
-export default function OurWorksSection() {
+const OurWorksSection = () => {
   return (
     <>
       <SectionTitleAndSubtitle
@@ -75,12 +75,12 @@ export default function OurWorksSection() {
                 <AC as={TopImageWrapper}>
                   <AC as={Image} mY="1.5rem" src={item.descriptionTopImage} />
                 </AC>
-                <AC textColour="black" bold textSize="2rem" mb="0.75rem">
+                <AC as={StyledTitle} textColour="black" bold textSize="2rem">
                   {item.title}
                 </AC>
                 {item.descs.map((desc, idx) => {
                   return (
-                    <AC key={'desc' + idx} as={Text} textColour="darkGrey" mb="0.25rem">
+                    <AC key={'desc' + idx} as={StyledDesc} textColour="darkGrey">
                       {desc}
                     </AC>
                   )
@@ -111,6 +111,14 @@ export default function OurWorksSection() {
     </>
   )
 }
+const StyledDesc = styled(Text)`
+  margin-bottom: 0.25rem;
+`
+
+const StyledTitle = styled(Text)`
+  margin-bottom: 0.75rem;
+`
+
 const TopImageWrapper = styled.div`
   max-width: 120px; ;
 `
@@ -121,3 +129,4 @@ const WrappedRow = styled(Row)`
       border-top: 1px solid #ebebeb;
     `}
 `
+export default OurWorksSection

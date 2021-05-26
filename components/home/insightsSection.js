@@ -35,7 +35,7 @@ const insightsData = [
     }
   }
 ]
-export default function InsightsSection() {
+const InsightsSection = () => {
   return (
     <>
       <SectionTitleAndSubtitle
@@ -69,3 +69,4 @@ export default function InsightsSection() {
     </>
   )
 }
+export default InsightsSection

@@ -4,7 +4,7 @@ import { MaxContainer } from '../common/maxContainer'
 import styled from 'styled-components'
 import ContactForm from '../common/page/contactForm'
 
-export default function ContactUsSection() {
+const ContactUsSection = () => {
   return (
     <AC as={MaxContainer} bgColour="light" pY="2.5rem">
       <AC as={Text} semiBold textSize="3.5rem" textColour="darkBlue" center>
@@ -27,3 +27,4 @@ export default function ContactUsSection() {
 const SubTextContainer = styled.div`
   max-width: 555px;
 `
+export default ContactUsSection

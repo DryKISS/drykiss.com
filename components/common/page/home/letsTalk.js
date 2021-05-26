@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Row, Column, Text } from '@drykiss/industry-ui'
 import AC from '../../../adaptorComponent'
 
-export default function LetsTalk() {
+const LetsTalk = () => {
   return (
     <AC as={Wrapper} pointer fullWidth absolute>
       <AC as={Row} elevation={1}>
@@ -24,3 +24,4 @@ export default function LetsTalk() {
 const Wrapper = styled.div`
   bottom: 3rem;
 `
+export default LetsTalk

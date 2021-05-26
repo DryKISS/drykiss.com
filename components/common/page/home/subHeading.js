@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Button, Column, Space, Row, Text } from '@drykiss/industry-ui'
 import { PageSubHeading } from '../subHeading'
 
-export default function HomeSubHeading() {
+const HomeSubHeading = () => {
   return (
     <>
       <PageSubHeading>
@@ -56,3 +56,4 @@ export default function HomeSubHeading() {
 const StyledButton = styled(Button)`
   min-width: 126px; ;
 `
+export default HomeSubHeading

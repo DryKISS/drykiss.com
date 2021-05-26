@@ -1,5 +1,6 @@
 import React from 'react'
 
-export default function ContactForm() {
+ const ContactForm=()=> {
   return <div>Contact us</div>
 }
+export default ContactForm

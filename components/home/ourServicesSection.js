@@ -42,7 +42,7 @@ const serviceCardsData = [
   }
 ]
 
-export default function OurServicesSection() {
+const OurServicesSection = () => {
   return (
     <>
       <SectionTitleAndSubtitle
@@ -91,3 +91,4 @@ const CardWrapper = styled.div`
   min-height: 270px;
   padding: 2rem 1rem;
 `
+export default OurServicesSection

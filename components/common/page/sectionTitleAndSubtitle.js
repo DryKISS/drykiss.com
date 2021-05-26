@@ -1,7 +1,7 @@
 import { Space, Text } from '@drykiss/industry-ui'
 import styled, { css } from 'styled-components'
 import AC from '../../adaptorComponent'
-export default function SectionTitleAndSubtitle({ title, subtitle, maxTextWidth, ...props }) {
+const SectionTitleAndSubtitle = ({ title, subtitle, maxTextWidth, ...props }) => {
   return (
     <Wrapper {...props}>
       <AC as={Text} semiBold textSize="2.25rem" textColour="darkBlue" center>
@@ -28,3 +28,4 @@ const TextContainer = styled.div`
       max-width: ${maxTextWidth};
     `}
 `
+export default SectionTitleAndSubtitle
