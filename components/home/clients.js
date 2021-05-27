@@ -13,7 +13,7 @@ import { SectionHeading } from '../common/typography/sectionHeading'
 import { clientsData } from './data'
 import AC from '../adaptorComponent'
 
-export const HomeClients = ({textSize}) => {
+export const HomeClients = ({ textSize }) => {
   return (
     <StyledWrapper>
       <Container>
@@ -21,7 +21,7 @@ export const HomeClients = ({textSize}) => {
 
         <StyledRow>
           {clientsData.map((client) => (
-            <AC as={Column} xs={12} md={6} lg={3} key={client.name} center>
+            <AC as={Column} xs={12} md={6} lg={3} key={client.name} center mY="1rem">
               <AC
                 as={StyledImage}
                 alt={client.name}

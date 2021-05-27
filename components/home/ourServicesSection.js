@@ -56,14 +56,32 @@ const OurServicesSection = () => {
         <Row>
           {serviceCardsData.map((data, index) => {
             return (
-              <AC key={index} as={Column} md={4} sm={12} center>
-                <AC as={CardWrapper} fullWidth elevation={1}>
+              <AC
+                key={index}
+                as={Column}
+                md={4}
+                sm={12}
+                center
+                smStyles={{
+                  pX: '2rem',
+                  mt: '2rem'
+                }}
+              >
+                <AC as={CardWrapper} fullWidth elevation={1} pY="2rem" pX="1rem">
                   <Space marginBottom="md">
-                    <AC as={Text} textColour="darkGeryText" bold size="md">
+                    <AC
+                      as={Text}
+                      textColour="darkGeryText"
+                      bold
+                      size="md"
+                      smStyles={{
+                        textColour: 'black'
+                      }}
+                    >
                       {data.title}
                     </AC>
                   </Space>
-                  <AC as={CardContentWrapper} flex itemsStart>
+                  <AC flex itemsStart>
                     <Image src={data.image} alt={data.title} />
                     <BulletsContainer>
                       {data.bullets.map((bullet, idx) => (
@@ -85,10 +103,8 @@ const OurServicesSection = () => {
 const BulletsContainer = styled.ul`
   margin: 0;
 `
-const CardContentWrapper = styled.div``
 const CardWrapper = styled.div`
   width: calc(100% - 0.75rem);
   min-height: 270px;
-  padding: 2rem 1rem;
 `
 export default OurServicesSection

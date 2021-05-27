@@ -31,13 +31,13 @@ const HomeSubHeading = () => {
       <Space marginBottom="lg" />
       <Row>
         <Column md={3}>
-          <StyledButton outline context="white">
+          <AC as={StyledButton} outline context="white" mb="1rem">
             <AC as={Text} textColour="white" size="sm">
               <AC as="span" bold>
                 Services
               </AC>
             </AC>
-          </StyledButton>
+          </AC>
         </Column>
         <Column md={6}>
           <StyledButton context="white" outline>

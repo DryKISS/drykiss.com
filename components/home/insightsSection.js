@@ -45,11 +45,29 @@ const InsightsSection = () => {
         maxTextWidth="1100px"
       />
 
-      <AC as={MaxContainer} mb="6rem">
+      <AC
+        as={MaxContainer}
+        mb="6rem"
+        smStyles={{
+          pX: '1rem'
+        }}
+      >
         <Row>
           {insightsData.map((item, index) => {
             return (
-              <AC key={index} as={Column} md={4} sm={12} flexColumn itemsStart height="30rem">
+              <AC
+                key={index}
+                as={Column}
+                md={4}
+                sm={12}
+                flexColumn
+                itemsStart
+                height="30rem"
+                smStyles={{
+                  height: 'unset',
+                  mY: '1.5rem'
+                }}
+              >
                 <Image src={item.image} />
                 <AC as={Text} mY="1.5rem" bold textColour="black">
                   {item.title}

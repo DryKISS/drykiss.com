@@ -56,7 +56,14 @@ const OurWorksSection = () => {
         maxTextWidth="1100px"
       />
 
-      <AC as={MaxContainer} mb="6rem" mt="2rem">
+      <AC
+        as={MaxContainer}
+        mb="6rem"
+        mt="2rem"
+        smStyles={{
+          pX: '1rem'
+        }}
+      >
         {ourWorksData.map((item, index) => {
           return (
             <AC
@@ -102,7 +109,15 @@ const OurWorksSection = () => {
                 {...(index % 2 === 0 && { pl: '0.5rem' })}
                 {...(index % 2 !== 0 && { pr: '0.5rem' })}
               >
-                <Image src={item.image} />
+                <AC
+                  as={Image}
+                  src={item.image}
+                  alt={item.image}
+                  smStyles={{
+                    width: '90%',
+                    ml: '5%'
+                  }}
+                />
               </AC>
             </AC>
           )

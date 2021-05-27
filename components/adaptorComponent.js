@@ -1,179 +1,243 @@
 import styled, { css } from 'styled-components'
+
 const margin = css`
-  ${({ margin }) =>
-    margin &&
-    css`
-      margin: ${margin};
-    `}
-  ${({ mX }) =>
-    mX &&
-    css`
-      margin-left: ${mX};
-      margin-right: ${mX};
-    `}
-  ${({ mY }) =>
-    mY &&
-    css`
-      margin-top: ${mY};
-      margin-bottom: ${mY};
-    `}
-  ${({ mb }) =>
-    mb &&
-    css`
-      margin-bottom: ${mb};
-    `}
-  ${({ mt }) =>
-    mt &&
-    css`
-      margin-top: ${mt};
-    `}
-  ${({ ml }) =>
-    ml &&
-    css`
-      margin-left: ${ml};
-    `}
-  ${({ mr }) =>
-    mr &&
-    css`
-      margin-right: ${mr};
-    `}
+  ${({ margin }) => margin && styleMapper('margin', margin)}
+  ${({ mX }) => mX && styleMapper('mX', mX)}
+  ${({ mY }) => mY && styleMapper('mY', mY)}
+  ${({ mb }) => mb && styleMapper('mb', mb)}
+  ${({ mt }) => mt && styleMapper('mt', mt)}
+  ${({ ml }) => ml && styleMapper('ml', ml)}
+  ${({ mr }) => mr && styleMapper('mr', mr)}
 `
 const padding = css`
-  ${({ padding }) =>
-    padding &&
-    css`
-      padding: ${padding};
-    `}
-  ${({ pX }) =>
-    pX &&
-    css`
-      padding-left: ${pX};
-      padding-right: ${pX};
-    `}
-  ${({ pY }) =>
-    pY &&
-    css`
-      padding-top: ${pY};
-      padding-bottom: ${pY};
-    `}
-  ${({ pb }) =>
-    pb &&
-    css`
-      padding-bottom: ${pb};
-    `}
-  ${({ pt }) =>
-    pt &&
-    css`
-      padding-top: ${pt};
-    `}
-  ${({ pl }) =>
-    pl &&
-    css`
-      padding-left: ${pl};
-    `}
-  ${({ pr }) =>
-    pr &&
-    css`
-      padding-right: ${pr};
-    `}
+  ${({ padding }) => padding && styleMapper('padding', padding)}
+  ${({ pX }) => pX && styleMapper('pX', pX)}
+  ${({ pY }) => pY && styleMapper('pY', pY)}
+  ${({ pb }) => pb && styleMapper('pb', pb)}
+  ${({ pt }) => pt && styleMapper('pt', pt)}
+  ${({ pl }) => pl && styleMapper('pl', pl)}
+  ${({ pr }) => pr && styleMapper('pr', pr)}
 `
-
-export const AdaptorComponent = styled.div`
+const acStyles = css`
   font-weight: 500;
-  ${({ textCenter }) =>
-    textCenter &&
-    css`
+  ${({ textCenter }) => textCenter && styleMapper('textCenter', textCenter)}
+  ${({ bgColour, theme }) => bgColour && styleMapper('bgColour', bgColour, theme)}
+  ${({ textColour, theme }) => textColour && styleMapper('textColour', textColour, theme)}
+  ${({ height }) => height && styleMapper('height', height)}
+  ${({ width }) => width && styleMapper('width', width)}
+  ${({ center }) => center && styleMapper('center', center)}
+  ${({ elevation }) => elevation && styleMapper('elevation', elevation)}
+  ${({ textSize }) => textSize && styleMapper('textSize', textSize)}
+  ${({ bold }) => bold && styleMapper('bold', bold)}
+  ${({ semiBold }) => semiBold && styleMapper('semiBold', semiBold)}
+  ${({ pointer }) => pointer && styleMapper('pointer', pointer)}
+  ${({ fullWidth }) => fullWidth && styleMapper('fullWidth', fullWidth)}
+  ${({ absolute }) => absolute && styleMapper('absolute', absolute)}
+  ${({ flex }) => flex && styleMapper('flex', flex)}
+  ${({ itemsStart }) => itemsStart && styleMapper('itemsStart', itemsStart)}
+  ${({ itemsCenter }) => itemsCenter && styleMapper('itemsCenter', itemsCenter)}
+  ${({ flexRowReverse }) => flexRowReverse && styleMapper('flexRowReverse', flexRowReverse)}
+  ${({ flexColumn }) => flexColumn && styleMapper('flexColumn', flexColumn)}
+  ${({ flexFiller }) => flexFiller && styleMapper('flexFiller', flexFiller)}
+    ${margin}
+    ${padding}
+    ${({ customCss }) => customCss && customCss}
+`
+const styleMapper = (key, value, theme) => {
+  let v = ''
+  switch (key) {
+    case 'margin':
+      v = `margin:${value};`
+      break
+    case 'mt':
+      v = `margin-top:${value};`
+      break
+    case 'mX':
+      v = `
+        margin-left: ${value};
+        margin-right: ${value};
+        `
+      break
+    case 'mY':
+      v = `
+          margin-top: ${value};
+          margin-bottom: ${value};
+          `
+      break
+    case 'mb':
+      v = `
+            margin-bottom: ${value};
+            `
+      break
+    case 'ml':
+      v = `
+            margin-left: ${value};
+            `
+      break
+    case 'mr':
+      v = `
+      margin-right: ${value};
+    `
+      break
+
+    case 'padding':
+      v = `padding:${value};`
+      break
+    case 'pt':
+      v = `padding-top:${value};`
+      break
+    case 'pX':
+      v = `
+          padding-left: ${value};
+          padding-right: ${value};
+          `
+      break
+    case 'pY':
+      v = `
+            padding-top: ${value};
+            padding-bottom: ${value};
+            `
+      break
+    case 'pb':
+      v = `
+              padding-bottom: ${value};
+              `
+      break
+    case 'pl':
+      v = `
+              padding-left: ${value};
+              `
+      break
+    case 'pr':
+      v = `
+        padding-right: ${value};
+      `
+      break
+    case 'textCenter':
+      v = `
       text-align: center;
-    `}
-  ${({ bgColour, theme }) =>
-    bgColour &&
-    css`
-      background-color: ${theme.COLOUR[bgColour] ?? bgColour};
-    `}
-  ${({ textColour, theme }) =>
-    textColour &&
-    css`
-      color: ${theme.COLOUR[textColour] ?? textColour};
-    `}
-  ${({ height }) =>
-    height &&
-    css`
-      height: ${height};
-    `}
-    ${({ center }) =>
-    center &&
-    css`
+    `
+      break
+    case 'height':
+      v = `
+      height: ${value};
+    `
+      break
+    case 'width':
+      v = `
+      width: ${value};
+    `
+      break
+    case 'center':
+      v = `
       display: flex;
       align-items: center;
       justify-content: center;
-    `}
-    ${({ elevation }) =>
-    elevation &&
-    css`
-      box-shadow: 0px ${10 * elevation}px ${25 * elevation}px rgba(0, 0, 0, ${0.1 * elevation});
-    `}
-    ${({ textSize }) =>
-    textSize &&
-    css`
-      font-size: ${textSize};
-    `}
-  ${({ bold }) =>
-    bold &&
-    css`
+    `
+      break
+    case 'bold':
+      v = `
       font-weight: 700;
-    `}
-  ${({ semiBold }) =>
-    semiBold &&
-    css`
+    `
+      break
+    case 'elevation':
+      v = `
+      box-shadow: 0px ${10 * value}px ${25 * value}px rgba(0, 0, 0, ${0.1 * value});
+    `
+      break
+    case 'textSize':
+      v = `
+      font-size: ${value};
+      line-height: calc(${value} + (${value} / 5));
+    `
+      break
+    case 'semiBold':
+      v = `
       font-weight: 600;
-    `}
-  ${({ pointer }) =>
-    pointer &&
-    css`
+    `
+      break
+    case 'pointer':
+      v = `
       cursor: pointer;
-    `}
-  ${({ fullWidth }) =>
-    fullWidth &&
-    css`
+    `
+      break
+    case 'fullWidth':
+      v = `
       width: 100%;
-    `}
-  ${({ absolute }) =>
-    absolute &&
-    css`
+    `
+      break
+    case 'absolute':
+      v = `
       position: absolute;
-    `}
-  ${({ flex }) =>
-    flex &&
-    css`
+    `
+      break
+    case 'flex':
+      v = `
       display: flex;
-    `}
-  ${({ itemsStart }) =>
-    itemsStart &&
-    css`
+    `
+      break
+    case 'itemsStart':
+      v = `
       align-items: start;
-    `}
-  ${({ itemsCenter }) =>
-    itemsCenter &&
-    css`
+    `
+      break
+    case 'itemsCenter':
+      v = `
       align-items: center;
-    `}
-  ${({ flexRowReverse }) =>
-    flexRowReverse &&
-    css`
+    `
+      break
+    case 'flexRowReverse':
+      v = `
       flex-direction: row-reverse;
-    `}
-  ${({ flexColumn }) =>
-    flexColumn &&
-    css`
+    `
+      break
+    case 'flexColumn':
+      v = `
       display: flex;
       flex-direction: column;
-    `}
-  ${({ flexFiller }) =>
-    flexFiller &&
-    css`
+    `
+      break
+    case 'flexFiller':
+      v = `
       flex: 1;
-    `}
-    ${margin}
-    ${padding}
+    `
+      break
+    case 'bgColour':
+      if (theme) {
+        v = `
+      background-color: ${theme?.COLOUR[value] ?? value};
+    `
+      }
+      break
+    case 'textColour':
+      if (theme) {
+        v = `
+      color: ${theme?.COLOUR[value] ?? value};
+    `
+      }
+      break
+
+    default:
+      break
+  }
+  return v
+}
+const creator = (type, theme) => {
+  let c = ''
+  if (type) {
+    for (const key in type) {
+      c += styleMapper(key, type[key], theme)
+    }
+  }
+  return css`
+    ${c}
+  `
+}
+export const AdaptorComponent = styled.div`
+  ${acStyles}
+  @media screen and (max-width: 600px) {
+    ${({ smStyles, theme }) => creator(smStyles, theme)}
+  }
 `
+
 export default AdaptorComponent
