@@ -21,6 +21,9 @@ const padding = css`
 const acStyles = css`
   font-weight: 500;
   ${({ textCenter }) => textCenter && styleMapper('textCenter', textCenter)}
+  ${({ textLeft }) => textLeft && styleMapper('textLeft', textLeft)}
+  ${({ textRight }) => textRight && styleMapper('textRight', textRight)}
+  ${({ textJustify }) => textJustify && styleMapper('textJustify', textJustify)}
   ${({ bgColour, theme }) => bgColour && styleMapper('bgColour', bgColour, theme)}
   ${({ textColour, theme }) => textColour && styleMapper('textColour', textColour, theme)}
   ${({ height }) => height && styleMapper('height', height)}
@@ -37,6 +40,7 @@ const acStyles = css`
   ${({ itemsStart }) => itemsStart && styleMapper('itemsStart', itemsStart)}
   ${({ itemsCenter }) => itemsCenter && styleMapper('itemsCenter', itemsCenter)}
   ${({ flexRowReverse }) => flexRowReverse && styleMapper('flexRowReverse', flexRowReverse)}
+  ${({ contentAround }) => contentAround && styleMapper('contentAround', contentAround)}
   ${({ flexColumn }) => flexColumn && styleMapper('flexColumn', flexColumn)}
   ${({ flexFiller }) => flexFiller && styleMapper('flexFiller', flexFiller)}
     ${margin}
@@ -118,6 +122,21 @@ const styleMapper = (key, value, theme) => {
       text-align: center;
     `
       break
+    case 'textRight':
+      v = `
+      text-align: right;
+    `
+      break
+    case 'textJustify':
+      v = `
+      text-align: justify;
+    `
+      break
+    case 'textLeft':
+      v = `
+      text-align: left;
+    `
+      break
     case 'height':
       v = `
       height: ${value};
@@ -189,6 +208,11 @@ const styleMapper = (key, value, theme) => {
     case 'flexRowReverse':
       v = `
       flex-direction: row-reverse;
+    `
+      break
+    case 'contentAround':
+      v = `
+      justify-content: space-around;
     `
       break
     case 'flexColumn':

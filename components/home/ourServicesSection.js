@@ -69,20 +69,27 @@ const OurServicesSection = () => {
               >
                 <AC as={CardWrapper} fullWidth elevation={1} pY="2rem" pX="1rem">
                   <Space marginBottom="md">
-                    <AC
-                      as={Text}
-                      textColour="darkGeryText"
-                      bold
-                      size="md"
-                      smStyles={{
-                        textColour: 'black'
-                      }}
-                    >
+                    <AC as={Text} textColour="darkGeryText" bold size="md">
                       {data.title}
                     </AC>
                   </Space>
-                  <AC flex itemsStart>
-                    <Image src={data.image} alt={data.title} />
+                  <AC
+                    flex
+                    itemsStart
+                    smStyles={{
+                      flexRowReverse: true,
+                      contentAround: true,
+                      itemsCenter: true
+                    }}
+                  >
+                    <AC
+                      as={Image}
+                      src={data.image}
+                      alt={data.title}
+                      smStyles={{
+                        width: '8.5rem'
+                      }}
+                    />
                     <BulletsContainer>
                       {data.bullets.map((bullet, idx) => (
                         <AC key={'bullet' + idx} as="li" textColour="darkGeryText">

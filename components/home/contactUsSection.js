@@ -12,7 +12,7 @@ const ContactUsSection = () => {
         semiBold
         textSize="3.5rem"
         textColour="darkBlue"
-        center
+        textCenter
         smStyles={{
           textSize: '1.5rem'
         }}
@@ -27,7 +27,16 @@ const ContactUsSection = () => {
       >
         <AC fullWidth center>
           <SubTextContainer>
-            <AC as={Text} semiBold textSize="1.25rem" textColour="dark" textCenter>
+            <AC
+              as={Text}
+              semiBold
+              textSize="1.25rem"
+              textColour="dark"
+              textCenter
+              smStyles={{
+                pX: '0.5rem'
+              }}
+            >
               We have helped many customers to transformed their ideas intoa working digital
               products
             </AC>
