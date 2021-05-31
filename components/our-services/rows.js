@@ -60,14 +60,14 @@ const OurServicesRows = () => {
             flexRowReverse={index % 2 !== 0}
             key={'row' + index}
             mb='8rem'
-            mdStyles={{ column: true,pX:'1rem',mb:'4rem' }}
+            mdStyles={{ column: true,pX:'2rem',mb:'4rem' }}
           >
             <Column md={6}>
               <Image src={item.image} alt={item.title} />
             </Column>
             <Column md={6}>
               <AC
-                as={Text}
+                as='p'
                 textSize='2.25rem'
                 textColour='darkBlue'
                 mb='0.75rem'

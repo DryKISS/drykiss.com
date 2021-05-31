@@ -48,7 +48,10 @@ const ourWorksData = [
 
 const OurWorksSection = () => {
   return (
-    <>
+    <AC
+		mdStyles={{
+			pX:'2rem'
+		}}>
       <SectionTitleAndSubtitle
         title="Discover our works"
         subtitle="We have helped many customers to
@@ -60,12 +63,7 @@ const OurWorksSection = () => {
         as={MaxContainer}
         mb="6rem"
         mt="2rem"
-        smStyles={{
-          pX: '1rem'
-        }}
-				mdStyles={{
-					pX:'2rem'
-				}}
+
       >
         {ourWorksData.map((item, index) => {
           return (
@@ -126,7 +124,7 @@ const OurWorksSection = () => {
           )
         })}
       </AC>
-    </>
+    </AC>
   )
 }
 const StyledDesc = styled(Text)`

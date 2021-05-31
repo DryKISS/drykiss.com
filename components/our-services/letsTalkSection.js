@@ -1,6 +1,6 @@
 import AC from '../adaptorComponent'
 import { MaxContainer } from '../common/maxContainer'
-import { Column, Row, Button, Text, Link } from '@drykiss/industry-ui'
+import { Column, Row, Button } from '@drykiss/industry-ui'
 
 const LetsTalkSection = () => {
   return (

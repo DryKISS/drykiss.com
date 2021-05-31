@@ -33,7 +33,7 @@ const ContactUsSection = () => {
               textSize="1.25rem"
               textColour="dark"
               textCenter
-              smStyles={{
+              mdStyles={{
                 pX: '0.5rem'
               }}
             >

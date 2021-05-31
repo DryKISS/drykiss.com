@@ -27,12 +27,12 @@ const OurServicesPage = () => {
         <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />
       )}
       <AC as={MaxContainer} bgColour='light' pY='3rem' mb='3rem'>
-        <AC as={Row} itemsCenter mdStyles={{ column: true, textCenter: true }}>
+        <AC as={Row} itemsCenter mdStyles={{ column: true, textCenter: true,pX:'1rem' }}>
           <Column xs={12} md={6}>
-            <AC as='h1' textSize='4rem' textColour='darkBlue' bold mb='2rem'>
+            <AC as='h1' textSize='4rem' textColour='darkBlue' bold mb='2rem' mdStyles={{textSize:'3rem'}} >
               Our Services
             </AC>
-            <AC as={Text} textSize='2.25rem' textColour='darkText' semiBold>
+            <AC as={Text} textSize='2.25rem' textColour='darkText' semiBold  mdStyles={{textSize:'2rem'}}  >
               We offer full-service web development and digital marketing
               solutions
             </AC>
