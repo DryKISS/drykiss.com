@@ -10,6 +10,7 @@
     "build": "next build",
     "export": "next export",
     "package": "npm run build && npm run export",
+    "packageStaging": "SITE_ENV=staging npm run build && SITE_ENV=staging npm run export",
     "postexport": "node ./scripts/postExport.js",
     "staging": "push-dir --dir=out --remote=git@github.com:DryKISS/dev.drykiss.com.git --branch=gh-pages",
     "production": "push-dir --dir=out --remote=git@github.com:DryKISS/drykiss.com.git --branch=gh-pages",

@@ -4,7 +4,7 @@
 
 // Import
 const fs = require('fs-extra')
-const Canonical = require('../config/canonical')
+let Canonical = require('../config/canonical')
 const getPages = require('../config/pages')
 
 function formatDateStandard(date) {
@@ -20,6 +20,10 @@ function formatDateStandard(date) {
 }
 
 const directory = 'out'
+
+if (process.env.SITE_ENV === 'staging') {
+  Canonical = 'dev.drykiss.com'
+}
 
 // NoJekyll
 fs.writeFileSync(`${directory}/.nojekyll`, '')
