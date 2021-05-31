@@ -292,10 +292,10 @@ const creator = (type, theme) => {
 }
 export const AdaptorComponent = styled.div`
   ${acStyles}
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 768px) {
     ${({ mdStyles, theme }) => creator(mdStyles, theme)}
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 576px) {
     ${({ smStyles, theme }) =>  creator(smStyles, theme)}
   }
 `

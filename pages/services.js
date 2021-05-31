@@ -11,6 +11,7 @@ import OurWorksSection from '../components/home/ourWorksSection'
 import AC from '../components/adaptorComponent'
 import { Brand, Canonical } from '../config/config'
 import { MaxContainer } from '../components/common/maxContainer'
+import LetsTalkSection from '../components/our-services/letsTalkSection'
 
 const meta = {
   description: `DryKISS is a full service internet and mobile digital production house. Our
@@ -44,6 +45,7 @@ const OurServicesPage = () => {
 
       <OurServicesRows />
       <OurWorksSection />
+      <LetsTalkSection />
     </>
   )
 }
