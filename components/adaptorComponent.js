@@ -37,6 +37,8 @@ const acStyles = css`
   ${({ fullWidth }) => fullWidth && styleMapper('fullWidth', fullWidth)}
   ${({ absolute }) => absolute && styleMapper('absolute', absolute)}
   ${({ flex }) => flex && styleMapper('flex', flex)}
+  ${({ column }) => column && styleMapper('column', column)}
+  ${({ columnsReverse }) => columnsReverse && styleMapper('columnsReverse', columnsReverse)}
   ${({ itemsStart }) => itemsStart && styleMapper('itemsStart', itemsStart)}
   ${({ itemsCenter }) => itemsCenter && styleMapper('itemsCenter', itemsCenter)}
   ${({ flexRowReverse }) => flexRowReverse && styleMapper('flexRowReverse', flexRowReverse)}
@@ -195,6 +197,18 @@ const styleMapper = (key, value, theme) => {
       display: flex;
     `
       break
+    case 'column':
+      v = `
+      display: flex;
+      flex-direction:column;
+    `
+      break
+    case 'columnsReverse':
+      v = `
+      display: flex;
+      flex-direction:column-reverse;
+    `
+      break
     case 'itemsStart':
       v = `
       align-items: start;
@@ -244,6 +258,7 @@ const styleMapper = (key, value, theme) => {
     default:
       break
   }
+
   return v
 }
 const creator = (type, theme) => {
