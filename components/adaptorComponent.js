@@ -27,10 +27,13 @@ const acStyles = css`
   ${({ bgColour, theme }) => bgColour && styleMapper('bgColour', bgColour, theme)}
   ${({ textColour, theme }) => textColour && styleMapper('textColour', textColour, theme)}
   ${({ height }) => height && styleMapper('height', height)}
+  ${({ minHeight }) => minHeight && styleMapper('minHeight', minHeight)}
   ${({ width }) => width && styleMapper('width', width)}
+  ${({ order }) => order && styleMapper('order', order)}
   ${({ center }) => center && styleMapper('center', center)}
   ${({ elevation }) => elevation && styleMapper('elevation', elevation)}
   ${({ textSize }) => textSize && styleMapper('textSize', textSize)}
+  ${({ lineHeight }) => lineHeight && styleMapper('lineHeight', lineHeight)}
   ${({ bold }) => bold && styleMapper('bold', bold)}
   ${({ semiBold }) => semiBold && styleMapper('semiBold', semiBold)}
   ${({ pointer }) => pointer && styleMapper('pointer', pointer)}
@@ -144,6 +147,11 @@ const styleMapper = (key, value, theme) => {
       height: ${value};
     `
       break
+    case 'minHeight':
+      v = `
+      min-height: ${value};
+    `
+      break
     case 'width':
       v = `
       width: ${value};
@@ -170,6 +178,11 @@ const styleMapper = (key, value, theme) => {
       v = `
       font-size: ${value};
       line-height: calc(${value} + (${value} / 5));
+    `
+      break
+    case 'lineHeight':
+      v = `
+      line-height: ${value};
     `
       break
     case 'semiBold':
@@ -240,6 +253,11 @@ const styleMapper = (key, value, theme) => {
       flex: 1;
     `
       break
+    case 'order':
+      v = `
+      order: ${value};
+    `
+      break
     case 'bgColour':
       if (theme) {
         v = `
@@ -274,11 +292,11 @@ const creator = (type, theme) => {
 }
 export const AdaptorComponent = styled.div`
   ${acStyles}
-  @media screen and (max-width: 400px) {
-    ${({ smStyles, theme }) =>  creator(smStyles, theme)}
-  }
   @media screen and (max-width: 700px) {
     ${({ mdStyles, theme }) => creator(mdStyles, theme)}
+  }
+  @media screen and (max-width: 400px) {
+    ${({ smStyles, theme }) =>  creator(smStyles, theme)}
   }
 `
 

@@ -69,26 +69,34 @@ const OurServicesSection = () => {
               >
                 <AC as={CardWrapper} fullWidth elevation={1} pY="2rem" pX="1rem">
                   <Space marginBottom="md">
-                    <AC as={Text} textColour="darkGeryText" bold size="md">
+                    <AC as={Text} textColour="darkGeryText" bold size="md" mdStyles={{textCenter:true}} >
                       {data.title}
                     </AC>
                   </Space>
                   <AC
                     flex
                     itemsStart
-                    smStyles={{
+										smStyles={{
+                      flexRowReverse: 'unset',
+                      contentAround: 'unset',
+                      itemsCenter: 'unset',
+											column:true
+                    }}
+                    mdStyles={{
                       flexRowReverse: true,
                       contentAround: true,
                       itemsCenter: true
                     }}
+
                   >
                     <AC
                       as={Image}
                       src={data.image}
                       alt={data.title}
-                      smStyles={{
+                      mdStyles={{
                         width: '8.5rem'
                       }}
+											smStyles={{ width:'unset'}}
                     />
                     <BulletsContainer>
                       {data.bullets.map((bullet, idx) => (

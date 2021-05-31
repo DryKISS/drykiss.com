@@ -17,3 +17,4 @@ const StyledHeading = styled(Heading)`
   color: ${({ theme }) => theme.COLOUR.white};
   padding-bottom: 1rem;
 `
+export default PageHeading

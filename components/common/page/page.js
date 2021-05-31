@@ -20,10 +20,11 @@ export const Page = ({
   heroHeading,
   heroImage,
   heroSubHeading,
-  meta
+  meta,
+	className
 }) => {
   return (
-    <StyledPage>
+    <StyledPage className={className}>
       {meta && <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />}
 
       <PageHero
@@ -31,6 +32,7 @@ export const Page = ({
         image={heroImage}
         onImage={onImage}
         subHeading={heroSubHeading}
+
       />
 
       {heading && (

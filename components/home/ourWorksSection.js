@@ -63,6 +63,9 @@ const OurWorksSection = () => {
         smStyles={{
           pX: '1rem'
         }}
+				mdStyles={{
+					pX:'2rem'
+				}}
       >
         {ourWorksData.map((item, index) => {
           return (

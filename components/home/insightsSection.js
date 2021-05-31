@@ -1,4 +1,3 @@
-import styled, { css } from 'styled-components'
 import { MaxContainer } from '../common/maxContainer'
 import AC from '../adaptorComponent'
 import { Column, Row, Image, Text, Link } from '@drykiss/industry-ui'
@@ -62,10 +61,15 @@ const InsightsSection = () => {
                 sm={12}
                 flexColumn
                 itemsStart
-                height="30rem"
+                minHeight="30rem"
+								pX="1rem"
                 smStyles={{
-                  height: 'unset',
-                  mY: '1.5rem'
+                  mY: '1.5rem',
+									pX:'1rem'
+                }}
+                mdStyles={{
+                  pX: '2.5rem',
+									mY:'1.5rem'
                 }}
               >
                 <Image src={item.image} />
@@ -87,4 +91,6 @@ const InsightsSection = () => {
     </>
   )
 }
+
+
 export default InsightsSection

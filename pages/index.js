@@ -3,12 +3,8 @@
  */
 
 // UI
-import { Space } from '@drykiss/industry-ui'
 import { HomeClients } from '../components/home/clients'
-import { HomeMiddleHero } from '../components/home/middleHero'
-import { HomeOurMethodology } from '../components/home/ourMethodology'
-import { HomeOurWorks } from '../components/home/ourWorks'
-import { HomeWhoWeAre } from '../components/home/whoWeAre'
+
 import { Page } from '../components/common/page/page'
 import LetsTalk from '../components/common/page/home/letsTalk'
 import HomeSubHeading from '../components/common/page/home/subHeading'

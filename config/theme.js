@@ -12,6 +12,7 @@ export const COLOUR = {
   drykiss_darkPink: '#FF6E91',
   darkBlue: '#002B54',
   lightBlue: '#E8EDFC',
+  darkText: 'rgb(67, 67, 67)',
   darkGeryText: 'rgb(124, 124, 124)',
 
   active: '#000000',
