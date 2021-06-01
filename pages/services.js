@@ -4,14 +4,13 @@
 
 // UI
 
-import { Image, Text, MetaHead, Row, Column } from '@drykiss/industry-ui'
+import { MetaHead} from '@drykiss/industry-ui'
 
 import OurServicesRows from '../components/our-services/rows'
 import OurWorksSection from '../components/home/ourWorksSection'
-import AC from '../components/adaptorComponent'
 import { Brand, Canonical } from '../config/config'
-import { MaxContainer } from '../components/common/maxContainer'
 import LetsTalkSection from '../components/our-services/letsTalkSection'
+import SimplePageHeader from '../components/common/head'
 
 const meta = {
   description: `DryKISS is a full service internet and mobile digital production house. Our
@@ -26,23 +25,11 @@ const OurServicesPage = () => {
       {meta && (
         <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />
       )}
-      <AC as={MaxContainer} bgColour='light' pY='3rem' mb='3rem'>
-        <AC as={Row} itemsCenter mdStyles={{ column: true, textCenter: true,pX:'1rem' }}>
-          <Column xs={12} md={6}>
-            <AC as='h1' textSize='4rem' textColour='darkBlue' bold mb='2rem' mdStyles={{textSize:'3rem'}} >
-              Our Services
-            </AC>
-            <AC as={Text} textSize='2.25rem' textColour='darkText' semiBold  mdStyles={{textSize:'2rem'}}  >
-              We offer full-service web development and digital marketing
-              solutions
-            </AC>
-          </Column>
-          <Column xs={12} md={6}>
-            <Image alt='Hero' src='/images/ourServices/head.svg' />
-          </Column>
-        </AC>
-      </AC>
-
+      <SimplePageHeader
+        title='Our Services'
+        sub='We offer full-service web development and digital marketing solutions'
+				image='/images/ourServices/head.svg'
+      />
       <OurServicesRows />
       <OurWorksSection />
       <LetsTalkSection />

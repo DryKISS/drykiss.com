@@ -1,7 +1,8 @@
 import { MaxContainer } from '../common/maxContainer'
 import AC from '../adaptorComponent'
-import { Column, Row, Image, Text, Link } from '@drykiss/industry-ui'
+import { Row } from '@drykiss/industry-ui'
 import SectionTitleAndSubtitle from '../common/page/sectionTitleAndSubtitle'
+import BlogCard from '../common/blogCard'
 const insightsData = [
   {
     image: '/images/insights/1.png',
@@ -38,59 +39,27 @@ const InsightsSection = () => {
   return (
     <>
       <SectionTitleAndSubtitle
-        title="Insight to grow your business"
-        subtitle="We have helped many customers to
-        transformed their ideas intoa working digital products"
-        maxTextWidth="1100px"
+        title='Insight to grow your business'
+        subtitle='We have helped many customers to
+        transformed their ideas intoa working digital products'
+        maxTextWidth='1100px'
       />
 
       <AC
         as={MaxContainer}
-        mb="6rem"
+        mb='6rem'
         smStyles={{
           pX: '1rem'
         }}
       >
         <Row>
           {insightsData.map((item, index) => {
-            return (
-              <AC
-                key={index}
-                as={Column}
-                md={4}
-                sm={12}
-                flexColumn
-                itemsStart
-                minHeight="30rem"
-								pX="1rem"
-                smStyles={{
-                  mY: '1.5rem',
-									pX:'1rem'
-                }}
-                mdStyles={{
-                  pX: '2.5rem',
-									mY:'1.5rem'
-                }}
-              >
-                <Image src={item.image} />
-                <AC as={Text} mY="1.5rem" bold textColour="black">
-                  {item.title}
-                </AC>
-                <AC mb="1.5rem">
-                  <AC as={Text}>{item.descs}</AC>
-                </AC>
-                <AC flexFiller />
-                <AC as={Link} to={item.bottomLink.to} textColour="primary">
-                  {item.bottomLink.title}
-                </AC>
-              </AC>
-            )
+            return <BlogCard key={index} item={item} />
           })}
         </Row>
       </AC>
     </>
   )
 }
-
 
 export default InsightsSection

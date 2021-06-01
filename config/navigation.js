@@ -19,11 +19,11 @@ export const Navigation = () => {
         name: 'Case Studies',
         to: '/case-studies'
       },
-      // {
-      //   id: 'navCareer',
-      //   name: 'Careers',
-      //   to: '/careers'
-      // },
+       {
+         id: 'blog',
+         name: 'Blog',
+         to: '/blog'
+       },
       {
         id: 'navOurCompany',
         name: 'Our Company',

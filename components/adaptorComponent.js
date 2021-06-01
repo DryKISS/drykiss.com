@@ -28,6 +28,7 @@ const acStyles = css`
   ${({ textColour, theme }) => textColour && styleMapper('textColour', textColour, theme)}
   ${({ height }) => height && styleMapper('height', height)}
   ${({ minHeight }) => minHeight && styleMapper('minHeight', minHeight)}
+  ${({ maxWidth }) => maxWidth && styleMapper('maxWidth', maxWidth)}
   ${({ width }) => width && styleMapper('width', width)}
   ${({ order }) => order && styleMapper('order', order)}
   ${({ center }) => center && styleMapper('center', center)}
@@ -150,6 +151,11 @@ const styleMapper = (key, value, theme) => {
     case 'minHeight':
       v = `
       min-height: ${value};
+    `
+      break
+    case 'maxWidth':
+      v = `
+      max-width: ${value};
     `
       break
     case 'width':

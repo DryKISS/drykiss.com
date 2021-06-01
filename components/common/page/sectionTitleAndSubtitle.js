@@ -10,7 +10,7 @@ const SectionTitleAndSubtitle = ({ title, subtitle, maxTextWidth, ...props }) =>
       <Space marginY="lg">
         <AC fullWidth center>
           <TextContainer maxTextWidth={maxTextWidth}>
-            <AC as={Text} semiBold textSize="1.25rem" textColour="lightBlue" textCenter>
+            <AC as={Text} semiBold textSize="1.25rem" textColour="#C7D3EE" textCenter>
               {subtitle}
             </AC>
           </TextContainer>
