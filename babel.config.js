@@ -1,6 +1,36 @@
 module.exports = {
   presets: ['@babel/preset-env', '@babel/preset-react', 'next/babel'],
-  plugins: ['@babel/plugin-transform-runtime'],
+  env: {
+    development: {
+      plugins: [
+        [
+          'styled-components',
+          { ssr: true, displayName: true, preprocess: false }
+        ]
+      ],
+      presets: ["next/babel"]
+    },
+    production: {
+      plugins: [
+        [
+          'styled-components',
+          { ssr: true, displayName: false, preprocess: false }
+        ]
+      ],
+      presets: ["next/babel"]
+    }
+  },
+  plugins: [
+    '@babel/plugin-transform-runtime',
+    [
+      'styled-components',
+      {
+        ssr: true,
+        displayName: true,
+        preprocess: false
+      }
+    ]
+  ],
   overrides: [
     {
       include: ['./node_modules'],
@@ -9,14 +39,6 @@ module.exports = {
           'babel-plugin-transform-require-ignore',
           {
             extensions: ['.css']
-          }
-        ],
-        [
-          'styled-components',
-          {
-            ssr: true,
-            displayName: true,
-            preprocess: false
           }
         ]
       ]
