@@ -98,10 +98,10 @@ const EachWork = () => {
           `}
           pb='3rem'
         >
-          <AC as={Column} md={5} center>
+          <AC as={Column} md={5} sm={12} center>
             <Image src={initialData.introImage} alt={initialData.name} />
           </AC>
-          <AC as={Column} selfCenter md={7}>
+          <AC as={Column} selfCenter md={7}  sm={12} >
             <AC
               as={Image}
               src={initialData.introIcon}
@@ -116,7 +116,7 @@ const EachWork = () => {
           </AC>
         </AC>
         <Row>
-          <AC as={Column} md={9}>
+          <AC as={Column} md={9}  sm={12}>
             <AC as='p' textSize='2.25rem' textColour='darkBlue' bold>
               ِDescriptions
             </AC>
@@ -143,7 +143,7 @@ const EachWork = () => {
               })}
             </AC>
           </AC>
-          <AC as={Column} md={3}>
+          <AC as={Column} md={3}  sm={12}>
             <AC as='p' textSize='1.25rem' textColour='darkBlue' semiBold>
               Project Duration
             </AC>
