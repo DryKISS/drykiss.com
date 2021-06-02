@@ -40,7 +40,7 @@ const ourWorksData = [
       'They required in a short development window the development of a global site for their #AnyExcuse campaign.'
     ],
     bottomLink: {
-      to: '',
+      to: '/our-works/cleverly',
       title: 'View case study'
     }
   }

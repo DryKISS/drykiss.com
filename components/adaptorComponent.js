@@ -24,14 +24,17 @@ const acStyles = css`
   ${({ textLeft }) => textLeft && styleMapper('textLeft', textLeft)}
   ${({ textRight }) => textRight && styleMapper('textRight', textRight)}
   ${({ textJustify }) => textJustify && styleMapper('textJustify', textJustify)}
-  ${({ bgColour, theme }) => bgColour && styleMapper('bgColour', bgColour, theme)}
-  ${({ textColour, theme }) => textColour && styleMapper('textColour', textColour, theme)}
+  ${({ bgColour, theme }) =>
+    bgColour && styleMapper('bgColour', bgColour, theme)}
+  ${({ textColour, theme }) =>
+    textColour && styleMapper('textColour', textColour, theme)}
   ${({ height }) => height && styleMapper('height', height)}
   ${({ minHeight }) => minHeight && styleMapper('minHeight', minHeight)}
   ${({ maxWidth }) => maxWidth && styleMapper('maxWidth', maxWidth)}
   ${({ width }) => width && styleMapper('width', width)}
   ${({ order }) => order && styleMapper('order', order)}
   ${({ center }) => center && styleMapper('center', center)}
+  ${({ selfCenter }) => selfCenter && styleMapper('selfCenter', selfCenter)}
   ${({ elevation }) => elevation && styleMapper('elevation', elevation)}
   ${({ textSize }) => textSize && styleMapper('textSize', textSize)}
   ${({ lineHeight }) => lineHeight && styleMapper('lineHeight', lineHeight)}
@@ -41,12 +44,17 @@ const acStyles = css`
   ${({ fullWidth }) => fullWidth && styleMapper('fullWidth', fullWidth)}
   ${({ absolute }) => absolute && styleMapper('absolute', absolute)}
   ${({ flex }) => flex && styleMapper('flex', flex)}
+  ${({ wrap }) => wrap && styleMapper('wrap', wrap)}
+  ${({ gap }) => gap && styleMapper('gap', gap)}
   ${({ column }) => column && styleMapper('column', column)}
-  ${({ columnsReverse }) => columnsReverse && styleMapper('columnsReverse', columnsReverse)}
+  ${({ columnsReverse }) =>
+    columnsReverse && styleMapper('columnsReverse', columnsReverse)}
   ${({ itemsStart }) => itemsStart && styleMapper('itemsStart', itemsStart)}
   ${({ itemsCenter }) => itemsCenter && styleMapper('itemsCenter', itemsCenter)}
-  ${({ flexRowReverse }) => flexRowReverse && styleMapper('flexRowReverse', flexRowReverse)}
-  ${({ contentAround }) => contentAround && styleMapper('contentAround', contentAround)}
+  ${({ flexRowReverse }) =>
+    flexRowReverse && styleMapper('flexRowReverse', flexRowReverse)}
+  ${({ contentAround }) =>
+    contentAround && styleMapper('contentAround', contentAround)}
   ${({ flexColumn }) => flexColumn && styleMapper('flexColumn', flexColumn)}
   ${({ flexFiller }) => flexFiller && styleMapper('flexFiller', flexFiller)}
     ${margin}
@@ -170,6 +178,12 @@ const styleMapper = (key, value, theme) => {
       justify-content: center;
     `
       break
+    case 'selfCenter':
+      v = `
+			align-self: center;
+
+    `
+      break
     case 'bold':
       v = `
       font-weight: 700;
@@ -177,7 +191,8 @@ const styleMapper = (key, value, theme) => {
       break
     case 'elevation':
       v = `
-      box-shadow: 0px ${10 * value}px ${25 * value}px rgba(0, 0, 0, ${0.1 * value});
+      box-shadow: 0px ${10 * value}px ${25 * value}px rgba(0, 0, 0, ${0.1 *
+        value});
     `
       break
     case 'textSize':
@@ -264,6 +279,17 @@ const styleMapper = (key, value, theme) => {
       order: ${value};
     `
       break
+    case 'wrap':
+      v = `
+      display:flex;
+			flex-wrap:wrap;
+    `
+      break
+    case 'gap':
+      v = `
+      gap:${value};
+    `
+      break
     case 'bgColour':
       if (theme) {
         v = `
@@ -302,7 +328,7 @@ export const AdaptorComponent = styled.div`
     ${({ mdStyles, theme }) => creator(mdStyles, theme)}
   }
   @media screen and (max-width: 576px) {
-    ${({ smStyles, theme }) =>  creator(smStyles, theme)}
+    ${({ smStyles, theme }) => creator(smStyles, theme)}
   }
 `
 
