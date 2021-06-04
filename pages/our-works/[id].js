@@ -82,60 +82,54 @@ const initialData = {
 const EachWork = () => {
   return (
     <>
-      {meta && (
-        <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />
-      )}
+      {meta && <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />}
       <SimplePageHeader
-        title='Discover our works'
-        sub='Lorem ipsum dolor sit amet, consectetuer'
-        image='/images/ourWorks/head.svg'
+        title="Discover our works"
+        sub="Lorem ipsum dolor sit amet, consectetuer"
+        image="/images/ourWorks/head.svg"
       />
-      <AC as={MaxContainer} mb='4rem'>
+      <AC as={MaxContainer} mb="4rem">
         <AC
           as={Row}
           customCss={css`
             border-bottom: 1px solid #e6e6e6;
           `}
-          pb='3rem'
+          pb="3rem"
         >
           <AC as={Column} md={5} sm={12} center>
             <Image src={initialData.introImage} alt={initialData.name} />
           </AC>
-          <AC as={Column} selfCenter md={7}  sm={12} >
-            <AC
-              as={Image}
-              src={initialData.introIcon}
-              alt={initialData.introIcon}
-            />
-            <AC as='p' textSize='2.25rem' textColour='darkBlue' bold>
+          <AC as={Column} selfCenter md={7} sm={12}>
+            <AC as={Image} src={initialData.introIcon} alt={initialData.introIcon} />
+            <AC as="p" textSize="2.25rem" textColour="darkBlue" bold>
               {initialData.name}
             </AC>
-            <AC as='p' textSize='1rem' textColour='#363940'>
+            <AC as="p" textSize="1rem" textColour="#363940">
               {initialData.shortDesc}
             </AC>
           </AC>
         </AC>
         <Row>
-          <AC as={Column} md={9}  sm={12}>
-            <AC as='p' textSize='2.25rem' textColour='darkBlue' bold>
+          <AC as={Column} md={9} sm={12}>
+            <AC as="p" textSize="2.25rem" textColour="darkBlue" bold>
               ِDescriptions
             </AC>
-            <AC as='p' textSize='1rem' textColour='#363940' lineHeight='1.4rem'>
+            <AC as="p" textSize="1rem" textColour="#363940" lineHeight="1.4rem">
               {initialData.desc}
             </AC>
-            <AC as='p' textSize='2.25rem' textColour='darkBlue' bold>
+            <AC as="p" textSize="2.25rem" textColour="darkBlue" bold>
               Outcomes
             </AC>
-            <AC as='ul'>
+            <AC as="ul">
               {initialData.outComes.map((item, index) => {
                 return (
                   <AC
                     key={'r' + index}
-                    as='li'
-                    textSize='1rem'
-                    lineHeight='1.4rem'
-                    textColour='#363940'
-                    mb='0.5rem'
+                    as="li"
+                    textSize="1rem"
+                    lineHeight="1.4rem"
+                    textColour="#363940"
+                    mb="0.5rem"
                   >
                     {item}
                   </AC>
@@ -143,34 +137,34 @@ const EachWork = () => {
               })}
             </AC>
           </AC>
-          <AC as={Column} md={3}  sm={12}>
-            <AC as='p' textSize='1.25rem' textColour='darkBlue' semiBold>
+          <AC as={Column} md={3} sm={12}>
+            <AC as="p" textSize="1.25rem" textColour="darkBlue" semiBold>
               Project Duration
             </AC>
-            <AC as='p' textSize='1rem' textColour='black' bold>
+            <AC as="p" textSize="1rem" textColour="black" bold>
               {initialData.duration}
             </AC>
-            <AC as='p' textSize='1.25rem' mb='1rem' textColour='darkBlue' semiBold>
+            <AC as="p" textSize="1.25rem" mb="1rem" textColour="darkBlue" semiBold>
               Team
             </AC>
-            <AC wrap gap='1.5rem'>
+            <AC wrap gap="1.5rem">
               {initialData.team.map((item, idx) => {
                 return (
                   <a href={item.link} key={'a' + idx}>
-                    {<AC width='3rem' as={Image} src={item.image} alt={item.name} />}
+                    {<AC width="3rem" as={Image} src={item.image} alt={item.name} />}
                   </a>
                 )
               })}
             </AC>
 
-            <AC as='p' textSize='1.25rem' mb='1rem' textColour='darkBlue' semiBold>
+            <AC as="p" textSize="1.25rem" mb="1rem" textColour="darkBlue" semiBold>
               Technologies
             </AC>
-						<AC wrap gap='1.5rem'>
+            <AC wrap gap="1.5rem">
               {initialData.technologies.map((item, idx) => {
                 return (
                   <a href={item.link} key={'tech' + idx}>
-                    {<AC width='3rem' as={Image} src={item.image} alt={item.name} />}
+                    {<AC width="3rem" as={Image} src={item.image} alt={item.name} />}
                   </a>
                 )
               })}

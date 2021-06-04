@@ -1,9 +1,9 @@
 import { Row, Breadcrumb } from '@drykiss/industry-ui'
-import { MaxContainer } from '../components/common/maxContainer'
-import BlogCard from '../components/common/blogCard'
-import AC from '../components/adaptorComponent'
+import BlogCard from '../../components/common/blogCard'
+import AC from '../../components/adaptorComponent'
 import { css } from 'styled-components'
-import LetsTalkSection from '../components/our-services/letsTalkSection'
+import LetsTalkSection from '../../components/our-services/letsTalkSection'
+import { MaxContainer } from '../../components/common/maxContainer'
 const blogCardData = [
   {
     image: '/images/insights/1.png',
@@ -106,25 +106,25 @@ const BlogPage = () => {
           }
         `}
       >
-        <Breadcrumb breadcrumbs={breadcrumbs} separator='\' />
+        <Breadcrumb breadcrumbs={breadcrumbs} separator="\" />
       </AC>
       <MaxContainer>
-        <AC as={BlogCard} full item={headCard} maxWidth='100%' />
+        <AC as={BlogCard} full item={headCard} maxWidth="100%" />
       </MaxContainer>
       <AC
         as={MaxContainer}
-        mb='6rem'
+        mb="6rem"
         smStyles={{
           pX: '1rem'
         }}
       >
         <Row>
           {blogCardData.map((item, index) => {
-            return <AC as={BlogCard} key={index} item={item} mb='4rem' />
+            return <AC as={BlogCard} key={index} item={item} mb="4rem" />
           })}
         </Row>
       </AC>
-			<LetsTalkSection />
+      <LetsTalkSection />
     </>
   )
 }

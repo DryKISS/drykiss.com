@@ -19,11 +19,11 @@ export const Navigation = () => {
         name: 'Case Studies',
         to: '/case-studies'
       },
-       {
-         id: 'blog',
-         name: 'Blog',
-         to: '/blog'
-       },
+      {
+        id: 'blog',
+        name: 'Blog',
+        to: '/blog'
+      },
       {
         id: 'navOurCompany',
         name: 'Our Company',
@@ -34,10 +34,20 @@ export const Navigation = () => {
         name: 'Our Works',
         to: '/our-works'
       },
+      // {
+      //   id: 'navInsights',
+      //   name: 'Insights',
+      //   to: '/insights'
+      // },
       {
-        id: 'navInsights',
-        name: 'Insights',
-        to: '/insights'
+        id: 'navTerms',
+        name: 'Terms',
+        to: '/terms'
+      },
+      {
+        id: 'navPrivacy',
+        name: 'Privacy',
+        to: '/privacy'
       },
       {
         id: 'navContacts',
