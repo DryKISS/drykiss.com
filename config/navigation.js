@@ -34,6 +34,11 @@ export const Navigation = () => {
         name: 'Our Works',
         to: '/our-works'
       },
+      {
+        id: 'navCareer',
+        name: 'Careers',
+        to: '/career'
+      },
       // {
       //   id: 'navInsights',
       //   name: 'Insights',

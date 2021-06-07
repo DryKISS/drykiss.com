@@ -31,6 +31,8 @@ const acStyles = css`
   ${({ minHeight }) => minHeight && styleMapper('minHeight', minHeight)}
   ${({ maxWidth }) => maxWidth && styleMapper('maxWidth', maxWidth)}
   ${({ width }) => width && styleMapper('width', width)}
+  ${({ borderRadius }) => borderRadius && styleMapper('borderRadius', borderRadius)}
+  ${({ borderColour }) => borderColour && styleMapper('borderColour', borderColour)}
   ${({ order }) => order && styleMapper('order', order)}
   ${({ center }) => center && styleMapper('center', center)}
   ${({ selfCenter }) => selfCenter && styleMapper('selfCenter', selfCenter)}
@@ -315,6 +317,16 @@ const styleMapper = (key, value, theme) => {
     case 'bgCover':
       v = `
       background-size: cover;
+    `
+      break
+    case 'borderColour':
+      v = `
+      border: 1px solid ${theme?.COLOUR[value] ?? value};
+    `
+      break
+    case 'borderRadius':
+      v = `
+      border-radius: ${value};
     `
       break
 

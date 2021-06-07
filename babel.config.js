@@ -6,7 +6,7 @@ module.exports = {
 				'@babel/plugin-transform-runtime',
         [
           'styled-components',
-          { ssr: true, displayName: true, preprocess: true }
+          { ssr: true, displayName: false, preprocess: true }
         ]
       ],
       presets: ["next/babel"]
