@@ -90,7 +90,7 @@ const EachWork = () => {
         sub='Lorem ipsum dolor sit amet, consectetuer'
         image='/images/ourWorks/head.svg'
       />
-      <AC as={MaxContainer} mb='4rem'>
+      <AC as={MaxContainer} mb='4rem' mdStyles={{padding:'2rem'}} >
         <AC
           as={Row}
           customCss={css`
@@ -115,18 +115,18 @@ const EachWork = () => {
             </AC>
           </AC>
         </AC>
-        <Row>
+        <AC as={Row} >
           <AC as={Column} md={9}  sm={12}>
-            <AC as='p' textSize='2.25rem' textColour='darkBlue' bold>
+            <AC as='p' textSize='2.25rem' textColour='darkBlue' bold mdStyles={{textCenter:true}} >
               ِDescriptions
             </AC>
             <AC as='p' textSize='1rem' textColour='#363940' lineHeight='1.4rem'>
               {initialData.desc}
             </AC>
-            <AC as='p' textSize='2.25rem' textColour='darkBlue' bold>
+            <AC as='p' textSize='2.25rem' textColour='darkBlue' bold  mdStyles={{textCenter:true}}  >
               Outcomes
             </AC>
-            <AC as='ul'>
+            <AC as='ul' >
               {initialData.outComes.map((item, index) => {
                 return (
                   <AC
@@ -144,16 +144,16 @@ const EachWork = () => {
             </AC>
           </AC>
           <AC as={Column} md={3}  sm={12}>
-            <AC as='p' textSize='1.25rem' textColour='darkBlue' semiBold>
+            <AC as='p' textSize='1.25rem' textColour='darkBlue' semiBold  mdStyles={{textCenter:true}}  >
               Project Duration
             </AC>
-            <AC as='p' textSize='1rem' textColour='black' bold>
+            <AC as='p' textSize='1rem' textColour='black' bold  mdStyles={{textCenter:true}} >
               {initialData.duration}
             </AC>
-            <AC as='p' textSize='1.25rem' mb='1rem' textColour='darkBlue' semiBold>
+            <AC as='p' textSize='1.25rem' mb='1rem' textColour='darkBlue' semiBold  mdStyles={{textCenter:true}} >
               Team
             </AC>
-            <AC wrap gap='1.5rem'>
+            <AC wrap gap='1.5rem' mdStyles={{center:true}} >
               {initialData.team.map((item, idx) => {
                 return (
                   <a href={item.link} key={'a' + idx}>
@@ -163,10 +163,10 @@ const EachWork = () => {
               })}
             </AC>
 
-            <AC as='p' textSize='1.25rem' mb='1rem' textColour='darkBlue' semiBold>
+            <AC as='p' textSize='1.25rem' mb='1rem' textColour='darkBlue' semiBold mdStyles={{textCenter:true}} >
               Technologies
             </AC>
-						<AC wrap gap='1.5rem'>
+						<AC wrap gap='1.5rem'  mdStyles={{center:true}} >
               {initialData.technologies.map((item, idx) => {
                 return (
                   <a href={item.link} key={'tech' + idx}>
@@ -176,7 +176,7 @@ const EachWork = () => {
               })}
             </AC>
           </AC>
-        </Row>
+        </AC>
       </AC>
     </>
   )
