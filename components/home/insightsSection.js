@@ -11,7 +11,7 @@ const insightsData = [
       'It’s no secret that much of the legal industry is build on reusable content. Most law firms  have their own customized set of standard…',
     bottomLink: {
       title: 'Read more',
-      to: ''
+      to: '/blog/1'
     }
   },
   {
@@ -39,15 +39,15 @@ const InsightsSection = () => {
   return (
     <>
       <SectionTitleAndSubtitle
-        title='Insight to grow your business'
-        subtitle='We have helped many customers to
-        transformed their ideas intoa working digital products'
-        maxTextWidth='1100px'
+        title="Insight to grow your business"
+        subtitle="We have helped many customers to
+        transformed their ideas intoa working digital products"
+        maxTextWidth="1100px"
       />
 
       <AC
         as={MaxContainer}
-        mb='6rem'
+        mb="6rem"
         smStyles={{
           pX: '1rem'
         }}

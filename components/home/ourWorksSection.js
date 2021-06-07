@@ -81,7 +81,7 @@ const OurWorksSection = () => {
                 {...(index % 2 !== 0 && { pl: '0.5rem' })}
               >
                 <AC as={TopImageWrapper}>
-                  <AC as={Image} mY="1.5rem" src={item.descriptionTopImage} />
+                  <AC as={Image} mY="1.5rem" src={item.descriptionTopImage} alt={item.title} />
                 </AC>
                 <AC as={StyledTitle} textColour="black" bold textSize="2rem">
                   {item.title}

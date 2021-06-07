@@ -23,7 +23,7 @@ const OurApproachSection = () => {
         </AC>
       </AC>
       <AC as={MaxContainer} center mb='6rem'>
-        <AC as={Image} src='/images/ourCompany/ourApproach/1.svg' width="calc(100% - 2rem)" maxWidth='720px' />
+        <AC as={Image} alt='ourApproach' src='/images/ourCompany/ourApproach/1.svg' width="calc(100% - 2rem)" maxWidth='720px' />
       </AC>
     </>
   )

@@ -82,13 +82,11 @@ const initialData = {
 const EachWork = () => {
   return (
     <>
-      {meta && (
-        <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />
-      )}
+      {meta && <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />}
       <SimplePageHeader
-        title='Discover our works'
-        sub='Lorem ipsum dolor sit amet, consectetuer'
-        image='/images/ourWorks/head.svg'
+        title="Discover our works"
+        sub="Lorem ipsum dolor sit amet, consectetuer"
+        image="/images/ourWorks/head.svg"
       />
       <AC as={MaxContainer} mb='4rem' mdStyles={{padding:'2rem'}} >
         <AC
@@ -96,21 +94,17 @@ const EachWork = () => {
           customCss={css`
             border-bottom: 1px solid #e6e6e6;
           `}
-          pb='3rem'
+          pb="3rem"
         >
           <AC as={Column} md={5} sm={12} center>
             <Image src={initialData.introImage} alt={initialData.name} />
           </AC>
-          <AC as={Column} selfCenter md={7}  sm={12} >
-            <AC
-              as={Image}
-              src={initialData.introIcon}
-              alt={initialData.introIcon}
-            />
-            <AC as='p' textSize='2.25rem' textColour='darkBlue' bold>
+          <AC as={Column} selfCenter md={7} sm={12}>
+            <AC as={Image} src={initialData.introIcon} alt={initialData.introIcon} />
+            <AC as="p" textSize="2.25rem" textColour="darkBlue" bold>
               {initialData.name}
             </AC>
-            <AC as='p' textSize='1rem' textColour='#363940'>
+            <AC as="p" textSize="1rem" textColour="#363940">
               {initialData.shortDesc}
             </AC>
           </AC>
@@ -120,7 +114,7 @@ const EachWork = () => {
             <AC as='p' textSize='2.25rem' textColour='darkBlue' bold mdStyles={{textCenter:true}} >
               ِDescriptions
             </AC>
-            <AC as='p' textSize='1rem' textColour='#363940' lineHeight='1.4rem'>
+            <AC as="p" textSize="1rem" textColour="#363940" lineHeight="1.4rem">
               {initialData.desc}
             </AC>
             <AC as='p' textSize='2.25rem' textColour='darkBlue' bold  mdStyles={{textCenter:true}}  >
@@ -131,11 +125,11 @@ const EachWork = () => {
                 return (
                   <AC
                     key={'r' + index}
-                    as='li'
-                    textSize='1rem'
-                    lineHeight='1.4rem'
-                    textColour='#363940'
-                    mb='0.5rem'
+                    as="li"
+                    textSize="1rem"
+                    lineHeight="1.4rem"
+                    textColour="#363940"
+                    mb="0.5rem"
                   >
                     {item}
                   </AC>
@@ -157,7 +151,7 @@ const EachWork = () => {
               {initialData.team.map((item, idx) => {
                 return (
                   <a href={item.link} key={'a' + idx}>
-                    {<AC width='3rem' as={Image} src={item.image} alt={item.name} />}
+                    {<AC width="3rem" as={Image} src={item.image} alt={item.name} />}
                   </a>
                 )
               })}
@@ -170,7 +164,7 @@ const EachWork = () => {
               {initialData.technologies.map((item, idx) => {
                 return (
                   <a href={item.link} key={'tech' + idx}>
-                    {<AC width='3rem' as={Image} src={item.image} alt={item.name} />}
+                    {<AC width="3rem" as={Image} src={item.image} alt={item.name} />}
                   </a>
                 )
               })}

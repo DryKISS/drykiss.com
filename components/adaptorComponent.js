@@ -24,10 +24,9 @@ const acStyles = css`
   ${({ textLeft }) => textLeft && styleMapper('textLeft', textLeft)}
   ${({ textRight }) => textRight && styleMapper('textRight', textRight)}
   ${({ textJustify }) => textJustify && styleMapper('textJustify', textJustify)}
-  ${({ bgColour, theme }) =>
-    bgColour && styleMapper('bgColour', bgColour, theme)}
-  ${({ textColour, theme }) =>
-    textColour && styleMapper('textColour', textColour, theme)}
+  ${({ bgColour, theme }) => bgColour && styleMapper('bgColour', bgColour, theme)}
+  ${({ bgImage, theme }) => bgImage && styleMapper('bgImage', bgImage, theme)}
+  ${({ textColour, theme }) => textColour && styleMapper('textColour', textColour, theme)}
   ${({ height }) => height && styleMapper('height', height)}
   ${({ minHeight }) => minHeight && styleMapper('minHeight', minHeight)}
   ${({ maxWidth }) => maxWidth && styleMapper('maxWidth', maxWidth)}
@@ -47,16 +46,15 @@ const acStyles = css`
   ${({ wrap }) => wrap && styleMapper('wrap', wrap)}
   ${({ gap }) => gap && styleMapper('gap', gap)}
   ${({ column }) => column && styleMapper('column', column)}
-  ${({ columnsReverse }) =>
-    columnsReverse && styleMapper('columnsReverse', columnsReverse)}
+  ${({ columnsReverse }) => columnsReverse && styleMapper('columnsReverse', columnsReverse)}
   ${({ itemsStart }) => itemsStart && styleMapper('itemsStart', itemsStart)}
   ${({ itemsCenter }) => itemsCenter && styleMapper('itemsCenter', itemsCenter)}
-  ${({ flexRowReverse }) =>
-    flexRowReverse && styleMapper('flexRowReverse', flexRowReverse)}
-  ${({ contentAround }) =>
-    contentAround && styleMapper('contentAround', contentAround)}
+  ${({ justifyCenter }) => justifyCenter && styleMapper('justifyCenter', justifyCenter)}
+  ${({ flexRowReverse }) => flexRowReverse && styleMapper('flexRowReverse', flexRowReverse)}
+  ${({ contentAround }) => contentAround && styleMapper('contentAround', contentAround)}
   ${({ flexColumn }) => flexColumn && styleMapper('flexColumn', flexColumn)}
   ${({ flexFiller }) => flexFiller && styleMapper('flexFiller', flexFiller)}
+  ${({ bgCover }) => bgCover && styleMapper('bgCover', bgCover)}
     ${margin}
     ${padding}
     ${({ customCss }) => customCss && customCss}
@@ -184,6 +182,12 @@ const styleMapper = (key, value, theme) => {
 
     `
       break
+    case 'justifyCenter':
+      v = `
+			justify-content: center;
+
+    `
+      break
     case 'bold':
       v = `
       font-weight: 700;
@@ -191,8 +195,7 @@ const styleMapper = (key, value, theme) => {
       break
     case 'elevation':
       v = `
-      box-shadow: 0px ${10 * value}px ${25 * value}px rgba(0, 0, 0, ${0.1 *
-        value});
+      box-shadow: 0px ${10 * value}px ${25 * value}px rgba(0, 0, 0, ${0.1 * value});
     `
       break
     case 'textSize':
@@ -303,6 +306,16 @@ const styleMapper = (key, value, theme) => {
       color: ${theme?.COLOUR[value] ?? value};
     `
       }
+      break
+    case 'bgImage':
+      v = `
+      background-image: url(${value});
+    `
+      break
+    case 'bgCover':
+      v = `
+      background-size: cover;
+    `
       break
 
     default:
