@@ -6,7 +6,7 @@ import ContactForm from '../common/page/contactForm'
 
 const ContactUsSection = () => {
   return (
-    <AC as={MaxContainer} bgColour="light" pY="2.5rem">
+    <AC as={MaxContainer} bgColour="light" pY="2.5rem" id='contactUsSection' >
       <AC
         as={Text}
         semiBold
@@ -20,7 +20,7 @@ const ContactUsSection = () => {
         Have a project in mind? Let’s Talk.
       </AC>
       <AC
-        mY="3rem"
+        mY="2rem"
         smStyles={{
           mY: '1.5rem'
         }}

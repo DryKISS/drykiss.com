@@ -1,4 +1,4 @@
-import { Space, Text } from '@drykiss/industry-ui'
+import { Text } from '@drykiss/industry-ui'
 import styled, { css } from 'styled-components'
 import AC from '../../adaptorComponent'
 const SectionTitleAndSubtitle = ({ title, subtitle, maxTextWidth, ...props }) => {
@@ -7,15 +7,15 @@ const SectionTitleAndSubtitle = ({ title, subtitle, maxTextWidth, ...props }) =>
       <AC as={Text} semiBold textSize="2.25rem" textColour="darkBlue" center>
         {title}
       </AC>
-      <Space marginY="lg">
+      <AC mb="3rem" mt='2rem' >
         <AC fullWidth center>
           <TextContainer maxTextWidth={maxTextWidth}>
-            <AC as={Text} semiBold textSize="1.25rem" textColour="#C7D3EE" textCenter>
+            <AC as={Text} semiBold textSize="1.25rem" textColour="#9CB4CA" textCenter>
               {subtitle}
             </AC>
           </TextContainer>
         </AC>
-      </Space>
+      </AC>
     </Wrapper>
   )
 }

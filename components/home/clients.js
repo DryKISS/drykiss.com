@@ -42,7 +42,6 @@ export const HomeClients = ({ textSize }) => {
 const StyledWrapper = styled.div`
   background: ${({ theme }) => theme.COLOUR.white} url('/images/hero/pattern-2.svg') no-repeat left
     bottom;
-  padding-bottom: 40px;
 `
 
 const StyledRow = styled(Row)`

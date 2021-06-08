@@ -96,7 +96,7 @@ const ContactForm = () => {
         <AC fullWidth center mt="2rem">
           <AC as={Row} fullWidth center>
             <AC as={Column} lg={2} md={2} sm={12}>
-              <AC as={Button} height="3rem" content="Submit" block type="submit" />
+              <AC as={Button} height="3rem" content="Send" block type="submit" />
             </AC>
           </AC>
         </AC>

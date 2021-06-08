@@ -21,7 +21,7 @@ export const Navigation = () => {
       },
       {
         id: 'blog',
-        name: 'Blog',
+        name: 'Insight',
         to: '/blog'
       },
       {

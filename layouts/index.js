@@ -16,6 +16,8 @@ import { Brand } from '../config/config'
 import { Copyright } from '../config/copyright'
 import { Footer } from '../config/footer'
 import { Navigation } from '../config/navigation'
+import GlobalStyles from '../styles/globalStyles'
+import styled from 'styled-components'
 
 const Layout = ({ children }) => {
   return (
@@ -31,11 +33,15 @@ const Layout = ({ children }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" key="viewport" />
       </Head>
 
-      {children}
+      {/*<StyledMain>{children}</StyledMain>*/}
+			{children}
+			<GlobalStyles />
     </Bootstrap>
   )
 }
-
+//const StyledMain=styled.main`
+//margin-top: -62px;
+//`
 Layout.propTypes = {
   children: node.isRequired
 }

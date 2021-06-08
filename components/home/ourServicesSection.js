@@ -62,6 +62,7 @@ const OurServicesSection = () => {
                 md={4}
                 sm={12}
                 center
+								pX='0.5rem'
                 smStyles={{
                   pX: '2rem',
                   mt: '2rem'

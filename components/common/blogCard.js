@@ -24,7 +24,7 @@ const BlogCard = ({item,full,...props}) => {
 			{...(full &&{itemsCenter:true,mb:"4rem"})}
     >
       <Image src={item.image} />
-      <AC as={Text} mY='1.5rem' bold textColour='black' {...(full &&{textSize:'2.25rem'})} >
+      <AC as={Text} mY='1.5rem' bold textColour='#6C6C6C' {...(full &&{textSize:'2.25rem'})} >
         {item.title}
       </AC>
       <AC mb='1.5rem'>
