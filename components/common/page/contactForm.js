@@ -81,6 +81,7 @@ const ContactForm = () => {
                 customCss={css`
                   input {
                     min-height: 3.25rem;
+										border-color:#CCCCCC;
                   }
                 `}
                 md={field.size}
