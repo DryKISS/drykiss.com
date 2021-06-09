@@ -338,7 +338,7 @@ const styleMapper = (key, value, theme) => {
       break
     case 'fontFamily':
       v = `
-      font-family: ${value};
+      font-family: ${value},sans-serif;
     `
       break
 

@@ -33,9 +33,9 @@ const SimplePageHeader = ({title,sub,image}) => {
             {sub}
           </AC>
         </AC>
-        <Column xs={12} md={6}>
+        <AC as={Column} xs={12} md={6} width="566px" >
           <Image alt='Hero' src={image} />
-        </Column>
+        </AC>
       </AC>
     </AC>
   )
