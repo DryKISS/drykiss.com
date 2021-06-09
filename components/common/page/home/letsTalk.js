@@ -5,7 +5,7 @@ import {smoothScroll} from '../../../../utils/scrollTo'
 
 const LetsTalk = () => {
   return (
-    <AC as={Wrapper}  fullWidth absolute  >
+    <AC as={Wrapper} fullWidth absolute mdStyles={{pX: '1.5rem'}}  >
       <AC as={Row} elevation={1}>
         <AC as={Column} center height="80px" bgColour="lightBlue" md={8}>
           <AC as={Text} textColour="black" size="md" semiBold>

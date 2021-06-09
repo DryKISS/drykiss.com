@@ -8,10 +8,11 @@ import styled from 'styled-components'
 // UI
 import { Container, Column, Image, MEDIA_QUERY_MAX, Row } from '@drykiss/industry-ui'
 import { PageHeading } from '../../common/page/heading'
+import AC from '../../adaptorComponent'
 
 export const PageHero = ({ heading, image, onImage, subHeading }) => {
   return (
-    <StyledWrapper withImage={!!image}>
+    <AC as={StyledWrapper} withImage={!!image} minHeight='523px' mdStyles={{minHeight:'unset'}} >
       <Container>
         <Row>
           <Column xs={12} md={6}>
@@ -27,7 +28,7 @@ export const PageHero = ({ heading, image, onImage, subHeading }) => {
           )}
         </Row>
       </Container>
-    </StyledWrapper>
+    </AC>
   )
 }
 const StyledColumn = styled(Column)`

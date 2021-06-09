@@ -52,7 +52,7 @@ const OurServicesSection = () => {
               full -service web development and marketing solution"
       />
 
-      <AC as={MaxContainer} mb="6rem">
+      <AC as={MaxContainer} mb="6rem" mdStyles={{mb:'3rem'}} >
         <Row>
           {serviceCardsData.map((data, index) => {
             return (
@@ -97,7 +97,7 @@ const OurServicesSection = () => {
                       mdStyles={{
                         width: '8.5rem'
                       }}
-											smStyles={{ width:'unset'}}
+											smStyles={{ width:'7rem'}}
                     />
                     <BulletsContainer>
                       {data.bullets.map((bullet, idx) => (

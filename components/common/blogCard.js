@@ -28,7 +28,7 @@ const BlogCard = ({item,full,...props}) => {
         {item.title}
       </AC>
       <AC mb='1.5rem'>
-        <AC as={Text}>{item.descs}</AC>
+        <AC as={Text} fontFamily='Poppins' >{item.descs}</AC>
       </AC>
       <AC flexFiller />
       <AC as={Link} to={item.bottomLink.to} textColour='primary'>

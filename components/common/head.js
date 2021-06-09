@@ -5,18 +5,19 @@ import {MaxContainer} from './maxContainer'
 
 const SimplePageHeader = ({title,sub,image}) => {
   return (
-    <AC as={MaxContainer} bgColour='light' pY='3rem' mb='3rem'>
+    <AC as={MaxContainer} bgColour='light' pY='3rem' mb='3rem'  minHeight='523px' mdStyles={{minHeight:'unset'}} flex itemsCenter  >
       <AC
         as={Row}
         itemsCenter
         mdStyles={{ column: true, textCenter: true, pX: '1rem' }}
       >
-        <Column xs={12} md={6}>
+        <AC as={Column} xs={12} md={6} mdStyles={{mb:'1rem'}} >
           <AC
             as='h1'
             textSize='4rem'
             textColour='darkBlue'
-            bold
+						fontFamily='Russo One'
+
             mb='2rem'
             mdStyles={{ textSize: '3rem' }}
           >
@@ -31,7 +32,7 @@ const SimplePageHeader = ({title,sub,image}) => {
           >
             {sub}
           </AC>
-        </Column>
+        </AC>
         <Column xs={12} md={6}>
           <Image alt='Hero' src={image} />
         </Column>

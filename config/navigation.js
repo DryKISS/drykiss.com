@@ -54,11 +54,11 @@ export const Navigation = () => {
         name: 'Privacy',
         to: '/privacy'
       },
-      {
-        id: 'navContacts',
-        name: 'Contacts',
-        to: '/contacts'
-      }
+      //{
+      //  id: 'navContacts',
+      //  name: 'Contacts',
+      //  to: '/contacts'
+      //}
     ]
   }
 

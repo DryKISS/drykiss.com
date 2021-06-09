@@ -38,12 +38,14 @@ const acStyles = css`
   ${({ selfCenter }) => selfCenter && styleMapper('selfCenter', selfCenter)}
   ${({ elevation }) => elevation && styleMapper('elevation', elevation)}
   ${({ textSize }) => textSize && styleMapper('textSize', textSize)}
+  ${({ fontFamily }) => fontFamily && styleMapper('fontFamily', fontFamily)}
   ${({ lineHeight }) => lineHeight && styleMapper('lineHeight', lineHeight)}
   ${({ bold }) => bold && styleMapper('bold', bold)}
   ${({ semiBold }) => semiBold && styleMapper('semiBold', semiBold)}
   ${({ pointer }) => pointer && styleMapper('pointer', pointer)}
   ${({ fullWidth }) => fullWidth && styleMapper('fullWidth', fullWidth)}
   ${({ absolute }) => absolute && styleMapper('absolute', absolute)}
+  ${({ relative }) => relative && styleMapper('relative', relative)}
   ${({ flex }) => flex && styleMapper('flex', flex)}
   ${({ wrap }) => wrap && styleMapper('wrap', wrap)}
   ${({ gap }) => gap && styleMapper('gap', gap)}
@@ -231,6 +233,11 @@ const styleMapper = (key, value, theme) => {
       position: absolute;
     `
       break
+    case 'relative':
+      v = `
+      position: relative;
+    `
+      break
     case 'flex':
       v = `
       display: flex;
@@ -327,6 +334,11 @@ const styleMapper = (key, value, theme) => {
     case 'borderRadius':
       v = `
       border-radius: ${value};
+    `
+      break
+    case 'fontFamily':
+      v = `
+      font-family: ${value};
     `
       break
 

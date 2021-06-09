@@ -114,9 +114,9 @@ const OurWorksSection = () => {
                   as={Image}
                   src={item.image}
                   alt={item.image}
-                  smStyles={{
-                    width: '90%',
-                    ml: '5%'
+                  mdStyles={{
+                    width: '100%',
+                    ml: '1%'
                   }}
                 />
               </AC>
