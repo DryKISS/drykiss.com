@@ -14,11 +14,11 @@ export const Navigation = () => {
         name: 'Services',
         to: '/services'
       },
-      {
-        id: 'navCaseStudies',
-        name: 'Case Studies',
-        to: '/case-studies'
-      },
+      //{
+      //  id: 'navCaseStudies',
+      //  name: 'Case Studies',
+      //  to: '/case-studies'
+      //},
       {
         id: 'blog',
         name: 'Insight',
@@ -44,16 +44,7 @@ export const Navigation = () => {
       //   name: 'Insights',
       //   to: '/insights'
       // },
-      {
-        id: 'navTerms',
-        name: 'Terms',
-        to: '/terms'
-      },
-      {
-        id: 'navPrivacy',
-        name: 'Privacy',
-        to: '/privacy'
-      },
+
       //{
       //  id: 'navContacts',
       //  name: 'Contacts',

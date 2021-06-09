@@ -21,7 +21,7 @@ export const Footer = [
     }
   },
   {
-    size: { sm: 12, md: 4 },
+    size: { sm: 12, md: 2 },
     header: {
       content: 'Social',
       context: 'white'
@@ -54,7 +54,29 @@ export const Footer = [
     }
   },
   {
-    size: { sm: 12, md: 4 },
+    size: { sm: 12, md: 3 },
+    header: {
+      content: 'Links',
+      context: 'white'
+    },
+    links: {
+      context: 'white',
+      items: [
+				{
+					id: 'navTerms',
+					name: 'Terms',
+					to: '/terms'
+				},
+				{
+					id: 'navPrivacy',
+					name: 'Privacy',
+					to: '/privacy'
+				},
+      ]
+    }
+  },
+  {
+    size: { sm: 12, md: 3 },
     header: {
       content: 'Contact',
       context: 'white'
