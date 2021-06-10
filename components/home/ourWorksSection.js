@@ -49,9 +49,10 @@ const ourWorksData = [
 const OurWorksSection = () => {
   return (
     <AC
-		mdStyles={{
-			pX:'2rem'
-		}}>
+      mdStyles={{
+        pX: '2rem'
+      }}
+    >
       <SectionTitleAndSubtitle
         title="Discover our works"
         subtitle="We have helped many customers to
@@ -59,12 +60,7 @@ const OurWorksSection = () => {
         maxTextWidth="1100px"
       />
 
-      <AC
-        as={MaxContainer}
-        mb="6rem"
-        mt="2rem"
-
-      >
+      <AC as={MaxContainer} mb="3rem" mt="2rem">
         {ourWorksData.map((item, index) => {
           return (
             <AC

@@ -1,7 +1,7 @@
 import { Row, Breadcrumb } from '@drykiss/industry-ui'
 import BlogCard from '../../components/common/blogCard'
 import AC from '../../components/adaptorComponent'
-import { css } from 'styled-components'
+import styled, { css } from 'styled-components'
 import LetsTalkSection from '../../components/our-services/letsTalkSection'
 import { MaxContainer } from '../../components/common/maxContainer'
 const blogCardData = [
@@ -85,13 +85,13 @@ const breadcrumbs = [
     to: {
       as: '/blog',
       href: {
-        pathname: '/blog/blog',
+        pathname: '/insight',
         query: {
           category: 'blog'
         }
       }
     },
-    title: 'Blog'
+    title: 'insight'
   }
 ]
 
@@ -101,16 +101,26 @@ const BlogPage = () => {
       <AC
         as={MaxContainer}
         customCss={css`
+          position: absolute;
+          left: 0;
+          nav {
+            padding: 0 !important;
+          }
           ol {
-            padding-left: 0.5rem;
+            padding-top: 0.25rem;
+            padding-left: 0;
+            margin-left: -0.45rem;
+          }
+          span {
+            font-size: 1rem;
           }
         `}
       >
         <Breadcrumb breadcrumbs={breadcrumbs} separator="\" />
       </AC>
-      <MaxContainer>
+      <StyledMaxContainer>
         <AC as={BlogCard} full item={headCard} maxWidth="100%" />
-      </MaxContainer>
+      </StyledMaxContainer>
       <AC
         as={MaxContainer}
         mb="6rem"
@@ -120,7 +130,7 @@ const BlogPage = () => {
       >
         <Row>
           {blogCardData.map((item, index) => {
-            return <AC as={BlogCard} key={index} item={item} mb="4rem" />
+            return <AC as={BlogCard} key={index} item={item} mb="2rem" />
           })}
         </Row>
       </AC>
@@ -128,5 +138,8 @@ const BlogPage = () => {
     </>
   )
 }
+const StyledMaxContainer = styled(MaxContainer)`
+  margin-top: 2rem;
+`
 
 export default BlogPage
