@@ -1,5 +1,5 @@
 import AC from '../adaptorComponent'
-import { Image, Text, MetaHead, Row, Column } from '@drykiss/industry-ui'
+import { Image, Text, Row, Column } from '@drykiss/industry-ui'
 import { MaxContainer } from './maxContainer'
 
 const SimplePageHeader = ({ title, sub, image }) => {
