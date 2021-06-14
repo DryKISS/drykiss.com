@@ -9,12 +9,12 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import AC from '../../adaptorComponent'
 import styled, { css } from 'styled-components'
 const schema = object().shape({
-  firstName: string().required(),
-  lastName: string().required(),
-  businessEmail: string().required(),
-  phoneNumber: string().required(),
-  companyNumber: string().required(),
-  message: string().required()
+  firstName: string().required('First name is required'),
+  lastName: string().required('Last name is required'),
+  businessEmail: string().required('Email is required'),
+  phoneNumber: string().required('Phone number is required'),
+  companyNumber: string().required('Company number is required'),
+  message: string().required('Message is required')
 })
 
 const ErrMessage = (message) => <FormError message={message} />
@@ -81,7 +81,7 @@ const ContactForm = () => {
                 customCss={css`
                   input {
                     min-height: 3.25rem;
-										border-color:#CCCCCC;
+                    border-color: #cccccc;
                   }
                 `}
                 md={field.size}
