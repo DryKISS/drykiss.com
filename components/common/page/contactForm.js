@@ -1,4 +1,13 @@
-import { Button, Column, Form, FormError, FormField, FormLabel, Row } from '@drykiss/industry-ui'
+import {
+  Button,
+  Column,
+  Form,
+  FormError,
+  FormField,
+  FormLabel,
+  Row,
+  TextareaField
+} from '@drykiss/industry-ui'
 
 // React Hook Form
 import { useForm } from 'react-hook-form'
@@ -45,7 +54,7 @@ const fields = [
     size: 12
   },
   {
-    placeHolder: 'message',
+    placeHolder: 'Message',
     name: 'message',
     size: 12
   }
@@ -87,7 +96,19 @@ const ContactForm = () => {
                 md={field.size}
               >
                 <FormLabel size="md" label="">
-                  <FormField {...defaultProps} placeholder={field.placeHolder} name={field.name} />
+                  {field.name === 'message' ? (
+                    <TextareaField
+                      {...defaultProps}
+                      placeholder={field.placeHolder}
+                      name={field.name}
+                    />
+                  ) : (
+                    <FormField
+                      {...defaultProps}
+                      placeholder={field.placeHolder}
+                      name={field.name}
+                    />
+                  )}
                   {errors[field.name] && ErrMessage(errors[field.name].message)}
                 </FormLabel>
               </AC>

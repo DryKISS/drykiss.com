@@ -1,5 +1,5 @@
 import { Column, Row, Image, Text } from '@drykiss/industry-ui'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import AC from '../adaptorComponent'
 
 const InfoRow = ({ index, item }) => {
@@ -8,8 +8,10 @@ const InfoRow = ({ index, item }) => {
       as={Row}
       flexRowReverse={index % 2 !== 0}
       mb="8rem"
-      itemsCenter
       mdStyles={{ column: true, pX: '2rem', mb: '4rem' }}
+      customCss={css`
+        align-items: center;
+      `}
     >
       <AC as={Column} md={6}>
         <Image src={item.image} alt={item.title} />

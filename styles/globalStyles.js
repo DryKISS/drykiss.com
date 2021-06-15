@@ -2,6 +2,9 @@ import { createGlobalStyle } from 'styled-components'
 export const greaterthan1920 = '@media screen and (min-width: 1920px)'
 export const greaterthan1440 = '@media screen and (min-width: 1440px)'
 const GlobalStyle = createGlobalStyle`
+html{
+	overflow-x: hidden;
+}
 html,body{
 	font-family:Poppins,sans-serif ;
 }

@@ -13,7 +13,7 @@ const LetsTalkSection = () => {
   return (
     <AC as={StyledWrapper} bgColour="light">
       <MaxContainer>
-        {isOpen == false ? (
+        {isOpen === false ? (
           <AC as={Row} pY="2rem" itemsCenter>
             <AC
               as={Column}

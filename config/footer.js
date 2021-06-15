@@ -62,16 +62,16 @@ export const Footer = [
     links: {
       context: 'white',
       items: [
-				{
-					id: 'navTerms',
-					name: 'Terms',
-					to: '/terms'
-				},
-				{
-					id: 'navPrivacy',
-					name: 'Privacy',
-					to: '/privacy'
-				},
+        {
+          id: 'navTerms',
+          name: 'Terms and conditions',
+          to: '/terms'
+        },
+        {
+          id: 'navPrivacy',
+          name: 'Privacy',
+          to: '/privacy'
+        }
       ]
     }
   },

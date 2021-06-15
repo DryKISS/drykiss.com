@@ -2,6 +2,7 @@ import AC from '../../../adaptorComponent'
 import styled from 'styled-components'
 import { Button, Column, Space, Row, Text } from '@drykiss/industry-ui'
 import { PageSubHeading } from '../subHeading'
+import Link from 'next/link'
 
 const HomeSubHeading = () => {
   return (
@@ -31,22 +32,26 @@ const HomeSubHeading = () => {
       <Space marginBottom="lg" />
       <Row>
         <Column md={3}>
-          <AC as={StyledButton} outline context="white" mb="1rem">
-            <AC as={Text} textColour="white" size="sm">
-              <AC as="span" bold>
-                Services
+          <Link href="/services">
+            <AC as={StyledButton} outline context="white" mb="1rem">
+              <AC as={Text} textColour="white" size="sm">
+                <AC as="span" bold>
+                  Services
+                </AC>
               </AC>
             </AC>
-          </AC>
+          </Link>
         </Column>
         <Column md={6}>
-          <StyledButton context="white" outline>
-            <AC as={Text} textColour="white" size="sm">
-              <AC as="span" bold>
-                How we do it
+          <Link href="/our-works">
+            <StyledButton context="white" outline>
+              <AC as={Text} textColour="white" size="sm">
+                <AC as="span" bold>
+                  How we do it
+                </AC>
               </AC>
-            </AC>
-          </StyledButton>
+            </StyledButton>
+          </Link>
         </Column>
       </Row>
     </>
