@@ -13,6 +13,7 @@ import OurServicesSection from '../components/home/ourServicesSection'
 import OurWorksSection from '../components/home/ourWorksSection'
 import InsightsSection from '../components/home/insightsSection'
 import ContactUsSection from '../components/home/contactUsSection'
+// import { HomePageService } from '../services/pages-services/homeService'
 
 const meta = {
   description: `DryKISS is a full service internet and mobile digital production house. Our
@@ -21,7 +22,12 @@ const meta = {
   title: 'DryKISS develops hybrid mobile and responsive websites'
 }
 
-const PageIndex = () => {
+// export const getStaticProps = async () => {
+//  return HomePageService.getInitialData({ numberOfPosts: 6 })
+// }
+
+const PageIndex = (props) => {
+  console.log(props)
   return (
     <Page
       heroHeading="We do MVPs"
