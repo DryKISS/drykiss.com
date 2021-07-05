@@ -5,51 +5,57 @@
 // UI
 import { Navbar } from '@drykiss/industry-ui'
 import { Brand } from '../config/config'
-
+export const PageAddresses = {
+  Blog: '/blog',
+  Services: '/services',
+  OurWorks: '/our-works',
+  Career: '/career',
+  OurCompany: '/our-company'
+}
 export const Navigation = () => {
   const Default = {
     right: [
       {
         id: 'navServices',
         name: 'Services',
-        to: '/services'
+        to: PageAddresses.Services
       },
-      //{
+      // {
       //  id: 'navCaseStudies',
       //  name: 'Case Studies',
       //  to: '/case-studies'
-      //},
+      // },
       {
         id: 'blog',
         name: 'Insight',
-        to: '/blog'
+        to: PageAddresses.Blog
       },
       {
         id: 'navOurCompany',
         name: 'Our Company',
-        to: '/our-company'
+        to: PageAddresses.OurCompany
       },
       {
         id: 'navWorks',
         name: 'Our Works',
-        to: '/our-works'
+        to: PageAddresses.OurWorks
       },
       {
         id: 'navCareer',
         name: 'Careers',
-        to: '/career'
-      },
+        to: PageAddresses.Career
+      }
       // {
       //   id: 'navInsights',
       //   name: 'Insights',
       //   to: '/insights'
       // },
 
-      //{
+      // {
       //  id: 'navContacts',
       //  name: 'Contacts',
       //  to: '/contacts'
-      //}
+      // }
     ]
   }
 

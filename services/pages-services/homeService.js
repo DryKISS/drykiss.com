@@ -1,13 +1,13 @@
-import { GetOurWorksAPI } from '../dataProvider'
+import { GetBlogPostsAPI } from '../dataProvider'
 
 const HomePageService = {
   getInitialData: ({ numberOfPosts }) => GetHomePageStaticProps({ numberOfPosts })
 }
 const GetHomePageStaticProps = async ({ numberOfPosts }) => {
-  const [works] = await Promise.all([GetOurWorksAPI({ numberOfPosts })])
+  const [posts] = await Promise.all([GetBlogPostsAPI({ numberOfPosts })])
   return {
     props: {
-      works
+      posts
     },
     revalidate: 10
   }

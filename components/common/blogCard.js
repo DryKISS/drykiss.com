@@ -1,7 +1,10 @@
 import { Column, Image, Text, Link } from '@drykiss/industry-ui'
+import { Addresses, CmsAddress } from '../../config/constants'
+import { PageAddresses } from '../../config/navigation'
 import AC from '../adaptorComponent'
 
 const BlogCard = ({ item, full, ...props }) => {
+  console.log(item)
   return (
     <AC
       {...props}
@@ -22,7 +25,7 @@ const BlogCard = ({ item, full, ...props }) => {
       }}
       {...(full && { itemsCenter: true, mb: '4rem', pX: '0' })}
     >
-      <Image src={item.image} />
+      <Image src={item.image.url} alt={item.image} />
       <AC
         as={Text}
         mY="1.5rem"
@@ -42,12 +45,12 @@ const BlogCard = ({ item, full, ...props }) => {
           mdStyles={{ width: 'unset' }}
           textCenter
         >
-          {item.descs}
+          {item.short.length > 70 ? item.short.slice(0, 70) + '...' : item.short}
         </AC>
       </AC>
       <AC flexFiller />
-      <AC as={Link} to={item.bottomLink.to} textColour="primary">
-        {item.bottomLink.title}
+      <AC as={Link} to={`${PageAddresses.Blog}/${item.id}`} textColour="primary">
+        Read More
       </AC>
     </AC>
   )

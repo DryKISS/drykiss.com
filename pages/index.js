@@ -13,6 +13,7 @@ import OurServicesSection from '../components/home/ourServicesSection'
 import OurWorksSection from '../components/home/ourWorksSection'
 import InsightsSection from '../components/home/insightsSection'
 import ContactUsSection from '../components/home/contactUsSection'
+import { HomePageService } from '../services/pages-services/homeService'
 // import { HomePageService } from '../services/pages-services/homeService'
 
 const meta = {
@@ -22,12 +23,13 @@ const meta = {
   title: 'DryKISS develops hybrid mobile and responsive websites'
 }
 
-// export const getStaticProps = async () => {
-//  return HomePageService.getInitialData({ numberOfPosts: 6 })
-// }
+export const getStaticProps = async () => {
+  return HomePageService.getInitialData({ numberOfPosts: 3 })
+}
 
 const PageIndex = (props) => {
-  console.log(props)
+  const { posts: blogPosts } = props
+
   return (
     <Page
       heroHeading="We do MVPs"
@@ -39,7 +41,7 @@ const PageIndex = (props) => {
       <AC as={HomeClients} textSize="1rem" />
       <OurServicesSection />
       <OurWorksSection />
-      <InsightsSection />
+      <InsightsSection posts={blogPosts} />
       <ContactUsSection />
       {/* <HomeWhoWeAre />
       <Space marginBottom="xxxl" />
