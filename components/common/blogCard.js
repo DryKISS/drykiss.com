@@ -1,5 +1,4 @@
 import { Column, Image, Text, Link } from '@drykiss/industry-ui'
-import { Addresses, CmsAddress } from '../../config/constants'
 import { PageAddresses } from '../../config/navigation'
 import AC from '../adaptorComponent'
 
