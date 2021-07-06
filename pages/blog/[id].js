@@ -1,5 +1,10 @@
 import AC from '../../components/adaptorComponent'
-import { Button } from '@drykiss/industry-ui'
+import { Button, Link } from '@drykiss/industry-ui'
+import { BlogPageService } from '../../services/pages-services/blogService'
+import styled from 'styled-components'
+import ReactMarkdown from 'react-markdown'
+import { CmsAddress } from '../../config/constants'
+import { MaxContainer } from '../../components/common/maxContainer'
 
 const postData = {
   title: 'Going against the grain, AngelPad kills its demo',
@@ -7,13 +12,60 @@ const postData = {
   mainImage: '/images/blog/blogPost1.png'
 }
 
-const BlogPost = () => {
+export async function getStaticPaths() {
+  const res = await BlogPageService.getBlogPosts({})
+  const paths = res.props.posts.map((item) => {
+    return { params: { id: item.id.toString() } }
+  })
+  return {
+    paths,
+    fallback: true
+  }
+}
+export const getStaticProps = async ({ params }) => {
+  return BlogPageService.getSingleBlogPost({ id: params?.id })
+}
+
+const heading = (props) => {
+  const { children, level } = props
+  switch (level) {
+    case 1:
+      return <h1 children={children} />
+    case 2:
+      return <H2 children={children} />
+    case 3:
+      return <h3 children={children} />
+    case 4:
+      return <h4 children={children} />
+    case 5:
+      return <h5 children={children} />
+    case 6:
+      return <h6 children={children} />
+
+    // default to H6 if you try to get a heading of level 0 or 7, as an example
+    default:
+      return <h6 children={children} />
+  }
+}
+const link = ({ children, href }) => {
+  return (
+    <Link to={href}>
+      <a>{children}</a>
+    </Link>
+  )
+}
+const image = ({ alt, src, title }) => (
+  <InPostImage alt={alt} src={`${CmsAddress}/${src}`} title={title} />
+)
+
+const BlogPost = (props) => {
+  const { post } = props
   return (
     <>
       <AC
         height="600px"
         fullWidth
-        bgImage={postData.mainImage}
+        bgImage={post.image.url}
         bgCover
         itemsCenter
         flexColumn
@@ -22,7 +74,7 @@ const BlogPost = () => {
         <AC flexFiller />
         <AC maxWidth="750px" textCenter>
           <AC as="h1" textSize="2.25rem" textColour="white">
-            Going against the grain, AngelPad kills its demo
+            {post.title}
           </AC>
           <AC wrap justifyCenter>
             {postData.categories.map((item, index) => {
@@ -35,7 +87,23 @@ const BlogPost = () => {
           </AC>
         </AC>
       </AC>
+      <MaxContainer>
+        {post.content && (
+          <RichWrapper>
+            <ReactMarkdown
+              children={post.content}
+              components={{
+                heading,
+                link,
+                image
+              }}
+            />
+          </RichWrapper>
+        )}
+      </MaxContainer>
     </>
   )
 }
 export default BlogPost
+const H2 = styled.h2``
+const RichWrapper = styled.div``

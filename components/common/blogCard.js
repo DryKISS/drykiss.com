@@ -1,9 +1,9 @@
 import { Column, Image, Text, Link } from '@drykiss/industry-ui'
 import { PageAddresses } from '../../config/navigation'
+import styled, { css } from 'styled-components'
 import AC from '../adaptorComponent'
 
 const BlogCard = ({ item, full, ...props }) => {
-  console.log(item)
   return (
     <AC
       {...props}
@@ -24,7 +24,9 @@ const BlogCard = ({ item, full, ...props }) => {
       }}
       {...(full && { itemsCenter: true, mb: '4rem', pX: '0' })}
     >
-      <Image src={item.image.url} alt={item.image} />
+      <StyledImageWrapper full={full}>
+        <AC as={Image} width="100%" src={item.image.url} alt={item.image} />
+      </StyledImageWrapper>
       <AC
         as={Text}
         mY="1.5rem"
@@ -44,7 +46,7 @@ const BlogCard = ({ item, full, ...props }) => {
           mdStyles={{ width: 'unset' }}
           textCenter
         >
-          {item.short.length > 70 ? item.short.slice(0, 70) + '...' : item.short}
+          {item?.short?.length > 70 ? item.short.slice(0, 70) + '...' : item.short}
         </AC>
       </AC>
       <AC flexFiller />
@@ -54,4 +56,20 @@ const BlogCard = ({ item, full, ...props }) => {
     </AC>
   )
 }
+
+const StyledImageWrapper = styled.div`
+  width: 100%;
+  ${({ full }) => {
+    return (
+      full !== true &&
+      css`
+        width: 345px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 6px;
+      `
+    )
+  }}
+`
+
 export default BlogCard

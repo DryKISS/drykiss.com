@@ -4,78 +4,12 @@ import AC from '../../components/adaptorComponent'
 import styled, { css } from 'styled-components'
 import LetsTalkSection from '../../components/our-services/letsTalkSection'
 import { MaxContainer } from '../../components/common/maxContainer'
-const blogCardData = [
-  {
-    image: '/images/insights/1.png',
-    title: 'Going against the grain, AngelPad kills its demo',
-    descs:
-      'It’s no secret that much of the legal industry is build on reusable content. Most law firms  have their own customized set of standard…',
-    bottomLink: {
-      title: 'Read more',
-      to: ''
-    }
-  },
-  {
-    image: '/images/insights/2.png',
-    title: 'Lawyaw uses AI to help lawyers draft faster',
-    descs:
-      'It’s no secret that much of the legal industry is build on reusable content. Most law firms  have their own customized set of standard…',
-    bottomLink: {
-      title: 'Read more',
-      to: ''
-    }
-  },
-  {
-    image: '/images/insights/3.png',
-    title: 'Tumblr confirms 84 accounts linked to the main stream',
-    descs:
-      'It’s no secret that much of the legal industry is build on reusable content. Most law firms  have their own customized set of standard…',
-    bottomLink: {
-      title: 'Read more',
-      to: ''
-    }
-  },
-  {
-    image: '/images/blog/1.png',
-    title: 'Going against the grain, AngelPad kills its demo',
-    descs:
-      'It’s no secret that much of the legal industry is build on reusable content. Most law firms  have their own customized set of standard…',
-    bottomLink: {
-      title: 'Read more',
-      to: ''
-    }
-  },
-  {
-    image: '/images/blog/2.png',
-    title: 'Lawyaw uses AI to help lawyers draft faster',
-    descs:
-      'It’s no secret that much of the legal industry is build on reusable content. Most law firms  have their own customized set of standard…',
-    bottomLink: {
-      title: 'Read more',
-      to: ''
-    }
-  },
-  {
-    image: '/images/blog/3.png',
-    title: 'Tumblr confirms 84 accounts linked to the main stream',
-    descs:
-      'It’s no secret that much of the legal industry is build on reusable content. Most law firms  have their own customized set of standard…',
-    bottomLink: {
-      title: 'Read more',
-      to: ''
-    }
-  }
-]
-const headCard = {
-  image: '/images/blog/head.png',
-  title: 'Tumblr confirms 84 accounts linked to the main stream',
-  descs:
-    'It’s no secret that much of the legal industry is build on reusable content. Most law firms  have their own customized set of standard…',
-  bottomLink: {
-    title: 'Read more',
-    to: ''
-  }
+import { BlogPageService } from '../../services/pages-services/blogService'
+
+export const getStaticProps = async () => {
+  return BlogPageService.getBlogPosts({})
 }
+
 const breadcrumbs = [
   {
     to: '/',
@@ -95,7 +29,11 @@ const breadcrumbs = [
   }
 ]
 
-const BlogPage = () => {
+const BlogPage = (props) => {
+  const { posts: blogPosts } = props
+
+  const [headCard, ...rest] = blogPosts
+
   return (
     <>
       <AC
@@ -129,7 +67,7 @@ const BlogPage = () => {
         }}
       >
         <Row>
-          {blogCardData.map((item, index) => {
+          {rest.map((item, index) => {
             return <AC as={BlogCard} key={index} item={item} mb="2rem" />
           })}
         </Row>
