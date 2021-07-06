@@ -6,12 +6,6 @@ import ReactMarkdown from 'react-markdown'
 import { CmsAddress } from '../../config/constants'
 import { MaxContainer } from '../../components/common/maxContainer'
 
-const postData = {
-  title: 'Going against the grain, AngelPad kills its demo',
-  categories: ['Technology'],
-  mainImage: '/images/blog/blogPost1.png'
-}
-
 export async function getStaticPaths() {
   const res = await BlogPageService.getBlogPosts({})
   const paths = res.props.posts.map((item) => {
@@ -77,13 +71,14 @@ const BlogPost = (props) => {
             {post.title}
           </AC>
           <AC wrap justifyCenter>
-            {postData.categories.map((item, index) => {
-              return (
-                <AC key={'y' + index} as={Button} bgColour="#C7D3EE" textColour="darkBlue">
-                  {item}
-                </AC>
-              )
-            })}
+            {post.categories &&
+              post.categories.categories.map((item, index) => {
+                return (
+                  <AC key={'y' + index} as={Button} bgColour="#C7D3EE" textColour="darkBlue">
+                    {item}
+                  </AC>
+                )
+              })}
           </AC>
         </AC>
       </AC>
