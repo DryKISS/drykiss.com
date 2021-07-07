@@ -25,7 +25,7 @@ const BlogCard = ({ item, full, ...props }) => {
       {...(full && { itemsCenter: true, mb: '4rem', pX: '0' })}
     >
       <StyledImageWrapper full={full}>
-        <AC as={Image} width="100%" src={item.image.url} alt={item.image} />
+        <AC as={Image} width="100%" src={item.image.url} alt={item.image.url} />
       </StyledImageWrapper>
       <AC
         as={Text}

@@ -1,3 +1,4 @@
+import axios from 'axios'
 export const apiProvider = {
-  get: fetch
+  get:axios.get
 }

@@ -13,5 +13,4 @@ const GetHomePageStaticProps = async ({ numberOfPosts }) => {
   }
 }
 
-//
 export { HomePageService }
