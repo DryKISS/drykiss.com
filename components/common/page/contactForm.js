@@ -1,4 +1,5 @@
 import {
+  Alert,
   Button,
   Column,
   Form,
@@ -17,6 +18,9 @@ import { object, string } from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 import AC from '../../adaptorComponent'
 import styled, { css } from 'styled-components'
+import { useState } from 'react'
+import axios from 'axios'
+
 const schema = object().shape({
   firstName: string().required('First name is required'),
   lastName: string().required('Last name is required'),
@@ -60,8 +64,15 @@ const fields = [
   }
 ]
 const ContactForm = () => {
-  const { errors, handleSubmit, register } = useForm({
+  const { errors, handleSubmit, register, reset } = useForm({
     resolver: yupResolver(schema)
+  })
+
+  const [loading, setLoading] = useState(false)
+
+  const [message, setMessage] = useState({
+    type: '',
+    text: ''
   })
 
   const defaultProps = {
@@ -69,8 +80,29 @@ const ContactForm = () => {
     register: register
   }
 
-  const onSubmit = (data) => {
-    console.info(data)
+  const onSubmit = async (data) => {
+    setLoading(true)
+    // Submit form
+    try {
+      const resp = await axios.post(process.env.NEXT_PUBLIC_CONTACT_FORM_SPREE_URL, {
+        name: 'contact',
+        data
+      })
+      if (resp.status === 200) {
+        reset()
+        setMessage({
+          type: 'success',
+          text: "Your submission was successful. We'll get back to you as soon as possible."
+        })
+        setLoading(false)
+      }
+    } catch (error) {
+      setMessage({
+        type: 'error',
+        text: 'There was an error submitting the form. Please try again!'
+      })
+      setLoading(false)
+    }
   }
 
   return (
@@ -118,10 +150,19 @@ const ContactForm = () => {
         <AC fullWidth center mt="2rem">
           <AC as={Row} fullWidth center>
             <AC as={Column} lg={2} md={2} sm={12}>
-              <AC as={Button} height="3rem" content="Send" block type="submit" />
+              <AC as={Button} disabled={loading} height="3rem" content="Send" block type="submit" />
             </AC>
           </AC>
         </AC>
+        {message.text && (
+          <AC mt="1rem" className="row">
+            <div className="col-sm-12">
+              <div className="form-group">
+                <Alert content={message.text} context={message.type} />
+              </div>
+            </div>
+          </AC>
+        )}
       </Form>
     </AC>
   )
