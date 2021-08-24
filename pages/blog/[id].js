@@ -13,7 +13,7 @@ export async function getStaticPaths() {
   })
   return {
     paths,
-    fallback: true
+    fallback: false
   }
 }
 export const getStaticProps = async ({ params }) => {
@@ -54,6 +54,9 @@ const image = ({ alt, src, title }) => (
 
 const BlogPost = (props) => {
   const { post } = props
+  if (!post) {
+    return <></>
+  }
   return (
     <>
       <AC

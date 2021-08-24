@@ -90,7 +90,7 @@ export async function getStaticPaths() {
   })
   return {
     paths,
-    fallback: true
+    fallback: false
   }
 }
 export const getStaticProps = async ({ params }) => {
@@ -138,7 +138,13 @@ const image = ({ alt, src, title }) => (
 
 const EachWork = (props) => {
   const { post } = props
+  if (!post) {
+    return <></>
+  }
   const { pageInfo } = post
+  if (!pageInfo) {
+    return <></>
+  }
   const {
     headerImage,
     content,
@@ -224,13 +230,14 @@ const EachWork = (props) => {
                   Team
                 </AC>
                 <AC wrap gap="1.5rem" mdStyles={{ center: true }}>
-                  {teamMembers.map((item, idx) => {
-                    return (
-                      <a href={item.link} key={'a' + idx}>
-                        {<AC width="3rem" as={Image} src={item.image.url} alt={item.title} />}
-                      </a>
-                    )
-                  })}
+                  {teamMembers &&
+                    teamMembers.map((item, idx) => {
+                      return (
+                        <a href={item.link} key={'a' + idx}>
+                          {<AC width="3rem" as={Image} src={item.image.url} alt={item.title} />}
+                        </a>
+                      )
+                    })}
                 </AC>
 
                 <AC
@@ -244,13 +251,14 @@ const EachWork = (props) => {
                   Technologies
                 </AC>
                 <AC wrap gap="1.5rem" mdStyles={{ center: true }}>
-                  {tecnologies.map((item, idx) => {
-                    return (
-                      <a href={item.link} key={'tech' + idx}>
-                        {<AC width="3rem" as={Image} src={item.image.url} alt={item.title} />}
-                      </a>
-                    )
-                  })}
+                  {tecnologies &&
+                    tecnologies.map((item, idx) => {
+                      return (
+                        <a href={item.link} key={'tech' + idx}>
+                          {<AC width="3rem" as={Image} src={item.image.url} alt={item.title} />}
+                        </a>
+                      )
+                    })}
                 </AC>
               </AC>
             </AC>
