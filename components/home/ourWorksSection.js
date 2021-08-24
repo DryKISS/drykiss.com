@@ -3,50 +3,9 @@ import { MaxContainer } from '../common/maxContainer'
 import AC from '../adaptorComponent'
 import { Column, Row, Image, Text, Link } from '@drykiss/industry-ui'
 import SectionTitleAndSubtitle from '../common/page/sectionTitleAndSubtitle'
+import { PageAddresses } from '../../config/navigation'
 
-const ourWorksData = [
-  {
-    descriptionTopImage: '/images/clients/ibm.svg',
-    title: 'Customer 1 Work',
-    image: '/images/ourWorks/1.png',
-    descs: [
-      "DryKISS completed what is the most ambitious digital marketing build for Deliveroo in it's history.",
-      'They required in a short development window the development of a global site for their #AnyExcuse campaign.'
-    ],
-    bottomLink: {
-      to: '',
-      title: 'View case study'
-    }
-  },
-  {
-    descriptionTopImage: '/images/clients/deliveroo.svg',
-    title: 'Deliveroo Excuse Generator',
-    image: '/images/ourWorks/2.png',
-    descs: [
-      "DryKISS completed what is the most ambitious digital marketing build for Deliveroo in it's history.",
-      'They required in a short development window the development of a global site for their #AnyExcuse campaign.'
-    ],
-    bottomLink: {
-      to: '',
-      title: 'View case study'
-    }
-  },
-  {
-    descriptionTopImage: '/images/clients/homyze.svg',
-    title: 'Homyze Cleverly',
-    image: '/images/ourWorks/3.png',
-    descs: [
-      "DryKISS completed what is the most ambitious digital marketing build for Deliveroo in it's history.",
-      'They required in a short development window the development of a global site for their #AnyExcuse campaign.'
-    ],
-    bottomLink: {
-      to: '/our-works/cleverly',
-      title: 'View case study'
-    }
-  }
-]
-
-const OurWorksSection = () => {
+const OurWorksSection = ({ works = [] }) => {
   return (
     <AC
       mdStyles={{
@@ -61,7 +20,7 @@ const OurWorksSection = () => {
       />
 
       <AC as={MaxContainer} mb="3rem" mt="2rem">
-        {ourWorksData.map((item, index) => {
+        {works.map((item, index) => {
           return (
             <AC
               as={WrappedRow}
@@ -77,28 +36,30 @@ const OurWorksSection = () => {
                 {...(index % 2 !== 0 && { pl: '0.5rem' })}
               >
                 <AC as={TopImageWrapper}>
-                  <AC as={Image} mY="1.5rem" src={item.descriptionTopImage} alt={item.title} />
+                  <AC as={Image} mY="1.5rem" src={item.icon.url} alt={item.title} />
                 </AC>
                 <AC as={StyledTitle} textColour="black" bold textSize="2rem">
                   {item.title}
                 </AC>
-                {item.descs.map((desc, idx) => {
+                {item.shortDescs.map((desc, idx) => {
                   return (
                     <AC key={'desc' + idx} as={StyledDesc} textColour="darkGrey">
-                      {desc}
+                      {desc.text}
                     </AC>
                   )
                 })}
-                <AC
-                  as={Link}
-                  to={item.bottomLink.to}
-                  bold
-                  textColour="primary"
-                  mY="2.5rem"
-                  textSize="0.75rem"
-                >
-                  {item.bottomLink.title}
-                </AC>
+                {item.pageInfo && (
+                  <AC
+                    as={Link}
+                    to={`${PageAddresses.OurWorks}/${item.id}`}
+                    bold
+                    textColour="primary"
+                    mY="2.5rem"
+                    textSize="0.75rem"
+                  >
+                    View case study
+                  </AC>
+                )}
               </AC>
               <AC
                 as={Column}
@@ -108,8 +69,8 @@ const OurWorksSection = () => {
               >
                 <AC
                   as={Image}
-                  src={item.image}
-                  alt={item.image}
+                  src={item.mainImage.formats?.medium?.url ?? item.mainImage.url}
+                  alt={item.icon.url}
                   mdStyles={{
                     width: '100%',
                     ml: '1%'

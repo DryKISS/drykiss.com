@@ -28,7 +28,7 @@ export const getStaticProps = async () => {
 }
 
 const PageIndex = (props) => {
-  const { posts: blogPosts } = props
+  const { posts: blogPosts, works } = props
 
   return (
     <Page
@@ -40,7 +40,7 @@ const PageIndex = (props) => {
     >
       <AC as={HomeClients} textSize="1rem" />
       <OurServicesSection />
-      <OurWorksSection />
+      <OurWorksSection {...{ works }} />
       <InsightsSection posts={blogPosts} />
       <ContactUsSection />
       {/* <HomeWhoWeAre />

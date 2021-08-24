@@ -1,9 +1,13 @@
+/* eslint-disable max-len */
 import { MetaHead, Row, Column, Image } from '@drykiss/industry-ui'
 import { Brand, Canonical } from '../../config/config'
 import SimplePageHeader from '../../components/common/head'
 import { MaxContainer } from '../../components/common/maxContainer'
 import AC from '../../components/adaptorComponent'
-import { css } from 'styled-components'
+import styled, { css } from 'styled-components'
+import { WorksPageService } from '../../services/pages-services/worksService'
+import { CmsAddress } from '../../config/constants'
+import ReactMarkdown from 'react-markdown'
 
 const meta = {
   description: `DryKISS is a full service internet and mobile digital production house. Our
@@ -79,101 +83,184 @@ const initialData = {
   ]
 }
 
-const EachWork = () => {
+export async function getStaticPaths() {
+  const res = await WorksPageService.getWorks()
+  const paths = res.props.posts.map((item) => {
+    return { params: { id: item.id.toString() } }
+  })
+  return {
+    paths,
+    fallback: true
+  }
+}
+export const getStaticProps = async ({ params }) => {
+  return WorksPageService.getSingleWork({ id: params?.id })
+}
+
+const heading = (props) => {
+  const { children, level } = props
+  switch (level) {
+    case 1:
+      return <h1 children={children} />
+    case 2:
+      return <H2 children={children} />
+    case 3:
+      return <h3 children={children} />
+    case 4:
+      return <h4 children={children} />
+    case 5:
+      return <h5 children={children} />
+    case 6:
+      return <h6 children={children} />
+
+    // default to H6 if you try to get a heading of level 0 or 7, as an example
+    default:
+      return <h6 children={children} />
+  }
+}
+const link = ({ children, href }) => {
+  return (
+    <Link to={href}>
+      <a>{children}</a>
+    </Link>
+  )
+}
+const li = ({ children }) => {
+  return (
+    <AC as="li" mb="1rem">
+      {children}
+    </AC>
+  )
+}
+const image = ({ alt, src, title }) => (
+  <InPostImage alt={alt} src={`${CmsAddress}/${src}`} title={title} />
+)
+
+const EachWork = (props) => {
+  const { post } = props
+  const { pageInfo } = post
+  const {
+    headerImage,
+    content,
+    headerDesc,
+    headerTitle,
+    id,
+    introDesc,
+    introIcon,
+    introImage,
+    introTitle,
+    projectDuration,
+    teamMembers,
+    tecnologies
+  } = pageInfo
   return (
     <>
-      {meta && <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />}
-      <SimplePageHeader
-        title="Discover our works"
-        sub="Lorem ipsum dolor sit amet, consectetuer"
-        image="/images/ourWorks/head.svg"
-      />
-      <AC as={MaxContainer} mb='4rem' mdStyles={{padding:'2rem'}} >
-        <AC
-          as={Row}
-          customCss={css`
-            border-bottom: 1px solid #e6e6e6;
-          `}
-          pb="3rem"
-        >
-          <AC as={Column} md={5} sm={12} center>
-            <Image src={initialData.introImage} alt={initialData.name} />
-          </AC>
-          <AC as={Column} selfCenter md={7} sm={12}>
-            <AC as={Image} src={initialData.introIcon} alt={initialData.introIcon} />
-            <AC as="p" textSize="2.25rem" textColour="darkBlue" bold>
-              {initialData.name}
+      {pageInfo && (
+        <>
+          {meta && <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />}
+          <SimplePageHeader title={headerTitle} sub={headerDesc} image={headerImage.url} />
+          <AC as={MaxContainer} mb="4rem" mdStyles={{ padding: '2rem' }}>
+            <AC
+              as={Row}
+              customCss={css`
+                border-bottom: 1px solid #e6e6e6;
+              `}
+              pb="3rem"
+            >
+              <AC as={Column} md={5} sm={12} center>
+                <Image src={introImage.url} alt={introImage.url} />
+              </AC>
+              <AC as={Column} selfCenter md={7} sm={12}>
+                <AC as={Image} src={introIcon.url} alt={introIcon.url} />
+                <AC as="p" textSize="2.25rem" textColour="darkBlue" bold>
+                  {introTitle}
+                </AC>
+                {introDesc.map((j, i) => {
+                  return (
+                    <AC key={i} as="p" textSize="1rem" textColour="#363940">
+                      {j.text}
+                    </AC>
+                  )
+                })}
+              </AC>
             </AC>
-            <AC as="p" textSize="1rem" textColour="#363940">
-              {initialData.shortDesc}
-            </AC>
-          </AC>
-        </AC>
-        <AC as={Row} >
-          <AC as={Column} md={9}  sm={12}>
-            <AC as='p' textSize='2.25rem' textColour='darkBlue' bold mdStyles={{textCenter:true}} >
-              ِDescriptions
-            </AC>
-            <AC as="p" textSize="1rem" textColour="#363940" lineHeight="1.4rem">
-              {initialData.desc}
-            </AC>
-            <AC as='p' textSize='2.25rem' textColour='darkBlue' bold  mdStyles={{textCenter:true}}  >
-              Outcomes
-            </AC>
-            <AC as='ul' >
-              {initialData.outComes.map((item, index) => {
-                return (
-                  <AC
-                    key={'r' + index}
-                    as="li"
-                    textSize="1rem"
-                    lineHeight="1.4rem"
-                    textColour="#363940"
-                    mb="0.5rem"
-                  >
-                    {item}
-                  </AC>
-                )
-              })}
-            </AC>
-          </AC>
-          <AC as={Column} md={3}  sm={12}>
-            <AC as='p' textSize='1.25rem' textColour='darkBlue' semiBold  mdStyles={{textCenter:true}}  >
-              Project Duration
-            </AC>
-            <AC as='p' textSize='1rem' textColour='black' bold  mdStyles={{textCenter:true}} >
-              {initialData.duration}
-            </AC>
-            <AC as='p' textSize='1.25rem' mb='1rem' textColour='darkBlue' semiBold  mdStyles={{textCenter:true}} >
-              Team
-            </AC>
-            <AC wrap gap='1.5rem' mdStyles={{center:true}} >
-              {initialData.team.map((item, idx) => {
-                return (
-                  <a href={item.link} key={'a' + idx}>
-                    {<AC width="3rem" as={Image} src={item.image} alt={item.name} />}
-                  </a>
-                )
-              })}
-            </AC>
+            <AC as={Row}>
+              <AC as={Column} md={9} sm={12}>
+                {content && (
+                  <RichWrapper>
+                    <ReactMarkdown
+                      children={content}
+                      components={{
+                        li,
+                        heading,
+                        link,
+                        image
+                      }}
+                    />
+                  </RichWrapper>
+                )}
+              </AC>
+              <AC as={Column} md={3} sm={12}>
+                <AC
+                  as="p"
+                  textSize="1.25rem"
+                  textColour="darkBlue"
+                  semiBold
+                  mdStyles={{ textCenter: true }}
+                >
+                  Project Duration
+                </AC>
+                <AC as="p" textSize="1rem" textColour="black" bold mdStyles={{ textCenter: true }}>
+                  {projectDuration}
+                </AC>
+                <AC
+                  as="p"
+                  textSize="1.25rem"
+                  mb="1rem"
+                  textColour="darkBlue"
+                  semiBold
+                  mdStyles={{ textCenter: true }}
+                >
+                  Team
+                </AC>
+                <AC wrap gap="1.5rem" mdStyles={{ center: true }}>
+                  {teamMembers.map((item, idx) => {
+                    return (
+                      <a href={item.link} key={'a' + idx}>
+                        {<AC width="3rem" as={Image} src={item.image.url} alt={item.title} />}
+                      </a>
+                    )
+                  })}
+                </AC>
 
-            <AC as='p' textSize='1.25rem' mb='1rem' textColour='darkBlue' semiBold mdStyles={{textCenter:true}} >
-              Technologies
-            </AC>
-						<AC wrap gap='1.5rem'  mdStyles={{center:true}} >
-              {initialData.technologies.map((item, idx) => {
-                return (
-                  <a href={item.link} key={'tech' + idx}>
-                    {<AC width="3rem" as={Image} src={item.image} alt={item.name} />}
-                  </a>
-                )
-              })}
+                <AC
+                  as="p"
+                  textSize="1.25rem"
+                  mb="1rem"
+                  textColour="darkBlue"
+                  semiBold
+                  mdStyles={{ textCenter: true }}
+                >
+                  Technologies
+                </AC>
+                <AC wrap gap="1.5rem" mdStyles={{ center: true }}>
+                  {tecnologies.map((item, idx) => {
+                    return (
+                      <a href={item.link} key={'tech' + idx}>
+                        {<AC width="3rem" as={Image} src={item.image.url} alt={item.title} />}
+                      </a>
+                    )
+                  })}
+                </AC>
+              </AC>
             </AC>
           </AC>
-        </AC>
-      </AC>
+        </>
+      )}
     </>
   )
 }
 
 export default EachWork
+const H2 = styled.h2``
+const RichWrapper = styled.div``
