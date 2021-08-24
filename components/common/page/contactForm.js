@@ -80,28 +80,38 @@ const ContactForm = () => {
     register: register
   }
 
-  const onSubmit = async (data) => {
+  const onFormError = () => {
+    setMessage({
+      type: 'error',
+      text: 'There was an error submitting the form. Please try again!'
+    })
+    setLoading(false)
+  }
+
+  const onFormSuccess = () => {
+    reset()
+    setMessage({
+      type: 'success',
+      text: "Your submission was successful. We'll get back to you as soon as possible."
+    })
+    setLoading(false)
+  }
+
+  const onSubmit = async (data, e) => {
+    e.preventDefault()
     setLoading(true)
     // Submit form
     try {
-      const resp = await axios.post(process.env.NEXT_PUBLIC_CONTACT_FORM_SPREE_URL, {
-        name: 'contact',
-        data
+       const resp = await axios.post('https://formspree.io/f/mdoypbqq', data, {
+        headers: { Accept: 'application/json' }
       })
       if (resp.status === 200) {
-        reset()
-        setMessage({
-          type: 'success',
-          text: "Your submission was successful. We'll get back to you as soon as possible."
-        })
-        setLoading(false)
+        onFormSuccess()
+      } else {
+        onFormError()
       }
     } catch (error) {
-      setMessage({
-        type: 'error',
-        text: 'There was an error submitting the form. Please try again!'
-      })
-      setLoading(false)
+      onFormError()
     }
   }
 

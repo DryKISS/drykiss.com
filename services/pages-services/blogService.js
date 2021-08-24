@@ -21,7 +21,7 @@ const GetBlogPageStaticProps = async ({ numberOfPosts, start }) => {
 
 const GetSingleBlogPostStaticProps = async (params) => {
   try {
-    console.log('newsId:' + params.id + '\n')
+    console.log('getting blog with Id:' + params.id + '\n')
     const [post] = await Promise.all([GetSingleBlogPostsAPI({ id: params.id })])
     return {
       props: {

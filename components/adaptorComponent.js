@@ -21,20 +21,29 @@ const padding = css`
 const acStyles = css`
   font-weight: 500;
   ${({ textCenter }) => textCenter && styleMapper('textCenter', textCenter)}
+  ${({ textAlign }) => textAlign && styleMapper('textAlign', textAlign)}
   ${({ textLeft }) => textLeft && styleMapper('textLeft', textLeft)}
   ${({ textRight }) => textRight && styleMapper('textRight', textRight)}
   ${({ textJustify }) => textJustify && styleMapper('textJustify', textJustify)}
   ${({ bgColour, theme }) => bgColour && styleMapper('bgColour', bgColour, theme)}
   ${({ bgImage, theme }) => bgImage && styleMapper('bgImage', bgImage, theme)}
+  ${({ bgSize }) => bgSize && styleMapper('bgSize', bgSize)}
   ${({ textColour, theme }) => textColour && styleMapper('textColour', textColour, theme)}
   ${({ height }) => height && styleMapper('height', height)}
   ${({ minHeight }) => minHeight && styleMapper('minHeight', minHeight)}
   ${({ maxWidth }) => maxWidth && styleMapper('maxWidth', maxWidth)}
   ${({ width }) => width && styleMapper('width', width)}
+  ${({ hidden }) => hidden && styleMapper('hidden', hidden)}
+  ${({ hide }) => hide && styleMapper('hide', hide)}
+  ${({ noBorder }) => noBorder && styleMapper('noBorder', noBorder)}
   ${({ borderRadius }) => borderRadius && styleMapper('borderRadius', borderRadius)}
-  ${({ borderColour }) => borderColour && styleMapper('borderColour', borderColour)}
+  ${({ borderColour, theme }) => borderColour && styleMapper('borderColour', borderColour, theme)}
+  ${({ bbColour, theme }) => bbColour && styleMapper('bbColour', bbColour, theme)}
+  ${({ borderWidth }) => borderWidth && styleMapper('borderWidth', borderWidth)}
+  ${({ objectFit }) => objectFit && styleMapper('objectFit', objectFit)}
   ${({ order }) => order && styleMapper('order', order)}
   ${({ center }) => center && styleMapper('center', center)}
+  ${({ spaceBetween }) => spaceBetween && styleMapper('spaceBetween', spaceBetween)}
   ${({ selfCenter }) => selfCenter && styleMapper('selfCenter', selfCenter)}
   ${({ elevation }) => elevation && styleMapper('elevation', elevation)}
   ${({ textSize }) => textSize && styleMapper('textSize', textSize)}
@@ -42,6 +51,7 @@ const acStyles = css`
   ${({ lineHeight }) => lineHeight && styleMapper('lineHeight', lineHeight)}
   ${({ bold }) => bold && styleMapper('bold', bold)}
   ${({ semiBold }) => semiBold && styleMapper('semiBold', semiBold)}
+  ${({ light }) => light && styleMapper('light', light)}
   ${({ pointer }) => pointer && styleMapper('pointer', pointer)}
   ${({ fullWidth }) => fullWidth && styleMapper('fullWidth', fullWidth)}
   ${({ absolute }) => absolute && styleMapper('absolute', absolute)}
@@ -53,6 +63,7 @@ const acStyles = css`
   ${({ columnsReverse }) => columnsReverse && styleMapper('columnsReverse', columnsReverse)}
   ${({ itemsStart }) => itemsStart && styleMapper('itemsStart', itemsStart)}
   ${({ itemsCenter }) => itemsCenter && styleMapper('itemsCenter', itemsCenter)}
+  ${({ justifyContent }) => justifyContent && styleMapper('justifyContent', justifyContent)}
   ${({ justifyCenter }) => justifyCenter && styleMapper('justifyCenter', justifyCenter)}
   ${({ flexRowReverse }) => flexRowReverse && styleMapper('flexRowReverse', flexRowReverse)}
   ${({ contentAround }) => contentAround && styleMapper('contentAround', contentAround)}
@@ -135,7 +146,12 @@ const styleMapper = (key, value, theme) => {
       break
     case 'textCenter':
       v = `
-      text-align: center;
+      text-align: center !important;
+    `
+      break
+    case 'textAlign':
+      v = `
+      text-align: ${value};
     `
       break
     case 'textRight':
@@ -321,6 +337,11 @@ const styleMapper = (key, value, theme) => {
       background-image: url(${value});
     `
       break
+    case 'bgSize':
+      v = `
+      background-size: ${value};
+    `
+      break
     case 'bgCover':
       v = `
       background-size: cover;
@@ -331,14 +352,55 @@ const styleMapper = (key, value, theme) => {
       border: 1px solid ${theme?.COLOUR[value] ?? value};
     `
       break
+    case 'bbColour':
+      v = `
+      border-bottom: 1px solid ${theme?.COLOUR[value] ?? value};
+    `
+      break
+    case 'borderWidth':
+      v = `
+      border-width:${value};
+    `
+      break
     case 'borderRadius':
       v = `
       border-radius: ${value};
     `
       break
+    case 'spaceBetween':
+      v = `
+      justify-content: space-between;
+    `
+      break
+    case 'light':
+      v = `
+      font-weight: 400 !important;
+    `
+      break
     case 'fontFamily':
       v = `
       font-family: ${value},sans-serif;
+    `
+      break
+    case 'justifyContent':
+      v = `
+      justify-content: ${value};
+    `
+      break
+    case 'noBorder':
+      v = `
+      border: none !important;
+    `
+      break
+    case 'objectFit':
+      v = `
+      object-fit: ${value};
+    `
+      break
+    case 'hidden':
+    case 'hide':
+      v = `
+      display: none;
     `
       break
 
@@ -359,12 +421,18 @@ const creator = (type, theme) => {
     ${c}
   `
 }
+
+export const largerThanTablet = `@media screen and (min-width: 768px)`
+export const tabletAndSmaller = `@media screen and (max-width: 768px)`
+export const largerThanMobile = `@media screen and (min-width: 576px)`
+export const mobileAndSmaller = `@media screen and (max-width: 576px)`
+
 export const AdaptorComponent = styled.div`
   ${acStyles}
-  @media screen and (max-width: 768px) {
+  ${tabletAndSmaller} {
     ${({ mdStyles, theme }) => creator(mdStyles, theme)}
   }
-  @media screen and (max-width: 576px) {
+  ${mobileAndSmaller} {
     ${({ smStyles, theme }) => creator(smStyles, theme)}
   }
 `

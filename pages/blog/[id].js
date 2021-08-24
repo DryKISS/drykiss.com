@@ -72,7 +72,7 @@ const BlogPost = (props) => {
           </AC>
           <AC wrap justifyCenter>
             {post.categories &&
-              post.categories.categories.map((item, index) => {
+              post.categories.map((item, index) => {
                 return (
                   <AC key={'y' + index} as={Button} bgColour="#C7D3EE" textColour="darkBlue">
                     {item}
