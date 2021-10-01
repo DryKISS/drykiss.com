@@ -31,10 +31,21 @@ const PageApp = (props) => {
           key="og:image"
           property="og:image"
         />
-
+        <meta
+          name="facebook:image"
+          content="https://drykiss.com/images/social/drykiss-facebook.jpg"
+        />
         <meta
           name="twitter:image"
-          content="https://drykiss.com/images/social/drykiss-facebook.jpg"
+          content="https://drykiss.com/images/social/drykiss-twitter.jpg"
+        />
+        <meta
+          name="instagram:image"
+          content="https://drykiss.com/images/social/drykiss-instagram.jpg"
+        />
+        <meta
+          name="linkedin:image"
+          content="https://drykiss.com/images/social/drykiss-linkedin.jpg"
         />
       </Head>
 
