@@ -9,7 +9,7 @@ import { MaxContainer } from '../../components/common/maxContainer'
 export async function getStaticPaths() {
   const res = await BlogPageService.getBlogPosts({})
   const paths = res.props.posts.map((item) => {
-    return { params: { id: item.id.toString() } }
+    return { params: { slug: item.slug } }
   })
   return {
     paths,
@@ -17,7 +17,7 @@ export async function getStaticPaths() {
   }
 }
 export const getStaticProps = async ({ params }) => {
-  return BlogPageService.getSingleBlogPost({ id: params?.id })
+  return BlogPageService.getSingleBlogPost({ slug: params?.slug })
 }
 
 const heading = (props) => {
@@ -62,7 +62,7 @@ const BlogPost = (props) => {
       <AC
         height="600px"
         fullWidth
-        bgImage={post.image.url}
+        bgImage={post?.image?.url}
         bgCover
         itemsCenter
         flexColumn

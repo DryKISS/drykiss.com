@@ -15,8 +15,8 @@ export const GetBlogPostsAPI = async ({ numberOfPosts, start }) => {
   return responseParser(res)
 }
 
-export const GetSingleBlogPostsAPI = async ({ id }) => {
-  const link = `${CmsAddress}/${Addresses.blog}/${id}`
+export const GetSingleBlogPostsAPI = async ({ slug }) => {
+  const link = `${CmsAddress}/${Addresses.blog}?slug=${slug}`
   const res = await apiProvider.get(link)
   return responseParser(res)
 }
