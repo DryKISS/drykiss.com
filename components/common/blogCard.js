@@ -50,7 +50,7 @@ const BlogCard = ({ item, full, ...props }) => {
         </AC>
       </AC>
       <AC flexFiller />
-      <AC as={Link} to={`${PageAddresses.Blog}/${item.id}`} textColour="primary">
+      <AC as={Link} to={`${PageAddresses.Blog}/${item.slug}`} textColour="primary">
         Read More
       </AC>
     </AC>

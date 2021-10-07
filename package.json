@@ -21,7 +21,7 @@
     "node": "^14"
   },
   "dependencies": {
-    "@drykiss/industry-ui": "2.1.8",
+    "@drykiss/industry-ui": "1.14.12",
     "@formspree/react": "^2.2.3",
     "@fortawesome/free-brands-svg-icons": "5.15.3",
     "axios": "^0.21.1",

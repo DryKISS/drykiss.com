@@ -11,7 +11,7 @@ import HomeSubHeading from '../components/common/page/home/subHeading'
 import AC from '../components/adaptorComponent'
 import OurServicesSection from '../components/home/ourServicesSection'
 import OurWorksSection from '../components/home/ourWorksSection'
-import InsightsSection from '../components/home/insightsSection'
+import BlogSection from '../components/home/blogSection'
 import ContactUsSection from '../components/home/contactUsSection'
 import { HomePageService } from '../services/pages-services/homeService'
 // import { HomePageService } from '../services/pages-services/homeService'
@@ -41,7 +41,7 @@ const PageIndex = (props) => {
       <AC as={HomeClients} textSize="1rem" />
       <OurServicesSection />
       <OurWorksSection {...{ works }} />
-      <InsightsSection posts={blogPosts} />
+      <BlogSection posts={blogPosts} />
       <ContactUsSection />
       {/* <HomeWhoWeAre />
       <Space marginBottom="xxxl" />

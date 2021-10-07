@@ -27,7 +27,7 @@ export const Navigation = () => {
       // },
       {
         id: 'blog',
-        name: 'Insight',
+        name: 'Blog',
         to: PageAddresses.Blog
       },
       {
@@ -45,17 +45,6 @@ export const Navigation = () => {
         name: 'Careers',
         to: PageAddresses.Career
       }
-      // {
-      //   id: 'navInsights',
-      //   name: 'Insights',
-      //   to: '/insights'
-      // },
-
-      // {
-      //  id: 'navContacts',
-      //  name: 'Contacts',
-      //  to: '/contacts'
-      // }
     ]
   }
 

@@ -4,7 +4,7 @@ import { Row } from '@drykiss/industry-ui'
 import SectionTitleAndSubtitle from '../common/page/sectionTitleAndSubtitle'
 import BlogCard from '../common/blogCard'
 
-const InsightsSection = ({ posts }) => {
+const BlogSection = ({ posts }) => {
   return (
     <>
       <SectionTitleAndSubtitle
@@ -32,4 +32,4 @@ const InsightsSection = ({ posts }) => {
   )
 }
 
-export default InsightsSection
+export default BlogSection

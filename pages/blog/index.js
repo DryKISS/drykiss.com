@@ -21,13 +21,13 @@ const breadcrumbs = [
     to: {
       as: '/blog',
       href: {
-        pathname: '/insight',
+        pathname: '/blog',
         query: {
           category: 'blog'
         }
       }
     },
-    title: 'insight'
+    title: 'blog'
   }
 ]
 
