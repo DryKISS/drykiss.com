@@ -17,36 +17,25 @@ const meta = {
   path: '/',
   title: 'DryKISS develops hybrid mobile and responsive websites'
 }
-const termsData = [
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-]
+
+const termsData = ['To be confirmed']
+
 const TermsPage = () => {
   return (
     <>
-      {meta && (
-        <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />
-      )}
+      {meta && <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />}
       <SimplePageHeader
-        title='Terms and Conditions'
-        sub='Lorem ipsum dolor sit amet, consectetuer'
-        image='/images/terms/head.svg'
+        title="Terms and Conditions"
+        sub="Lorem ipsum dolor sit amet, consectetuer"
+        image="/images/terms/head.svg"
       />
-      <AC as={MaxContainer} mb='6rem'>
-        <AC as='h1' textColour='primary' textSize='1.5rem' bold>
-        Terms and Conditions
+      <AC as={MaxContainer} mb="6rem">
+        <AC as="h1" textColour="primary" textSize="1.5rem" bold>
+          Terms and Conditions
         </AC>
         {termsData.map((item, index) => {
           return (
-            <AC
-              key={'item' + index}
-              as='p'
-              textSize='1rem'
-              lineHeight='1.75rem'
-            >
+            <AC key={'item' + index} as="p" textSize="1rem" lineHeight="1.75rem">
               {item}
             </AC>
           )

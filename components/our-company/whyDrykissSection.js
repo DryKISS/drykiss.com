@@ -19,8 +19,7 @@ const whyDrykissData = [
   ],
   [
     {
-      text:
-        'We help you build value - by applying an honest and ethical approach to collaboration.'
+      text: 'We help you build value - by applying an honest and ethical approach to collaboration.'
     },
     {
       image: '/images/our-company/why-drykiss/3.svg'
@@ -36,26 +35,26 @@ const WhyDrykissSection = () => {
   return (
     <>
       <SectionTitleAndSubtitle
-        title='Why DryKISS'
+        title="Why DryKISS"
         subtitle="When you need superheroes for your project, with minimum fuss, Don't Repeat Yourself and Keep It Simple Stupid with DryKISS."
-        maxTextWidth='815px'
+        maxTextWidth="815px"
       />
       <AC
-        as='p'
-        maxWidth='725px'
-        mY='4rem'
-        mX='auto'
-        textColour='darkText'
-        textSize='1rem'
-        lineHeight='1.4rem'
+        as="p"
+        maxWidth="725px"
+        mY="4rem"
+        mX="auto"
+        textColour="darkText"
+        textSize="1rem"
+        lineHeight="1.4rem"
         textCenter
       >
-        With over 20+ years experience, we understand your challenges and want
-        to help you learn about your users, business requirements and solve
-        customer pain points. We are a full-service software development
-        company; building deliverables from early stages to successful projects.
+        With over 20+ years experience, we understand your challenges and want to help you learn
+        about your users, business requirements and solve customer pain points. We are a
+        full-service software development company; building deliverables from early stages to
+        successful projects.
       </AC>
-      <AC as={MaxContainer} mb='4rem'>
+      <AC as={MaxContainer} mb="4rem">
         {whyDrykissData.map((item, index) => {
           return (
             <AC
@@ -78,24 +77,16 @@ const WhyDrykissSection = () => {
                     lg={4}
                     md={6}
                     sm={12}
-                    minHeight='263px'
+                    minHeight="263px"
                     {...(isImage && { bgColour: '#E7F2FC' })}
                     center
                   >
                     {isText && (
-                      <AC
-                        as='p'
-                        pX='2.25rem'
-                        textColour='#999999'
-                        textSize='1.25rem'
-                        textCenter
-                      >
+                      <AC as="p" pX="2.25rem" textColour="#999999" textSize="1.25rem" textCenter>
                         {content.text}
                       </AC>
                     )}
-                    {isImage && (
-                      <AC as={Image} alt={content.image} src={content.image} />
-                    )}
+                    {isImage && <AC as={Image} alt={content.image} src={content.image} />}
                   </AC>
                 )
               })}

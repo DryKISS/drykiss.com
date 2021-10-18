@@ -12,7 +12,7 @@ import AC from '../../adaptorComponent'
 
 export const PageHero = ({ heading, image, onImage, subHeading }) => {
   return (
-    <AC as={StyledWrapper} withImage={!!image} minHeight='523px' mdStyles={{minHeight:'unset'}} >
+    <AC as={StyledWrapper} withImage={!!image} minHeight="523px" mdStyles={{ minHeight: 'unset' }}>
       <Container>
         <Row>
           <Column xs={12} md={6}>
@@ -47,7 +47,6 @@ const StyledWrapper = styled.div`
   color: ${({ theme }) => theme.COLOUR.white};
   margin-bottom: 2rem;
   overflow: hidden;
-  /*padding-top: 140px;*/
   padding-top: 75px;
 
   img {

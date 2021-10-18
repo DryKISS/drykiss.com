@@ -3,7 +3,7 @@
  */
 
 // UI
-import { MetaHead} from '@drykiss/industry-ui'
+import { MetaHead } from '@drykiss/industry-ui'
 import OurServicesRows from '../components/our-services/rows'
 import OurWorksSection from '../components/home/ourWorksSection'
 import { Brand, Canonical } from '../config/config'
@@ -20,13 +20,11 @@ const meta = {
 const OurServicesPage = () => {
   return (
     <>
-      {meta && (
-        <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />
-      )}
+      {meta && <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />}
       <SimplePageHeader
-        title='Our Services'
-        sub='We offer full-service web development and digital marketing solutions'
-				image='/images/our-services/head.svg'
+        title="Our Services"
+        sub="We offer full-service web development and digital marketing solutions"
+        image="/images/our-services/head.svg"
       />
       <OurServicesRows />
       <OurWorksSection />

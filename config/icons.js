@@ -12,12 +12,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 // Free Solid - FAS
-import {
-  faBars,
-  faCopyright,
-  faEnvelope,
-  faPhone
-} from '@fortawesome/free-solid-svg-icons'
+import { faBars, faCopyright, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 // Library
 import { library } from '@fortawesome/fontawesome-svg-core'

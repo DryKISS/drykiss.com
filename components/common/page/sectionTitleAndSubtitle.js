@@ -1,33 +1,28 @@
 import { Text } from '@drykiss/industry-ui'
 import styled, { css } from 'styled-components'
 import AC from '../../adaptorComponent'
-const SectionTitleAndSubtitle = ({
-  title,
-  subtitle,
-  maxTextWidth,
-  ...props
-}) => {
+const SectionTitleAndSubtitle = ({ title, subtitle, maxTextWidth, ...props }) => {
   return (
     <Wrapper {...props}>
       <AC
         as={Text}
         semiBold
-        textSize='2.25rem'
-        textColour='darkBlue'
+        textSize="2.25rem"
+        textColour="darkBlue"
         center
-        fontFamily='Poppins'
-        mdStyles={{ pX: '1rem',textCenter:true }}
+        fontFamily="Poppins"
+        mdStyles={{ pX: '1rem', textCenter: true }}
       >
         {title}
       </AC>
-      <AC mb='3rem' mt='2rem'>
+      <AC mb="3rem" mt="2rem">
         <AC fullWidth center>
           <TextContainer maxTextWidth={maxTextWidth}>
             <AC
               as={Text}
               semiBold
-              textSize='1.25rem'
-              textColour='#9CB4CA'
+              textSize="1.25rem"
+              textColour="#9CB4CA"
               textCenter
               mdStyles={{ pX: '1rem' }}
             >

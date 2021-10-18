@@ -52,7 +52,7 @@ const OurServicesSection = () => {
               full -service web development and marketing solution"
       />
 
-      <AC as={MaxContainer} mb="6rem" mdStyles={{mb:'3rem'}} >
+      <AC as={MaxContainer} mb="6rem" mdStyles={{ mb: '3rem' }}>
         <Row>
           {serviceCardsData.map((data, index) => {
             return (
@@ -62,7 +62,7 @@ const OurServicesSection = () => {
                 md={4}
                 sm={12}
                 center
-								pX='0.5rem'
+                pX="0.5rem"
                 smStyles={{
                   pX: '2rem',
                   mt: '2rem'
@@ -70,25 +70,30 @@ const OurServicesSection = () => {
               >
                 <AC as={CardWrapper} fullWidth elevation={1} pY="2rem" pX="1rem">
                   <Space marginBottom="md">
-                    <AC as={Text} textColour="darkGeryText" bold size="md" mdStyles={{textCenter:true}} >
+                    <AC
+                      as={Text}
+                      textColour="darkGeryText"
+                      bold
+                      size="md"
+                      mdStyles={{ textCenter: true }}
+                    >
                       {data.title}
                     </AC>
                   </Space>
                   <AC
                     flex
                     itemsStart
-										smStyles={{
+                    smStyles={{
                       flexRowReverse: 'unset',
                       contentAround: 'unset',
                       itemsCenter: 'unset',
-											column:true
+                      column: true
                     }}
                     mdStyles={{
                       flexRowReverse: true,
                       contentAround: true,
                       itemsCenter: true
                     }}
-
                   >
                     <AC
                       as={Image}
@@ -97,7 +102,7 @@ const OurServicesSection = () => {
                       mdStyles={{
                         width: '8.5rem'
                       }}
-											smStyles={{ width:'7rem'}}
+                      smStyles={{ width: '7rem' }}
                     />
                     <BulletsContainer>
                       {data.bullets.map((bullet, idx) => (

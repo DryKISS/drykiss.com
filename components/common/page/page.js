@@ -21,7 +21,7 @@ export const Page = ({
   heroImage,
   heroSubHeading,
   meta,
-	className
+  className
 }) => {
   return (
     <StyledPage className={className}>
@@ -32,7 +32,6 @@ export const Page = ({
         image={heroImage}
         onImage={onImage}
         subHeading={heroSubHeading}
-
       />
 
       {heading && (

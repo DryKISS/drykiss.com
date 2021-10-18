@@ -52,7 +52,7 @@ const OurServicesRows = () => {
   return (
     <MaxContainer>
       {ourServicesData.map((item, index) => {
-        return <InfoRow key={'service'+index} item={item} index={index} />
+        return <InfoRow key={'service' + index} item={item} index={index} />
       })}
     </MaxContainer>
   )

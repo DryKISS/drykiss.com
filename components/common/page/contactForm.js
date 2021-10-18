@@ -100,9 +100,10 @@ const ContactForm = () => {
   const onSubmit = async (data, e) => {
     e.preventDefault()
     setLoading(true)
+
     // Submit form
     try {
-       const resp = await axios.post('https://formspree.io/f/mdoypbqq', data, {
+      const resp = await axios.post('https://formspree.io/f/mdoypbqq', data, {
         headers: { Accept: 'application/json' }
       })
       if (resp.status === 200) {

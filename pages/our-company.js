@@ -23,20 +23,18 @@ const meta = {
 const OurCompanyPage = () => {
   return (
     <>
-      {meta && (
-        <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />
-      )}
+      {meta && <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />}
       <SimplePageHeader
-        title='Our Company'
+        title="Our Company"
         sub="We don't repeat our selves and keep it simple"
-        image='/images/our-company/head.svg'
+        image="/images/our-company/head.svg"
       />
       <WhoWeAreSection />
-			<WhyDrykissSection />
-			<OurApproachSection />
-			<DrykissTeam />
-			<OurWorksSection/>
-			<LetsTalkSection />
+      <WhyDrykissSection />
+      <OurApproachSection />
+      <DrykissTeam />
+      <OurWorksSection />
+      <LetsTalkSection />
     </>
   )
 }

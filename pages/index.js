@@ -14,7 +14,6 @@ import OurWorksSection from '../components/home/ourWorksSection'
 import BlogSection from '../components/home/blogSection'
 import ContactUsSection from '../components/home/contactUsSection'
 import { HomePageService } from '../services/pages-services/homeService'
-// import { HomePageService } from '../services/pages-services/homeService'
 
 const meta = {
   description: `DryKISS is a full service internet and mobile digital production house. Our
@@ -43,14 +42,6 @@ const PageIndex = (props) => {
       <OurWorksSection {...{ works }} />
       <BlogSection posts={blogPosts} />
       <ContactUsSection />
-      {/* <HomeWhoWeAre />
-      <Space marginBottom="xxxl" />
-      <HomeOurMethodology />
-      <HomeMiddleHero />
-      <Space marginBottom="xxxl" />
-      <HomeOurWorks />
-      <Space marginBottom="xxxl" />
-      <HomeClients /> */}
     </Page>
   )
 }

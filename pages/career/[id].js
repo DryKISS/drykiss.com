@@ -4,7 +4,7 @@
 
 // UI
 
-import { MetaHead, Button, Column, Image, Row } from '@drykiss/industry-ui'
+import { MetaHead, Button, Column, Row } from '@drykiss/industry-ui'
 
 import { Brand, Canonical } from '../../config/config'
 import SimplePageHeader from '../../components/common/head'
@@ -74,30 +74,28 @@ const eachCareerData = {
 const EachCareerPage = () => {
   return (
     <>
-      {meta && (
-        <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />
-      )}
+      {meta && <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />}
       <SimplePageHeader
-        title='Careers'
-        sub='Lorem ipsum dolor sit amet, consectetuer'
-        image='/images/career/head.svg'
+        title="Careers"
+        sub="Lorem ipsum dolor sit amet, consectetuer"
+        image="/images/career/head.svg"
       />
       <AC
         as={MaxContainer}
-        mb='6rem'
+        mb="6rem"
         mdStyles={{
           pX: '1.5rem'
         }}
       >
         <AC as={Row} itemsCenter>
           <Column md={9} sm={12}>
-            <AC as='h1' textColour='darkBlue' textSize='2.25' bold>
+            <AC as="h1" textColour="darkBlue" textSize="2.25" bold>
               {eachCareerData.title}
             </AC>
           </Column>
-          <Column md={3} sm={12} flex itemsCenter >
-            {/*<Image src={eachCareerData.image} alt={eachCareerData.title} />*/}
-            <AC as={Button} bgColour='primary' elevation={1}>
+          <Column md={3} sm={12} flex itemsCenter>
+            {/* <Image src={eachCareerData.image} alt={eachCareerData.title} /> */}
+            <AC as={Button} bgColour="primary" elevation={1}>
               Apply on Angle List
             </AC>
           </Column>
@@ -105,7 +103,7 @@ const EachCareerPage = () => {
         {eachCareerData.sections.map((section, index) => {
           return (
             <AC key={'section' + index}>
-              <AC as='h2' textSize='1.25rem' textColour='darkBlue' bold>
+              <AC as="h2" textSize="1.25rem" textColour="darkBlue" bold>
                 {section.title}
               </AC>
               {section.descs &&
@@ -113,25 +111,25 @@ const EachCareerPage = () => {
                   return (
                     <AC
                       key={'desc' + index + '' + idx}
-                      as='p'
-                      mb='1rem'
-                      textSize='0.75rem'
-                      textColour='#999999'
+                      as="p"
+                      mb="1rem"
+                      textSize="0.75rem"
+                      textColour="#999999"
                       bold
                     >
                       {desc}
                     </AC>
                   )
                 })}
-              <AC as='ul'>
+              <AC as="ul">
                 {section.bullets.map((bullet, idx) => {
                   return (
                     <AC
-                      as='li'
+                      as="li"
                       key={'bullet' + index + '' + idx}
-                      mb='1rem'
-                      textSize='0.75rem'
-                      textColour='#999999'
+                      mb="1rem"
+                      textSize="0.75rem"
+                      textColour="#999999"
                       bold
                     >
                       {bullet}
@@ -139,7 +137,7 @@ const EachCareerPage = () => {
                   )
                 })}
               </AC>
-              <AC key={'sp' + index} mb='2.5rem'></AC>
+              <AC key={'sp' + index} mb="2.5rem"></AC>
             </AC>
           )
         })}

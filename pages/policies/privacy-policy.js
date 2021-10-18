@@ -16,7 +16,6 @@ const meta = {
   title: 'DryKISS develops hybrid mobile and responsive websites'
 }
 
-
 const PagePrivacy = () => {
   return (
     <Page heroHeading="Privacy Policy" meta={meta}>

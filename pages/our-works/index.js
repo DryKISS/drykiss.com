@@ -19,7 +19,7 @@ export const getStaticProps = async () => {
   return WorksPageService.getWorks()
 }
 
-const OurWorks = ({ posts:works }) => {
+const OurWorks = ({ posts: works }) => {
   return (
     <>
       {meta && <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />}

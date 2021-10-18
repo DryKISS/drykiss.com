@@ -3,23 +3,17 @@ module.exports = {
   env: {
     development: {
       plugins: [
-				'@babel/plugin-transform-runtime',
-        [
-          'styled-components',
-          { ssr: true, displayName: false, preprocess: true }
-        ]
+        '@babel/plugin-transform-runtime',
+        ['styled-components', { ssr: true, displayName: false, preprocess: true }]
       ],
-      presets: ["next/babel"]
+      presets: ['next/babel']
     },
     production: {
       plugins: [
-				'@babel/plugin-transform-runtime',
-        [
-          'styled-components',
-          { ssr: true, displayName: false, preprocess: true }
-        ]
+        '@babel/plugin-transform-runtime',
+        ['styled-components', { ssr: true, displayName: false, preprocess: true }]
       ],
-      presets: ["next/babel"]
+      presets: ['next/babel']
     }
   },
 

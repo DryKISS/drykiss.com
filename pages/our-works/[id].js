@@ -94,6 +94,7 @@ export async function getStaticPaths() {
     fallback: false
   }
 }
+
 export const getStaticProps = async ({ params }) => {
   return WorksPageService.getSingleWork({ id: params?.id })
 }
@@ -119,6 +120,7 @@ const heading = (props) => {
       return <h6 children={children} />
   }
 }
+
 const link = ({ children, href }) => {
   return (
     <Link to={href}>
@@ -126,6 +128,7 @@ const link = ({ children, href }) => {
     </Link>
   )
 }
+
 const li = ({ children }) => {
   return (
     <AC as="li" mb="1rem">
@@ -133,25 +136,29 @@ const li = ({ children }) => {
     </AC>
   )
 }
+
 const image = ({ alt, src, title }) => (
   <InPostImage alt={alt} src={`${CmsAddress}/${src}`} title={title} />
 )
 
 const EachWork = (props) => {
   const { post } = props
+
   if (!post) {
     return <></>
   }
+
   const { pageInfo } = post
+
   if (!pageInfo) {
     return <></>
   }
+
   const {
     headerImage,
     content,
     headerDesc,
     headerTitle,
-    id,
     introDesc,
     introIcon,
     introImage,
@@ -160,6 +167,7 @@ const EachWork = (props) => {
     teamMembers,
     tecnologies
   } = pageInfo
+
   return (
     <>
       {pageInfo && (
