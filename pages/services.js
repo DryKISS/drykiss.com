@@ -3,9 +3,7 @@
  */
 
 // UI
-
 import { MetaHead} from '@drykiss/industry-ui'
-
 import OurServicesRows from '../components/our-services/rows'
 import OurWorksSection from '../components/home/ourWorksSection'
 import { Brand, Canonical } from '../config/config'
@@ -28,7 +26,7 @@ const OurServicesPage = () => {
       <SimplePageHeader
         title='Our Services'
         sub='We offer full-service web development and digital marketing solutions'
-				image='/images/ourServices/head.svg'
+				image='/images/our-services/head.svg'
       />
       <OurServicesRows />
       <OurWorksSection />

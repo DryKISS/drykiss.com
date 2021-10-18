@@ -8,6 +8,7 @@ export const Addresses = {
   blog: 'blog-posts',
   ourWorks: 'dk-works'
 }
+
 export const googleApiConfig = {
   type: 'service_account',
   project_id: 'mycms-324509',

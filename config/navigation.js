@@ -5,6 +5,7 @@
 // UI
 import { Navbar } from '@drykiss/industry-ui'
 import { Brand } from '../config/config'
+
 export const PageAddresses = {
   Blog: '/blog',
   Services: '/services',
@@ -12,6 +13,7 @@ export const PageAddresses = {
   Career: '/career',
   OurCompany: '/our-company'
 }
+
 export const Navigation = () => {
   const Default = {
     right: [
@@ -20,11 +22,6 @@ export const Navigation = () => {
         name: 'Services',
         to: PageAddresses.Services
       },
-      // {
-      //  id: 'navCaseStudies',
-      //  name: 'Case Studies',
-      //  to: '/case-studies'
-      // },
       {
         id: 'blog',
         name: 'Blog',

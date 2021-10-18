@@ -33,7 +33,7 @@ export const HomeOurMethodology = () => {
 
         <Row align="center">
           <Column sm={12} md={6}>
-            <Image alt="Ethos" src="/images/home/etho.svg" />
+            <Image alt="Ethos" src="/images/home/ethos.svg" />
           </Column>
 
           <Column sm={12} md={6}>

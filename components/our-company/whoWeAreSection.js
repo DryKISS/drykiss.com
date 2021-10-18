@@ -4,13 +4,13 @@ import { MaxContainer } from '../common/maxContainer'
 import SectionTitleAndSubtitle from '../common/page/sectionTitleAndSubtitle'
 const whoWeAreData = [
   {
-    image: '/images/ourCompany/1.svg',
+    image: '/images/our-company/1.svg',
     title: 'Modern Technology',
     desc:
       'We design, build and launch Minimum Viable Products (MVP). Or iterate existing products. This helps you showcase social proof to potential investors at every round of funding from Venture Capital to Series A, B, C and IPO.\nSkilled at crafting responsive website design, app development, marketplaces and eCommerce, we help create products that validate your idea. We will craft it around your value proposition, proprietary technology and competitive advantage. Our core services cover strategy, planning, testing, analytics, design and build. From the first concept to the grand release.'
   },
   {
-    image: '/images/ourCompany/2.svg',
+    image: '/images/our-company/2.svg',
     title: 'Modern Technology',
     desc: 'We can also help your startup:',
     bullets: [
@@ -20,7 +20,7 @@ const whoWeAreData = [
     ]
   },
   {
-    image: '/images/ourCompany/3.svg',
+    image: '/images/our-company/3.svg',
     title: 'Modern Technology',
     desc: 'Our technology stack',
     bullets: ['React', 'JavaScript', 'NextJS', 'Node.js', '	Amazon AWS', 'IndustryUI design system']

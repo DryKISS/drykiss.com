@@ -15,9 +15,10 @@ const meta = {
   path: '/',
   title: 'DryKISS develops hybrid mobile and responsive websites'
 }
+
 const initialData = {
-  introImage: '/images/eachWork/cleverly/introImage.svg',
-  introIcon: '/images/eachWork/cleverly/projectIcon.svg',
+  introImage: '/images/each-work/cleverly/intro-image.svg',
+  introIcon: '/images/each-work/cleverly/project-icon.svg',
   name: 'Cleverly',
   shortDesc:
     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad',
@@ -32,18 +33,18 @@ const initialData = {
   duration: '12 months',
   team: [
     {
-      image: '/images/eachWork/cleverly/team/1.png',
+      image: '/images/each-work/cleverly/team/1.png',
       name: 'ian',
       link: 'ian'
     },
     {
-      image: '/images/eachWork/cleverly/team/2.png',
+      image: '/images/each-work/cleverly/team/2.png',
 
       name: 'Kristian',
       link: 'kristian'
     },
     {
-      image: '/images/eachWork/cleverly/team/3.png',
+      image: '/images/each-work/cleverly/team/3.png',
 
       name: 'ali',
       link: 'ali'
@@ -51,32 +52,32 @@ const initialData = {
   ],
   technologies: [
     {
-      image: '/images/eachWork/cleverly/technologies/1.svg',
+      image: '/images/each-work/cleverly/technologies/1.svg',
       name: 'hasura',
       link: 'hasura'
     },
     {
-      image: '/images/eachWork/cleverly/technologies/2.svg',
+      image: '/images/each-work/cleverly/technologies/2.svg',
       name: 'react',
       link: 'react'
     },
     {
-      image: '/images/eachWork/cleverly/technologies/3.svg',
+      image: '/images/each-work/cleverly/technologies/3.svg',
       name: 'next',
       link: 'next'
     },
     {
-      image: '/images/eachWork/cleverly/technologies/4.svg',
+      image: '/images/each-work/cleverly/technologies/4.svg',
       name: 'asdasdasdas',
       link: 'hasura'
     },
     {
-      image: '/images/eachWork/cleverly/technologies/5.svg',
+      image: '/images/each-work/cleverly/technologies/5.svg',
       name: 'asdasdasd',
       link: 'react'
     },
     {
-      image: '/images/eachWork/cleverly/technologies/6.svg',
+      image: '/images/each-work/cleverly/technologies/6.svg',
       name: 'aasda',
       link: 'next'
     }

@@ -3,7 +3,6 @@
  */
 
 // UI
-
 import { MetaHead } from '@drykiss/industry-ui'
 import { Brand, Canonical } from '../config/config'
 import SimplePageHeader from '../components/common/head'
@@ -30,7 +29,7 @@ const OurCompanyPage = () => {
       <SimplePageHeader
         title='Our Company'
         sub="We don't repeat our selves and keep it simple"
-        image='/images/ourCompany/head.svg'
+        image='/images/our-company/head.svg'
       />
       <WhoWeAreSection />
 			<WhyDrykissSection />

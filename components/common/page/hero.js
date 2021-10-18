@@ -31,6 +31,7 @@ export const PageHero = ({ heading, image, onImage, subHeading }) => {
     </AC>
   )
 }
+
 const StyledColumn = styled(Column)`
   display: flex;
   justify-content: center;

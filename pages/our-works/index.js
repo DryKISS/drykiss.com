@@ -3,7 +3,6 @@
  */
 
 // UI
-
 import { MetaHead } from '@drykiss/industry-ui'
 import { Brand, Canonical } from '../../config/config'
 import SimplePageHeader from '../../components/common/head'
@@ -27,7 +26,7 @@ const OurWorks = ({ posts:works }) => {
       <SimplePageHeader
         title="Discover our works"
         sub="Lorem ipsum dolor sit amet, consectetuer"
-        image="/images/ourWorks/head.svg"
+        image="/images/our-works/head.svg"
       />
       <OurWorksSection {...{ works }} />
     </>

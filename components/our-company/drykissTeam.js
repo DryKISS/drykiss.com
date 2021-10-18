@@ -1,29 +1,29 @@
 import AC from '../adaptorComponent'
 import { Row, Column, Image } from '@drykiss/industry-ui'
-
 import { MaxContainer } from '../common/maxContainer'
 import SectionTitleAndSubtitle from '../common/page/sectionTitleAndSubtitle'
 import { css } from 'styled-components'
+
 const drykissTeamData = [
   {
     name: 'Ian Warner',
     position: 'CEO',
-    image: '/images/ourCompany/drykissTeam/1.png'
+    image: '/images/our-company/drykiss-team/1.png'
   },
   {
     name: 'Kristian Heruc',
     position: 'CTO',
-    image: '/images/ourCompany/drykissTeam/2.png'
+    image: '/images/our-company/drykiss-team/2.png'
   },
   {
     name: 'Ali Sharafi',
     position: 'CPO',
-    image: '/images/ourCompany/drykissTeam/4.jpg'
+    image: '/images/our-company/drykiss-team/4.jpg'
   },
   {
     name: 'May Tran',
     position: 'COO',
-    image: '/images/ourCompany/drykissTeam/3.png'
+    image: '/images/our-cmpany/drykiss-team/3.png'
   }
 ]
 
@@ -35,6 +35,7 @@ const DrykissTeam = () => {
         subtitle="Our team comprises highly skilled professionals with over 20+ years of experience in web development, digital marketing, and tech consulting. We are bold, global, agile, lean, and love thinking outside the box"
         maxTextWidth="920px"
       />
+
       <AC as={MaxContainer} mb="6rem">
         <Row>
           {drykissTeamData.map((item, index) => {
@@ -66,4 +67,5 @@ const DrykissTeam = () => {
     </>
   )
 }
+
 export default DrykissTeam

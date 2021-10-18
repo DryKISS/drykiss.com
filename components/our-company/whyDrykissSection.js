@@ -3,17 +3,18 @@ import AC from '../adaptorComponent'
 import { Column, Row, Image, Text } from '@drykiss/industry-ui'
 import { css } from 'styled-components'
 import { MaxContainer } from '../common/maxContainer'
+
 const whyDrykissData = [
   [
     {
-      image: '/images/ourCompany/whyDrykiss/1.svg'
+      image: '/images/our-company/why-drykiss/1.svg'
     },
     {
       text:
         'We bring technical and business expertise - translate your idea into features and roadmaps.'
     },
     {
-      image: '/images/ourCompany/whyDrykiss/2.svg'
+      image: '/images/our-company/why-drykiss/2.svg'
     }
   ],
   [
@@ -22,7 +23,7 @@ const whyDrykissData = [
         'We help you build value - by applying an honest and ethical approach to collaboration.'
     },
     {
-      image: '/images/ourCompany/whyDrykiss/3.svg'
+      image: '/images/our-company/why-drykiss/3.svg'
     },
     {
       text:
@@ -105,4 +106,5 @@ const WhyDrykissSection = () => {
     </>
   )
 }
+
 export default WhyDrykissSection

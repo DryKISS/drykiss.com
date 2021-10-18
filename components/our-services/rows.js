@@ -1,10 +1,9 @@
-
 import InfoRow from '../common/infoRow'
 import { MaxContainer } from '../common/maxContainer'
 
 const ourServicesData = [
   {
-    image: '/images/ourServices/1.svg',
+    image: '/images/our-services/1.svg',
     title: 'Startup Solutions',
     sub: 'We help startups reduce their time-to-market',
     desc:
@@ -19,7 +18,7 @@ const ourServicesData = [
     ]
   },
   {
-    image: '/images/ourServices/2.svg',
+    image: '/images/our-services/2.svg',
     title: 'Development',
     sub: 'We help companies meet their web and mobile application needs',
     desc:
@@ -34,7 +33,7 @@ const ourServicesData = [
     ]
   },
   {
-    image: '/images/ourServices/3.svg',
+    image: '/images/our-services/3.svg',
     title: 'Digital Marketing',
     sub: 'Make your brand stand out in this cluttered digital world',
     desc:
