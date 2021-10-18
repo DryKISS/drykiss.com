@@ -10,6 +10,7 @@
     "build": "next build",
     "export": "next export",
     "package": "npm run build && npm run export",
+    "packageStaging": "SITE_ENV=staging npm run build && SITE_ENV=staging npm run export",
     "postexport": "node ./scripts/postExport.js",
     "staging": "push-dir --dir=out --remote=git@github.com:DryKISS/dev.drykiss.com.git --branch=gh-pages",
     "production": "push-dir --dir=out --remote=git@github.com:DryKISS/drykiss.com.git --branch=gh-pages",
@@ -21,8 +22,13 @@
   },
   "dependencies": {
     "@drykiss/industry-ui": "1.14.12",
+    "@formspree/react": "^2.2.3",
     "@fortawesome/free-brands-svg-icons": "5.15.3",
-    "next": "^10.2.3"
+    "axios": "^0.21.1",
+    "googleapis": "^84.0.0",
+    "next": "^10.2.3",
+    "react-markdown": "^6.0.2",
+    "styled-components": "^5.3.0"
   },
   "devDependencies": {
     "@babel/core": "7.14.0",

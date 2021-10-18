@@ -15,18 +15,25 @@ import { Brand, Canonical } from '../../../config/config'
 
 export const Page = ({
   children,
-  fluid,
+  onImage,
   heading,
   heroHeading,
   heroImage,
   heroSubHeading,
-  meta
+  meta,
+	className
 }) => {
   return (
-    <StyledPage>
+    <StyledPage className={className}>
       {meta && <MetaHead canonical={Canonical} brand={Brand.name} meta={meta} />}
 
-      <PageHero heading={heroHeading} image={heroImage} subHeading={heroSubHeading} />
+      <PageHero
+        heading={heroHeading}
+        image={heroImage}
+        onImage={onImage}
+        subHeading={heroSubHeading}
+
+      />
 
       {heading && (
         <Container>

@@ -8,41 +8,55 @@ import styled from 'styled-components'
 // UI
 import { Container, Column, Image, MEDIA_QUERY_MAX, Row } from '@drykiss/industry-ui'
 import { PageHeading } from '../../common/page/heading'
-import { PageSubHeading } from '../../common/page/subHeading'
+import AC from '../../adaptorComponent'
 
-export const PageHero = ({ heading, image, subHeading }) => {
+export const PageHero = ({ heading, image, onImage, subHeading }) => {
   return (
-    <StyledWrapper withImage={!!image}>
+    <AC as={StyledWrapper} withImage={!!image} minHeight='523px' mdStyles={{minHeight:'unset'}} >
       <Container>
         <Row>
-          <Column xs={12} md={5}>
+          <Column xs={12} md={6}>
             <PageHeading content={heading} />
-
-            <PageSubHeading>{subHeading}</PageSubHeading>
+            {subHeading}
           </Column>
 
           {image && (
-            <Column xs={12} md={7}>
+            <StyledColumn xs={12} md={6}>
               <Image alt="Hero" src={image} />
-            </Column>
+              {onImage}
+            </StyledColumn>
           )}
         </Row>
       </Container>
-    </StyledWrapper>
+    </AC>
   )
 }
+const StyledColumn = styled(Column)`
+  display: flex;
+  justify-content: center;
+`
 
 const StyledWrapper = styled.div`
-  background: ${({ theme }) => theme.COLOUR.gray90} url('/images/hero/pattern.svg') no-repeat right;
-  color: ${({ theme }) => theme.COLOUR.white};
-  height: 435px;
-  padding-top: 180px;
-  margin-bottom: ${({ withImage }) => (withImage ? 160 : 40)}px;
+  background: ${({ theme }) => {
+      return theme.COLOUR.primary
+    }}
+    url('/images/hero/pattern.svg') no-repeat right;
+  border-bottom: 1px solid #eee;
   box-sizing: border-box;
+  color: ${({ theme }) => theme.COLOUR.white};
+  margin-bottom: 2rem;
+  overflow: hidden;
+  /*padding-top: 140px;*/
+  padding-top: 75px;
+
+  img {
+    max-width: 350px;
+    text-align: center;
+  }
 
   ${MEDIA_QUERY_MAX.phone`
     padding-top: 90px;
-    margin-bottom: 120px;
+    margin-bottom: 2rem;
 
     img {
       padding-top: 40px;

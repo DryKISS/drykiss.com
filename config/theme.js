@@ -10,6 +10,10 @@ const fonts = {
 export const COLOUR = {
   drykiss_lightBlue: '#00D2D2',
   drykiss_darkPink: '#FF6E91',
+  darkBlue: '#002B54',
+  lightBlue: '#E8EDFC',
+  darkText: 'rgb(67, 67, 67)',
+  darkGeryText: 'rgb(124, 124, 124)',
 
   active: '#000000',
   visited: '#00D2D2',
@@ -21,7 +25,7 @@ export const COLOUR = {
   light: 'rgb(236, 240, 243)',
   gray90: '#1A1A1A',
 
-  primary: '#289BC3',
+  primary: '#0F7CE3',
   secondary: '#FF6E91',
   success: 'rgb(54, 197, 58)',
   info: 'rgb(148, 148, 126)',
@@ -77,7 +81,8 @@ export const HEADINGS = {
 
 const NAVBAR = {
   // Navbar
-  background: COLOUR.gray90,
+  background: COLOUR.primary,
+  borderBottom: 'none',
   borderTopWidth: '0.125rem',
   borderTopColor: COLOUR.primary,
 
@@ -109,13 +114,13 @@ const TYPOGRAPHY = {
 }
 
 const FOOTER = {
-  background: '#1A1A1A',
-  colour: COLOUR.white
+  background: '#002B54',
+  colour: '#B5DBFF'
 }
 
 const COPYRIGHT = {
-  background: '#1A1A1A',
-  colour: COLOUR.white
+  background: '#002B54',
+  colour: '#B5DBFF'
 }
 
 export const Theme = {
